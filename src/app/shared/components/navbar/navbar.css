@@ -1,0 +1,41 @@
+.navbar {
+    padding: 6px 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    display: block;
+    padding: 14px 24px;
+}
+
+a {
+    text-decoration: none;  
+    font-family: var(--font-primary);
+    color: inherit;
+    font-size: 16px;
+}
+
+.main {
+    font-weight: bold;
+    
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+
+
+}
+
+.seperator {
+    border-bottom: 8px solid #D7AF59;
+    border-radius: 4px 4px 4px 4px;
+}
