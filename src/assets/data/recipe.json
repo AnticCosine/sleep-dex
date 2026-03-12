@@ -1,0 +1,815 @@
+[
+  {
+    "id": "fancy_apple_curry",
+    "name": "Fancy Apple Curry",
+    "type": "curry",
+    "baseStrength": 668,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 7 }
+    ]
+  },
+  {
+    "id": "simple_chowder",
+    "name": "Simple Chowder",
+    "type": "curry",
+    "baseStrength": 727,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 7 }
+    ]
+  },
+  {
+    "id": "mild_honey_curry",
+    "name": "Mild Honey Curry",
+    "type": "curry",
+    "baseStrength": 749,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 7 }
+    ]
+  },
+  {
+    "id": "beanburger_curry",
+    "name": "Beanburger Curry",
+    "type": "curry",
+    "baseStrength": 764,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 7 }
+    ]
+  },
+  {
+    "id": "hearty_cheeseburger_curry",
+    "name": "Hearty Cheeseburger Curry",
+    "type": "curry",
+    "baseStrength": 1785,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 8 },
+      { "ingredientId": "bean_sausage", "amount": 8 }
+    ]
+  },
+  {
+    "id": "drought_katsu_curry",
+    "name": "“Drought” Katsu Curry",
+    "type": "curry",
+    "baseStrength": 1815,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 10 },
+      { "ingredientId": "pure_oil", "amount": 5 }
+    ]
+  },
+  {
+    "id": "solar_power_tomato_curry",
+    "name": "“Solar Power” Tomato Curry",
+    "type": "curry",
+    "baseStrength": 1943,
+    "ingredients": [
+      { "ingredientId": "snoozy_tomato", "amount": 10 },
+      { "ingredientId": "fiery_herb", "amount": 5 }
+    ]
+  },
+  {
+    "id": "melty_omelette_curry",
+    "name": "Melty Omelette Curry",
+    "type": "curry",
+    "baseStrength": 2009,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 10 },
+      { "ingredientId": "snoozy_tomato", "amount": 6 }
+    ]
+  },
+  {
+    "id": "soft_potato_chowder",
+    "name": "Soft Potato Chowder",
+    "type": "curry",
+    "baseStrength": 3089,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "soft_potato", "amount": 8 },
+      { "ingredientId": "tasty_mushroom", "amount": 4 }
+    ]
+  },
+  {
+    "id": "bulk_up_bean_curry",
+    "name": "“Bulk Up” Bean Curry",
+    "type": "curry",
+    "baseStrength": 3274,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 12 },
+      { "ingredientId": "bean_sausage", "amount": 6 },
+      { "ingredientId": "fiery_herb", "amount": 4 },
+      { "ingredientId": "fancy_egg", "amount": 4 }
+    ]
+  },
+  {
+    "id": "spore_mushroom_curry",
+    "name": "“Spore” Mushroom Curry",
+    "type": "curry",
+    "baseStrength": 4041,
+    "ingredients": [
+      { "ingredientId": "soft_potato", "amount": 9 },
+      { "ingredientId": "tasty_mushroom", "amount": 14 }
+    ]
+  },
+  {
+    "id": "egg_bomb_curry",
+    "name": "“Egg Bomb” Curry",
+    "type": "curry",
+    "baseStrength": 4523,
+    "ingredients": [
+      { "ingredientId": "soft_potato", "amount": 4 },
+      { "ingredientId": "fancy_apple", "amount": 11 },
+      { "ingredientId": "fancy_egg", "amount": 8 },
+      { "ingredientId": "honey", "amount": 12 }
+    ]
+  },
+  {
+    "id": "limber_corn_stew",
+    "name": "“Limber” Corn Stew",
+    "type": "curry",
+    "baseStrength": 4670,
+    "ingredients": [
+      { "ingredientId": "greengrass_corn", "amount": 14 },
+      { "ingredientId": "moomoo_milk", "amount": 8 },
+      { "ingredientId": "soft_potato", "amount": 8 }
+    ]
+  },
+  {
+    "id": "dizzy_punch_spicy_curry",
+    "name": "“Dizzy Punch” Spicy Curry",
+    "type": "curry",
+    "baseStrength": 5702,
+    "ingredients": [
+      { "ingredientId": "rousing_coffee", "amount": 11 },
+      { "ingredientId": "fiery_herb", "amount": 11 },
+      { "ingredientId": "honey", "amount": 11 }
+    ]
+  },
+  {
+    "id": "spicy_leek_curry",
+    "name": "Spicy Leek Curry",
+    "type": "curry",
+    "baseStrength": 5900,
+    "ingredients": [
+      { "ingredientId": "large_leek", "amount": 14 },
+      { "ingredientId": "fiery_herb", "amount": 8 },
+      { "ingredientId": "warming_ginger", "amount": 10 }
+    ]
+  },
+  {
+    "id": "grilled_tail_curry",
+    "name": "Grilled Tail Curry",
+    "type": "curry",
+    "baseStrength": 7483,
+    "ingredients": [
+      { "ingredientId": "fiery_herb", "amount": 25 },
+      { "ingredientId": "slowpoke_tail", "amount": 8 }
+    ]
+  },
+  {
+    "id": "dream_eater_butter_curry",
+    "name": "“Dream Eater” Butter Curry",
+    "type": "curry",
+    "baseStrength": 9010,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 12 },
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "soft_potato", "amount": 18 },
+      { "ingredientId": "snoozy_tomato", "amount": 15 }
+    ]
+  },
+  {
+    "id": "ninja_curry",
+    "name": "Ninja Curry",
+    "type": "curry",
+    "baseStrength": 9445,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 24 },
+      { "ingredientId": "bean_sausage", "amount": 9 },
+      { "ingredientId": "large_leek", "amount": 12 },
+      { "ingredientId": "tasty_mushroom", "amount": 5 }
+    ]
+  },
+  {
+    "id": "inferno_corn_keema_curry",
+    "name": "“Inferno” Corn Keema Curry",
+    "type": "curry",
+    "baseStrength": 13690,
+    "ingredients": [
+      { "ingredientId": "fiery_herb", "amount": 27 },
+      { "ingredientId": "bean_sausage", "amount": 24 },
+      { "ingredientId": "greengrass_corn", "amount": 14 },
+      { "ingredientId": "warming_ginger", "amount": 12 }
+    ]
+  },
+  {
+    "id": "role_play_pumpkaboo_stew",
+    "name": "“Role Play” Pumpkaboo Stew",
+    "type": "curry",
+    "baseStrength": 15621,
+    "ingredients": [
+      { "ingredientId": "plump_pumpkin", "amount": 10 },
+      { "ingredientId": "bean_sausage", "amount": 16 },
+      { "ingredientId": "soft_potato", "amount": 18 },
+      { "ingredientId": "tasty_mushroom", "amount": 25 }
+    ]
+  },
+  {
+    "id": "hidden_power_perk_up_stew",
+    "name": "“Hidden Power” Perk-Up Stew",
+    "type": "curry",
+    "baseStrength": 19061,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 28 },
+      { "ingredientId": "snoozy_tomato", "amount": 25 },
+      { "ingredientId": "tasty_mushroom", "amount": 23 },
+      { "ingredientId": "rousing_coffee", "amount": 16 }
+    ]
+  },
+  {
+    "id": "cut_sukiyaki_curry",
+    "name": "“Cut” Sukiyaki Curry",
+    "type": "curry",
+    "baseStrength": 20655,
+    "ingredients": [
+      { "ingredientId": "large_leek", "amount": 27 },
+      { "ingredientId": "bean_sausage", "amount": 26 },
+      { "ingredientId": "honey", "amount": 26 },
+      { "ingredientId": "fancy_egg", "amount": 22 }
+    ]
+  },
+  {
+    "id": "overgrow_avocado_gratin",
+    "name": "“Overgrow” Avocado Gratin",
+    "type": "curry",
+    "baseStrength": 24802,
+    "ingredients": [
+      { "ingredientId": "glossy_avocado", "amount": 22 },
+      { "ingredientId": "soft_potato", "amount": 20 },
+      { "ingredientId": "moomoo_milk", "amount": 41 },
+      { "ingredientId": "pure_oil", "amount": 32 }
+    ]
+  },
+  {
+    "id": "warm_moomoo_milk",
+    "name": "Warm Moomoo Milk",
+    "type": "dessert",
+    "baseStrength": 727,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 7 }
+    ]
+  },
+  {
+    "id": "fancy_apple_juice",
+    "name": "Fancy Apple Juice",
+    "type": "dessert",
+    "baseStrength": 763,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 8 }
+    ]
+  },
+  {
+    "id": "craft_soda_pop",
+    "name": "Craft Soda Pop",
+    "type": "dessert",
+    "baseStrength": 964,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 9 }
+    ]
+  },
+  {
+    "id": "lucky_chant_apple_pie",
+    "name": "“Lucky Chant” Apple Pie",
+    "type": "dessert",
+    "baseStrength": 1634,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 12 },
+      { "ingredientId": "moomoo_milk", "amount": 4 }
+    ]
+  },
+  {
+    "id": "fluffy_sweet_potatoes",
+    "name": "“Fluffy” Sweet Potatoes",
+    "type": "dessert",
+    "baseStrength": 1783,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 5 },
+      { "ingredientId": "soft_potato", "amount": 9 }
+    ]
+  },
+  {
+    "id": "ember_ginger_tea",
+    "name": "“Ember” Ginger Tea",
+    "type": "dessert",
+    "baseStrength": 1788,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 7 },
+      { "ingredientId": "warming_ginger", "amount": 9 }
+    ]
+  },
+  {
+    "id": "cloud_nine_soy_cake",
+    "name": "“Cloud Nine” Soy Cake",
+    "type": "dessert",
+    "baseStrength": 1798,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 8 },
+      { "ingredientId": "greengrass_soybeans", "amount": 7 }
+    ]
+  },
+  {
+    "id": "stalwart_vegetable_juice",
+    "name": "“Stalwart” Vegetable Juice",
+    "type": "dessert",
+    "baseStrength": 1798,
+    "ingredients": [
+      { "ingredientId": "snoozy_tomato", "amount": 9 },
+      { "ingredientId": "fancy_apple", "amount": 7 }
+    ]
+  },
+  {
+    "id": "big_malasada",
+    "name": "Big Malasada",
+    "type": "dessert",
+    "baseStrength": 2927,
+    "ingredients": [
+      { "ingredientId": "pure_oil", "amount": 10 },
+      { "ingredientId": "moomoo_milk", "amount": 7 },
+      { "ingredientId": "honey", "amount": 6 }
+    ]
+  },
+  {
+    "id": "hustle_protein_smoothie",
+    "name": "“Hustle” Protein Smoothie",
+    "type": "dessert",
+    "baseStrength": 3168,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 15 },
+      { "ingredientId": "soothing_cacao", "amount": 8 }
+    ]
+  },
+  {
+    "id": "sweet_scent_chocolate_cake",
+    "name": "“Sweet Scent” Chocolate Cake",
+    "type": "dessert",
+    "baseStrength": 3280,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 7 },
+      { "ingredientId": "honey", "amount": 9 },
+      { "ingredientId": "soothing_cacao", "amount": 8 }
+    ]
+  },
+  {
+    "id": "petal_dance_chocolate_tart",
+    "name": "“Petal Dance” Chocolate Tart",
+    "type": "dessert",
+    "baseStrength": 3314,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 11 },
+      { "ingredientId": "fancy_apple", "amount": 11 }
+    ]
+  },
+  {
+    "id": "lovely_kiss_smoothie",
+    "name": "“Lovely Kiss” Smoothie",
+    "type": "dessert",
+    "baseStrength": 4734,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 11 },
+      { "ingredientId": "moomoo_milk", "amount": 9 },
+      { "ingredientId": "honey", "amount": 7 },
+      { "ingredientId": "soothing_cacao", "amount": 8 }
+    ]
+  },
+  {
+    "id": "steadfast_ginger_cookies",
+    "name": "“Steadfast” Ginger Cookies",
+    "type": "dessert",
+    "baseStrength": 4921,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 14 },
+      { "ingredientId": "warming_ginger", "amount": 12 },
+      { "ingredientId": "soothing_cacao", "amount": 5 },
+      { "ingredientId": "fancy_egg", "amount": 4 }
+    ]
+  },
+  {
+    "id": "nerolis_restorative_tea",
+    "name": "Neroli's Restorative Tea",
+    "type": "dessert",
+    "baseStrength": 5065,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 15 },
+      { "ingredientId": "warming_ginger", "amount": 11 },
+      { "ingredientId": "tasty_mushroom", "amount": 9 }
+    ]
+  },
+  {
+    "id": "huge_power_soy_donuts",
+    "name": "“Huge Power” Soy Donuts",
+    "type": "dessert",
+    "baseStrength": 5547,
+    "ingredients": [
+      { "ingredientId": "pure_oil", "amount": 12 },
+      { "ingredientId": "greengrass_soybeans", "amount": 16 },
+      { "ingredientId": "soothing_cacao", "amount": 7 }
+    ]
+  },
+  {
+    "id": "explosion_popcorn",
+    "name": "“Explosion” Popcorn",
+    "type": "dessert",
+    "baseStrength": 6048,
+    "ingredients": [
+      { "ingredientId": "greengrass_corn", "amount": 15 },
+      { "ingredientId": "pure_oil", "amount": 14 },
+      { "ingredientId": "moomoo_milk", "amount": 7 }
+    ]
+  },
+  {
+    "id": "early_bird_coffee_jelly",
+    "name": "“Early Bird” Coffee Jelly",
+    "type": "dessert",
+    "baseStrength": 6739,
+    "ingredients": [
+      { "ingredientId": "rousing_coffee", "amount": 16 },
+      { "ingredientId": "moomoo_milk", "amount": 14 },
+      { "ingredientId": "honey", "amount": 12 }
+    ]
+  },
+  {
+    "id": "mold_breaker_corn_tiramisu",
+    "name": "“Mold Breaker” Corn Tiramisu",
+    "type": "dessert",
+    "baseStrength": 7125,
+    "ingredients": [
+      { "ingredientId": "rousing_coffee", "amount": 14 },
+      { "ingredientId": "greengrass_corn", "amount": 14 },
+      { "ingredientId": "moomoo_milk", "amount": 12 }
+    ]
+  },
+  {
+    "id": "jigglypuffs_fruity_flan",
+    "name": "Jigglypuff's Fruity Flan",
+    "type": "dessert",
+    "baseStrength": 7594,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 20 },
+      { "ingredientId": "fancy_egg", "amount": 15 },
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "fancy_apple", "amount": 10 }
+    ]
+  },
+  {
+    "id": "leaf_tornado_smoothie",
+    "name": "“Leaf Tornado” Smoothie",
+    "type": "dessert",
+    "baseStrength": 8165,
+    "ingredients": [
+      { "ingredientId": "glossy_avocado", "amount": 18 },
+      { "ingredientId": "snoozy_tomato", "amount": 16 },
+      { "ingredientId": "moomoo_milk", "amount": 14 }
+    ]
+  },
+  {
+    "id": "teatime_corn_scones",
+    "name": "“Teatime” Corn Scones",
+    "type": "dessert",
+    "baseStrength": 10925,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 20 },
+      { "ingredientId": "warming_ginger", "amount": 20 },
+      { "ingredientId": "greengrass_corn", "amount": 18 },
+      { "ingredientId": "moomoo_milk", "amount": 9 }
+    ]
+  },
+  {
+    "id": "flower_gift_macarons",
+    "name": "“Flower Gift” Macarons",
+    "type": "dessert",
+    "baseStrength": 13834,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 25 },
+      { "ingredientId": "fancy_egg", "amount": 25 },
+      { "ingredientId": "honey", "amount": 17 },
+      { "ingredientId": "moomoo_milk", "amount": 10 }
+    ]
+  },
+  {
+    "id": "zing_zap_spiced_cola",
+    "name": "“Zing Zap” Spiced Cola",
+    "type": "dessert",
+    "baseStrength": 17494,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 35 },
+      { "ingredientId": "warming_ginger", "amount": 20 },
+      { "ingredientId": "large_leek", "amount": 20 },
+      { "ingredientId": "rousing_coffee", "amount": 12 }
+    ]
+  },
+  {
+    "id": "clodsire_eclair",
+    "name": "Clodsire Eclair",
+    "type": "dessert",
+    "baseStrength": 20885,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 30 },
+      { "ingredientId": "moomoo_milk", "amount": 26 },
+      { "ingredientId": "rousing_coffee", "amount": 24 },
+      { "ingredientId": "honey", "amount": 22 }
+    ]
+  },
+  {
+    "id": "scary_face_pancakes",
+    "name": "“Scary Face” Pancakes",
+    "type": "dessert",
+    "baseStrength": 24354,
+    "ingredients": [
+      { "ingredientId": "plump_pumpkin", "amount": 18 },
+      { "ingredientId": "fancy_egg", "amount": 24 },
+      { "ingredientId": "honey", "amount": 32 },
+      { "ingredientId": "snoozy_tomato", "amount": 29 }
+    ]
+  },
+  {
+    "id": "honey_gather_chocolate_waffles",
+    "name": "“Honey Gather” Chocolate Waffles",
+    "type": "dessert",
+    "baseStrength": 25484,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 38 },
+      { "ingredientId": "greengrass_corn", "amount": 28 },
+      { "ingredientId": "pure_oil", "amount": 28 },
+      { "ingredientId": "soothing_cacao", "amount": 21 }
+    ]
+  },
+  {
+    "id": "fancy_apple_salad",
+    "name": "Fancy Apple Salad",
+    "type": "salad",
+    "baseStrength": 763,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 8 }
+    ]
+  },
+  {
+    "id": "bean_ham_salad",
+    "name": "Bean Ham Salad",
+    "type": "salad",
+    "baseStrength": 873,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 8 }
+    ]
+  },
+  {
+    "id": "snoozy_tomato_salad",
+    "name": "Snoozy Tomato Salad",
+    "type": "salad",
+    "baseStrength": 933,
+    "ingredients": [
+      { "ingredientId": "snoozy_tomato", "amount": 8 }
+    ]
+  },
+  {
+    "id": "snow_cloak_caesar_salad",
+    "name": "“Snow Cloak” Caesar Salad",
+    "type": "salad",
+    "baseStrength": 1774,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "bean_sausage", "amount": 6 }
+    ]
+  },
+  {
+    "id": "heat_wave_tofu_salad",
+    "name": "“Heat Wave” Tofu Salad",
+    "type": "salad",
+    "baseStrength": 1976,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 10 },
+      { "ingredientId": "fiery_herb", "amount": 6 }
+    ]
+  },
+  {
+    "id": "dazzling_apple_cheese_salad",
+    "name": "“Dazzling” Apple Cheese Salad",
+    "type": "salad",
+    "baseStrength": 2578,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 15 },
+      { "ingredientId": "moomoo_milk", "amount": 5 },
+      { "ingredientId": "pure_oil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "immunity_leek_salad",
+    "name": "“Immunity” Leek Salad",
+    "type": "salad",
+    "baseStrength": 2658,
+    "ingredients": [
+      { "ingredientId": "large_leek", "amount": 10 },
+      { "ingredientId": "warming_ginger", "amount": 5 }
+    ]
+  },
+  {
+    "id": "fury_attack_corn_salad",
+    "name": "“Fury Attack” Corn Salad",
+    "type": "salad",
+    "baseStrength": 2785,
+    "ingredients": [
+      { "ingredientId": "greengrass_corn", "amount": 9 },
+      { "ingredientId": "pure_oil", "amount": 8 }
+    ]
+  },
+  {
+    "id": "moomoo_caprese_salad",
+    "name": "Moomoo Caprese Salad",
+    "type": "salad",
+    "baseStrength": 2856,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 12 },
+      { "ingredientId": "snoozy_tomato", "amount": 6 },
+      { "ingredientId": "pure_oil", "amount": 5 }
+    ]
+  },
+  {
+    "id": "superpower_extreme_salad",
+    "name": "“Superpower” Extreme Salad",
+    "type": "salad",
+    "baseStrength": 2958,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 9 },
+      { "ingredientId": "soft_potato", "amount": 3 },
+      { "ingredientId": "fancy_egg", "amount": 5 },
+      { "ingredientId": "warming_ginger", "amount": 6 }
+    ]
+  },
+  {
+    "id": "water_veil_tofu_salad",
+    "name": "“Water Veil” Tofu Salad",
+    "type": "salad",
+    "baseStrength": 3113,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 15 },
+      { "ingredientId": "snoozy_tomato", "amount": 9 }
+    ]
+  },
+  {
+    "id": "contrary_chocolate_meat_salad",
+    "name": "“Contrary” Chocolate Meat Salad",
+    "type": "salad",
+    "baseStrength": 3558,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 14 },
+      { "ingredientId": "bean_sausage", "amount": 9 }
+    ]
+  },
+  {
+    "id": "gluttony_potato_salad",
+    "name": "“Gluttony” Potato Salad",
+    "type": "salad",
+    "baseStrength": 5040,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 7 },
+      { "ingredientId": "soft_potato", "amount": 14 },
+      { "ingredientId": "fancy_apple", "amount": 6 },
+      { "ingredientId": "fancy_egg", "amount": 9 }
+    ]
+  },
+  {
+    "id": "overheat_ginger_salad",
+    "name": "“Overheat” Ginger Salad",
+    "type": "salad",
+    "baseStrength": 5225,
+    "ingredients": [
+      { "ingredientId": "fiery_herb", "amount": 17 },
+      { "ingredientId": "warming_ginger", "amount": 10 },
+      { "ingredientId": "snoozy_tomato", "amount": 8 }
+    ]
+  },
+  {
+    "id": "spore_mushroom_salad",
+    "name": "“Spore” Mushroom Salad",
+    "type": "salad",
+    "baseStrength": 5859,
+    "ingredients": [
+      { "ingredientId": "pure_oil", "amount": 8 },
+      { "ingredientId": "snoozy_tomato", "amount": 8 },
+      { "ingredientId": "tasty_mushroom", "amount": 17 }
+    ]
+  },
+  {
+    "id": "luscious_avocado_salad",
+    "name": "Luscious Avocado Salad",
+    "type": "salad",
+    "baseStrength": 7125,
+    "ingredients": [
+      { "ingredientId": "glossy_avocado", "amount": 14 },
+      { "ingredientId": "greengrass_soybeans", "amount": 18 },
+      { "ingredientId": "pure_oil", "amount": 10 }
+    ]
+  },
+  {
+    "id": "calm_mind_fruit_salad",
+    "name": "“Calm Mind” Fruit Salad",
+    "type": "salad",
+    "baseStrength": 7675,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 21 },
+      { "ingredientId": "honey", "amount": 16 },
+      { "ingredientId": "greengrass_corn", "amount": 12 }
+    ]
+  },
+  {
+    "id": "slowpoke_tail_pepper_salad",
+    "name": "Slowpoke Tail Pepper Salad",
+    "type": "salad",
+    "baseStrength": 8169,
+    "ingredients": [
+      { "ingredientId": "pure_oil", "amount": 15 },
+      { "ingredientId": "fiery_herb", "amount": 10 },
+      { "ingredientId": "slowpoke_tail", "amount": 10 }
+    ]
+  },
+  {
+    "id": "cross_chop_salad",
+    "name": "“Cross Chop” Salad",
+    "type": "salad",
+    "baseStrength": 8755,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 20 },
+      { "ingredientId": "bean_sausage", "amount": 15 },
+      { "ingredientId": "greengrass_corn", "amount": 11 },
+      { "ingredientId": "snoozy_tomato", "amount": 10 }
+    ]
+  },
+  {
+    "id": "greengrass_salad",
+    "name": "Greengrass Salad",
+    "type": "salad",
+    "baseStrength": 11393,
+    "ingredients": [
+      { "ingredientId": "pure_oil", "amount": 22 },
+      { "ingredientId": "greengrass_corn", "amount": 17 },
+      { "ingredientId": "snoozy_tomato", "amount": 14 },
+      { "ingredientId": "soft_potato", "amount": 9 }
+    ]
+  },
+  {
+    "id": "ninja_salad",
+    "name": "Ninja Salad",
+    "type": "salad",
+    "baseStrength": 11659,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 19 },
+      { "ingredientId": "large_leek", "amount": 15 },
+      { "ingredientId": "warming_ginger", "amount": 11 },
+      { "ingredientId": "tasty_mushroom", "amount": 12 }
+    ]
+  },
+  {
+    "id": "petal_blizzard_layered_salad",
+    "name": "“Petal Blizzard” Layered Salad",
+    "type": "salad",
+    "baseStrength": 11881,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 25 },
+      { "ingredientId": "pure_oil", "amount": 17 },
+      { "ingredientId": "soft_potato", "amount": 15 },
+      { "ingredientId": "bean_sausage", "amount": 12 }
+    ]
+  },
+  {
+    "id": "apple_acid_yogurt_dressed_salad",
+    "name": "“Apple Acid” Yogurt-Dressed Salad",
+    "type": "salad",
+    "baseStrength": 19293,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 35 },
+      { "ingredientId": "fancy_apple", "amount": 28 },
+      { "ingredientId": "snoozy_tomato", "amount": 23 },
+      { "ingredientId": "moomoo_milk", "amount": 18 }
+    ]
+  },
+  {
+    "id": "defiant_coffee_dressed_salad",
+    "name": "“Defiant” Coffee-Dressed Salad",
+    "type": "salad",
+    "baseStrength": 20218,
+    "ingredients": [
+      { "ingredientId": "rousing_coffee", "amount": 28 },
+      { "ingredientId": "bean_sausage", "amount": 28 },
+      { "ingredientId": "pure_oil", "amount": 22 },
+      { "ingredientId": "soft_potato", "amount": 22 }
+    ]
+  },
+  {
+    "id": "bulldoze_guacamole_and_chips",
+    "name": "“Bulldoze” Guacamole and Chips",
+    "type": "salad",
+    "baseStrength": 25162,
+    "ingredients": [
+      { "ingredientId": "glossy_avocado", "amount": 28 },
+      { "ingredientId": "greengrass_corn", "amount": 25 },
+      { "ingredientId": "fiery_herb", "amount": 30 },
+      { "ingredientId": "greengrass_soybeans", "amount": 22 }
+    ]
+  }
+]
