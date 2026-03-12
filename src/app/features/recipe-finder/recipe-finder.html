@@ -1,2 +1,5 @@
 <p>recipe-finder works!</p>
-<app-recipe-card></app-recipe-card>
+<app-recipe-card
+    *ngIf="recipes$ | async as recipes"
+    [recipe]="recipes[0]">
+</app-recipe-card>
