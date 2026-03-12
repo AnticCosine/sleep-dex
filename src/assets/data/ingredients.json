@@ -1,1 +1,97 @@
-+
+[
+    {
+        "id": "fancy_apple",
+        "name": "Fancy Apple",
+        "strength": 90
+    },
+    {
+        "id": "moomoo_milk",
+        "name": "Moomoo Milk",
+        "strength": 98
+    },
+    {
+        "id": "greengrass_soybeans",
+        "name": "Greengrass Soybeans",
+        "strength": 100
+    },
+    {
+        "id": "honey",
+        "name": "Honey",
+        "strength": 101
+    },
+    {
+        "id": "bean_sausage",
+        "name": "Bean Sausage",
+        "strength": 103
+    },
+    {
+        "id": "warming_ginger",
+        "name": "Warming Ginger",
+        "strength": 109
+    },
+    {
+        "id": "snoozy_tomato",
+        "name": "Snoozy Tomato",
+        "strength": 110
+    },
+    {
+        "id": "fancy_egg",
+        "name": "Fancy Egg",
+        "strength": 115
+    },
+    {
+        "id": "pure_oil",
+        "name": "Pure Oil",
+        "strength": 121
+    },
+    {
+        "id": "soft_potato",
+        "name": "Soft Potato",
+        "strength": 124
+    },
+    {
+        "id": "fiery_herb",
+        "name": "Fiery Herb",
+        "strength": 130
+    },
+    {
+        "id": "greengrass_corn",
+        "name": "Greengrass Corn",
+        "strength": 140
+    },
+    {
+        "id": "soothing_cacao",
+        "name": "Soothing Cacao",
+        "strength": 151
+    },
+    {
+        "id": "rousing_coffee",
+        "name": "Rousing Coffee",
+        "strength": 153
+    },
+    {
+        "id": "glossy_avocado",
+        "name": "Glossy Avocado",
+        "strength": 162
+    },
+    {
+        "id": "tasty_mushroom",
+        "name": "Tasty Mushroom",
+        "strength": 167
+    },
+    {
+        "id": "large_leek",
+        "name": "Large Leek",
+        "strength": 185
+    },
+    {
+        "id": "plump_pumpkin",
+        "name": "Plump Pumpkin",
+        "strength": 250
+    },
+    {
+        "id": "slowpoke_tail",
+        "name": "Slowpoke Tail",
+        "strength": 342
+    }
+]

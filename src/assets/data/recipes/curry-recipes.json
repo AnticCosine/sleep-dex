@@ -1,0 +1,250 @@
+[
+  {
+    "id": "fancy_apple_curry",
+    "name": "Fancy Apple Curry",
+    "type": "curry",
+    "baseStrength": 668,
+    "ingredients": [
+      { "ingredientId": "fancy_apple", "amount": 7 }
+    ]
+  },
+  {
+    "id": "simple_chowder",
+    "name": "Simple Chowder",
+    "type": "curry",
+    "baseStrength": 727,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 7 }
+    ]
+  },
+  {
+    "id": "mild_honey_curry",
+    "name": "Mild Honey Curry",
+    "type": "curry",
+    "baseStrength": 749,
+    "ingredients": [
+      { "ingredientId": "honey", "amount": 7 }
+    ]
+  },
+  {
+    "id": "beanburger_curry",
+    "name": "Beanburger Curry",
+    "type": "curry",
+    "baseStrength": 764,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 7 }
+    ]
+  },
+  {
+    "id": "hearty_cheeseburger_curry",
+    "name": "Hearty Cheeseburger Curry",
+    "type": "curry",
+    "baseStrength": 1785,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 8 },
+      { "ingredientId": "bean_sausage", "amount": 8 }
+    ]
+  },
+  {
+    "id": "drought_katsu_curry",
+    "name": "“Drought” Katsu Curry",
+    "type": "curry",
+    "baseStrength": 1815,
+    "ingredients": [
+      { "ingredientId": "bean_sausage", "amount": 10 },
+      { "ingredientId": "pure_oil", "amount": 5 }
+    ]
+  },
+  {
+    "id": "solar_power_tomato_curry",
+    "name": "“Solar Power” Tomato Curry",
+    "type": "curry",
+    "baseStrength": 1943,
+    "ingredients": [
+      { "ingredientId": "snoozy_tomato", "amount": 10 },
+      { "ingredientId": "fiery_herb", "amount": 5 }
+    ]
+  },
+  {
+    "id": "melty_omelette_curry",
+    "name": "Melty Omelette Curry",
+    "type": "curry",
+    "baseStrength": 2009,
+    "ingredients": [
+      { "ingredientId": "fancy_egg", "amount": 10 },
+      { "ingredientId": "snoozy_tomato", "amount": 6 }
+    ]
+  },
+  {
+    "id": "soft_potato_chowder",
+    "name": "Soft Potato Chowder",
+    "type": "curry",
+    "baseStrength": 3089,
+    "ingredients": [
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "soft_potato", "amount": 8 },
+      { "ingredientId": "tasty_mushroom", "amount": 4 }
+    ]
+  },
+  {
+    "id": "bulk_up_bean_curry",
+    "name": "“Bulk Up” Bean Curry",
+    "type": "curry",
+    "baseStrength": 3274,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 12 },
+      { "ingredientId": "bean_sausage", "amount": 6 },
+      { "ingredientId": "fiery_herb", "amount": 4 },
+      { "ingredientId": "fancy_egg", "amount": 4 }
+    ]
+  },
+  {
+    "id": "spore_mushroom_curry",
+    "name": "“Spore” Mushroom Curry",
+    "type": "curry",
+    "baseStrength": 4041,
+    "ingredients": [
+      { "ingredientId": "soft_potato", "amount": 9 },
+      { "ingredientId": "tasty_mushroom", "amount": 14 }
+    ]
+  },
+  {
+    "id": "egg_bomb_curry",
+    "name": "“Egg Bomb” Curry",
+    "type": "curry",
+    "baseStrength": 4523,
+    "ingredients": [
+      { "ingredientId": "soft_potato", "amount": 4 },
+      { "ingredientId": "fancy_apple", "amount": 11 },
+      { "ingredientId": "fancy_egg", "amount": 8 },
+      { "ingredientId": "honey", "amount": 12 }
+    ]
+  },
+  {
+    "id": "limber_corn_stew",
+    "name": "“Limber” Corn Stew",
+    "type": "curry",
+    "baseStrength": 4670,
+    "ingredients": [
+      { "ingredientId": "greengrass_corn", "amount": 14 },
+      { "ingredientId": "moomoo_milk", "amount": 8 },
+      { "ingredientId": "soft_potato", "amount": 8 }
+    ]
+  },
+  {
+    "id": "dizzy_punch_spicy_curry",
+    "name": "“Dizzy Punch” Spicy Curry",
+    "type": "curry",
+    "baseStrength": 5702,
+    "ingredients": [
+      { "ingredientId": "rousing_coffee", "amount": 11 },
+      { "ingredientId": "fiery_herb", "amount": 11 },
+      { "ingredientId": "honey", "amount": 11 }
+    ]
+  },
+  {
+    "id": "spicy_leek_curry",
+    "name": "Spicy Leek Curry",
+    "type": "curry",
+    "baseStrength": 5900,
+    "ingredients": [
+      { "ingredientId": "large_leek", "amount": 14 },
+      { "ingredientId": "fiery_herb", "amount": 8 },
+      { "ingredientId": "warming_ginger", "amount": 10 }
+    ]
+  },
+  {
+    "id": "grilled_tail_curry",
+    "name": "Grilled Tail Curry",
+    "type": "curry",
+    "baseStrength": 7483,
+    "ingredients": [
+      { "ingredientId": "fiery_herb", "amount": 25 },
+      { "ingredientId": "slowpoke_tail", "amount": 8 }
+    ]
+  },
+  {
+    "id": "dream_eater_butter_curry",
+    "name": "“Dream Eater” Butter Curry",
+    "type": "curry",
+    "baseStrength": 9010,
+    "ingredients": [
+      { "ingredientId": "soothing_cacao", "amount": 12 },
+      { "ingredientId": "moomoo_milk", "amount": 10 },
+      { "ingredientId": "soft_potato", "amount": 18 },
+      { "ingredientId": "snoozy_tomato", "amount": 15 }
+    ]
+  },
+  {
+    "id": "ninja_curry",
+    "name": "Ninja Curry",
+    "type": "curry",
+    "baseStrength": 9445,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 24 },
+      { "ingredientId": "bean_sausage", "amount": 9 },
+      { "ingredientId": "large_leek", "amount": 12 },
+      { "ingredientId": "tasty_mushroom", "amount": 5 }
+    ]
+  },
+  {
+    "id": "inferno_corn_keema_curry",
+    "name": "“Inferno” Corn Keema Curry",
+    "type": "curry",
+    "baseStrength": 13690,
+    "ingredients": [
+      { "ingredientId": "fiery_herb", "amount": 27 },
+      { "ingredientId": "bean_sausage", "amount": 24 },
+      { "ingredientId": "greengrass_corn", "amount": 14 },
+      { "ingredientId": "warming_ginger", "amount": 12 }
+    ]
+  },
+  {
+    "id": "role_play_pumpkaboo_stew",
+    "name": "“Role Play” Pumpkaboo Stew",
+    "type": "curry",
+    "baseStrength": 15621,
+    "ingredients": [
+      { "ingredientId": "plump_pumpkin", "amount": 10 },
+      { "ingredientId": "bean_sausage", "amount": 16 },
+      { "ingredientId": "soft_potato", "amount": 18 },
+      { "ingredientId": "tasty_mushroom", "amount": 25 }
+    ]
+  },
+  {
+    "id": "hidden_power_perk_up_stew",
+    "name": "“Hidden Power” Perk-Up Stew",
+    "type": "curry",
+    "baseStrength": 19061,
+    "ingredients": [
+      { "ingredientId": "greengrass_soybeans", "amount": 28 },
+      { "ingredientId": "snoozy_tomato", "amount": 25 },
+      { "ingredientId": "tasty_mushroom", "amount": 23 },
+      { "ingredientId": "rousing_coffee", "amount": 16 }
+    ]
+  },
+  {
+    "id": "cut_sukiyaki_curry",
+    "name": "“Cut” Sukiyaki Curry",
+    "type": "curry",
+    "baseStrength": 20655,
+    "ingredients": [
+      { "ingredientId": "large_leek", "amount": 27 },
+      { "ingredientId": "bean_sausage", "amount": 26 },
+      { "ingredientId": "honey", "amount": 26 },
+      { "ingredientId": "fancy_egg", "amount": 22 }
+    ]
+  },
+  {
+    "id": "overgrow_avocado_gratin",
+    "name": "“Overgrow” Avocado Gratin",
+    "type": "curry",
+    "baseStrength": 24802,
+    "ingredients": [
+      { "ingredientId": "glossy_avocado", "amount": 22 },
+      { "ingredientId": "soft_potato", "amount": 20 },
+      { "ingredientId": "moomoo_milk", "amount": 41 },
+      { "ingredientId": "pure_oil", "amount": 32 }
+    ]
+  }
+]
