@@ -12,4 +12,14 @@ export class RecipeCard {
 
   @Input() recipe!: Recipe;
 
+
+  get imageRecipePath(): string {
+    console.log(this.recipe.ingredients)
+    return `assets/images/recipes/${this.recipe.id}.png`
+  }
+
+  imageIngredientPath(ingredientId: string): string {
+    console.log(ingredientId)
+    return `assets/images/ingredients/${ingredientId}.png`
+  }
 }

@@ -1,4 +1,19 @@
 <div class="recipe-card">
-    <h1>{{ recipe.name }}</h1>
-    <h1>TEST</h1>
+
+    <img [src]="imageRecipePath" alt="" class="recipe-img">
+    <h2>{{ recipe.name }}</h2>
+    
+    <div class="recipe-ingredients">
+        @for (ingredient of recipe.ingredients; track ingredient) {
+            <div class="ingredient">
+                <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                <h3>{{ ingredient.amount }}</h3>
+            </div>
+        }
+    </div>
+
+    <div class="checklist">
+        <h3>Cooked?</h3>
+        <input type="checkbox">
+    </div>
 </div>

@@ -1,0 +1,54 @@
+.recipe-card {
+    width: 100%;
+    max-width: 260px;
+    
+    background-color: #FFB8B6;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-img {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+h2 {
+    margin: 0px;
+    font-family: var(--font-primary);
+    color: inherit;
+    font-size: 20px;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+}
+
+.ingredient-img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+h3 {
+    margin: 0px;
+    font-family: var(--font-primary);
+    color: inherit;
+    font-size: 16px;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+}
