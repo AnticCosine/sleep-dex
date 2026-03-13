@@ -1,4 +1,4 @@
-<div class="recipe-card">
+<div [class]="'recipe-card-' + recipe.type">
 
     <img [src]="imageRecipePath" alt="" class="recipe-img">
     <h2>{{ recipe.name }}</h2>

@@ -1,9 +1,17 @@
-<p>recipe-finder works!</p>
-<app-recipe-card
-    *ngIf="recipes$ | async as recipes"
-    [recipe]="recipes[0]">
-</app-recipe-card>
-<app-recipe-card
-    *ngIf="recipes$ | async as recipes"
-    [recipe]="recipes[20]">
-</app-recipe-card>
+<div class="wrapper">
+    <div class="recipe-finder">
+    
+        <input placeholder="Search Recipes" type="text" name="text" class="input">
+    
+        <div class="recipes">
+            @if (recipes$ | async; as recipes) {
+                @for (recipe of recipes; track recipe) {
+                    <app-recipe-card
+                        [recipe]="recipe">
+                    </app-recipe-card>
+                }
+            }
+        </div>
+    
+    </div>
+</div> 

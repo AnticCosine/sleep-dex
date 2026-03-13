@@ -1,13 +1,42 @@
-.recipe-card {
-    width: 100%;
-    max-width: 260px;
+.recipe-card-curry {
+
+    width: 240px;
+    height: 250px;
     
     background-color: #FFB8B6;
     border-radius: 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    align-items: center;
+}
+
+.recipe-card-salad {
+
+    width: 240px;
+    height: 250px;
+    
+    background-color: #b6feb2;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.recipe-card-dessert {
+
+    width: 240px;
+    height: 250px;
+    
+    background-color: #fffbb2;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
     align-items: center;
 }
 
@@ -20,7 +49,11 @@ h2 {
     margin: 0px;
     font-family: var(--font-primary);
     color: inherit;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.recipe-ingredients {
+    display: flex;
 }
 
 .ingredient {
@@ -33,15 +66,15 @@ h2 {
 }
 
 .ingredient-img {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 h3 {
     margin: 0px;
     font-family: var(--font-primary);
     color: inherit;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .checklist {
