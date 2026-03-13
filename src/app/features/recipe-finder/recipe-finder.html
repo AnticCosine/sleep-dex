@@ -3,3 +3,7 @@
     *ngIf="recipes$ | async as recipes"
     [recipe]="recipes[0]">
 </app-recipe-card>
+<app-recipe-card
+    *ngIf="recipes$ | async as recipes"
+    [recipe]="recipes[20]">
+</app-recipe-card>
