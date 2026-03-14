@@ -2,6 +2,34 @@
     <div class="recipe-finder">
     
         <input placeholder="Search Recipes" type="text" name="text" class="input">
+
+        <details class="dropdown">
+            <summary>
+              Dish Type
+              <img src="assets/images/dropdown_arrow.png" alt="">
+            </summary>
+            
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="curry" />
+                  Curry
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="salad" />
+                  Salad
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="dessert" />
+                  Dessert
+                </label>
+              </li>
+            </ul>
+        </details>
     
         <div class="recipes">
             @if (recipes$ | async; as recipes) {

@@ -1,16 +1,20 @@
 .wrapper {
-    
+  font-family: var(--font-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recipe-finder {
     margin-top: 8px;
     width: 100%;
-    max-width: 8000px;
+    max-width: 975px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .input {
@@ -23,6 +27,8 @@
   outline: none;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0px 0px 20px -18px;
+
+  margin-top: 16px;
 }
 
 .input:hover {
@@ -38,6 +44,47 @@
   border: 2px solid grey;
 }
 
+.dropdown {
+  background: none;
+  border: none;
+
+  margin-top: 16px;
+  
+}
+
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-left: 2px;
+  padding: 10px;
+
+  background: #ffffff;
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+
+  position: absolute;
+  min-width: 220px;
+  
+}
+
+.dropdown li {
+  margin-top: 5px;
+}
 
 
 .recipes {
@@ -45,6 +92,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 5px;
 }
