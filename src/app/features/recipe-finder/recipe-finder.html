@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="recipe-finder">
     
-        <input placeholder="Search Recipes" type="text" name="text" class="input">
+        <input placeholder="Search Recipes" type="text" class="input" [formControl]="searchControl">
 
         <details class="dropdown">
             <summary>
@@ -12,19 +12,19 @@
             <ul>
               <li>
                 <label>
-                  <input type="checkbox" name="curry" />
+                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('curry')" (change)="toggleRecipeType('curry', $event.target.checked)" name="curry" />
                   Curry
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="salad" />
+                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('salad')" (change)="toggleRecipeType('salad', $event.target.checked)" name="salad" />
                   Salad
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="dessert" />
+                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('dessert')" (change)="toggleRecipeType('dessert', $event.target.checked)" name="dessert" />
                   Dessert
                 </label>
               </li>
@@ -32,7 +32,7 @@
         </details>
     
         <div class="recipes">
-            @if (recipes$ | async; as recipes) {
+            @if (filteredRecipes$ | async; as recipes) {
                 @for (recipe of recipes; track recipe) {
                     <app-recipe-card
                         [recipe]="recipe">
