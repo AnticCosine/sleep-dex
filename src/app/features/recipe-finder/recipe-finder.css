@@ -44,6 +44,12 @@
   border: 2px solid grey;
 }
 
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .dropdown {
   background: none;
   border: none;
@@ -84,6 +90,39 @@
 
 .dropdown li {
   margin-top: 5px;
+}
+
+.ingredient-grid {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  background: #ffffff;
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+
+  padding-left: 0;
+  margin-top: 10px;
+  margin-left: 2px;
+  padding: 10px;
+
+  width: 220px;
+  max-height: 200px;
+  overflow-y: auto;
+
+  position: absolute; /* to make the dropdown size not change as well (might not work for smaller views need to revisit this)*/
+}
+
+.ingredient-grid img {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+.ingredient-grid .ingredient-unchecked {
+  opacity: 50%;
 }
 
 

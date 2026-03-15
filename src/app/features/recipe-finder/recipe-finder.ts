@@ -5,6 +5,8 @@ import { RecipeService } from '../../services/recipe-service';
 import { CommonModule } from '@angular/common';
 import { combineLatest, debounceTime, map, Observable, startWith } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { IngredientService } from '../../services/ingredient-service';
+import { Ingredient } from '../../models/ingredient.model';
 
 @Component({
   selector: 'app-recipe-finder',
@@ -15,21 +17,28 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class RecipeFinder {
   
   searchControl = new FormControl('');
-  RecipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);
+  recipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);
+  ingredientControl = new FormControl<string[]>([]);
+
   recipes$!: Observable<Recipe[]>;
   filteredRecipes$!: Observable<Recipe[]>;
 
-  constructor(private recipeService: RecipeService) {}
+  ingredients$!: Observable<Ingredient[]>
+  filteredIngredients$!: Observable<Ingredient[]>;
+
+  constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {}
 
   ngOnInit(): void {
     this.recipes$ = this.recipeService.GetRecipes();
+    this.ingredients$ = this.ingredientService.GetIngredients();
     
     this.filteredRecipes$ = combineLatest([
       this.recipes$,
       this.searchControl.valueChanges.pipe(startWith(''), debounceTime(100)),
-      this.RecipeTypeControl.valueChanges.pipe(startWith(this.RecipeTypeControl.value ?? []))
+      this.recipeTypeControl.valueChanges.pipe(startWith(this.recipeTypeControl.value ?? [])),
+      this.ingredientControl.valueChanges.pipe(startWith(this.ingredientControl.value ?? []))
     ]).pipe(
-      map(([recipes, search, recipeTypes]) => {
+      map(([recipes, search, recipeTypes, ingredient]) => {
 
         const searchTerm = (search ?? ``).toLowerCase();
 
@@ -37,8 +46,9 @@ export class RecipeFinder {
 
           const matchedSearch = recipe.name.toLowerCase().includes(searchTerm);
           const matchedRecipeType = !recipeTypes?.length || recipeTypes.includes(recipe.type);
+          const matchedIngredients = !ingredient?.length || ingredient.every(i => recipe.ingredients.some(j => j.ingredientId === i));
 
-          return matchedSearch && matchedRecipeType;
+          return matchedSearch && matchedRecipeType && matchedIngredients;
         }
         );
       })
@@ -46,12 +56,30 @@ export class RecipeFinder {
   }
 
   toggleRecipeType(type: string, checked: boolean) {
-    const current = this.RecipeTypeControl.value ?? [];
+    const current = this.recipeTypeControl.value ?? [];
 
     if (checked) {
-      this.RecipeTypeControl.setValue([...current, type]);
+      this.recipeTypeControl.setValue([...current, type]);
     } else {
-      this.RecipeTypeControl.setValue(current.filter(t => t !== type));
+      this.recipeTypeControl.setValue(current.filter(t => t !== type));
     }
+  }
+
+  toggleIngredient(ingredient: string) {
+    const current = this.ingredientControl.value ?? [];
+
+    if (current.includes(ingredient)) {
+      this.ingredientControl.setValue(current.filter(i => i !== ingredient));
+    } else {
+      this.ingredientControl.setValue([...current, ingredient]);
+    }
+  }
+
+  hasIngredient(ingredient: string) {
+    return this.ingredientControl.value?.includes(ingredient);
+  }
+
+  imageIngredientPath(ingredientId: string): string {
+    return `assets/images/ingredients/${ingredientId}.png`
   }
 }

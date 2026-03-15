@@ -3,33 +3,83 @@
     
         <input placeholder="Search Recipes" type="text" class="input" [formControl]="searchControl">
 
-        <details class="dropdown">
+        <div class="filters">
+
+          <details class="dropdown">
+              <summary>
+                Recipe Type
+                <img src="assets/images/dropdown_arrow.png" alt="">
+              </summary>
+
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('curry')" (change)="toggleRecipeType('curry', $event.target.checked)" name="curry" />
+                    Curry
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('salad')" (change)="toggleRecipeType('salad', $event.target.checked)" name="salad" />
+                    Salad
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('dessert')" (change)="toggleRecipeType('dessert', $event.target.checked)" name="dessert" />
+                    Dessert
+                  </label>
+                </li>
+              </ul>
+          </details>
+
+          <details class="dropdown">
+              <summary>
+                Cooked?
+                <img src="assets/images/dropdown_arrow.png" alt="">
+              </summary>
+
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="Yes" />
+                    Yes
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="No" />
+                    No
+                  </label>
+                </li>
+              </ul>
+          </details>
+
+          <details class="dropdown">
             <summary>
-              Dish Type
-              <img src="assets/images/dropdown_arrow.png" alt="">
+                Ingredients
+                <img src="assets/images/dropdown_arrow.png" alt="">
             </summary>
-            
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('curry')" (change)="toggleRecipeType('curry', $event.target.checked)" name="curry" />
-                  Curry
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('salad')" (change)="toggleRecipeType('salad', $event.target.checked)" name="salad" />
-                  Salad
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" [checked]="RecipeTypeControl.value?.includes('dessert')" (change)="toggleRecipeType('dessert', $event.target.checked)" name="dessert" />
-                  Dessert
-                </label>
-              </li>
-            </ul>
-        </details>
+
+            <div class="ingredient-grid">
+              
+              @if (ingredients$ | async; as ingredients) {
+                @for (ingredient of ingredients; track ingredient) {
+                  <div class="ingredient-item" [class.selected]="ingredientControl.value?.includes(ingredient.id)" (click)="toggleIngredient(ingredient.id)">
+
+                    @if (hasIngredient(ingredient.id)) {
+                      <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
+                    } @else {
+                      <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
+                    }
+                    
+                  </div>
+                }
+              }
+            </div>
+          </details>
+
+        </div>
     
         <div class="recipes">
             @if (filteredRecipes$ | async; as recipes) {
