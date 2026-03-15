@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class RecipeCard {
 
   @Input() recipe!: Recipe;
+  cooked = false;
 
   get imageRecipePath(): string {
     return `assets/images/recipes/${this.recipe.id}.png`
@@ -18,5 +19,19 @@ export class RecipeCard {
 
   imageIngredientPath(ingredientId: string): string {
     return `assets/images/ingredients/${ingredientId}.png`
+  }
+
+  get totalIngredients(): number {
+    return this.recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
+  }
+
+  toggleCooked() {
+    this.cooked = !this.cooked;
+  }
+
+  get checkboxImage(): string {
+    return this.cooked
+      ? 'assets/images/checked_checkbox.svg'
+      : 'assets/images/unchecked_checkbox.svg';
   }
 }

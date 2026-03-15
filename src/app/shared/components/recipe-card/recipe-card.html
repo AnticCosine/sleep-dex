@@ -1,12 +1,15 @@
 <div [class]="'recipe-card-' + recipe.type">
 
     <img [src]="imageRecipePath" alt="" class="recipe-img">
-    <h2>{{ recipe.name }}</h2>
+    <h2>{{ recipe.name }} ({{ totalIngredients }})</h2>
     
     <div class="recipe-ingredients">
         @for (ingredient of recipe.ingredients; track ingredient) {
             <div class="ingredient">
-                <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                <div class="ingredient-icon">
+                    <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                </div>
+                
                 <h3>{{ ingredient.amount }}</h3>
             </div>
         }
@@ -14,6 +17,6 @@
 
     <div class="checklist">
         <h3>Cooked?</h3>
-        <input type="checkbox">
+        <img [src]="checkboxImage" (click)="toggleCooked()" alt="">
     </div>
 </div>

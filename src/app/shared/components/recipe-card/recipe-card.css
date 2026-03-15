@@ -50,24 +50,37 @@ h2 {
     font-family: var(--font-primary);
     color: inherit;
     font-size: 16px;
+
+    text-align: center;
+    min-height: 40px;
 }
 
 .recipe-ingredients {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: auto;
 }
 
 .ingredient {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.ingredient-img {
-    max-width: 30px;
-    max-height: 30px;
+.ingredient-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 h3 {
@@ -83,5 +96,9 @@ h3 {
     align-items: center;
     justify-content: center;
 
-    margin-top: 8px;
+    cursor: pointer;
+
+    margin-top: auto;
+    margin-bottom: 4px;
+    gap: 8px;
 }
