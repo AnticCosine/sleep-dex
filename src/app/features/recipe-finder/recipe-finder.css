@@ -58,6 +58,10 @@
   
 }
 
+label input{
+  display: none;
+}
+
 .dropdown summary {
   list-style: none;
   cursor: pointer;
@@ -90,6 +94,18 @@
 
 .dropdown li {
   margin-top: 5px;
+}
+
+.dropdown li label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdown li img{
+  width: 18px;
+  height: 18px;
 }
 
 .ingredient-grid {

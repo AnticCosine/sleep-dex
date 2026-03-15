@@ -12,21 +12,22 @@
               </summary>
 
               <ul>
-                <li>
+                <li (click)="toggleRecipeType('curry')">
                   <label>
-                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('curry')" (change)="toggleRecipeType('curry', $event.target.checked)" name="curry" />
+                    <img [src]="recipeTypeControl.value?.includes('curry') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
                     Curry
                   </label>
                 </li>
-                <li>
+                <li (click)="toggleRecipeType('salad')">
                   <label>
-                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('salad')" (change)="toggleRecipeType('salad', $event.target.checked)" name="salad" />
+                    <img [src]="recipeTypeControl.value?.includes('salad') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
                     Salad
                   </label>
                 </li>
-                <li>
+                <li (click)="toggleRecipeType('dessert')">
                   <label>
-                    <input type="checkbox" [checked]="recipeTypeControl.value?.includes('dessert')" (change)="toggleRecipeType('dessert', $event.target.checked)" name="dessert" />
+                    
+                    <img [src]="recipeTypeControl.value?.includes('dessert') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
                     Dessert
                   </label>
                 </li>

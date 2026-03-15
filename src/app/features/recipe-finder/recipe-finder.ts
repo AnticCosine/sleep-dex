@@ -55,13 +55,13 @@ export class RecipeFinder {
     );
   }
 
-  toggleRecipeType(type: string, checked: boolean) {
+  toggleRecipeType(type: string) {
     const current = this.recipeTypeControl.value ?? [];
 
-    if (checked) {
-      this.recipeTypeControl.setValue([...current, type]);
-    } else {
+    if (current.includes(type)) {
       this.recipeTypeControl.setValue(current.filter(t => t !== type));
+    } else {
+      this.recipeTypeControl.setValue([...current, type]);
     }
   }
 
