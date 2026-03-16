@@ -3,7 +3,7 @@ import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { Recipe } from '../../models/recipe.models';
 import { RecipeService } from '../../services/recipe-service';
 import { CommonModule } from '@angular/common';
-import { combineLatest, debounceTime, map, Observable, startWith } from 'rxjs';
+import { combineLatest, debounceTime, map, Observable, startWith, take } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { IngredientService } from '../../services/ingredient-service';
 import { Ingredient } from '../../models/ingredient.model';
@@ -19,6 +19,8 @@ export class RecipeFinder {
   searchControl = new FormControl('');
   recipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);
   ingredientControl = new FormControl<string[]>([]);
+  minIngredientsControl = new FormControl<number | null>(null);
+  maxIngredientsControl = new FormControl<number | null>(null);
 
   recipes$!: Observable<Recipe[]>;
   filteredRecipes$!: Observable<Recipe[]>;
@@ -31,14 +33,27 @@ export class RecipeFinder {
   ngOnInit(): void {
     this.recipes$ = this.recipeService.GetRecipes();
     this.ingredients$ = this.ingredientService.GetIngredients();
+
+    this.recipes$.pipe(take(1)).subscribe(recipes => {
+      const count = recipes.map(recipe => {
+        return recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
+      });
+      const min = Math.min(...count);
+      const max = Math.max(...count);
+
+      this.minIngredientsControl.setValue(min);
+      this.maxIngredientsControl.setValue(max);
+    })
     
     this.filteredRecipes$ = combineLatest([
       this.recipes$,
       this.searchControl.valueChanges.pipe(startWith(''), debounceTime(100)),
       this.recipeTypeControl.valueChanges.pipe(startWith(this.recipeTypeControl.value ?? [])),
-      this.ingredientControl.valueChanges.pipe(startWith(this.ingredientControl.value ?? []))
+      this.ingredientControl.valueChanges.pipe(startWith(this.ingredientControl.value ?? [])),
+      this.minIngredientsControl.valueChanges.pipe(startWith(null)),
+      this.maxIngredientsControl.valueChanges.pipe(startWith(null))
     ]).pipe(
-      map(([recipes, search, recipeTypes, ingredient]) => {
+      map(([recipes, search, recipeTypes, ingredient, minIngredients, maxIngredients]) => {
 
         const searchTerm = (search ?? ``).toLowerCase();
 
@@ -48,7 +63,11 @@ export class RecipeFinder {
           const matchedRecipeType = !recipeTypes?.length || recipeTypes.includes(recipe.type);
           const matchedIngredients = !ingredient?.length || ingredient.every(i => recipe.ingredients.some(j => j.ingredientId === i));
 
-          return matchedSearch && matchedRecipeType && matchedIngredients;
+          const totalIngredients = recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
+          const matchedMinIngredients = minIngredients == null || totalIngredients >= minIngredients;
+          const matchedMaxIngredients = maxIngredients == null || totalIngredients <= maxIngredients;
+
+          return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients;
         }
         );
       })

@@ -44,17 +44,49 @@
   border: 2px solid grey;
 }
 
+.min-ingredient-input,
+.max-ingredient-input{
+  width: 100%;
+  max-width: 40px;
+
+  height: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+}
+
 .filters {
   display: flex;
   flex-direction: row;
+  
+  width: inherit;
+  margin-top: 16px;
+}
+
+.filters .dropdown-filters{
+  display: flex;
+  flex-direction: row;
   gap: 8px;
+}
+
+.filters .pot-size-filter{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  
+  margin-left: auto;
+}
+
+h3 {
+  margin: auto;
 }
 
 .dropdown {
   background: none;
   border: none;
 
-  margin-top: 16px;
+  
   
 }
 

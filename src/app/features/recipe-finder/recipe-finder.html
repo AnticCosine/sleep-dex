@@ -1,84 +1,96 @@
 <div class="wrapper">
     <div class="recipe-finder">
     
-        <input placeholder="Search Recipes" type="text" class="input" [formControl]="searchControl">
+        <input placeholder="Search Recipes" type="text" class="input" id="search" [formControl]="searchControl">
 
         <div class="filters">
 
-          <details class="dropdown">
+          <div class="dropdown-filters">
+
+            <details class="dropdown">
+                <summary>
+                  Recipe Type
+                  <img src="assets/images/dropdown_arrow.png" alt="">
+                </summary>
+
+                <ul>
+                  <li (click)="toggleRecipeType('curry')">
+                    <label>
+                      <img [src]="recipeTypeControl.value?.includes('curry') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
+                      Curry
+                    </label>
+                  </li>
+                  <li (click)="toggleRecipeType('salad')">
+                    <label>
+                      <img [src]="recipeTypeControl.value?.includes('salad') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
+                      Salad
+                    </label>
+                  </li>
+                  <li (click)="toggleRecipeType('dessert')">
+                    <label>
+
+                      <img [src]="recipeTypeControl.value?.includes('dessert') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
+                      Dessert
+                    </label>
+                  </li>
+                </ul>
+            </details>
+
+            <details class="dropdown">
+                <summary>
+                  Cooked?
+                  <img src="assets/images/dropdown_arrow.png" alt="">
+                </summary>
+
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="Yes" />
+                      Yes
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="No" />
+                      No
+                    </label>
+                  </li>
+                </ul>
+            </details>
+
+            <details class="dropdown">
               <summary>
-                Recipe Type
-                <img src="assets/images/dropdown_arrow.png" alt="">
+                  Ingredients
+                  <img src="assets/images/dropdown_arrow.png" alt="">
               </summary>
 
-              <ul>
-                <li (click)="toggleRecipeType('curry')">
-                  <label>
-                    <img [src]="recipeTypeControl.value?.includes('curry') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                    Curry
-                  </label>
-                </li>
-                <li (click)="toggleRecipeType('salad')">
-                  <label>
-                    <img [src]="recipeTypeControl.value?.includes('salad') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                    Salad
-                  </label>
-                </li>
-                <li (click)="toggleRecipeType('dessert')">
-                  <label>
-                    
-                    <img [src]="recipeTypeControl.value?.includes('dessert') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                    Dessert
-                  </label>
-                </li>
-              </ul>
-          </details>
+              <div class="ingredient-grid">
 
-          <details class="dropdown">
-              <summary>
-                Cooked?
-                <img src="assets/images/dropdown_arrow.png" alt="">
-              </summary>
+                @if (ingredients$ | async; as ingredients) {
+                  @for (ingredient of ingredients; track ingredient) {
+                    <div class="ingredient-item" [class.selected]="ingredientControl.value?.includes(ingredient.id)" (click)="toggleIngredient(ingredient.id)">
 
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="Yes" />
-                    Yes
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="No" />
-                    No
-                  </label>
-                </li>
-              </ul>
-          </details>
+                      @if (hasIngredient(ingredient.id)) {
+                        <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
+                      }
 
-          <details class="dropdown">
-            <summary>
-                Ingredients
-                <img src="assets/images/dropdown_arrow.png" alt="">
-            </summary>
-
-            <div class="ingredient-grid">
-              
-              @if (ingredients$ | async; as ingredients) {
-                @for (ingredient of ingredients; track ingredient) {
-                  <div class="ingredient-item" [class.selected]="ingredientControl.value?.includes(ingredient.id)" (click)="toggleIngredient(ingredient.id)">
-
-                    @if (hasIngredient(ingredient.id)) {
-                      <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
-                    } @else {
-                      <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
-                    }
-                    
-                  </div>
+                    </div>
+                  }
                 }
-              }
-            </div>
-          </details>
+              </div>
+            </details>
+
+          </div>
+          
+          <div class="pot-size-filter">
+            <h3>Pot Size</h3>
+            <input type="number" [value]="minIngredientsControl.value" id="ingredient-count-min" class="min-ingredient-input" [formControl]="minIngredientsControl">
+            <h3>-</h3>
+            <input type="number" [value]="maxIngredientsControl.value" id="ingredient-count-max" class="max-ingredient-input" [formControl]="maxIngredientsControl">
+          </div>
+          
 
         </div>
     
