@@ -64,6 +64,11 @@
   margin-left: auto;
 }
 
+.filters .pot-size-filter .pot-icon {
+  width: 28px;
+  height: 28px;
+}
+
 h3 {
   margin: auto;
 }
