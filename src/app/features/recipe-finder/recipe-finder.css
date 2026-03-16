@@ -18,30 +18,16 @@
 }
 
 .input {
-  width: 100%;
-  max-width: 975px;
-  height: 45px;
+  width: inherit;
+  height: 60px;
   padding: 12px;
   border-radius: 12px;
   border: 1.5px solid lightgrey;
   outline: none;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0px 0px 20px -18px;
 
+  box-sizing: border-box;
+  
   margin-top: 16px;
-}
-
-.input:hover {
-  border: 2px solid lightgrey;
-  box-shadow: 0px 0px 20px -17px;
-}
-
-.input:active {
-  transform: scale(0.95);
-}
-
-.input:focus {
-  border: 2px solid grey;
 }
 
 .min-ingredient-input,
@@ -51,7 +37,7 @@
 
   height: 20px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1.5px solid lightgrey;
 }
 
@@ -82,12 +68,31 @@ h3 {
   margin: auto;
 }
 
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  padding: 8px;
+
+  
+  border-radius: 10px;
+  background: #bebebe;
+  border: 1.5px solid lightgrey;
+
+  cursor: pointer;
+}
+
+.button-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .dropdown {
   background: none;
   border: none;
-
-  
-  
 }
 
 label input{

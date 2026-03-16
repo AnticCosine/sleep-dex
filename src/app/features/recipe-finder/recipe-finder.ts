@@ -28,7 +28,12 @@ export class RecipeFinder {
   ingredients$!: Observable<Ingredient[]>
   filteredIngredients$!: Observable<Ingredient[]>;
 
-  constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {}
+  minIngredients = 0;
+  maxIngredients = 0;
+
+  constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {
+  
+  }
 
   ngOnInit(): void {
     this.recipes$ = this.recipeService.GetRecipes();
@@ -38,11 +43,11 @@ export class RecipeFinder {
       const count = recipes.map(recipe => {
         return recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
       });
-      const min = Math.min(...count);
-      const max = Math.max(...count);
+      this.minIngredients = Math.min(...count);
+      this.maxIngredients = Math.max(...count);
 
-      this.minIngredientsControl.setValue(min);
-      this.maxIngredientsControl.setValue(max);
+      this.minIngredientsControl.setValue(this.minIngredients);
+      this.maxIngredientsControl.setValue(this.maxIngredients);
     })
     
     this.filteredRecipes$ = combineLatest([
@@ -92,6 +97,14 @@ export class RecipeFinder {
     } else {
       this.ingredientControl.setValue([...current, ingredient]);
     }
+  }
+
+  resetFilters() {
+    this.searchControl.setValue('');
+    this.recipeTypeControl.setValue(['curry', 'salad', 'dessert']);
+    this.ingredientControl.setValue([]);
+    this.minIngredientsControl.setValue(this.minIngredients);
+    this.maxIngredientsControl.setValue(this.maxIngredients);
   }
 
   hasIngredient(ingredient: string) {

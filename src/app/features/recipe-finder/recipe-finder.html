@@ -89,9 +89,13 @@
             <input type="number" [value]="minIngredientsControl.value" id="ingredient-count-min" class="min-ingredient-input" [formControl]="minIngredientsControl">
             <h3>-</h3>
             <input type="number" [value]="maxIngredientsControl.value" id="ingredient-count-max" class="max-ingredient-input" [formControl]="maxIngredientsControl">
+
+            <button class="button-icon" (click)="resetFilters()">
+              <img src="assets/images/reset-icon.svg" alt="">
+            </button>
           </div>
           
-
+          
         </div>
     
         <div class="recipes">
