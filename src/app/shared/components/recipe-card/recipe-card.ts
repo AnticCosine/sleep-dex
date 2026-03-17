@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Recipe } from '../../../models/recipe.models';
 import { CommonModule } from '@angular/common';
+import { RecipeService } from '../../../services/recipe-service';
+import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-recipe-card',
@@ -12,6 +14,18 @@ export class RecipeCard {
 
   @Input() recipe!: Recipe;
   cooked = false;
+
+  cooked$!: Observable<boolean>;
+
+  constructor(private recipeService: RecipeService) {}
+
+  ngOnInit() {
+    this.cooked = this.recipeService.isCooked(this.recipe.id);
+
+    this.cooked$ = this.recipeService.cookedRecipes$.pipe(
+      map(list => list.includes(this.recipe.id))
+    );
+  }
 
   get imageRecipePath(): string {
     return `assets/images/recipes/${this.recipe.id}.png`
@@ -26,7 +40,7 @@ export class RecipeCard {
   }
 
   toggleCooked() {
-    this.cooked = !this.cooked;
+    this.recipeService.markCooked(this.recipe.id);
   }
 
   get checkboxImage(): string {

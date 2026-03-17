@@ -16,8 +16,8 @@
     </div>
 
     <div class="checklist">
-        <button class="button-icon" [class.cooked]="cooked" (click)="toggleCooked()">
-            {{ cooked ? 'Cooked' : 'Uncooked' }}
+        <button class="button-icon" [class.cooked]="cooked$ | async" (click)="toggleCooked()">
+            {{ (cooked$ | async) ? 'Cooked' : 'Uncooked' }}
         </button>
     </div>
 </div>

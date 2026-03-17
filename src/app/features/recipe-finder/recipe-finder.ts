@@ -36,7 +36,7 @@ export class RecipeFinder {
   }
 
   ngOnInit(): void {
-    this.recipes$ = this.recipeService.GetRecipes();
+    this.recipes$ = this.recipeService.getRecipes();
     this.ingredients$ = this.ingredientService.GetIngredients();
 
     this.recipes$.pipe(take(1)).subscribe(recipes => {
