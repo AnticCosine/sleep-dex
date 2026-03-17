@@ -97,8 +97,11 @@
           
           
         </div>
-    
-        <div class="recipes">
+        
+        @if (tabularFormat) {
+
+        } @else {
+          <div class="recipe-cards">
             @if (filteredRecipes$ | async; as recipes) {
                 @for (recipe of recipes; track recipe) {
                     <app-recipe-card
@@ -106,7 +109,9 @@
                     </app-recipe-card>
                 }
             }
-        </div>
+          </div>
+        }
+
     
     </div>
 </div> 

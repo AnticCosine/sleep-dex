@@ -15,6 +15,8 @@ import { Ingredient } from '../../models/ingredient.model';
   styleUrl: './recipe-finder.css',
 })
 export class RecipeFinder {
+
+  tabularFormat = false;
   
   searchControl = new FormControl('');
   recipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);
