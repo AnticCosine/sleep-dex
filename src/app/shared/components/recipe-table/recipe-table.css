@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    
+    border-bottom: 2px solid #D7AF59;
+}
+
+tbody tr {
+    border-bottom: 2px solid #D7AF59;
+}
+
+tbody .recipe-img {
+    width: 60px;
+    height: 60px;
+}
+
+.ingredient {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+}
+
+.ingredient-img {
+    width: 24px;
+    height: 24px;
+}

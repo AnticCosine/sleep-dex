@@ -7,10 +7,11 @@ import { combineLatest, debounceTime, map, Observable, startWith, take } from 'r
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { IngredientService } from '../../services/ingredient-service';
 import { Ingredient } from '../../models/ingredient.model';
+import { RecipeTable } from '../../shared/components/recipe-table/recipe-table';
 
 @Component({
   selector: 'app-recipe-finder',
-  imports: [RecipeCard, CommonModule, ReactiveFormsModule],
+  imports: [RecipeCard, RecipeTable,CommonModule, ReactiveFormsModule],
   templateUrl: './recipe-finder.html',
   styleUrl: './recipe-finder.css',
 })
@@ -129,6 +130,10 @@ export class RecipeFinder {
     this.minIngredientsControl.setValue(this.minIngredients);
     this.maxIngredientsControl.setValue(this.maxIngredients);
     this.cookedRecipeControl.setValue(['cooked', 'uncooked']);
+  }
+
+  changeRecipeFormat() {
+    this.tabularFormat = !this.tabularFormat;
   }
 
   hasIngredient(ingredient: string) {

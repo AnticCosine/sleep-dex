@@ -183,6 +183,11 @@ label input{
   opacity: 50%;
 }
 
+.recipe-table {
+  margin-top: 8px;
+
+  width: inherit;
+}
 
 .recipe-cards {
     margin-top: 8px;

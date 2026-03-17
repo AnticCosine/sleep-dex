@@ -89,29 +89,37 @@
             <input type="number" [value]="minIngredientsControl.value" id="ingredient-count-min" class="min-ingredient-input" [formControl]="minIngredientsControl">
             <h3>-</h3>
             <input type="number" [value]="maxIngredientsControl.value" id="ingredient-count-max" class="max-ingredient-input" [formControl]="maxIngredientsControl">
+            
+
+            <button class="button-icon" (click)="changeRecipeFormat()">
+              <img src="assets/images/table_icon.svg" alt="">
+            </button>
 
             <button class="button-icon" (click)="resetFilters()">
-              <img src="assets/images/reset-icon.svg" alt="">
+              <img src="assets/images/reset_icon.svg" alt="">
             </button>
           </div>
           
           
         </div>
         
-        @if (tabularFormat) {
-
-        } @else {
-          <div class="recipe-cards">
-            @if (filteredRecipes$ | async; as recipes) {
-                @for (recipe of recipes; track recipe) {
-                    <app-recipe-card
-                        [recipe]="recipe">
-                    </app-recipe-card>
-                }
-            }
-          </div>
+        @if (filteredRecipes$ | async; as recipes) {
+          @if (tabularFormat) {
+            <div class="recipe-table">
+              <app-recipe-table [recipes]="recipes"></app-recipe-table>
+            </div>
+          } @else {
+            <div class="recipe-cards">
+              @if (filteredRecipes$ | async; as recipes) {
+                  @for (recipe of recipes; track recipe) {
+                      <app-recipe-card
+                          [recipe]="recipe">
+                      </app-recipe-card>
+                  }
+              }
+            </div>
+          }
         }
-
     
     </div>
 </div> 

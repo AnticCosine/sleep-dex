@@ -1,1 +1,32 @@
-<p>recipe-table works!</p>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Ingredients</th>
+            <th>Strength</th>
+            <th>Cooked</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (recipe of recipes; track recipe) {
+            <tr>
+                <td><img [src]="imageRecipePath(recipe.id)" alt="" class="recipe-img"></td>
+                <td>{{ recipe.name }}</td>
+                <td>
+                    @for (ingredient of recipe.ingredients; track ingredient) {
+                        <div class="ingredient">
+                            <div class="ingredient-icon">
+                                <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                            </div>
+
+                            <h3>{{ ingredient.amount }}</h3>
+                        </div>
+                    }
+                </td>
+                <td>{{ recipe.baseStrength }}</td>
+            </tr>
+        }
+    </tbody>
+</table>
