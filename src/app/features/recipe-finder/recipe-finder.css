@@ -184,13 +184,13 @@ label input{
 }
 
 .recipe-table {
-  margin-top: 8px;
+  margin-top: 16px;
 
   width: inherit;
 }
 
 .recipe-cards {
-    margin-top: 8px;
+    margin-top: 16px;
 
     display: flex;
     flex-wrap: wrap;

@@ -17,7 +17,7 @@ import { RecipeTable } from '../../shared/components/recipe-table/recipe-table';
 })
 export class RecipeFinder {
 
-  tabularFormat = false;
+  tabularFormat = true;
   
   searchControl = new FormControl('');
   recipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);

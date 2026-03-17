@@ -1,21 +1,48 @@
 table {
     width: 100%;
+    
     border-collapse: collapse;
 }
 
 thead th {
     text-align: left;
-    
+    padding-bottom: 12px;
     border-bottom: 2px solid #D7AF59;
 }
 
+.sortable span {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sortable:hover .sort-icon {
+    opacity: 1;
+}
+
+.sort-icon {
+    width: 16px;
+    opacity: 0;
+}
+
+.sort-icon.desc {
+  transform: rotate(180deg);
+}
+
+
+
 tbody tr {
+    padding: 4px;
     border-bottom: 2px solid #D7AF59;
 }
 
 tbody .recipe-img {
     width: 60px;
     height: 60px;
+}
+
+tbody .checkbox {
+    cursor: pointer;
 }
 
 .ingredient {

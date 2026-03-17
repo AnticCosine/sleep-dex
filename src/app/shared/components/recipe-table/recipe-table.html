@@ -2,18 +2,33 @@
     <thead>
         <tr>
             <th></th>
-            <th>Name</th>
+            <th (click)="sort('name')" class="sortable">
+                <span>
+                    Name
+                    <img src="assets/images/dropdown_arrow.png" alt="" class="sort-icon" [class.desc]="sortDirection === 'desc'">
+                </span>
+            </th>
             <th>Ingredients</th>
-            <th>Strength</th>
-            <th>Cooked</th>
+            <th (click)="sort('baseStrength')" class="sortable">
+                <span>
+                    Strength
+                    <img src="assets/images/dropdown_arrow.png" alt="" class="sort-icon" [class.desc]="sortDirection === 'desc'">
+                </span>
+            </th>
+            <th (click)="sort('cooked')" class="sortable">
+                <span>
+                    Cooked
+                    <img src="assets/images/dropdown_arrow.png" alt="" class="sort-icon" [class.desc]="sortDirection === 'desc'">
+                </span>
+            </th>
         </tr>
     </thead>
 
     <tbody>
-        @for (recipe of recipes; track recipe) {
+        @for (recipe of displayedRecipes; track recipe) {
             <tr>
                 <td><img [src]="imageRecipePath(recipe.id)" alt="" class="recipe-img"></td>
-                <td>{{ recipe.name }}</td>
+                <td>{{ recipe.name }} ({{ totalIngredients(recipe) }})</td>
                 <td>
                     @for (ingredient of recipe.ingredients; track ingredient) {
                         <div class="ingredient">
@@ -26,6 +41,9 @@
                     }
                 </td>
                 <td>{{ recipe.baseStrength }}</td>
+                <td (click)="toggleCooked(recipe.id)">
+                    <img [src]="isCooked(recipe.id) ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="" class="checkbox">
+                </td>
             </tr>
         }
     </tbody>
