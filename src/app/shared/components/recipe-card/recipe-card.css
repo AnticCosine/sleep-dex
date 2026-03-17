@@ -91,14 +91,29 @@ h3 {
 }
 
 .checklist {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+}
 
+.checklist button {
+    width: 90px;
+    height: 24px;
+    padding: 4px;
+    border-radius: 10px 10px 0 0;
     cursor: pointer;
 
-    margin-top: auto;
-    margin-bottom: 4px;
-    gap: 8px;
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 16px;
 }
+
+.checklist .button-icon {
+    background-color: #ff6363;
+}
+
+.checklist .button-icon.cooked {
+    background-color: #95e951;
+}
+

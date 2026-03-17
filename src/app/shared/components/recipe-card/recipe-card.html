@@ -16,7 +16,8 @@
     </div>
 
     <div class="checklist">
-        <h3>Cooked?</h3>
-        <img [src]="checkboxImage" (click)="toggleCooked()" alt="">
+        <button class="button-icon" [class.cooked]="cooked" (click)="toggleCooked()">
+            {{ cooked ? 'Cooked' : 'Uncooked' }}
+        </button>
     </div>
 </div>
