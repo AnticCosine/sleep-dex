@@ -21,12 +21,16 @@ export class RecipeFinder {
   ingredientControl = new FormControl<string[]>([]);
   minIngredientsControl = new FormControl<number | null>(null);
   maxIngredientsControl = new FormControl<number | null>(null);
+  cookedRecipeControl = new FormControl<string[]>(['cooked', 'uncooked']);
 
   recipes$!: Observable<Recipe[]>;
   filteredRecipes$!: Observable<Recipe[]>;
 
   ingredients$!: Observable<Ingredient[]>
   filteredIngredients$!: Observable<Ingredient[]>;
+
+  cookedRecipes$!: Observable<string[]>;
+  filteredCookedRecipes$!: Observable<String[]>;
 
   minIngredients = 0;
   maxIngredients = 0;
@@ -38,6 +42,7 @@ export class RecipeFinder {
   ngOnInit(): void {
     this.recipes$ = this.recipeService.getRecipes();
     this.ingredients$ = this.ingredientService.GetIngredients();
+    this.cookedRecipes$ = this.recipeService.cookedRecipes$;
 
     this.recipes$.pipe(take(1)).subscribe(recipes => {
       const count = recipes.map(recipe => {
@@ -56,9 +61,11 @@ export class RecipeFinder {
       this.recipeTypeControl.valueChanges.pipe(startWith(this.recipeTypeControl.value ?? [])),
       this.ingredientControl.valueChanges.pipe(startWith(this.ingredientControl.value ?? [])),
       this.minIngredientsControl.valueChanges.pipe(startWith(null)),
-      this.maxIngredientsControl.valueChanges.pipe(startWith(null))
+      this.maxIngredientsControl.valueChanges.pipe(startWith(null)),
+      this.cookedRecipeControl.valueChanges.pipe(startWith(this.cookedRecipeControl.value ?? [])),
+      this.cookedRecipes$
     ]).pipe(
-      map(([recipes, search, recipeTypes, ingredient, minIngredients, maxIngredients]) => {
+      map(([recipes, search, recipeTypes, ingredient, minIngredients, maxIngredients, cooked, cookedFilter]) => {
 
         const searchTerm = (search ?? ``).toLowerCase();
 
@@ -72,7 +79,11 @@ export class RecipeFinder {
           const matchedMinIngredients = minIngredients == null || totalIngredients >= minIngredients;
           const matchedMaxIngredients = maxIngredients == null || totalIngredients <= maxIngredients;
 
-          return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients;
+          const isCooked = cookedFilter.includes(recipe.id);
+
+          const matchedCookedRecipes = cooked?.includes('cooked') && isCooked || cooked?.includes('uncooked') && !isCooked;
+
+          return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients && matchedCookedRecipes;
         }
         );
       })
@@ -86,6 +97,16 @@ export class RecipeFinder {
       this.recipeTypeControl.setValue(current.filter(t => t !== type));
     } else {
       this.recipeTypeControl.setValue([...current, type]);
+    }
+  }
+
+  toggleCookedRecipeType(type: string) {
+    const current = this.cookedRecipeControl.value ?? [];
+
+    if (current.includes(type)) {
+      this.cookedRecipeControl.setValue(current.filter(t => t !== type));
+    } else {
+      this.cookedRecipeControl.setValue([...current, type]);
     }
   }
 
@@ -105,6 +126,7 @@ export class RecipeFinder {
     this.ingredientControl.setValue([]);
     this.minIngredientsControl.setValue(this.minIngredients);
     this.maxIngredientsControl.setValue(this.maxIngredients);
+    this.cookedRecipeControl.setValue(['cooked', 'uncooked']);
   }
 
   hasIngredient(ingredient: string) {

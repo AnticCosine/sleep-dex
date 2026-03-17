@@ -43,16 +43,16 @@
                 </summary>
 
                 <ul>
-                  <li>
+                  <li (click)="toggleCookedRecipeType('cooked')">
                     <label>
-                      <input type="checkbox" name="Yes" />
-                      Yes
+                      <img [src]="cookedRecipeControl.value?.includes('cooked') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
+                      Cooked
                     </label>
                   </li>
-                  <li>
+                  <li (click)="toggleCookedRecipeType('uncooked')">
                     <label>
-                      <input type="checkbox" name="No" />
-                      No
+                      <img [src]="cookedRecipeControl.value?.includes('uncooked') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
+                      Uncooked
                     </label>
                   </li>
                 </ul>
