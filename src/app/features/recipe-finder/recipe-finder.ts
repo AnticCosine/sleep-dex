@@ -20,11 +20,11 @@ export class RecipeFinder {
   tabularFormat = false;
   
   searchControl = new FormControl('');
-  recipeTypeControl = new FormControl<string[]>(['curry', 'salad', 'dessert']);
+  recipeTypeControl = new FormControl<string[]>([]);
   ingredientControl = new FormControl<string[]>([]);
   minIngredientsControl = new FormControl<number | null>(null);
   maxIngredientsControl = new FormControl<number | null>(null);
-  cookedRecipeControl = new FormControl<string[]>(['cooked', 'uncooked']);
+  cookedRecipeControl = new FormControl<string[]>([]);
 
   recipes$!: Observable<Recipe[]>;
   filteredRecipes$!: Observable<Recipe[]>;
@@ -84,7 +84,7 @@ export class RecipeFinder {
 
           const isCooked = cookedFilter.includes(recipe.id);
 
-          const matchedCookedRecipes = cooked?.includes('cooked') && isCooked || cooked?.includes('uncooked') && !isCooked;
+          const matchedCookedRecipes = !cooked?.length || (cooked?.includes('cooked') && isCooked) || (cooked?.includes('uncooked') && !isCooked);
 
           return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients && matchedCookedRecipes;
         }
@@ -125,11 +125,11 @@ export class RecipeFinder {
 
   resetFilters() {
     this.searchControl.setValue('');
-    this.recipeTypeControl.setValue(['curry', 'salad', 'dessert']);
+    this.recipeTypeControl.setValue([]);
     this.ingredientControl.setValue([]);
     this.minIngredientsControl.setValue(this.minIngredients);
     this.maxIngredientsControl.setValue(this.maxIngredients);
-    this.cookedRecipeControl.setValue(['cooked', 'uncooked']);
+    this.cookedRecipeControl.setValue([]);
   }
 
   changeRecipeFormat() {

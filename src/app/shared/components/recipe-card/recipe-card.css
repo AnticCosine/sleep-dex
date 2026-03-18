@@ -1,43 +1,27 @@
-.recipe-card-curry {
-
+.recipe-card-curry,
+.recipe-card-salad,
+.recipe-card-dessert {
     width: 240px;
     height: 250px;
     
-    background-color: #FFB8B6;
+    
     border-radius: 10px;
 
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+}
+
+.recipe-card-curry {
+  background-color: #FFB8B6;
 }
 
 .recipe-card-salad {
-
-    width: 240px;
-    height: 250px;
-    
-    background-color: #b6feb2;
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+  background-color: #b6feb2;
 }
 
 .recipe-card-dessert {
-
-    width: 240px;
-    height: 250px;
-    
-    background-color: #fffbb2;
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+  background-color: #fffbb2;
 }
 
 .disabled {
@@ -46,18 +30,18 @@
 }
 
 .recipe-img {
-    max-width: 130px;
-    max-height: 130px;
+  max-width: 130px;
+  max-height: 130px;
 }
 
 h2 {
-    margin: 0px;
-    font-family: var(--font-primary);
-    color: inherit;
-    font-size: 16px;
+  margin: 0px;
+  font-family: var(--font-primary);
+  color: inherit;
+  font-size: 16px;
 
-    text-align: center;
-    min-height: 40px;
+  text-align: center;
+  min-height: 40px;
 }
 
 .recipe-ingredients {
