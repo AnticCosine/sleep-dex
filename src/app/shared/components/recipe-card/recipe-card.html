@@ -1,4 +1,4 @@
-<div [class]="'recipe-card-' + recipe.type">
+<div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false">
 
     <img [src]="imageRecipePath" alt="" class="recipe-img">
     <h2>{{ recipe.name }} ({{ totalIngredients }})</h2>
@@ -10,13 +10,18 @@
                     <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
                 </div>
                 
-                <h3>{{ ingredient.amount }}</h3>
+                @if (quantities) {
+                    <h3>{{ quantities[ingredient.ingredientId] || 0 }} / {{ ingredient.amount }}</h3>
+                } @else {
+                    <h3>{{ ingredient.amount }}</h3>
+                }
+                
             </div>
         }
     </div>
 
     <div class="checklist">
-        <button class="button-icon" [class.cooked]="cooked$ | async" (click)="toggleCooked()">
+        <button class="button-icon" [class.cooked]="cooked$ | async" [disabled]="canMake === false" (click)="toggleCooked()">
             {{ (cooked$ | async) ? 'Cooked' : 'Uncooked' }}
         </button>
     </div>

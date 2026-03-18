@@ -1,0 +1,40 @@
+<div class="wrapper">
+
+    <div class="ingredient-calculator">
+        <div class="ingredient">
+            @if (quantities$ | async; as quantities) {
+                @if (ingredients$ | async; as ingredients) {
+                    @for (ingredient of ingredients; track ingredient.id) {
+
+                        <div class="ingredient-input">
+                            <img [src]="imageIngredientPath(ingredient.id)" alt="">
+                        
+                            <div class="value">
+                                <button class="minus" (click)="decrease(ingredient.id)">-</button>
+                                <input type="number" class="" [ngModel]="quantities[ingredient.id]" (ngModelChange)="updateQuantity(ingredient.id, $event)" min="0">
+                                <button class="plus" (click)="increase(ingredient.id)">+</button>
+                            </div>
+                        </div>
+
+                    }
+                }
+            }
+        </div>
+
+        @if (cookableRecipes$ | async; as recipes) {
+            <div class="recipe-cards">
+            
+                @for (item of recipes; track item.recipe.id) {
+                    <app-recipe-card
+                        [recipe]="item.recipe"
+                        [quantities]="item.quantities"
+                        [canMake]="item.canMake">
+                    </app-recipe-card>
+                }
+            
+            </div>  
+        }
+    </div>
+
+
+</div>

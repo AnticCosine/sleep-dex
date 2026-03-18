@@ -13,6 +13,8 @@ import { map, Observable } from 'rxjs';
 export class RecipeCard {
 
   @Input() recipe!: Recipe;
+  @Input() quantities?: { [key: string]: number };
+  @Input() canMake?: boolean;
   cooked = false;
 
   cooked$!: Observable<boolean>;
