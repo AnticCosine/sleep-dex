@@ -1,15 +1,18 @@
 .recipe-card-curry,
 .recipe-card-salad,
 .recipe-card-dessert {
-    width: 240px;
-    height: 260px;
-    
-    
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 220px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.recipe-img {
+  max-width: 110px;
+  max-height: 110px;
 }
 
 .recipe-card-curry {
@@ -73,6 +76,7 @@ h2 {
   gap: 12px;
 
   margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .ingredient {
@@ -135,39 +139,39 @@ h3 {
 
 
 @media (max-width: 520px) {
+
   .recipe-card-curry,
   .recipe-card-salad,
   .recipe-card-dessert {
-    width: 100%;
-    height: auto;
     min-height: 200px;
-    padding-bottom: 0;
   }
+  
 
   .recipe-img {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .ingredient-img {
+    width: 20px;
+    height: 20px;
   }
 
   h2 {
     font-size: 13px;
-    min-height: unset;
-    margin-top: 10px;
-    padding: 0 6px;
   }
 
-  .recipe-ingredients {
-    gap: 8px;
-  }
-
-  .ingredient-icon {
-    width: 24px;
-    height: 24px;
+  h3 {
+    font-size: 10px;
   }
 
   .checklist button {
     width: 80px;
     font-size: 13px;
+  }
+
+  .base-strength {
+    font-size: 14px;
   }
 }
 
