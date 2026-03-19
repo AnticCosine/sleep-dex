@@ -16,15 +16,15 @@
 }
 
 .recipe-card-curry {
-  background-color: #FFB8B6;
+  background-color: var(--curry-colour);
 }
 
 .recipe-card-salad {
-  background-color: #b6feb2;
+  background-color: var(--salad-colour);
 }
 
 .recipe-card-dessert {
-  background-color: #fffbb2;
+  background-color: var(--dessert-colour);
 }
 
 .disabled {

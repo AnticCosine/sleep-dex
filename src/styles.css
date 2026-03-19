@@ -6,7 +6,9 @@
 
     --font-primary: m-plus-1p, sans-serif;
 
-
+    --curry-colour: #FFB8B6;
+    --salad-colour: #b6feb2;
+    --dessert-colour: #fffbb2;
 }
 
 body {

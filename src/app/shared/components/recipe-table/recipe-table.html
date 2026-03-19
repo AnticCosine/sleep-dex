@@ -27,7 +27,7 @@
     <tbody>
         @for (recipe of displayedRecipes; track recipe) {
             <tr>
-                <td><img [src]="imageRecipePath(recipe.id)" alt="" class="recipe-img"></td>
+                <td [class]="recipe.type"><img [src]="imageRecipePath(recipe.id)" alt="" class="recipe-img"></td>
                 <td>{{ recipe.name }} ({{ totalIngredients(recipe) }})</td>
                 <td>
                     @for (ingredient of recipe.ingredients; track ingredient) {
@@ -40,7 +40,7 @@
                         </div>
                     }
                 </td>
-                <td>{{ recipe.baseStrength }}</td>
+                <td class="strength-badge"><span>{{ recipe.baseStrength }}</span></td>
                 <td (click)="toggleCooked(recipe.id)">
                     <img [src]="isCooked(recipe.id) ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="" class="checkbox">
                 </td>

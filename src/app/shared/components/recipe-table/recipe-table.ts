@@ -14,6 +14,8 @@ type SortColumn = 'name' | 'baseStrength' | 'cooked';
 export class RecipeTable {
 
   @Input() recipes!: Recipe[];
+  @Input() quantities?: { [key: string]: number };
+  @Input() canMake?: boolean;
   displayedRecipes: Recipe[] = [];
   
   sortColumn: SortColumn | '' = '';
