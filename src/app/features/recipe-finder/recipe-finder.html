@@ -7,56 +7,13 @@
 
           <div class="dropdown-filters">
 
-            <details class="dropdown" (click)="onDropdownToggle($event)">
-                <summary>
-                  Type
-                  <img src="assets/images/dropdown_arrow.png" alt="">
-                </summary>
-
-                <ul>
-                  <li (click)="toggleRecipeType('curry')">
-                    <label>
-                      <img [src]="recipeTypeControl.value?.includes('curry') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                      Curry
-                    </label>
-                  </li>
-                  <li (click)="toggleRecipeType('salad')">
-                    <label>
-                      <img [src]="recipeTypeControl.value?.includes('salad') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                      Salad
-                    </label>
-                  </li>
-                  <li (click)="toggleRecipeType('dessert')">
-                    <label>
-
-                      <img [src]="recipeTypeControl.value?.includes('dessert') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                      Dessert
-                    </label>
-                  </li>
-                </ul>
-            </details>
-
-            <details class="dropdown" (click)="onDropdownToggle($event)">
-                <summary>
-                  Cooked?
-                  <img src="assets/images/dropdown_arrow.png" alt="">
-                </summary>
-
-                <ul>
-                  <li (click)="toggleCookedRecipeType('cooked')">
-                    <label>
-                      <img [src]="cookedRecipeControl.value?.includes('cooked') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                      Cooked
-                    </label>
-                  </li>
-                  <li (click)="toggleCookedRecipeType('uncooked')">
-                    <label>
-                      <img [src]="cookedRecipeControl.value?.includes('uncooked') ? 'assets/images/checked_checkbox.svg' : 'assets/images/unchecked_checkbox.svg'" alt="">
-                      Uncooked
-                    </label>
-                  </li>
-                </ul>
-            </details>
+            
+            <button class="chip curry" [class.active]="recipeTypeControl.value?.includes('curry')" (click)="toggleRecipeType('curry')">Curry</button>
+            <button class="chip salad" [class.active]="recipeTypeControl.value?.includes('salad')" (click)="toggleRecipeType('salad')">Salad</button>
+            <button class="chip dessert" [class.active]="recipeTypeControl.value?.includes('dessert')" (click)="toggleRecipeType('dessert')">Dessert</button>
+            <button class="chip" [class.active]="cookedRecipeControl.value?.includes('cooked')" (click)="toggleCookedRecipeType('cooked')">Cooked</button>
+            <button class="chip" [class.active]="cookedRecipeControl.value?.includes('uncooked')" (click)="toggleCookedRecipeType('uncooked')">Uncooked</button>
+            
 
             <details class="dropdown" (click)="onDropdownToggle($event)">
               <summary>
@@ -84,20 +41,25 @@
 
           </div>
           
-          <div class="pot-size-filter">
-            <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
-            <input type="number" [value]="minIngredientsControl.value" id="ingredient-count-min" class="min-ingredient-input" [formControl]="minIngredientsControl">
-            <h3>-</h3>
-            <input type="number" [value]="maxIngredientsControl.value" id="ingredient-count-max" class="max-ingredient-input" [formControl]="maxIngredientsControl">
-            
+          <div class="input-filters">
+            <div class="pot-size-pill">
+              <div class="pot-size-pill-icon">
+                <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
+              </div>
+              <input type="number" class="min-ingredient-input" [formControl]="minIngredientsControl">
+              <span class="pot-separator">–</span>
+              <input type="number" class="max-ingredient-input" [formControl]="maxIngredientsControl">
+            </div>
 
-            <button class="button-icon" (click)="changeRecipeFormat()">
-              <img src="assets/images/table_icon.svg" alt="">
-            </button>
+            <div class="input-buttons">
+              <button class="button-icon" (click)="changeRecipeFormat()">
+                <img src="assets/images/table_icon.svg" alt="">
+              </button>
 
-            <button class="button-icon" (click)="resetFilters()">
-              <img src="assets/images/reset_icon.svg" alt="">
-            </button>
+              <button class="button-icon" (click)="resetFilters()">
+                <img src="assets/images/reset_icon.svg" alt="">
+              </button>
+            </div>
           </div>
           
           

@@ -1,5 +1,5 @@
 .navbar {
-    padding-top: 6px;
+    margin-top: 6px;
 }
 
 ul {
@@ -23,6 +23,11 @@ a {
     font-size: 16px;
 }
 
+a.active {
+    color: #D7AF59;
+    font-weight: 700;
+}
+
 .main {
     font-weight: bold;
     
@@ -38,4 +43,60 @@ a {
 .seperator {
     border-bottom: 8px solid #D7AF59;
     border-radius: 4px 4px 4px 4px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-drawer {
+    display: none;
+    flex-direction: column;
+    padding: 8px 16px 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.mobile-drawer a {
+    padding: 12px 4px;
+    font-size: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.mobile-drawer a.active {
+    color: #D7AF59;
+    font-weight: 700;
+}
+
+.mobile-drawer a:last-child { border-bottom: none; }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+
+    .hamburger { display: flex; }
+
+    .mobile-drawer.open { display: flex; }
+
+    ul li.main { padding: 14px 0; }
 }

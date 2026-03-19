@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .input {
@@ -43,6 +43,7 @@
 
 .filters {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   
   width: inherit;
@@ -55,7 +56,7 @@
   gap: 8px;
 }
 
-.filters .pot-size-filter{
+.filters .input-filters{
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -64,14 +65,56 @@
   margin-left: auto;
 }
 
-.filters .pot-size-filter .pot-icon {
-  width: 28px;
-  height: 28px;
+.filters .input-filters .input-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  
+  margin-left: auto;
 }
 
-.filters .pot-size-filter input {
-  text-align: center;
+.pot-size-pill {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+  background: #ffff;
+  overflow: hidden;
+  
 }
+
+.pot-size-pill-icon {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-right: 1.5px solid lightgrey;
+  
+}
+
+.pot-size-pill .pot-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.min-ingredient-input,
+.max-ingredient-input {
+  width: 28px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  background: transparent;
+  
+}
+
+.pot-separator {
+  font-size: 13px;
+  color: lightgrey;
+  padding: 0 2px;
+}
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -88,8 +131,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: inherit;
-  height: inherit;
+  width: 40px;
+  height: 40px;
   padding: 8px;
 
   
@@ -209,12 +252,39 @@ label input{
     gap: 5px;
 }
 
+.chip {
+  background: #ffffff;
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+  padding: 8px 14px;
+}
+
+.chip.active {
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.chip.curry { background-color: #FFB8B6; }
+
+.chip.salad { background-color: #b6feb2; }
+
+.chip.dessert { background-color: #fffbb2; }
+
+.chip.curry.active { background-color: #ffa5a1; }
+
+.chip.salad.active { background-color: #a1ff9c; }
+
+.chip.dessert.active { background-color: #fdf892; }
+
+
 
 
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
 
@@ -223,7 +293,7 @@ label input{
     gap: 6px;
   }
 
-  .filters .pot-size-filter {
+  .filters .input-filters {
     margin-left: 0;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -232,5 +302,14 @@ label input{
   .ingredient-grid {
     width: 180px;
     max-height: 300px;
+  }
+}
+
+@media (max-width: 520px) {
+  .recipe-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
   }
 }

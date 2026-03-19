@@ -1,13 +1,27 @@
 <div class="navbar">
-    <ul>
-        <li class="main"><a href="">recipe-dex</a></li>
+    <div class="navbar-inner">
+        <ul>
+            <li class="main"><a href="">recipe-dex</a></li>
 
-        <div class="nav-links">
-            <li><a routerLink="/recipes" routerLinkActive="active">recipes</a></li>
-            <li><a routerLink="/ingredients" routerLinkActive="active">ingredients</a></li>
-            <li><a href="">sign up</a></li>
-        </div>
+            <div class="nav-links">
+                <li><a routerLink="/recipes" routerLinkActive="active">recipes</a></li>
+                <li><a routerLink="/ingredients" routerLinkActive="active">ingredients</a></li>
+                <li><a href="">sign up</a></li>
 
-    </ul>
+                
+            </div>
+
+            <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </ul>
+    </div>
     <div class="seperator"></div>
+    <div class="mobile-drawer" [class.open]="menuOpen">
+        <a routerLink="/recipes" routerLinkActive="active" (click)="toggleMenu()">recipes</a>
+        <a routerLink="/ingredients" routerLinkActive="active" (click)="toggleMenu()">ingredients</a>
+        <a href="">sign up</a>
+    </div>
 </div>

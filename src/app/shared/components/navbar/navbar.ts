@@ -7,4 +7,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class Navbar {}
+export class Navbar {
+  menuOpen = false;
+  toggleMenu() { this.menuOpen = !this.menuOpen; }
+}
