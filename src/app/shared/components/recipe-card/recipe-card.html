@@ -1,7 +1,12 @@
 <div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false">
 
     <img [src]="imageRecipePath" alt="" class="recipe-img">
+    <div class="base-strength">
+        {{ recipe.baseStrength }}
+    </div>
     <h2>{{ recipe.name }} ({{ totalIngredients }})</h2>
+
+    
     
     <div class="recipe-ingredients">
         @for (ingredient of recipe.ingredients; track ingredient) {
