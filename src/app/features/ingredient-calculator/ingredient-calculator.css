@@ -18,27 +18,46 @@
 }
 
 .ingredient {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 12px;
   margin-top: 16px;
-
-  gap: 16px;
+  width: 100%;
 }
 
 .ingredient-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;   /* needed for badge */
+}
+
+.ingredient-input.empty {
+  opacity: 0.45;
+}
+
+.ingredient-badge {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  width: 17px;
+  height: 17px;
+  background: #FFB8B6;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 700;
+  color: #993c1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
 .ingredient-input img {
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
 }
 
 .value {
@@ -96,4 +115,6 @@ input[type="number"]::-webkit-inner-spin-button {
     gap: 8px;
     width: 100%;
   }
+
+  
 }
