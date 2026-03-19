@@ -2,7 +2,7 @@
 .recipe-card-salad,
 .recipe-card-dessert {
     width: 240px;
-    height: 250px;
+    height: 260px;
     
     
     border-radius: 10px;
@@ -36,7 +36,6 @@
 
 .base-strength {
   margin-top: -35px;
-  z-index: 1;
 
   width: 60px;
   height: 30px;
@@ -64,6 +63,7 @@ h2 {
   text-align: center;
   min-height: 40px;
 
+  
   margin-top: 16px;
 }
 
@@ -72,7 +72,7 @@ h2 {
   justify-content: center;
   gap: 12px;
 
-  margin-top: auto;
+  margin-top: 0;
 }
 
 .ingredient {

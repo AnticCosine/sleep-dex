@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { Recipe } from '../../models/recipe.models';
 import { RecipeService } from '../../services/recipe-service';
@@ -8,6 +8,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { IngredientService } from '../../services/ingredient-service';
 import { Ingredient } from '../../models/ingredient.model';
 import { RecipeTable } from '../../shared/components/recipe-table/recipe-table';
+import { RecipeFilterService } from '../../services/recipe-filter-service';
 
 @Component({
   selector: 'app-recipe-finder',
@@ -38,7 +39,7 @@ export class RecipeFinder {
   minIngredients = 0;
   maxIngredients = 0;
 
-  constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {
+  constructor(private recipeService: RecipeService, private ingredientService: IngredientService, private recipeFilterService: RecipeFilterService) {
   
   }
 
@@ -68,29 +69,19 @@ export class RecipeFinder {
       this.cookedRecipeControl.valueChanges.pipe(startWith(this.cookedRecipeControl.value ?? [])),
       this.cookedRecipes$
     ]).pipe(
-      map(([recipes, search, recipeTypes, ingredient, minIngredients, maxIngredients, cooked, cookedFilter]) => {
-
-        const searchTerm = (search ?? ``).toLowerCase();
-
-        return recipes.filter(recipe => {
-
-          const matchedSearch = recipe.name.toLowerCase().includes(searchTerm);
-          const matchedRecipeType = !recipeTypes?.length || recipeTypes.includes(recipe.type);
-          const matchedIngredients = !ingredient?.length || ingredient.every(i => recipe.ingredients.some(j => j.ingredientId === i));
-
-          const totalIngredients = recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
-          const matchedMinIngredients = minIngredients == null || totalIngredients >= minIngredients;
-          const matchedMaxIngredients = maxIngredients == null || totalIngredients <= maxIngredients;
-
-          const isCooked = cookedFilter.includes(recipe.id);
-
-          const matchedCookedRecipes = !cooked?.length || (cooked?.includes('cooked') && isCooked) || (cooked?.includes('uncooked') && !isCooked);
-
-          return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients && matchedCookedRecipes;
-        }
-        );
-      })
-    );
+      map(([recipes, search, recipeTypes, ingredient, minIngredients, maxIngredients, cooked, cookedFilter]) =>
+        this.recipeFilterService.filterRecipes(recipes, {
+          search,
+          recipeTypes,
+          ingredient,
+          minIngredients,
+          maxIngredients,
+          cooked,
+          cookedFilter
+        })
+      )
+    )
+    
   }
 
   toggleRecipeType(type: string) {
@@ -142,5 +133,26 @@ export class RecipeFinder {
 
   imageIngredientPath(ingredientId: string): string {
     return `assets/images/ingredients/${ingredientId}.png`
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const dropdowns = document.querySelectorAll('details.dropdown');
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(event.target as Node)) {
+        dropdown.removeAttribute('open');
+      }
+    });
+  }
+
+  onDropdownToggle(event: Event): void {
+    const clicked = event.target as HTMLElement;
+    const thisDropdown = clicked.closest('details.dropdown');
+    const dropdowns = document.querySelectorAll('details.dropdown');
+    dropdowns.forEach(dropdown => {
+      if (dropdown !== thisDropdown) {
+        dropdown.removeAttribute('open');
+      }
+    });
   }
 }

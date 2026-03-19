@@ -7,7 +7,7 @@
 
           <div class="dropdown-filters">
 
-            <details class="dropdown">
+            <details class="dropdown" (click)="onDropdownToggle($event)">
                 <summary>
                   Type
                   <img src="assets/images/dropdown_arrow.png" alt="">
@@ -36,7 +36,7 @@
                 </ul>
             </details>
 
-            <details class="dropdown">
+            <details class="dropdown" (click)="onDropdownToggle($event)">
                 <summary>
                   Cooked?
                   <img src="assets/images/dropdown_arrow.png" alt="">
@@ -58,7 +58,7 @@
                 </ul>
             </details>
 
-            <details class="dropdown">
+            <details class="dropdown" (click)="onDropdownToggle($event)">
               <summary>
                   Ingredients
                   <img src="assets/images/dropdown_arrow.png" alt="">
