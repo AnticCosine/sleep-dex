@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { Recipe } from '../../models/recipe.models';
 import { RecipeService } from '../../services/recipe-service';
@@ -40,13 +40,11 @@ export class RecipeFinder {
   minIngredients = 0;
   maxIngredients = 0;
 
-  constructor(private recipeService: RecipeService, private ingredientService: IngredientService, private recipeFilterService: RecipeFilterService, private cdr: ChangeDetectorRef) {
+  constructor(private recipeService: RecipeService, private ingredientService: IngredientService, private recipeFilterService: RecipeFilterService) {
   
   }
 
   ngOnInit(): void {
-    this.checkScreen();
-
     this.recipes$ = this.recipeService.getRecipes();
     this.ingredients$ = this.ingredientService.GetIngredients();
     this.cookedRecipes$ = this.recipeService.cookedRecipes$;
@@ -60,7 +58,7 @@ export class RecipeFinder {
 
       this.minIngredientsControl.setValue(this.minIngredients);
       this.maxIngredientsControl.setValue(this.maxIngredients);
-    })
+    });
     
     this.filteredRecipes$ = combineLatest([
       this.recipes$,
@@ -83,12 +81,7 @@ export class RecipeFinder {
           cookedFilter
         })
       )
-    )
-
-    window.addEventListener('resize', () => {
-      this.checkScreen();
-      this.cdr.detectChanges();
-    });
+    );
     
   }
 
@@ -135,6 +128,7 @@ export class RecipeFinder {
     this.tabularFormat = !this.tabularFormat;
   }
 
+  @HostListener('window:resize')
   checkScreen() {
     const isMobile = window.matchMedia('(max-width: 550px)').matches;
     this.mobileView = isMobile;
