@@ -52,7 +52,7 @@
             </div>
 
             <div class="input-buttons">
-              <button class="button-icon" (click)="changeRecipeFormat()">
+              <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
                 <img src="assets/images/table_icon.svg" alt="">
               </button>
 

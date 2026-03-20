@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { ChangeDetectorRef, Component, HostListener } from '@angular/core';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { Recipe } from '../../models/recipe.models';
 import { RecipeService } from '../../services/recipe-service';
@@ -19,6 +19,7 @@ import { RecipeFilterService } from '../../services/recipe-filter-service';
 export class RecipeFinder {
 
   tabularFormat = false;
+  mobileView = false;
   
   searchControl = new FormControl('');
   recipeTypeControl = new FormControl<string[]>([]);
@@ -39,11 +40,13 @@ export class RecipeFinder {
   minIngredients = 0;
   maxIngredients = 0;
 
-  constructor(private recipeService: RecipeService, private ingredientService: IngredientService, private recipeFilterService: RecipeFilterService) {
+  constructor(private recipeService: RecipeService, private ingredientService: IngredientService, private recipeFilterService: RecipeFilterService, private cdr: ChangeDetectorRef) {
   
   }
 
   ngOnInit(): void {
+    this.checkScreen();
+
     this.recipes$ = this.recipeService.getRecipes();
     this.ingredients$ = this.ingredientService.GetIngredients();
     this.cookedRecipes$ = this.recipeService.cookedRecipes$;
@@ -81,6 +84,11 @@ export class RecipeFinder {
         })
       )
     )
+
+    window.addEventListener('resize', () => {
+      this.checkScreen();
+      this.cdr.detectChanges();
+    });
     
   }
 
@@ -125,6 +133,13 @@ export class RecipeFinder {
 
   changeRecipeFormat() {
     this.tabularFormat = !this.tabularFormat;
+  }
+
+  checkScreen() {
+    const isMobile = window.matchMedia('(max-width: 550px)').matches;
+    this.mobileView = isMobile;
+    
+    if (isMobile) this.tabularFormat = false;
   }
 
   hasIngredient(ingredient: string) {
