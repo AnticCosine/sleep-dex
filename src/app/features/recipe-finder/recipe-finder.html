@@ -1,71 +1,13 @@
 <div class="wrapper">
     <div class="recipe-finder">
     
-        <input placeholder="Search Recipes" type="text" class="input" id="search" [formControl]="searchControl">
-
-        <div class="filters">
-
-          <div class="dropdown-filters">
-
-            
-            <button class="chip curry" [class.active]="recipeTypeControl.value?.includes('curry')" (click)="toggleRecipeType('curry')">Curry</button>
-            <button class="chip salad" [class.active]="recipeTypeControl.value?.includes('salad')" (click)="toggleRecipeType('salad')">Salad</button>
-            <button class="chip dessert" [class.active]="recipeTypeControl.value?.includes('dessert')" (click)="toggleRecipeType('dessert')">Dessert</button>
-            <button class="chip" [class.active]="cookedRecipeControl.value?.includes('cooked')" (click)="toggleCookedRecipeType('cooked')">Cooked</button>
-            <button class="chip" [class.active]="cookedRecipeControl.value?.includes('uncooked')" (click)="toggleCookedRecipeType('uncooked')">Uncooked</button>
-            
-
-            <details class="dropdown" (click)="onDropdownToggle($event)">
-              <summary>
-                  Ingredients
-                  <img src="assets/images/dropdown_arrow.png" alt="">
-              </summary>
-
-              <div class="ingredient-grid">
-
-                @if (ingredients$ | async; as ingredients) {
-                  @for (ingredient of ingredients; track ingredient) {
-                    <div class="ingredient-item" [class.selected]="ingredientControl.value?.includes(ingredient.id)" (click)="toggleIngredient(ingredient.id)">
-
-                      @if (hasIngredient(ingredient.id)) {
-                        <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
-                      } @else {
-                        <img [src]="imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
-                      }
-
-                    </div>
-                  }
-                }
-              </div>
-            </details>
-
-          </div>
-          
-          <div class="input-filters">
-            <div class="pot-size-pill">
-              <div class="pot-size-pill-icon">
-                <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
-              </div>
-              <input type="number" class="min-ingredient-input" [formControl]="minIngredientsControl">
-              <span class="pot-separator">–</span>
-              <input type="number" class="max-ingredient-input" [formControl]="maxIngredientsControl">
-            </div>
-
-            <div class="input-buttons">
-              <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
-                <img src="assets/images/table_icon.svg" alt="">
-              </button>
-
-              <button class="button-icon" (click)="resetFilters()">
-                <img src="assets/images/reset_icon.svg" alt="">
-              </button>
-            </div>
-          </div>
-          
-          
-        </div>
+        <app-recipe-filters
+          [filterState]="filterState"
+          [showFormatToggle]="false"
+          (formatChange)="changeRecipeFormat()"
+        />
         
-        @if (filteredRecipes$ | async; as recipes) {
+        @if (filterState.filteredRecipes$ | async; as recipes) {
           @if (tabularFormat) {
             <div class="recipe-table">
               <app-recipe-table [recipes]="recipes"></app-recipe-table>

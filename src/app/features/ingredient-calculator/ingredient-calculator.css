@@ -17,6 +17,10 @@
   align-items: flex-start;
 }
 
+app-recipe-filters {
+  width: inherit;
+}
+
 .ingredient {
   width: inherit;
 

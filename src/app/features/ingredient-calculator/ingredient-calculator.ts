@@ -8,33 +8,33 @@ import { FormsModule } from '@angular/forms';
 import { Recipe, RecipeIngredients } from '../../models/recipe.models';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { IngredientTable } from '../../shared/components/ingredient-table/ingredient-table';
+import { RecipeFilters } from '../../shared/components/recipe-filters/recipe-filters';
+import { RecipeFilterStateService } from '../../services/recipe-filter-state-service';
+import { RecipeTable } from '../../shared/components/recipe-table/recipe-table';
 
 @Component({
   selector: 'app-ingredient-calculator',
-  imports: [RecipeCard, IngredientTable , CommonModule, FormsModule],
+  imports: [RecipeCard, IngredientTable, RecipeTable, RecipeFilters , CommonModule, FormsModule],
   templateUrl: './ingredient-calculator.html',
   styleUrl: './ingredient-calculator.css',
 })
 export class IngredientCalculator {
 
-  recipes$!: Observable<Recipe[]>;
-  ingredients$!: Observable<Ingredient[]>;
+  tabularFormat = false;
 
   cookableRecipes$!: Observable<{ recipe: Recipe, canMake: boolean, quantities: any}[]>;
 
   quantities$!: Observable<{[id: string]: number;}>;
 
-  constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {
+  constructor(private ingredientService: IngredientService, public filterState: RecipeFilterStateService) {
     
   }
 
   ngOnInit(): void {
-    this.ingredients$ = this.ingredientService.GetIngredients();
-    this.recipes$ = this.recipeService.getRecipes();
     this.quantities$ = this.ingredientService.getQuantities$();
 
     this.cookableRecipes$ = combineLatest([
-      this.recipes$,
+      this.filterState.filteredRecipes$,
       this.quantities$
     ]).pipe(
       map(([recipes, quantities]) => {
@@ -58,5 +58,9 @@ export class IngredientCalculator {
 
   imageIngredientPath(ingredientId: string): string {
     return `assets/images/ingredients/${ingredientId}.png`;
+  }
+
+  changeRecipeFormat() {
+    this.tabularFormat = !this.tabularFormat;
   }
 } 

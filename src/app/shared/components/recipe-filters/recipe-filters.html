@@ -1,0 +1,63 @@
+<input placeholder="Search Recipes" type="text" class="input" id="search" [formControl]="filterState.searchControl">
+
+<div class="filters">
+
+    <div class="dropdown-filters">
+
+            
+        <button class="chip curry" [class.active]="filterState.recipeTypeControl.value?.includes('curry')" (click)="filterState.toggleRecipeType('curry')">Curry</button>
+        <button class="chip salad" [class.active]="filterState.recipeTypeControl.value?.includes('salad')" (click)="filterState.toggleRecipeType('salad')">Salad</button>
+        <button class="chip dessert" [class.active]="filterState.recipeTypeControl.value?.includes('dessert')" (click)="filterState.toggleRecipeType('dessert')">Dessert</button>
+        <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
+        <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
+            
+
+        <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary>
+                Ingredients
+                <img src="assets/images/dropdown_arrow.png" alt="">
+            </summary>
+
+            <div class="ingredient-grid">
+
+                @if (filterState.ingredients$ | async; as ingredients) {
+                  @for (ingredient of ingredients; track ingredient) {
+                    <div class="ingredient-item" [class.selected]="filterState.ingredientControl.value?.includes(ingredient.id)" (click)="filterState.toggleIngredient(ingredient.id)">
+
+                      @if (filterState.hasIngredient(ingredient.id)) {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+              </div>
+        </details>
+
+    </div>
+          
+    <div class="input-filters">
+        <div class="pot-size-pill">
+              <div class="pot-size-pill-icon">
+                <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
+              </div>
+              <input type="number" class="min-ingredient-input" [formControl]="filterState.minIngredientsControl">
+              <span class="pot-separator">–</span>
+              <input type="number" class="max-ingredient-input" [formControl]="filterState.maxIngredientsControl">
+        </div>
+
+        <div class="input-buttons">
+            <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
+              <img src="assets/images/table_icon.svg" alt="">
+            </button>
+
+            <button class="button-icon" (click)="filterState.resetFilters()">
+              <img src="assets/images/reset_icon.svg" alt="">
+            </button>
+        </div>
+    </div>
+          
+          
+</div>
