@@ -13,7 +13,8 @@ import { CommonModule } from '@angular/common';
 export class IngredientTable {
 
   ingredients$!: Observable<Ingredient[]>;
- 
+  tableCollapsed = false;
+
   constructor(private ingredientService: IngredientService) {}
 
   ngOnInit() {
@@ -54,5 +55,9 @@ export class IngredientTable {
  
   trackById(_: number, ingredient: Ingredient): string {
     return ingredient.id;
+  }
+
+  collapseTable() {
+    this.tableCollapsed = !this.tableCollapsed;
   }
 }
