@@ -26,7 +26,7 @@
     </div>
 
     <div class="checklist">
-        <button class="button-icon" [class.cooked]="cooked$ | async" [disabled]="canMake === false" (click)="toggleCooked()">
+        <button *ngIf="!homePlaceHolder" class="button-icon" [class.cooked]="cooked$ | async" [disabled]="canMake === false" (click)="toggleCooked()">
             {{ (cooked$ | async) ? 'Cooked' : 'Uncooked' }}
         </button>
     </div>

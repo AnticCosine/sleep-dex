@@ -30,16 +30,11 @@ export class RecipeTable {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['recipes'] && this.recipes) {
       
-      if (this.sortColumn && this.sortColumn != 'cooked') {
+      if (this.sortColumn && this.sortColumn) {
         this.displayedRecipes = [...this.recipes];
         this.sort(this.sortColumn, false);
-      } else { // current logic to stop new cooked dishes moving in the table (might need rework) 
-        const currIds = this.displayedRecipes.map(r => r.id);
-        this.displayedRecipes = currIds.map(id => this.recipes.find(r => r.id === id))
-        .filter(Boolean) as Recipe[];
-
-        const newRecipes = this.recipes.filter(r => !currIds.includes(r.id));
-        this.displayedRecipes.push(...newRecipes);
+      } else {
+        this.displayedRecipes = [...this.recipes];
       }
     }
 

@@ -2,26 +2,7 @@
 
     <div class="ingredient-calculator">
         <div class="ingredient">
-            @if (quantities$ | async; as quantities) {
-                @if (ingredients$ | async; as ingredients) {
-                    @for (ingredient of ingredients; track ingredient.id) {
-
-                        <div class="ingredient-input" [class.empty]="quantities[ingredient.id] === 0">
-                            <img [src]="imageIngredientPath(ingredient.id)" alt="">
-                            @if (quantities[ingredient.id] > 0) {
-                                <div class="ingredient-badge">{{ quantities[ingredient.id] }}</div>
-                            }
-                        
-                            <div class="value">
-                                <button class="minus" (click)="decrease(ingredient.id)">-</button>
-                                <input type="number" class="" [ngModel]="quantities[ingredient.id]" (ngModelChange)="updateQuantity(ingredient.id, $event)" min="0">
-                                <button class="plus" (click)="increase(ingredient.id)">+</button>
-                            </div>
-                        </div>
-
-                    }
-                }
-            }
+            <app-ingredient-table></app-ingredient-table>
         </div>
 
         @if (cookableRecipes$ | async; as recipes) {

@@ -7,10 +7,11 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Recipe, RecipeIngredients } from '../../models/recipe.models';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
+import { IngredientTable } from '../../shared/components/ingredient-table/ingredient-table';
 
 @Component({
   selector: 'app-ingredient-calculator',
-  imports: [RecipeCard, CommonModule, FormsModule],
+  imports: [RecipeCard, IngredientTable , CommonModule, FormsModule],
   templateUrl: './ingredient-calculator.html',
   styleUrl: './ingredient-calculator.css',
 })
@@ -21,7 +22,7 @@ export class IngredientCalculator {
 
   cookableRecipes$!: Observable<{ recipe: Recipe, canMake: boolean, quantities: any}[]>;
 
-  quantities$ = new BehaviorSubject<{ [key: string]: number }>({});
+  quantities$!: Observable<{[id: string]: number;}>;
 
   constructor(private recipeService: RecipeService, private ingredientService: IngredientService) {
     
@@ -30,12 +31,7 @@ export class IngredientCalculator {
   ngOnInit(): void {
     this.ingredients$ = this.ingredientService.GetIngredients();
     this.recipes$ = this.recipeService.getRecipes();
-
-    this.ingredients$.pipe(take(1)).subscribe(ingredients => {
-      const initial: { [key: string]: number } = {};
-      ingredients.forEach(i => initial[i.id] = 0);
-      this.quantities$.next(initial);
-    });
+    this.quantities$ = this.ingredientService.getQuantities$();
 
     this.cookableRecipes$ = combineLatest([
       this.recipes$,
@@ -58,26 +54,6 @@ export class IngredientCalculator {
         })
       })
     );
-  }
-
-  increase(ingredientId: string) {
-    const q = { ...this.quantities$.value };
-    q[ingredientId]++;
-    this.quantities$.next(q);
-  }
-
-  decrease(ingredientId: string) {
-    const q = { ...this.quantities$.value };
-    if (q[ingredientId] > 0) {
-      q[ingredientId]--;
-      this.quantities$.next(q);
-    }
-  }
-
-  updateQuantity(id: string, value: number) {
-    const q = { ...this.quantities$.value };
-    q[id] = Math.max(0, value || 0);
-    this.quantities$.next(q);
   }
 
   imageIngredientPath(ingredientId: string): string {
