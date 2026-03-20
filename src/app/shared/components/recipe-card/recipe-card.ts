@@ -45,10 +45,4 @@ export class RecipeCard {
   toggleCooked() {
     this.recipeService.markCooked(this.recipe.id);
   }
-
-  get checkboxImage(): string {
-    return this.cooked
-      ? 'assets/images/checked_checkbox.svg'
-      : 'assets/images/unchecked_checkbox.svg';
-  }
 }

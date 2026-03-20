@@ -26,7 +26,7 @@
 
     <tbody>
         @for (recipe of displayedRecipes; track recipe) {
-            <tr>
+            <tr [class.cannot-make]="quantities && !canMakeRecipe(recipe)">
                 <td [class]="recipe.type"><img [src]="imageRecipePath(recipe.id)" alt="" class="recipe-img"></td>
                 <td>{{ recipe.name }} ({{ totalIngredients(recipe) }})</td>
                 <td>
@@ -36,7 +36,11 @@
                                 <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
                             </div>
 
-                            <h3>{{ ingredient.amount }}</h3>
+                            @if (quantities) {
+                                <h3>{{ quantityOf(ingredient.ingredientId) }}/{{ ingredient.amount }}</h3>
+                            } @else {
+                                <h3>{{ ingredient.amount }}</h3>
+                            }
                         </div>
                     }
                 </td>

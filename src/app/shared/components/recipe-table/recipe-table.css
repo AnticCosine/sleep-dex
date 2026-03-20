@@ -113,3 +113,12 @@ tbody .checkbox {
     width: 24px;
     height: 24px;
 }
+
+h3 {
+  font-size: 14px;
+}
+
+tbody tr.cannot-make td {
+  opacity: 0.45;
+  filter: grayscale(100%);
+}

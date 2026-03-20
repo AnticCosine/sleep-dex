@@ -18,7 +18,11 @@
 }
 
 app-recipe-filters {
-  width: inherit;
+  width: 100%;
+}
+
+.recipe-table {
+  width: 100%;
 }
 
 .ingredient {

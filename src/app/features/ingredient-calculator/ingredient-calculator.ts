@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RecipeService } from '../../services/recipe-service';
 import { IngredientService } from '../../services/ingredient-service';
 import { BehaviorSubject, combineLatest, map, Observable, take } from 'rxjs';
@@ -26,6 +26,7 @@ export class IngredientCalculator {
 
   quantities$!: Observable<{[id: string]: number;}>;
 
+  ingredients$!: Observable<Ingredient[]>;
   constructor(private ingredientService: IngredientService, public filterState: RecipeFilterStateService) {
     
   }
@@ -56,11 +57,21 @@ export class IngredientCalculator {
     );
   }
 
+  toRecipes(items: { recipe: Recipe, canMake: boolean, quantities: any }[]): Recipe[] {
+    return items.map(item => item.recipe);
+  }
+
   imageIngredientPath(ingredientId: string): string {
     return `assets/images/ingredients/${ingredientId}.png`;
   }
 
   changeRecipeFormat() {
     this.tabularFormat = !this.tabularFormat;
+  }
+
+  @HostListener('window:resize')
+  checkScreen() {
+    const isMobile = window.matchMedia('(max-width: 550px)').matches;
+    if (isMobile) this.tabularFormat = false;
   }
 } 

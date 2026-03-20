@@ -15,7 +15,8 @@
             @if (tabularFormat) {
                 <div class="recipe-table">
                     <app-recipe-table
-                        [recipes]="recipes">
+                        [recipes]="toRecipes(recipes)"
+                        [quantities]="(quantities$ | async)!">
                     </app-recipe-table>
                 </div>
             } @else {

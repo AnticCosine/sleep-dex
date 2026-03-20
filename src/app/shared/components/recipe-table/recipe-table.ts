@@ -1,13 +1,14 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Recipe } from '../../../models/recipe.models';
 import { RecipeService } from '../../../services/recipe-service';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 type SortColumn = 'name' | 'baseStrength' | 'cooked';
 
 @Component({
   selector: 'app-recipe-table',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './recipe-table.html',
   styleUrl: './recipe-table.css',
 })
@@ -15,16 +16,21 @@ export class RecipeTable {
 
   @Input() recipes!: Recipe[];
   @Input() quantities?: { [key: string]: number };
-  @Input() canMake?: boolean;
   displayedRecipes: Recipe[] = [];
   
   sortColumn: SortColumn | '' = '';
   sortDirection: 'asc' | 'desc' = 'desc';
+
+  cooked$!: Observable<Set<string>>;
   
   constructor(private recipeService: RecipeService) {}
 
   ngOnInit() {
     this.displayedRecipes = [...this.recipes];
+
+    this.cooked$ = this.recipeService.cookedRecipes$.pipe(
+      map(list => new Set(list))
+    );
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -96,4 +102,22 @@ export class RecipeTable {
   isCooked(recipeId: string): boolean {
     return this.recipeService.isCooked(recipeId);
   }
+
+  canMakeRecipe(recipe: Recipe): boolean {
+    if (!this.quantities) return false;
+    return recipe.ingredients.every(req =>
+      (this.quantities![req.ingredientId] || 0) >= req.amount
+    );
+  }
+ 
+  quantityOf(ingredientId: string): number {
+    return this.quantities?.[ingredientId] ?? 0;
+  }
+
+  checkboxImage(cooked: boolean): string {
+    return cooked
+      ? 'assets/images/checked_checkbox.svg'
+      : 'assets/images/unchecked_checkbox.svg';
+  }
+ 
 }
