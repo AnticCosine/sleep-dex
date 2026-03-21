@@ -1,0 +1,157 @@
+.footer {
+    font-family: var(--font-primary);
+    margin-top: 32px;
+}
+
+.separator {
+    border-bottom: 8px solid #D7AF59;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.footer-inner {
+    padding: 24px 24px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-name .name {
+
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer-section h4 {
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 12px 0;
+}
+
+.footer-section a {
+    display: block;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    padding: 4px 0;
+    transition: color 0.15s;
+}
+
+.footer-section a:hover,
+.footer-section a.active {
+    color: #D7AF59;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    resize: none;
+    height: 68px;
+    margin-bottom: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.15s;
+}
+
+.feedback-form textarea:focus {
+    border-color: #D7AF59;
+}
+
+.feedback-form textarea:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.feedback-form button {
+    font-family: var(--font-primary);
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid #D7AF59;
+    border-radius: 6px;
+    background: transparent;
+    color: #D7AF59;
+    cursor: pointer;
+}
+
+.feedback-form button:hover:not(:disabled) {
+    background: #D7AF59;
+    color: #fff;
+}
+
+.feedback-form button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.footer-bottom-wrapper {
+    border-top: 1px solid #eee;
+    padding: 0 24px;
+}
+
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom span {
+    font-family: var(--font-primary);
+    font-size: 13px;
+    color: #888;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    text-decoration: none;
+    color: #888;
+    transition: color 0.15s;
+}
+
+.github-link:hover {
+    color: #D7AF59;
+}
+
+.github-icon {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .footer-section:last-of-type {
+    grid-column: 1 / -1;
+  }
+}

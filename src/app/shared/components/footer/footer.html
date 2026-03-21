@@ -1,1 +1,43 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="separator"></div>
+
+  <div class="footer-inner">
+    
+    <div class="footer-name">
+      <a routerLink="/" class="name">recipe-dex</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Links</h4>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
+      <a routerLink="/recipes" routerLinkActive="active">recipes</a>
+      <a routerLink="/ingredients" routerLinkActive="active">ingredients</a>
+      <a routerLink="/signup">sign up</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Feedback</h4>
+      <div class="feedback-form">
+        <textarea
+          [(ngModel)]="feedbackText"
+          [disabled]="submitted">
+        </textarea>
+        <button (click)="sendFeedback()" [disabled]="submitted">
+          {{ submitted ? 'sent!' : 'send feedback' }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom-wrapper">
+    <div class="footer-bottom">
+      <span>© 2026 recipe-dex</span>
+      <a href="https://github.com/AnticCosine/recipe-dex" target="_blank" rel="noopener noreferrer" class="github-link">
+        <img src="assets/images/github_icon.svg" alt="" class="github-icon">
+        github repo
+      </a>
+    </div>
+  </div>
+
+</footer>
