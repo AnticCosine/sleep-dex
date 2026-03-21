@@ -4,9 +4,9 @@
 
         <div class="main-content">
             <div class="main-desc">
-                <h1>A cool way to track your <br>pokemon sleep recipes</h1>
+                <h1>A cool way to track your pokemon sleep recipes</h1>
                 <p>
-                    Discover new recipes, keep track of your inventory pantry and track everything 
+                    Discover new recipes, manage your ingredient pantry and track everything 
                     you've cooked so far, all in one place!
                 </p>
                 <a routerLink="/recipes" class="btn-primary">Browse recipes</a>
@@ -19,7 +19,8 @@
                     </app-recipe-card>
                     <app-recipe-card
                         [recipe]="recipes[55]"
-                        [homePlaceHolder]="true">
+                        [homePlaceHolder]="true"
+                        class="salad-card">
                     </app-recipe-card>
                 }
                 
