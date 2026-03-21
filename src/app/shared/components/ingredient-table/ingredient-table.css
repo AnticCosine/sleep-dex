@@ -29,6 +29,11 @@
     gap: 8px;
 }
 
+.buttons img {
+  width: 16px;
+  height: 16px;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -41,6 +46,15 @@
   color: inherit;
   font-family: var(--font-primary);
   cursor: pointer;
+}
+
+.btn-clear {
+  color: var(--danger-text, #a32d2d);
+  border-color: var(--danger-border, #f09595);
+}
+ 
+.btn-clear:hover {
+  background-color: var(--danger-bg, #fcebeb);
 }
 
 .upload-btn:hover {

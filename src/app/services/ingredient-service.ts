@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Ingredient } from '../models/ingredient.model';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-const lowThreshold = 3;
+const lowThreshold = 20;
 export type IngredientStatus = 'ok' | 'low' | 'out';
 
 @Injectable({
@@ -47,9 +47,14 @@ export class IngredientService {
     return stored ? JSON.parse(stored) : {};
   }
 
-  private saveToStorage(quantities: { [id: string]: number }): void {
+  saveToStorage(quantities: { [id: string]: number }): void {
     localStorage.setItem(this.storageKey, JSON.stringify(quantities));
     this.quantities$.next(quantities);
+  }
+
+  clearAllQuantities(): void {
+    localStorage.removeItem(this.storageKey);
+    this.quantities$.next({});
   }
 
 }

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { IngredientService, IngredientStatus } from '../../../services/ingredient-service';
 import { Observable } from 'rxjs';
 import { Ingredient } from '../../../models/ingredient.model';
 import { CommonModule } from '@angular/common';
+import { OcrIngredientService } from '../../../services/ocr-ingredient-service';
 
 @Component({
   selector: 'app-ingredient-table',
@@ -14,8 +15,12 @@ export class IngredientTable {
 
   ingredients$!: Observable<Ingredient[]>;
   tableCollapsed = false;
+  clearConfirmPending = false;
 
-  constructor(private ingredientService: IngredientService) {}
+  private clearResetTimer: ReturnType<typeof setTimeout> | null = null;
+  private readonly CONFIRM_TIMEOUT_MS = 3500;
+
+  constructor(private ingredientService: IngredientService, private ocrIngredientService: OcrIngredientService, private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.ingredients$ = this.ingredientService.GetIngredients();
@@ -33,7 +38,22 @@ export class IngredientTable {
     return `assets/images/ingredients/${id}.png`;
   }
 
+  async onImageUpload(event: Event): Promise<void> {
+    const input = event.target as HTMLInputElement;
+    const file = input.files?.[0];
+    if (!file) return;
+    
+    const results = await this.ocrIngredientService.processImage(file);
+    //console.log('ingredient image results:', results);
+    
+    this.ingredientService.clearAllQuantities();
+    results.forEach((item: { id: string; quantity: number }) => {
+      this.ingredientService.setQuantity(item.id, item.quantity);
+    });
+    this.cdr.markForCheck();
 
+    input.value = '';
+  }
 
 
   onQuantityBlur(event: FocusEvent, id: string): void {
@@ -59,5 +79,27 @@ export class IngredientTable {
 
   collapseTable() {
     this.tableCollapsed = !this.tableCollapsed;
+  }
+
+  onClearAllClick(): void {
+    if (!this.clearConfirmPending) {
+      this.clearConfirmPending = true;
+      this.clearResetTimer = setTimeout(() => {
+        this.clearConfirmPending = false;
+        this.cdr.markForCheck();
+      }, this.CONFIRM_TIMEOUT_MS);
+    } else {
+      this.cancelClearTimer();
+      this.clearConfirmPending = false;
+      this.ingredientService.clearAllQuantities();
+      this.cdr.markForCheck();
+    }
+  }
+
+  private cancelClearTimer(): void {
+    if (this.clearResetTimer !== null) {
+      clearTimeout(this.clearResetTimer);
+      this.clearResetTimer = null;
+    }
   }
 }
