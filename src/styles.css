@@ -12,6 +12,7 @@
 
 [data-theme="dark"] {
     /* TODO */
+    --colour-background: #F9F9D9;
 }
 
 body {
