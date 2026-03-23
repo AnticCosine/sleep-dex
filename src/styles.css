@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-
     --colour-background: #F9F9D9;
 
     --font-primary: m-plus-1p, sans-serif;
@@ -9,6 +8,10 @@
     --curry-colour: #FFB8B6;
     --salad-colour: #b6feb2;
     --dessert-colour: #fffbb2;
+}
+
+[data-theme="dark"] {
+    /* TODO */
 }
 
 body {

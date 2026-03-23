@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthService } from '../../../services/auth-service';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../../../services/theme-service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +16,7 @@ export class Navbar {
   showAuthModal = false;
   isLoggedIn$!: Observable<boolean>;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, public themeService: ThemeService) {}
 
   ngOnInit() {
     this.isLoggedIn$ = this.authService.isLoggedIn$;

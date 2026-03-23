@@ -200,7 +200,38 @@ a.active {
 .auth-link {
   cursor: pointer;
 }
- 
+
+
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+.theme-btn:hover {
+  opacity: 1;
+}
+
+.drawer-theme-btn {
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--color-drawer-border, lightgrey);
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+.drawer-theme-btn::after {
+  content: attr(title);
+  font-size: 16px;
+  color: inherit;
+}
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
