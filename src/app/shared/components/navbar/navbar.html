@@ -7,7 +7,13 @@
                 <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a></li>
                 <li><a routerLink="/recipes" routerLinkActive="active">recipes</a></li>
                 <li><a routerLink="/ingredients" routerLinkActive="active">ingredients</a></li>
-                <li><a href="">sign up</a></li>
+                
+                <li *ngIf="!(isLoggedIn$ | async)">
+                    <a class="auth-link" (click)="openModal()">sign in</a>
+                </li>
+                <li *ngIf="isLoggedIn$ | async">
+                    <a class="auth-link signout" (click)="signOut()">sign out</a>
+                </li>
 
                 
             </div>
@@ -24,6 +30,28 @@
         <a routerLink="/" routerLinkActive="active" (click)="toggleMenu()" [routerLinkActiveOptions]="{ exact: true }">home</a>
         <a routerLink="/recipes" routerLinkActive="active" (click)="toggleMenu()">recipes</a>
         <a routerLink="/ingredients" routerLinkActive="active" (click)="toggleMenu()">ingredients</a>
-        <a href="">sign up</a>
+        <a *ngIf="!(isLoggedIn$ | async)" class="auth-link" (click)="openModal()">sign in</a>
+        <a *ngIf="isLoggedIn$ | async" class="auth-link" (click)="signOut()">sign out</a>
+    </div>
+
+    <div class="modal-view" *ngIf="showAuthModal" (click)="closeModal()">
+        <div class="modal">
+            <button class="modal-close" (click)="closeModal()">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h2>Welcome!</h2>
+            <p>Sign in to save and manage your cooked recipes and ingredients</p>
+
+            <div class="sign-up-button">
+                <button class="google-btn" (click)="signInWithGoogle()">
+                    <img src="assets/images/google_icon.svg" alt="">
+                    Continue with Google
+                </button>
+            </div>
+
+            <p>Note: items are also saved in local storage</p>
+        </div>
     </div>
 </div>

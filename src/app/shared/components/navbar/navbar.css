@@ -93,6 +93,115 @@ a.active {
 
 .mobile-drawer a:last-child { border-bottom: none; }
 
+
+
+.modal-view {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.15s ease;
+}
+ 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  position: relative;
+  animation: slideUp 0.2s ease;
+  font-family: var(--font-primary);
+}
+
+.modal img {
+    width: 20px;
+    height: 20px; 
+}
+ 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+ 
+.modal h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #111;
+}
+ 
+.modal p {
+  font-size: 14px;
+  color: #666;
+}
+ 
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+ 
+.modal-close:hover {
+  opacity: 0.8;
+}
+ 
+.modal-close span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  background: #111;
+  border-radius: 1px;
+  position: absolute;
+}
+ 
+.modal-close span:nth-child(1) { transform: rotate(45deg); }
+.modal-close span:nth-child(2) { transform: rotate(-45deg); }
+
+.sign-up-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+ 
+.google-btn:hover {
+  background: #f8f8f8;
+  border-color: #bbb;
+}
+
+.auth-link {
+  cursor: pointer;
+}
+ 
+
 @media (max-width: 768px) {
     .nav-links { display: none; }
 
@@ -101,4 +210,11 @@ a.active {
     .mobile-drawer.open { display: flex; }
 
     ul li.main { padding: 14px 0; }
+}
+
+@media (max-width: 440px) {
+    .modal {
+        max-width: calc(100vw - 2rem);
+        margin: 0 1rem;
+    }
 }
