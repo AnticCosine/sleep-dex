@@ -19,10 +19,10 @@
       <div class="feedback-form">
         <textarea
           [(ngModel)]="feedbackText"
-          [disabled]="submitted">
+          [disabled]="sending || submitted">
         </textarea>
-        <button (click)="sendFeedback()" [disabled]="submitted">
-          {{ submitted ? 'sent!' : 'send feedback' }}
+        <button (click)="sendFeedback()" [disabled]="sending || submitted">
+          {{ submitted ? 'sent!' : error ? 'already sent feedback, try again later.' : 'send feedback' }}
         </button>
       </div>
     </div>
