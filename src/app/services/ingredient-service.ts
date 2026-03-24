@@ -102,9 +102,19 @@ export class IngredientService {
     this.quantities$.next(quantities);
   }
 
-  clearAllQuantities(): void {
+  async clearAllQuantities(): Promise<void> {
     localStorage.removeItem(this.storageKey);
     this.quantities$.next({});
+
+    if (this.getToken()) {
+      try {
+        await firstValueFrom(
+          this.http.put(`${this.API}/user/ingredients`, { ingredients: [] })
+        );
+      } catch (err) {
+        console.error('Failed to clear ingredients in DB:', err);
+      }
+    }
   }
 
   private getToken(): string | null {

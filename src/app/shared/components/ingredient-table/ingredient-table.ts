@@ -84,7 +84,7 @@ export class IngredientTable {
     this.tableCollapsed = !this.tableCollapsed;
   }
 
-  onClearAllClick(): void {
+  async onClearAllClick(): Promise<void> {
     if (!this.clearConfirmPending) {
       this.clearConfirmPending = true;
       this.clearResetTimer = setTimeout(() => {
@@ -94,7 +94,7 @@ export class IngredientTable {
     } else {
       this.cancelClearTimer();
       this.clearConfirmPending = false;
-      this.ingredientService.clearAllQuantities();
+      await this.ingredientService.clearAllQuantities();
       this.cdr.markForCheck();
     }
   }
