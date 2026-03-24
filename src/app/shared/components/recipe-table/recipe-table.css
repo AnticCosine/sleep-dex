@@ -38,6 +38,14 @@ table th.sortable:nth-child(5) {
   transform: rotate(180deg);
 }
 
+tbody tr {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+tbody tr:hover {
+  transform: translateY(-4px);
+}
+
 tbody tr td {
   background: #fff;
   border-top: 0.5px solid lightgray;

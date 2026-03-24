@@ -21,7 +21,7 @@
 .section-label {
   font-size: 13px;
   font-weight: 600;
-  color: #888;
+  color: var(--stat-label-colour);
   font-family: var(--font-primary);
 }
 
@@ -64,8 +64,8 @@
 }
 
 .list-card {
-  background: #fff;
-  border: 1px solid lightgray;
+  background: var(--border-colour);
+  border: 1px solid var(--border-colour);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -75,8 +75,8 @@
   grid-template-columns: 36px 1fr 80px;
   gap: 12px;
   padding: 8px 14px;
-  background: #f5f5f0;
-  border-bottom: 1px solid lightgray;
+  background: var(--table-head-colour);
+  border-bottom: 1px solid var(--border-colour);
 }
 
 .th {
@@ -97,7 +97,8 @@
   align-items: center;
   gap: 12px;
   padding: 10px 14px;
-  border-bottom: 1px solid lightgray;
+  background-color: var(--table-row-colour);
+  border-bottom: 1px solid var(--border-colour);
   transition: opacity 0.2s;
 }
 
@@ -116,7 +117,7 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: #f5f5f0;
+  background: var(--img-sq-colour);
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -134,6 +135,7 @@
   font-size: 13px;
   font-weight: 600;
   font-family: var(--font-primary);
+  color: var(--font-colour);
 }
 
 .qty-cell {
@@ -163,14 +165,15 @@
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
-  border: 1.5px solid lightgray;
+  border: 1.5px solid var(--border-colour);
   background: transparent;
   transition: border-color 0.15s, background-color 0.15s;
+  color: var(--font-colour);
 }
 
 .qty-num:hover {
   background: #f5f5f0;
-  border-color: lightgray;
+  border-color: var(--border-colour);
 }
 
 .qty-num:focus {

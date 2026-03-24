@@ -15,7 +15,7 @@
                     <a class="auth-link signout" (click)="signOut()">sign out</a>
                 </li>
 
-                <!--
+                
                 <li>
                     <button class="theme-btn" (click)="themeService.toggle()">
                     
@@ -23,7 +23,7 @@
                       <img src="assets/images/moon_icon.svg" width="18" height="18" alt="" *ngIf="!themeService.isDark">
                     </button>
                 </li>
-                -->
+                
                 
             </div>
 
@@ -41,12 +41,12 @@
         <a routerLink="/ingredients" routerLinkActive="active" (click)="toggleMenu()">ingredients</a>
         <a *ngIf="!(isLoggedIn$ | async)" class="auth-link" (click)="openModal()">sign in</a>
         <a *ngIf="isLoggedIn$ | async" class="auth-link" (click)="signOut()">sign out</a>
-        <!--
+        
         <button class="theme-btn drawer-theme-btn" (click)="themeService.toggle()" [title]="themeService.isDark ? 'Switch to light mode' : 'Switch to dark mode'">
             <img src="assets/images/sun_icon.svg" width="18" height="18" alt="" *ngIf="themeService.isDark">
             <img src="assets/images/moon_icon.svg" width="18" height="18" alt="" *ngIf="!themeService.isDark">
         </button>
-        -->
+        
     </div>
 
     <div class="modal-view" *ngIf="showAuthModal" (click)="closeModal()">

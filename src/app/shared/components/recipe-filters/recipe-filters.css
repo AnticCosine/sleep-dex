@@ -211,10 +211,12 @@ label input{
   height: 40px;
 
   cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.2s ease;
 }
 
-.ingredient-grid .ingredient-unchecked {
-  opacity: 50%;
+.ingredient-grid img.ingredient-unchecked {
+  opacity: 0.5;
+  transform: scale(0.95);
 }
 
 .chip {
@@ -232,11 +234,11 @@ label input{
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
 }
 
-.chip.curry { background-color: #FFB8B6; }
+.chip.curry { background-color: var(--curry-colour); }
 
-.chip.salad { background-color: #b6feb2; }
+.chip.salad { background-color: var(--salad-colour);  }
 
-.chip.dessert { background-color: #fffbb2; }
+.chip.dessert { background-color: var(--dessert-colour);  }
 
 .chip.curry.active { background-color: #ffa5a1; }
 

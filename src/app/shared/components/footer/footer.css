@@ -23,7 +23,7 @@
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--font-colour);
     
 }
 
@@ -33,7 +33,7 @@
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #888;
+    color: var(--stat-label-colour);
     margin: 0 0 12px 0;
 }
 
@@ -41,7 +41,7 @@
     display: block;
     font-family: var(--font-primary);
     text-decoration: none;
-    color: inherit;
+    color: var(--font-colour);
     font-size: 14px;
     padding: 4px 0;
     transition: color 0.15s;
@@ -57,16 +57,17 @@
     font-family: var(--font-primary);
     font-size: 13px;
     padding: 8px 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-colour);
     border-radius: 6px;
     background: transparent;
-    color: inherit;
+    color: var(--font-colour);
     resize: none;
     height: 68px;
     margin-bottom: 8px;
     outline: none;
     box-sizing: border-box;
     transition: border-color 0.15s;
+
 }
 
 .feedback-form textarea:focus {
@@ -117,7 +118,7 @@
 .footer-bottom span {
     font-family: var(--font-primary);
     font-size: 13px;
-    color: #888;
+    color: var(--stat-label-colour);
 }
 
 .github-link {
@@ -127,7 +128,7 @@
     font-family: var(--font-primary);
     font-size: 13px;
     text-decoration: none;
-    color: #888;
+    color: var(--stat-label-colour);
     transition: color 0.15s;
 }
 

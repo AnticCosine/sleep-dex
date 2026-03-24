@@ -8,11 +8,56 @@
     --curry-colour: #FFB8B6;
     --salad-colour: #b6feb2;
     --dessert-colour: #fffbb2;
+
+    --border-colour: lightgray;
+
+    --font-colour: black;
+
+    --desc-colour: #666;
+    --home-btn-colour: #333;
+    --home-btn-txt-colour: #fff;
+
+    --stat-label-colour: #888;
+    --progress-colour: lightgray;
+
+    --type--colour: #fff;
+
+    --type-bg: #fff;
+
+    --table-head-colour: #f5f5f0;
+    --table-row-colour: white;
+    --img-sq-colour: #f5f5f0;
+    
+    --modal-bg: #fff;
 }
 
 [data-theme="dark"] {
     /* TODO */
-    --colour-background: #F9F9D9;
+    --colour-background: #242831;
+
+    --curry-colour: #f0a8a6;
+    --salad-colour: #a4eba0;
+    --dessert-colour: #f5f1a0;
+
+    --font-colour: #efefef;
+    --desc-colour: #b4b4b4;
+
+    --home-btn-colour: #fff;
+    --home-btn-txt-colour: #333;
+
+    --stat-label-colour: rgb(211, 211, 211);
+    --progress-colour: #efefef;
+
+    --border-colour: #444;
+    --type-bg: #2C333D;
+
+    --filter: brightness(0) invert(1);
+
+    --table-head-colour: #2E353F;
+    --table-row-colour: #242831;
+    --img-sq-colour: #30343f;
+
+    --modal-bg: #2C333D;
 }
 
 body {

@@ -19,7 +19,7 @@ ul li {
 a {
     text-decoration: none;  
     font-family: var(--font-primary);
-    color: inherit;
+    color: var(--font-colour);
     font-size: 16px;
 }
 
@@ -56,6 +56,7 @@ a.active {
     background: none;
     border: none;
     cursor: pointer;
+    color: var(--font-colour);
 }
 
 .hamburger span {
@@ -83,7 +84,7 @@ a.active {
 .mobile-drawer a {
     padding: 12px 4px;
     font-size: 16px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid var(--border-colour);
 }
 
 .mobile-drawer a.active {
@@ -113,7 +114,7 @@ a.active {
 
 
 .modal {
-  background: #fff;
+  background: var(--modal-bg);
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
@@ -138,12 +139,12 @@ a.active {
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 8px;
-  color: #111;
+  color: var(--font-colour);
 }
  
 .modal p {
   font-size: 14px;
-  color: #666;
+  color: var(--desc-colour);
 }
  
 .modal-close {
@@ -198,6 +199,7 @@ a.active {
 }
 
 .auth-link {
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -209,6 +211,7 @@ a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: var(--filter);
   opacity: 0.8;
   transition: opacity 0.15s;
 }
