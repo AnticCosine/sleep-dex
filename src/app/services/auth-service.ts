@@ -39,11 +39,14 @@ export class AuthService {
   }
 
   private handleOAuthCallback() {
-    const params = new URLSearchParams(window.location.search);
+    const hash = window.location.hash;
+    if (!hash.includes('auth/callback')) return;
+
+    const queryString = hash.split('?')[1] ?? '';
+    const params = new URLSearchParams(queryString);
     const token = params.get('token');
     if (!token) return;
 
-   
     localStorage.setItem(this.jwt_token, token);
     this.loggedIn.next(true);
     window.history.replaceState({}, '', window.location.pathname);
