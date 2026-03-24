@@ -24,7 +24,7 @@ export class DataSyncService {
       const [remoteRecipes, remoteIngredients] = await Promise.all([
         firstValueFrom(this.http.get<string[]>(`${this.API}/user/recipes`, { headers })),
         firstValueFrom(
-          this.http.get<{ [ingredientId: string]: { quantity: number } }>(
+          this.http.get<{ ingredientId: string; quantity: number }[]>(
             `${this.API}/user/ingredients`,
             { headers }
           )
@@ -35,10 +35,10 @@ export class DataSyncService {
       const ingredients = remoteIngredients ?? [];
 
       const flatIngredients = Object.fromEntries(
-        Object.entries(ingredients).map(([id, val]) => [id, val.quantity])
+        ingredients.map(({ ingredientId, quantity }) => [ingredientId, quantity])
       );
 
-      const hasRemoteData = recipes.length > 0 || Object.keys(flatIngredients).length > 0;
+      const hasRemoteData = recipes.length > 0 || ingredients.length > 0;
  
       if (hasRemoteData) {
         this.recipeService.saveRecipe(recipes);
@@ -62,9 +62,10 @@ export class DataSyncService {
         const ingredientEntries = Object.entries(localIngredients);
         if (ingredientEntries.length > 0) {
 
-          const payload = Object.fromEntries(
-            ingredientEntries.map(([id, qty]) => [id, { quantity: qty }])
-          );
+          const payload = ingredientEntries.map(([ingredientId, quantity]) => ({
+            ingredientId,
+            quantity,
+          }));
 
           uploads.push(
             firstValueFrom(

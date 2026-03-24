@@ -62,9 +62,10 @@ export class IngredientService {
  
     if (this.getToken()) {
       try {
-        const payload = Object.fromEntries(
-          Object.entries(current).map(([id, qty]) => [id, { quantity: qty }])
-        );
+        const payload = Object.entries(current).map(([ingredientId, quantity]) => ({
+          ingredientId,
+          quantity,
+        }));
 
         await firstValueFrom(
           this.http.put(`${this.API}/user/ingredients`, { ingredients: payload })
