@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { combineLatest, map, Observable } from 'rxjs';
+import { combineLatest, map, Observable, take, tap } from 'rxjs';
 import { HomeStats, TypeProgress } from '../../models/home-stats.model';
 import { RecipeService } from '../../services/recipe-service';
 import { Recipe } from '../../models/recipe.models';
@@ -18,7 +18,7 @@ export class Home {
 
   stats$!: Observable<HomeStats>;
   recipes$!: Observable<Recipe[]>;
-
+  animate = false;
   constructor(private recipeService: RecipeService) {} 
 
   ngOnInit(): void {
@@ -52,7 +52,36 @@ export class Home {
         
         return { total, cooked, remaining, completionPercent, byType }
 
+      }),
+      tap(() => {
+        setTimeout(() => {
+          this.animate = true;
+        }, 0);
       })
-    )
+    );
+  }
+  ngAfterViewInit() {
+    this.stats$.pipe(take(1)).subscribe(stats => {
+      setTimeout(() => {
+        this.animateCountUp('s-total', stats.total);
+        this.animateCountUp('s-cooked', stats.cooked);
+        this.animateCountUp('s-remaining', stats.remaining);
+        this.animateCountUp('s-pct', stats.completionPercent, '%');
+      });
+
+    });
+  }
+
+  animateCountUp(id: string, target: number, suffix = '', duration = 1100) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const t = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.round(ease * target) + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
   }
 }

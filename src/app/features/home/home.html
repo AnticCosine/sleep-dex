@@ -31,19 +31,19 @@
         <div class="stats-grid">
             <div class="stat-card">
               <div class="stat-label">Total recipes</div>
-              <div class="stat-value">{{ stats.total }}</div>
+              <div class="stat-value" id="s-total">{{ stats.total }}</div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Cooked</div>
-              <div class="stat-value cooked-value">{{ stats.cooked }}</div>
+              <div class="stat-value cooked-value" id="s-cooked">{{ stats.cooked }}</div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Remaining</div>
-              <div class="stat-value">{{ stats.remaining }}</div>
+              <div class="stat-value" id="s-remaining">{{ stats.remaining }}</div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Completion</div>
-              <div class="stat-value">{{ stats.completionPercent }}%</div>
+              <div class="stat-value" id="s-pct">{{ stats.completionPercent }}%</div>
             </div>
         </div>
 
@@ -58,7 +58,7 @@
                     <span class="badge" [class]="'badge-' + t.type">{{ t.cooked }} / {{ t.total }}</span>
                   </div>
                   <div class="progress-track">
-                    <div class="progress-fill" [class]="'progress-' + t.type" [style.width.%]="t.percent"></div>
+                    <div class="progress-fill" [class]="'progress-' + t.type" [style.width.%]="animate ? t.percent : 0"></div>
                   </div>
                   <div class="type-pct">{{ t.percent }}% complete</div>
                 </div>

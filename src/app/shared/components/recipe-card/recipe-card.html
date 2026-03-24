@@ -1,4 +1,4 @@
-<div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false">
+<div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false" (click)="toggleCooked()">
 
     <img [src]="imageRecipePath" alt="" class="recipe-img">
     <div class="base-strength">
@@ -27,7 +27,7 @@
     </div>
 
     <div class="checklist">
-        <button *ngIf="!homePlaceHolder" class="button-icon" [class.cooked]="cooked$ | async" [disabled]="canMake === false" (click)="toggleCooked()">
+        <button *ngIf="!homePlaceHolder" class="button-icon" [class.cooked]="cooked$ | async">
             {{ (cooked$ | async) ? 'Cooked' : 'Uncooked' }}
         </button>
     </div>
