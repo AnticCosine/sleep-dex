@@ -62,8 +62,12 @@ export class IngredientService {
  
     if (this.getToken()) {
       try {
+        const payload = Object.fromEntries(
+          Object.entries(current).map(([id, qty]) => [id, { quantity: qty }])
+        );
+
         await firstValueFrom(
-          this.http.put(`${this.API}/user/ingredients`, { ingredients: current })
+          this.http.put(`${this.API}/user/ingredients`, { ingredients: payload })
         );
       } catch (err) {
         console.error('Failed to batch sync ingredients:', err);

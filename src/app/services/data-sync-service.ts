@@ -61,11 +61,16 @@ export class DataSyncService {
  
         const ingredientEntries = Object.entries(localIngredients);
         if (ingredientEntries.length > 0) {
+
+          const payload = Object.fromEntries(
+            ingredientEntries.map(([id, qty]) => [id, { quantity: qty }])
+          );
+
           uploads.push(
             firstValueFrom(
               this.http.put(
                 `${this.API}/user/ingredients`,
-                { ingredients: localIngredients },
+                { ingredients: payload },
                 { headers }
               )
             )
