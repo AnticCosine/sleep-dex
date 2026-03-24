@@ -47,9 +47,12 @@ export class IngredientTable {
     //console.log('ingredient image results:', results);
     
     this.ingredientService.clearAllQuantities();
-    results.forEach((item: { id: string; quantity: number }) => {
-      this.ingredientService.setQuantity(item.id, item.quantity);
-    });
+    this.ingredientService.setQuantities(
+      results.map((item: { id: string; quantity: number }) => ({
+        id: item.id,
+        quantity: item.quantity,
+      }))
+    );
     this.cdr.markForCheck();
 
     input.value = '';

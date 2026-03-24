@@ -34,9 +34,7 @@ export class IngredientService {
  
   async setQuantity(id: string, qty: number): Promise<void> {
     const clamped = Math.max(0, qty);
-    const updated = { ...this.quantities$.value, [id]: clamped };
-    this.quantities$.next(updated);
-    this.saveToStorage(updated);
+    this.updateState({ ...this.quantities$.value, [id]: clamped });
 
     if (this.getToken()) {
       try {
@@ -50,6 +48,36 @@ export class IngredientService {
         console.error('Failed to sync ingredient:', err);
       }
     }
+  }
+
+
+  async setQuantities(updates: { id: string; quantity: number }[]): Promise<void> {
+    const current = { ...this.quantities$.value };
+ 
+    for (const { id, quantity } of updates) {
+      current[id] = Math.max(0, quantity);
+    }
+ 
+    this.updateState(current);
+ 
+    if (this.getToken()) {
+      try {
+        await firstValueFrom(
+          this.http.put(`${this.API}/user/ingredients`, { ingredients: current })
+        );
+      } catch (err) {
+        console.error('Failed to batch sync ingredients:', err);
+      }
+    }
+  }
+
+  private updateState(quantities: { [id: string]: number }): void {
+    localStorage.setItem(this.storageKey, JSON.stringify(quantities));
+    this.quantities$.next(quantities);
+  }
+
+  syncFromRemote(quantities: { [id: string]: number }): void {
+    this.updateState(quantities);
   }
  
   getStatus(id: string): IngredientStatus {
