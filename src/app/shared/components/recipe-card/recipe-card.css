@@ -13,6 +13,9 @@
 
   cursor: pointer;
   user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .recipe-card-curry:hover,

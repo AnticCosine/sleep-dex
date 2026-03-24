@@ -11,8 +11,8 @@ export class ThemeService {
   constructor() {
     const saved = localStorage.getItem(this.darkModeStorageKey);
     this.isDark = saved !== null
-      ? saved === 'true'
-      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      ? this.isDark = saved === 'true'
+      : this.isDark = false;
     this.apply();
   }
 
