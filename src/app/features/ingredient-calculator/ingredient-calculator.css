@@ -47,6 +47,10 @@ app-recipe-filters {
     width: 100%;
     
   }
+}
 
-  
+@media (max-width: 350px) {
+  .recipe-cards {
+    grid-template-columns: 1fr;
+  }
 }

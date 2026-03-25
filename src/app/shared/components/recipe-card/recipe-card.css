@@ -25,6 +25,12 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
+.recipe-card-curry:active,
+.recipe-card-salad:active,
+.recipe-card-dessert:active {
+  transform: scale(0.95);
+}
+
 .recipe-img {
   max-width: 110px;
   max-height: 110px;
@@ -126,6 +132,11 @@ h3 {
     font-family: var(--font-primary);
     color: inherit;
     font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
 }
 
 .checklist {
@@ -186,7 +197,7 @@ h3 {
   }
 
   h3 {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .checklist button {
@@ -213,5 +224,10 @@ h3 {
     font-weight: 800;
 
   }
+
+  .recipe-ingredients {
+    gap: 8px;
+  }
+
 }
 

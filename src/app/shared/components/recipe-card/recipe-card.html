@@ -17,7 +17,11 @@
                 </div>
                 
                 @if (quantities) {
-                    <h3>{{ quantities[ingredient.ingredientId] || 0 }} / {{ ingredient.amount }}</h3>
+                    <h3>
+                        <span>{{ quantities[ingredient.ingredientId] || 0 }}</span>
+                        <span class="divider">/</span>
+                        <span>{{ ingredient.amount }}</span>
+                    </h3>
                 } @else {
                     <h3>{{ ingredient.amount }}</h3>
                 }
