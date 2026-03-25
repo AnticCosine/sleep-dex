@@ -30,6 +30,15 @@ export class RecipeCard {
     );
   }
 
+  get craftableCount(): number {
+    if (!this.quantities || !this.recipe.ingredients.length) return 0;
+    return Math.min(
+      ...this.recipe.ingredients.map(ing =>
+        Math.floor((this.quantities![ing.ingredientId] || 0) / ing.amount)
+      )
+    );
+  }
+
   get imageRecipePath(): string {
     return `assets/images/recipes/${this.recipe.id}.png`
   }

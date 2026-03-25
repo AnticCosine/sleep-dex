@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, Input } from '@angular/core';
 import { IngredientService, IngredientStatus } from '../../../services/ingredient-service';
 import { Observable } from 'rxjs';
 import { Ingredient } from '../../../models/ingredient.model';
@@ -14,16 +14,21 @@ import { OcrIngredientService } from '../../../services/ocr-ingredient-service';
 export class IngredientTable {
 
   ingredients$!: Observable<Ingredient[]>;
+  previewCount = 4;
+  @Input() isExpanded = false;
   tableCollapsed = false;
   clearConfirmPending = false;
 
   private clearResetTimer: ReturnType<typeof setTimeout> | null = null;
   private readonly CONFIRM_TIMEOUT_MS = 3500;
 
+  ingredients: Ingredient[] = [];
+
   constructor(private ingredientService: IngredientService, private ocrIngredientService: OcrIngredientService, private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.ingredients$ = this.ingredientService.GetIngredients();
+    this.ingredients$.subscribe(list => this.ingredients = list);
   }
 
   getQuantity(id: string): number {
@@ -82,6 +87,19 @@ export class IngredientTable {
 
   collapseTable() {
     this.tableCollapsed = !this.tableCollapsed;
+  }
+
+  get visibleIngredients(): Ingredient[] {
+    if (!this.ingredients) return [];
+    return this.isExpanded ? this.ingredients : this.ingredients.slice(0, this.previewCount);
+  }
+
+  get hiddenCount(): number {
+    return Math.max(0, (this.ingredients?.length ?? 0) - this.previewCount);
+  }
+
+  toggleExpanded() {
+    this.isExpanded = !this.isExpanded;
   }
 
   async onClearAllClick(): Promise<void> {

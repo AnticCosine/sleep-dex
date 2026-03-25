@@ -32,7 +32,7 @@
     </div>
  
     @if (ingredients$ | async; as ingredients) {
-      @for (ingredient of ingredients; track trackById($index, ingredient)) {
+      @for (ingredient of visibleIngredients; track trackById($index, ingredient)) {
         <div class="list-row" [class.row-out]="getStatus(ingredient.id) === 'out'">
  
           <div class="img-sq">
@@ -54,6 +54,15 @@
           </div>
  
         </div>
+      }
+
+      @if (hiddenCount > 0 || isExpanded) {
+        <button class="show-more-btn" (click)="toggleExpanded()">
+          <span>
+            {{ isExpanded ? 'Show less' : 'Show ' + hiddenCount + ' more' }}
+          </span>
+          <span class="chevron" [class.chevron-up]="isExpanded"></span>
+        </button>
       }
     }
  

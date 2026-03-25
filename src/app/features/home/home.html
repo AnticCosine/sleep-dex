@@ -60,13 +60,13 @@
                   <div class="progress-track">
                     <div class="progress-fill" [class]="'progress-' + t.type" [style.width.%]="animate ? t.percent : 0"></div>
                   </div>
-                  <div class="type-pct">{{ t.percent }}% complete</div>
+                  <div class="type-pct" id="type-pct-{{ t.type }}">{{ t.percent }}% complete</div>
                 </div>
               }
             </div>
         </div>
 
-        <app-ingredient-table></app-ingredient-table>
+        <app-ingredient-table [isExpanded]="true"></app-ingredient-table>
 
     </div>
 </div>

@@ -24,6 +24,8 @@ export class Home {
   ngOnInit(): void {
     this.recipes$ = this.recipeService.getRecipes();
 
+    
+
     this.stats$ = combineLatest([
       this.recipes$,
       this.recipeService.cookedRecipes$
@@ -60,6 +62,7 @@ export class Home {
       })
     );
   }
+  
   ngAfterViewInit() {
     this.stats$.pipe(take(1)).subscribe(stats => {
       setTimeout(() => {
@@ -67,6 +70,10 @@ export class Home {
         this.animateCountUp('s-cooked', stats.cooked);
         this.animateCountUp('s-remaining', stats.remaining);
         this.animateCountUp('s-pct', stats.completionPercent, '%');
+
+        stats.byType.forEach(type => {
+          this.animateCountUp(`type-pct-${type.type}`, type.percent, '%');
+        });
       });
 
     });

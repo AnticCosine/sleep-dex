@@ -21,10 +21,13 @@ import { RecipeFilters } from '../../shared/components/recipe-filters/recipe-fil
 export class RecipeFinder {
 
   tabularFormat = false;
+  quantities$!: Observable<{ [id: string]: number }>;
 
-  constructor(public filterState: RecipeFilterStateService) { }
+  constructor(public filterState: RecipeFilterStateService, private ingredientService: IngredientService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.quantities$ = this.ingredientService.getQuantities$();
+  }
 
   
   changeRecipeFormat() {

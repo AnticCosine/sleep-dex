@@ -14,11 +14,13 @@
             </div>
           } @else {
             <div class="recipe-cards">
-              
-              @for (recipe of recipes; track recipe.id) {
-                  <app-recipe-card
-                      [recipe]="recipe">
-                  </app-recipe-card>
+              @if (quantities$ | async; as quantities) {
+                @for (recipe of recipes; track recipe.id) {
+                    <app-recipe-card
+                        [recipe]="recipe"
+                        [quantities]="quantities">
+                    </app-recipe-card>
+                }
               }
               
             </div>

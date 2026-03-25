@@ -1,10 +1,16 @@
 <div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false" (click)="toggleCooked()">
-
+    <div *ngIf="!homePlaceHolder" class="craftable-count" [class.craftable-count--zero]="craftableCount === 0">
+        ×{{ craftableCount }}
+    </div>
+    <div *ngIf="!homePlaceHolder" class="ingredient-total">
+        <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
+        {{ totalIngredients }}
+    </div>
     <img [src]="imageRecipePath" alt="" class="recipe-img">
     <div class="base-strength">
         {{ recipe.baseStrength }}
     </div>
-    <h2>{{ recipe.name }} ({{ totalIngredients }})</h2>
+    <h2>{{ recipe.name }}</h2>
     <div class="name-divider"></div>
 
     
