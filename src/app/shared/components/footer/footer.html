@@ -9,9 +9,9 @@
 
     <div class="footer-section">
       <h4>Links</h4>
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
-      <a routerLink="/recipes" routerLinkActive="active">recipes</a>
-      <a routerLink="/ingredients" routerLinkActive="active">ingredients</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/recipes" routerLinkActive="active">Recipes</a>
+      <a routerLink="/ingredients" routerLinkActive="active">Ingredients</a>
     </div>
 
     <div class="footer-section">
@@ -23,7 +23,7 @@
           [disabled]="sending || submitted">
         </textarea>
         <button (click)="sendFeedback()" [disabled]="sending || submitted">
-          {{ submitted ? 'sent!' : error ? 'already sent feedback, try again later.' : 'send feedback' }}
+          {{ submitted ? 'Sent!' : error ? 'Already sent feedback, try again later.' : 'Send feedback' }}
         </button>
       </div>
     </div>
