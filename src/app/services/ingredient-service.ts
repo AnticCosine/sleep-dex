@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Ingredient } from '../models/ingredient.model';
-import { BehaviorSubject, firstValueFrom, Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 const lowThreshold = 20;
 export type IngredientStatus = 'ok' | 'low' | 'out';
@@ -12,11 +11,8 @@ export type IngredientStatus = 'ok' | 'low' | 'out';
 })
 export class IngredientService {
   private storageKey = 'ingredientQuantities';
-  private readonly jwt_token = 'auth_token';
 
   private quantities$ = new BehaviorSubject<{ [id: string]: number }>(this.loadFromStorage());
-
-  private readonly API = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
@@ -32,26 +28,13 @@ export class IngredientService {
     return this.quantities$.value[id] ?? 0;
   }
  
-  async setQuantity(id: string, qty: number): Promise<void> {
+  setQuantity(id: string, qty: number): void {
     const clamped = Math.max(0, qty);
     this.updateState({ ...this.quantities$.value, [id]: clamped });
-
-    if (this.getToken()) {
-      try {
-        await firstValueFrom(
-          this.http.post(`${this.API}/user/ingredients`, {
-            ingredientId: id,
-            quantity: clamped,
-          })
-        );
-      } catch (err) {
-        console.error('Failed to sync ingredient:', err);
-      }
-    }
   }
 
 
-  async setQuantities(updates: { id: string; quantity: number }[]): Promise<void> {
+  setQuantities(updates: { id: string; quantity: number }[]): void {
     const current = { ...this.quantities$.value };
  
     for (const { id, quantity } of updates) {
@@ -59,21 +42,6 @@ export class IngredientService {
     }
  
     this.updateState(current);
- 
-    if (this.getToken()) {
-      try {
-        const payload = Object.entries(current).map(([ingredientId, quantity]) => ({
-          ingredientId,
-          quantity,
-        }));
-
-        await firstValueFrom(
-          this.http.put(`${this.API}/user/ingredients`, { ingredients: payload })
-        );
-      } catch (err) {
-        console.error('Failed to batch sync ingredients:', err);
-      }
-    }
   }
 
   private updateState(quantities: { [id: string]: number }): void {
@@ -102,23 +70,9 @@ export class IngredientService {
     this.quantities$.next(quantities);
   }
 
-  async clearAllQuantities(): Promise<void> {
+  clearAllQuantities(): void {
     localStorage.removeItem(this.storageKey);
     this.quantities$.next({});
-
-    if (this.getToken()) {
-      try {
-        await firstValueFrom(
-          this.http.put(`${this.API}/user/ingredients`, { ingredients: [] })
-        );
-      } catch (err) {
-        console.error('Failed to clear ingredients in DB:', err);
-      }
-    }
-  }
-
-  private getToken(): string | null {
-    return localStorage.getItem(this.jwt_token);
   }
 
 }
