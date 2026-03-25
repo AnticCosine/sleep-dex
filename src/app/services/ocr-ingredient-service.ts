@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { createWorker } from 'tesseract.js';
+import { createWorker, PSM } from 'tesseract.js';
 
 export interface OcrIngredientResult {
   id: string;
@@ -7,23 +7,25 @@ export interface OcrIngredientResult {
 }
 
 const NAME_TO_ID: Record<string, string> = {
-  'fancy egg': 'fancy_egg',
+  'fancy eg': 'fancy_egg',
   'soft potato': 'soft_potato',
   'fancy apple': 'fancy_apple',
   'fiery herb': 'fiery_herb',
   'bean sausage': 'bean_sausage',
   'moomoo milk': 'moomoo_milk',
   'honey': 'honey',
-  'pure oil': 'pure_oil',
+  'pure': 'pure_oil',
   'warming ginger': 'warming_ginger',
-  'snoozy tomato': 'snoozy_tomato',
+  'tom': 'snoozy_tomato',
   'soybeans': 'greengrass_soybeans',
   'corn': 'greengrass_corn',
   'large leek': 'large_leek',
-  'mushroom': 'tasty_mushroom',
+  'mush': 'tasty_mushroom',
   'rousing coffee': 'rousing_coffee',
-  'soothing cacao': 'soothing_cacao',
-  'slow smokytail': 'slow_smokytail',
+  'cacao': 'soothing_cacao',
+  'pumpkin': 'plump_pumpkin',
+  'avocado': 'glossy_avocado',
+  'tail': 'slowpoke_tail'
 };
 
 @Injectable({
@@ -34,12 +36,18 @@ export class OcrIngredientService {
   async processImage(file: File): Promise<OcrIngredientResult[]> {
     const worker = await createWorker('eng');
     const dataUrl = await this.fileToDataUrl(file);
+    
     const preprocessed = await this.preprocessImage(dataUrl);
     const { data } = await worker.recognize(preprocessed);
 
     await worker.terminate();
     
-    return this.parseIngredients(data.text);
+    
+    const parseIngredients = this.parseIngredients(data.text);
+    //console.log(data.text, data.confidence);
+    //console.log("parsedIngredients: ", parseIngredients)
+
+    return parseIngredients;
 
   }
 
@@ -56,7 +64,7 @@ export class OcrIngredientService {
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = () => {
-        const scale = 2;
+        const scale = 2.5;
         const canvas = document.createElement('canvas');
         canvas.width = img.width * scale;
         canvas.height = img.height * scale;
@@ -77,10 +85,8 @@ export class OcrIngredientService {
 
   private applyGreyscaleAndContrast(imageData: ImageData): void {
     const d = imageData.data;
-
-    const contrast = 1.6;
-    const factor = (259 * (contrast * 255 + 255)) / (255 * (259 - contrast * 255));
-
+    const contrastDelta = 80;
+    const factor = (259 * (contrastDelta + 255)) / (255 * (259 - contrastDelta));
     for (let i = 0; i < d.length; i += 4) {
       const grey = 0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2];
       const adjusted = Math.min(255, Math.max(0, factor * (grey - 128) + 128));
@@ -98,7 +104,7 @@ export class OcrIngredientService {
       .replace(/[\s]+/g, ' ')
       .trim();
 
-    const quantityRegex = /x(\d+)/g;
+    const quantityRegex = /[x%](\d+)/g;
     const quantities: { value: number; index: number }[] = [];
     let match: RegExpExecArray | null;
     while ((match = quantityRegex.exec(normalized)) !== null) {
