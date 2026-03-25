@@ -26,6 +26,10 @@ jobs:
       - name: Build
         run: npm run build -- --base-href /
 
+      - name: Prepare for GitHub Pages
+        run: |
+          cp ./dist/recipe-dex/browser/index.html ./dist/recipe-dex/browser/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
