@@ -6,8 +6,8 @@
 
             
         <button class="chip curry" [class.active]="filterState.recipeTypeControl.value?.includes('curry')" (click)="filterState.toggleRecipeType('curry')">Curry</button>
-        <button class="chip salad" [class.active]="filterState.recipeTypeControl.value?.includes('salad')" (click)="filterState.toggleRecipeType('salad')">Salad</button>
         <button class="chip dessert" [class.active]="filterState.recipeTypeControl.value?.includes('dessert')" (click)="filterState.toggleRecipeType('dessert')">Dessert</button>
+        <button class="chip salad" [class.active]="filterState.recipeTypeControl.value?.includes('salad')" (click)="filterState.toggleRecipeType('salad')">Salad</button>
         <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
         <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
             
@@ -43,9 +43,9 @@
               <div class="pot-size-pill-icon">
                 <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
               </div>
-              <input type="number" class="min-ingredient-input" [formControl]="filterState.minIngredientsControl">
+              <input id="min-ingredient-input" type="number" class="min-ingredient-input" [formControl]="filterState.minIngredientsControl">
               <span class="pot-separator">–</span>
-              <input type="number" class="max-ingredient-input" [formControl]="filterState.maxIngredientsControl">
+              <input id="max-ingredient-input" type="number" class="max-ingredient-input" [formControl]="filterState.maxIngredientsControl">
         </div>
 
         <div class="input-buttons">

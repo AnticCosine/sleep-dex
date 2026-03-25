@@ -1,16 +1,17 @@
-<div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false" (click)="toggleCooked()">
-    <div *ngIf="!homePlaceHolder" class="craftable-count" [class.craftable-count--zero]="craftableCount === 0">
-        ×{{ craftableCount }}
+<div [class]="'recipe-card-' + recipe.type" [class.disabled]="canMake === false" (click)="!homePlaceHolder && toggleCooked()">
+    <div *ngIf="!homePlaceHolder" class="base-strength-count">
+
+        {{ recipe.baseStrength }}
     </div>
     <div *ngIf="!homePlaceHolder" class="ingredient-total">
         <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
         {{ totalIngredients }}
     </div>
     <img [src]="imageRecipePath" alt="" class="recipe-img">
-    <div class="base-strength">
-        {{ recipe.baseStrength }}
+    <div *ngIf="!recipePlaceHolder && !homePlaceHolder" class="craft-count" [class.craftable-count--zero]="craftableCount === 0">
+        x{{ craftableCount }}
     </div>
-    <h2>{{ recipe.name }}</h2>
+    <h2 [class.recipe-name]="recipePlaceHolder">{{ recipe.name }}</h2>
     <div class="name-divider"></div>
 
     
@@ -22,7 +23,7 @@
                     <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
                 </div>
                 
-                @if (quantities) {
+                @if (quantities && !recipePlaceHolder) {
                     <h3>
                         <span>{{ quantities[ingredient.ingredientId] || 0 }}</span>
                         <span class="divider">/</span>

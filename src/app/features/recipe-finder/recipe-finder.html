@@ -18,7 +18,8 @@
                 @for (recipe of recipes; track recipe.id) {
                     <app-recipe-card
                         [recipe]="recipe"
-                        [quantities]="quantities">
+                        [quantities]="quantities"
+                        [recipePlaceHolder]="true">
                     </app-recipe-card>
                 }
               }

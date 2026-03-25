@@ -19,6 +19,7 @@
       <div class="feedback-form">
         <textarea
           [(ngModel)]="feedbackText"
+          id="feedback"
           [disabled]="sending || submitted">
         </textarea>
         <button (click)="sendFeedback()" [disabled]="sending || submitted">

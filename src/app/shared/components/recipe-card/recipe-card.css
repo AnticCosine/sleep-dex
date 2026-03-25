@@ -58,15 +58,15 @@
   max-height: 130px;
 }
 
-.base-strength {
-  margin-top: -35px;
+.craft-count {
+  margin-top: -30px;
 
-  width: 60px;
+  width: 40px;
   height: 30px;
 
   background-color: #fefefe;
   border-radius: 20px;
-  border: 3px solid #84492a;
+  border: 3px solid #3ebe42;
 
   font-weight: 800;
   
@@ -78,11 +78,20 @@
   text-align: center;
 }
 
+.craftable-count--zero {
+  border: 3px solid #e64744;
+}
+
+.recipe-name {
+  font-size: 16px;
+  margin-top: 0;
+}
+
 h2 {
   margin: 0px;
   font-family: var(--font-primary);
   color: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 
   text-align: center;
@@ -92,58 +101,31 @@ h2 {
   margin-top: 16px;
 }
 
-.craftable-count {
-  position: absolute;
-  top: 8px;
-  right: 4px;
-
-  min-width: 32px;
-  height: 24px;
-  padding: 0 8px;
-
-  background-color: #fefefe;
-  border-radius: 14px;
-  border: 2.5px solid #4caf50;
-
-  font-weight: 800;
-  font-size: 13px;
-  letter-spacing: 0.02em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-}
-
-.craftable-count--zero {
-  border-color: #ff6363;
-  color: #ff6363;
-}
-
+.base-strength-count,
 .ingredient-total {
   position: absolute;
-  top: 8px;
-  left: 4px;
-
-  min-width: 32px;
-  height: 24px;
-  padding: 0 8px;
-
-  background-color: #fefefe;
-  border-radius: 14px;
-  border: 2.5px solid #84492a;
-
-  font-weight: 800;
-  font-size: 13px;
-  letter-spacing: 0.02em;
-
+  top: 0;
+  width: 48px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
 
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+.ingredient-total {
+  left: 0;
+  border-radius: 10px 0 10px 0;
+  background: rgba(0, 0, 0, 0.164);
+}
+
+.base-strength-count {
+  right: 0;
+  border-radius: 0 10px 0 10px;
+  background: #f4ae5e;
 }
 
 .ingredient-total img {
@@ -248,8 +230,8 @@ h3 {
   }
 
   .ingredient-img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   h2 {
@@ -273,13 +255,13 @@ h3 {
     margin: 0;
   }
 
-  .base-strength {
+  .craft-count {
     margin-top: -22px;
 
-    width: 50px;
+    width: 30px;
     height: 25px;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 800;
 
@@ -287,32 +269,6 @@ h3 {
 
   .recipe-ingredients {
     gap: 8px;
-  }
-
-  .craftable-count {
-    min-width: 40px;
-    height: 20px;
-    padding: 0;
-
-    font-size: 10px;
-
-    right: 4px;
-  }
-
-  .ingredient-total {
-    min-width: 40px;
-    height: 20px;
-    padding: 0;
-
-    font-size: 10px;
-    gap: 2px;
-
-    left: 4px;
-  }
-
-  .ingredient-total img {
-    width: 12px;
-    height: 12px;
   }
 
 }

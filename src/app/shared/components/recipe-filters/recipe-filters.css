@@ -260,8 +260,10 @@ label input{
 
   .filters .input-filters {
     margin-left: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  }
+
+  .filters .input-filters .input-buttons {
+    margin-left: 0;
   }
   
 }

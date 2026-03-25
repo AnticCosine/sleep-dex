@@ -16,6 +16,7 @@ export class RecipeCard {
   @Input() quantities?: { [key: string]: number };
   @Input() canMake?: boolean;
   @Input() homePlaceHolder?: boolean = false; // placeholder to showcase card on homepage 
+  @Input() recipePlaceHolder?: boolean = false;
   cooked = false;
 
   cooked$!: Observable<boolean>;

@@ -187,14 +187,15 @@
   color: var(--font-colour);
 }
 
+
 .qty-num:hover {
-  background: #f5f5f0;
+  background: var(--qty-focus-colour);
   border-color: var(--border-colour);
 }
 
 .qty-num:focus {
   outline: none;
-  background: #fff;
+  background: var(--qty-focus-colour);
   border-color: #378ADD;
   box-shadow: 0 0 0 2px rgba(55, 138, 221, 0.15);
 }
@@ -245,9 +246,9 @@
 }
 
 
-@media (max-width: 330px) {
+@media (max-width: 520px) {
   .list-header {
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 16px;
   }
 }

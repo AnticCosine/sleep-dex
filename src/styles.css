@@ -27,6 +27,8 @@
     --table-head-colour: #f5f5f0;
     --table-row-colour: white;
     --img-sq-colour: #f5f5f0;
+
+    --qty-focus-colour: #eeeeee;
     
     --modal-bg: #fff;
 }
@@ -56,6 +58,8 @@
     --table-head-colour: #2E353F;
     --table-row-colour: #242831;
     --img-sq-colour: #30343f;
+
+    --qty-focus-colour: #30343f;
 
     --modal-bg: #2C333D;
 }

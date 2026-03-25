@@ -3,7 +3,9 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+
+  min-height: calc(100vh);
 }
 
 .ingredient-calculator {
@@ -49,7 +51,7 @@ app-recipe-filters {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 355px) {
   .recipe-cards {
     grid-template-columns: 1fr;
   }
