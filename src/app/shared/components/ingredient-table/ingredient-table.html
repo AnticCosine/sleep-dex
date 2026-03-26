@@ -9,10 +9,10 @@
         [class.btn-clear--confirm]="clearConfirmPending"
         (click)="onClearAllClick()">
         <img src="assets/images/trash_icon.svg" alt="">
-        {{ clearConfirmPending ? 'Confirm clear' : 'Clear all' }}
+        {{ clearConfirmPending ? 'Confirm?' : 'Clear' }}
       </button>
 
-      <button class="btn" (click)="collapseTable()">Collapse Table</button>
+      <button class="btn" (click)="collapseTable()">{{tableCollapsed ? 'Open' : 'Collapse' }}</button>
       <button class="btn" (click)="uploadInput.click()">
         <img src="assets/images/upload_icon.svg" alt="">
         Upload photo

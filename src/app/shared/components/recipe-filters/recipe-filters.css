@@ -29,6 +29,8 @@
   
   width: inherit;
   margin-top: 16px;
+
+  font-size: 14px;
 }
 
 .filters .dropdown-filters{
@@ -53,6 +55,16 @@
   align-items: center;
   
   margin-left: auto;
+}
+
+.type-chips-row {
+  display: flex;
+  gap: 8px;
+}
+
+.cooked-chips-row {
+  display: flex;
+  gap: 8px;
 }
 
 .pot-size-pill {
@@ -195,7 +207,7 @@ label input{
   padding-left: 0;
   margin-top: 10px;
   margin-left: 2px;
-  padding: 10px;
+  padding: 5px;
 
   width: 220px;
   max-height: 200px;
@@ -250,28 +262,65 @@ label input{
 @media (max-width: 810px) {
   .filters {
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
   }
-
   .filters .dropdown-filters {
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 7px;
   }
-
   .filters .input-filters {
     margin-left: 0;
+    margin-top: 10px;
   }
 
   .filters .input-filters .input-buttons {
     margin-left: 0;
   }
-  
 }
 
-@media (max-width: 665px) {
-  .ingredient-grid {
-    transform: translateX(-50%); /*temp fix need to think of a better way*/
+@media (max-width: 560px) {
+  .filters .dropdown-filters {
+    display: flex;
+    flex-direction: column;
   }
+
+  .type-chips-row,
+  .cooked-chips-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .type-chips-row button,
+  .cooked-chips-row button {
+    width: 100%;
+  }
+
+  .input-filters .pot-size-pill {
+    flex-shrink: 0;
+  }
+
+  .cooked-chips-row .dropdown summary {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 8px 4px;
+
+    font-size: 14px;
+  }
+
+  .filters .input-filters .pot-size-pill {
+    width: calc((100% - 16px) / 3);
+  }
+
+  
+
+  .filters .input-filters .input-buttons {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  
 }
 
 @media (max-width: 545px) {
@@ -284,5 +333,21 @@ label input{
 
   .ingredient-grid {
     transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters .input-filters .pot-size-pill-icon {
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 435px) {
+  .filters .input-filters .pot-size-pill input {
+    padding: 10px 0;
+  }
+
+  .filters .input-filters .pot-size-pill-icon {
+    padding: 0 4px;
   }
 }

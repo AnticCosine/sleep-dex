@@ -4,15 +4,16 @@
 
     <div class="dropdown-filters">
 
-            
-        <button class="chip curry" [class.active]="filterState.recipeTypeControl.value?.includes('curry')" (click)="filterState.toggleRecipeType('curry')">Curry</button>
-        <button class="chip dessert" [class.active]="filterState.recipeTypeControl.value?.includes('dessert')" (click)="filterState.toggleRecipeType('dessert')">Dessert</button>
-        <button class="chip salad" [class.active]="filterState.recipeTypeControl.value?.includes('salad')" (click)="filterState.toggleRecipeType('salad')">Salad</button>
-        <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
-        <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
-            
+        <div class="type-chips-row"> 
+          <button class="chip curry" [class.active]="filterState.recipeTypeControl.value?.includes('curry')" (click)="filterState.toggleRecipeType('curry')">Curry</button>
+          <button class="chip dessert" [class.active]="filterState.recipeTypeControl.value?.includes('dessert')" (click)="filterState.toggleRecipeType('dessert')">Dessert</button>
+          <button class="chip salad" [class.active]="filterState.recipeTypeControl.value?.includes('salad')" (click)="filterState.toggleRecipeType('salad')">Salad</button>
+        </div>
 
-        <details class="dropdown" (click)="onDropdownToggle($event)">
+        
+
+        <div class="cooked-chips-row">
+          <details class="dropdown" (click)="onDropdownToggle($event)">
             <summary>
                 Ingredients
                 <img src="assets/images/dropdown_arrow.png" alt="">
@@ -33,8 +34,11 @@
                     </div>
                   }
                 }
-              </div>
-        </details>
+            </div>
+          </details>
+          <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
+          <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
+        </div>
 
     </div>
           
