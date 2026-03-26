@@ -1,8 +1,6 @@
 # Sleep Dex
 
-A Pokemon Sleep recipe & ingredient tracker where players can keep track of their current ingredients recipes they can cook/cooked so far. 
-
----
+A Pokemon Sleep recipe & ingredient tracker 
 
 ## Features so far
 
@@ -12,13 +10,9 @@ A Pokemon Sleep recipe & ingredient tracker where players can keep track of thei
 - Upload photos feature to autofill ingredients from a pokemon sleep ingredient inventory image (experimental) 
 - Ingredient page stores your current pot size and shows how it scales with sunday bonus and cooking power up procs 
 
----
-
 ## Screenshots 
 
 ![Home Page](src/assets/images/page_preview.png)
-
----
 
 ## Project Setup 
 
