@@ -35,23 +35,23 @@ export class IngredientCalculator {
     this.quantities$ = this.ingredientService.getQuantities$();
 
     this.cookableRecipes$ = combineLatest([
-      this.filterState.filteredRecipes$,
+      this.filterState.filteredIngredientRecipes$,
       this.quantities$
     ]).pipe(
       map(([recipes, quantities]) => {
         
-        const mapped = recipes.map(recipe => {
+        const mapped = recipes.map((recipe, idx) => {
           const canMake = recipe.ingredients.every(req =>
             (quantities[req.ingredientId] || 0) >= req.amount
           );
 
-          return {recipe, canMake, quantities}
+          return {recipe, canMake, quantities, idx }
         })
 
         return mapped.sort((a,b) => {
           if (a.canMake && !b.canMake) return -1;
           if (!a.canMake && b.canMake) return 1;
-          return 0;
+          return b.recipe.baseStrength - a.recipe.baseStrength; // return 0; to keep original order 
         })
       })
     );

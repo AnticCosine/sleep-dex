@@ -1,4 +1,16 @@
-<input placeholder="Search Recipes" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
+<div class="first-filter">
+  <input placeholder="Search Recipes" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
+
+  <div class="input-buttons">
+    <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
+      <img src="assets/images/table_icon.svg" alt="">
+    </button>
+
+    <button class="button-icon" (click)="filterState.resetFilters(); magnezoneProcs = 0; sundayBonus = false; this.filterState.applySundayBonus(this.sundayBonus);">
+      <img src="assets/images/reset_icon.svg" alt="">
+    </button>
+  </div>
+</div>
 
 <div class="filters">
 
@@ -47,19 +59,35 @@
               <div class="pot-size-pill-icon">
                 <img src="assets/images/pot_icon.png" alt="" class="pot-icon">
               </div>
-              <input id="min-ingredient-input" type="number" class="min-ingredient-input" [formControl]="filterState.minIngredientsControl">
-              <span class="pot-separator">–</span>
-              <input id="max-ingredient-input" type="number" class="max-ingredient-input" [formControl]="filterState.maxIngredientsControl">
+              <input id="min-ingredient-input" type="number" class="min-ingredient-input" [formControl]="filterState.minIngredientsControl" *ngIf="!ingredeintPlaceHolder">
+              <span class="pot-separator" *ngIf="!ingredeintPlaceHolder">–</span>
+              <input id="max-ingredient-input" type="number" class="max-ingredient-input" [formControl]="filterState.maxIngredientsControl" *ngIf="!ingredeintPlaceHolder">
+
+              <input id="pot-ingredient-input" type="number" class="pot-ingredient-input" [formControl]="filterState.potIngredientControl" *ngIf="ingredeintPlaceHolder">
+
+              <ng-container *ngIf="effectivePotSize !== null && ingredeintPlaceHolder">
+                <span class="pot-arrow">→</span>
+                <span class="pot-effective">{{ effectivePotSize }}</span>
+              </ng-container>
         </div>
 
-        <div class="input-buttons">
-            <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
-              <img src="assets/images/table_icon.svg" alt="">
-            </button>
+        <button class="chip sunday-chip" [class.active]="sundayBonus" (click)="toggleSundayBonus()" *ngIf="ingredeintPlaceHolder">
+          <img src="assets/images/sunday_icon.png" alt="" class="sunday-icon">
+          Sunday
+        </button>
 
-            <button class="button-icon" (click)="filterState.resetFilters()">
-              <img src="assets/images/reset_icon.svg" alt="">
-            </button>
+        <div class="mag-stepper" *ngIf="ingredeintPlaceHolder">
+          <button class="mag-icon-btn" [class.on]="magnezoneProcs > 0" (click)="cycleMagnezone()">
+            <img [src]="'assets/images/magnezone_' + magnezoneProcs + '.png'" alt="Magnezone" class="mag-img">
+          </button>
+          <button class="step-btn" (click)="decrementMagnezone()">−</button>
+          <div class="mag-mid">
+            
+            <span class="mag-bonus">
+              <span class="mag-lv">lv </span> {{ magnezoneLevel }}
+            </span>
+          </div>
+          <button class="step-btn" (click)="incrementMagnezone()">+</button>
         </div>
     </div>
           

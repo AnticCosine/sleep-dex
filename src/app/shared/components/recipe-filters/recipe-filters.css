@@ -11,8 +11,49 @@
   margin-top: 16px;
 }
 
+.first-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  margin-top: 16px;
+
+  
+  
+  border-radius: 10px;
+  background: #ffff;
+  border: 1.5px solid lightgrey;
+
+  cursor: pointer;
+}
+
+.button-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .min-ingredient-input,
-.max-ingredient-input{
+.max-ingredient-input,
+.pot-ingredient-input{
   width: 100%;
   max-width: 40px;
 
@@ -43,16 +84,6 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  align-items: center;
-  
-  margin-left: auto;
-}
-
-.filters .input-filters .input-buttons{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
   
   margin-left: auto;
 }
@@ -91,7 +122,8 @@
 }
 
 .min-ingredient-input,
-.max-ingredient-input {
+.max-ingredient-input,
+.pot-ingredient-input {
   width: 28px;
   border: none;
   outline: none;
@@ -117,27 +149,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
-.button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
 
-  
-  border-radius: 10px;
-  background: #ffff;
-  border: 1.5px solid lightgrey;
 
-  cursor: pointer;
-}
-
-.button-icon img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
 
 .dropdown {
   background: none;
@@ -260,8 +273,115 @@ label input{
 
 .chip.dessert.active { background-color: #fdf892; }
 
+.mag-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  flex-shrink: 0;
+}
 
-@media (max-width: 810px) {
+.mag-icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.mag-icon-btn.on {
+  opacity: 1;
+}
+
+.mag-img {
+  width: 40px;
+  height: 40px;
+}
+
+.step-btn {
+  width: 24px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.step-btn:hover {
+  background: #f5f5f5;
+}
+
+.mag-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0 2px;
+}
+
+.mag-lv {
+  font-size: 10px;
+  color: #aaa;
+  line-height: 1;
+}
+
+.mag-bonus {
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #1a5fb4;
+}
+
+.mag-bonus.off {
+  color: #aaa;
+}
+
+.sunday-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.sunday-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sunday-chip.active {
+  background: #fff3cd;
+  border-color: #c8961a;
+  color: #b47d05;
+}
+
+.pot-arrow {
+  font-size: 13px;
+  color: var(--color-text-tertiary, lightgrey);
+  padding: 0 4px;
+}
+
+.pot-effective {
+  font-size: 14px;
+  font-weight: 500;
+  color: #185FA5;
+  padding-right: 10px;
+}
+
+
+
+@media (max-width: 925px) {
   .filters {
     flex-direction: column;
     gap: 0;
@@ -275,9 +395,7 @@ label input{
     margin-top: 10px;
   }
 
-  .filters .input-filters .input-buttons {
-    margin-left: 0;
-  }
+
 }
 
 @media (max-width: 560px) {
@@ -310,17 +428,13 @@ label input{
     font-size: 14px;
   }
 
-  .filters .input-filters .pot-size-pill {
-    width: calc((100% - 16px) / 3);
+  .filters .input-filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   
 
-  .filters .input-filters .input-buttons {
-    display: flex;
-    gap: 8px;
-    margin-left: auto;
-  }
 
   
 }
@@ -352,4 +466,15 @@ label input{
   .filters .input-filters .pot-size-pill-icon {
     padding: 0 4px;
   }
+}
+
+@media (max-width: 390px) {
+  .step-btn {
+    width: auto;
+  }
+
+  .mag-stepper .step-btn {
+    padding: 4px;
+  }
+  
 }

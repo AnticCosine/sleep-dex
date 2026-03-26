@@ -16,6 +16,9 @@ export class RecipeFilterService {
       maxIngredients?: number | null;
       cooked?: string[] | null;
       cookedFilter?: string[] | null;
+      potSize?:  number | null;
+      sundayBonus?: boolean | null;
+      magneZoneBonus?: number | null;
     }
   ): Recipe[] {
     const {
@@ -26,6 +29,9 @@ export class RecipeFilterService {
       maxIngredients,
       cooked = [],
       cookedFilter = [],
+      potSize = null,
+      sundayBonus,
+      magneZoneBonus 
     } = options;
 
     const searchTerm = (search ?? ``).toLowerCase();
@@ -38,12 +44,17 @@ export class RecipeFilterService {
       const totalIngredients = recipe.ingredients.reduce((total, ingredient) => total + ingredient.amount, 0);
       const matchedMinIngredients = minIngredients == null || totalIngredients >= minIngredients;
       const matchedMaxIngredients = maxIngredients == null || totalIngredients <= maxIngredients;
+      const sundayPot = sundayBonus && potSize != null ? potSize * 2 : potSize;
+      const effectivePotSize = sundayPot == null
+        ? null
+        : sundayPot + (magneZoneBonus ?? 0);
 
+      const matchedPotSize = effectivePotSize == null || totalIngredients <= effectivePotSize;
       const isCooked = cookedFilter?.includes(recipe.id);
 
       const matchedCookedRecipes = !cooked?.length || (cooked?.includes('cooked') && isCooked) || (cooked?.includes('uncooked') && !isCooked);
 
-      return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients && matchedCookedRecipes;
+      return matchedSearch && matchedRecipeType && matchedIngredients && matchedMinIngredients && matchedMaxIngredients && matchedCookedRecipes && matchedPotSize;
     });
   }
 }
