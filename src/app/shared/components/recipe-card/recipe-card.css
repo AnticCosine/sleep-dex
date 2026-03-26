@@ -173,12 +173,12 @@ h3 {
     margin: 0px;
     font-family: var(--font-primary);
     color: inherit;
-    font-size: 14px;
+    font-size: 12px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 1px;
 }
 
 .checklist {
@@ -225,8 +225,8 @@ h3 {
   
 
   .recipe-img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .ingredient-img {
@@ -257,7 +257,6 @@ h3 {
   }
 
   .craft-count {
-    margin-top: -22px;
 
     width: 30px;
     height: 25px;
