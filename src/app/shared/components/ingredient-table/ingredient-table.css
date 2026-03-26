@@ -46,7 +46,7 @@
   border-radius: 10px;
   border: 1px solid lightgray;
   background: #fff;
-  color: inherit;
+  color: black;
   font-family: var(--font-primary);
   cursor: pointer;
 }

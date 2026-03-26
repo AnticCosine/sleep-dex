@@ -70,7 +70,7 @@
 
   font-weight: 800;
   
-
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +93,7 @@ h2 {
   color: inherit;
   font-size: 16px;
   font-weight: 600;
+  color: black;
 
   text-align: center;
   min-height: 40px;
@@ -178,6 +179,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
     gap: 1px;
 }
 
