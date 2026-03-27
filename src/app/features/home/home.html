@@ -9,7 +9,10 @@
                     Discover new recipes, manage your ingredient pantry and track everything 
                     you've cooked so far, all in one place!
                 </p>
-                <a routerLink="/recipes" class="btn-primary">Browse recipes</a>
+                <div class="browse">
+                  <a routerLink="/recipes" class="btn-primary">Browse Recipes</a>
+                  <a routerLink="/ingredients" class="btn-primary">Browse Ingredients</a>
+                </div>
             </div>
             <div class="main-cards">
                 @if (recipes$ | async; as recipes) {

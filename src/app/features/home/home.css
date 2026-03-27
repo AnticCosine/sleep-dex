@@ -47,6 +47,11 @@
   line-height: 1.6;
   margin: 0;
 }
+
+.browse {
+  display: flex;
+  gap: 8px;
+}
  
 .btn-primary {
   display: inline-block;
@@ -204,7 +209,7 @@
   color: var(--stat-label-colour);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 790px) {
   .main-cards .salad-card {
     display: none;
   }
@@ -267,5 +272,10 @@
 
   .types {
     margin-top: 8px;
+  }
+
+  .browse {
+    flex-direction: column;
+    width: stretch;
   }
 }
