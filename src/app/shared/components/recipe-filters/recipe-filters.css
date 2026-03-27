@@ -158,26 +158,46 @@ input[type="number"]::-webkit-inner-spin-button {
 .dropdown {
   background: none;
   border: none;
+  position: relative;
 }
-
-label input{
+ 
+label input {
   display: none;
 }
 
 .dropdown summary {
   list-style: none;
   cursor: pointer;
-  padding: 10px;
-
-  display: flex;
+ 
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  color: black;
-
+  gap: 8px;
+ 
+  padding: 10px;
   background: #ffffff;
-  border: 1.5px solid lightgrey;
+  border: 4px solid lightgrey;
   border-radius: 10px;
-  
+  color: black;
+  font-size: 14px;
+ 
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  user-select: none;
+}
+
+.dropdown summary::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid #aaa;
+  border-bottom: 1.5px solid #aaa;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.dropdown[open] summary::after {
+  transform: rotate(-135deg)  translateX(-4px);
 }
 
 .dropdown ul {
@@ -250,7 +270,7 @@ label input{
 }
 
 .chip {
-  background: #ffffff;
+  background: white;
   border: 4px solid lightgrey;
   border-radius: 10px;
   color: black;
@@ -387,7 +407,7 @@ label input{
 
 
 
-@media (max-width: 925px) {
+@media (max-width: 970px) {
   .filters {
     flex-direction: column;
     gap: 0;
