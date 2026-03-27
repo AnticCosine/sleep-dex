@@ -15,6 +15,7 @@
 
     --desc-colour: #666;
     --home-btn-colour: #333;
+    --home-btn-hover: #292929;
     --home-btn-txt-colour: #fff;
 
     --stat-label-colour: #888;
@@ -31,6 +32,8 @@
     --qty-focus-colour: #eeeeee;
     
     --modal-bg: #fff;
+
+    --hover-colour: #f0f0f0;
 }
 
 [data-theme="dark"] {
@@ -45,6 +48,7 @@
     --desc-colour: #b4b4b4;
 
     --home-btn-colour: #fff;
+    --home-btn-hover: #ebeaea;
     --home-btn-txt-colour: #333;
 
     --stat-label-colour: rgb(211, 211, 211);

@@ -62,6 +62,8 @@
   align-self: flex-start;
 }
 
+.btn-primary:hover { background-color: var(--home-btn-hover); }
+
 .main-cards {
   display: flex;
   gap: 10px;
