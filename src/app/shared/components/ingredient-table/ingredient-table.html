@@ -28,7 +28,7 @@
     <div class="list-head-row">
       <span></span>
       <span class="th">Ingredient</span>
-      <span class="th th-right">In stock</span>
+      <span class="th th-right"> {{ totalIngredients > 0 ? totalIngredients : ''}} In stock</span>
     </div>
  
     @if (ingredients$ | async; as ingredients) {

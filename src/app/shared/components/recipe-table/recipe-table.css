@@ -50,6 +50,8 @@ tbody tr:hover {
 
 tbody tr td {
   background: #fff;
+  color: black;
+  font-weight: 600;
   border-top: 0.5px solid lightgray;
   border-bottom: 0.5px solid lightgray;
   padding: 10px 12px;
@@ -130,5 +132,5 @@ h3 {
 
 tbody tr.cannot-make td {
   opacity: 0.45;
-  filter: grayscale(100%);
+  filter: grayscale(50%);
 }

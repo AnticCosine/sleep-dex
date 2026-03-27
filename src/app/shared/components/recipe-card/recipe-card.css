@@ -51,6 +51,7 @@
 
 .disabled {
   opacity: 0.45;
+  filter: grayscale(50%);
 }
 
 .recipe-img {

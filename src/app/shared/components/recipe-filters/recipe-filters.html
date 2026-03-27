@@ -26,7 +26,7 @@
 
         <div class="cooked-chips-row">
           <details class="dropdown" (click)="onDropdownToggle($event)">
-            <summary>
+            <summary class="ingredient-dropdown">
                 Ingredients
                 <img src="assets/images/dropdown_arrow.png" alt="">
             </summary>
@@ -48,8 +48,8 @@
                 }
             </div>
           </details>
-          <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
-          <button class="chip" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
+          <button class="chip neutral" [class.active]="filterState.cookedRecipeControl.value?.includes('cooked')" (click)="filterState.toggleCookedRecipeType('cooked')">Cooked</button>
+          <button class="chip neutral" [class.active]="filterState.cookedRecipeControl.value?.includes('uncooked')" (click)="filterState.toggleCookedRecipeType('uncooked')">Uncooked</button>
         </div>
 
     </div>

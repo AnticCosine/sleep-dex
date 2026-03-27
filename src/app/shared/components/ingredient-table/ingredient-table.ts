@@ -18,6 +18,7 @@ export class IngredientTable {
   @Input() isExpanded = false;
   tableCollapsed = false;
   clearConfirmPending = false;
+  totalIngredients = 0;
 
   private clearResetTimer: ReturnType<typeof setTimeout> | null = null;
   private readonly CONFIRM_TIMEOUT_MS = 3500;
@@ -29,6 +30,10 @@ export class IngredientTable {
   ngOnInit() {
     this.ingredients$ = this.ingredientService.GetIngredients();
     this.ingredients$.subscribe(list => this.ingredients = list);
+
+    this.ingredientService.getQuantities$().subscribe(list => {
+      this.totalIngredients = Object.values(list).reduce((acc, qty) => acc + qty, 0);
+    })
   }
 
   getQuantity(id: string): number {
