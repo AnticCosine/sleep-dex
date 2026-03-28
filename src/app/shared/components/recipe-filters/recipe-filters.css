@@ -186,7 +186,7 @@ label input {
   user-select: none;
 }
 
-.dropdown summary:hover { background-color: var(--hover-colour); }
+
 
 .dropdown summary::after {
   content: '';
@@ -294,17 +294,24 @@ label input {
 
 .chip.dessert { border: 4px solid var(--dessert-colour); }
 
-.chip.curry.active { background-color: #ffa5a1; }
+@media (hover: hover) {
+
 .chip.curry:hover { background-color: #ffa5a1; }
+.chip.salad:hover { background-color: #a1ff9c; }
+.chip.dessert:hover { background-color: #fdf892; }
+.chip.neutral:hover { background-color: var(--hover-colour); }
+.sunday-chip:hover { background: #fce69f; }
+.dropdown summary:hover { background-color: var(--hover-colour); }
+
+}
+
+.chip.curry.active { background-color: #ffa5a1; }
 
 .chip.salad.active { background-color: #a1ff9c; }
-.chip.salad:hover { background-color: #a1ff9c; }
 
 .chip.dessert.active { background-color: #fdf892; }
-.chip.dessert:hover { background-color: #fdf892; }
 
 .chip.neutral.active { background-color: var(--hover-colour); }
-.chip.neutral:hover { background-color: var(--hover-colour); }
 
 .mag-stepper {
   display: flex;
@@ -394,7 +401,7 @@ label input {
   height: 16px;
 }
 
-.sunday-chip:hover { background: #fce69f; }
+
 .sunday-chip.active {
   background: #fce69f;
   color: #b47d05;
