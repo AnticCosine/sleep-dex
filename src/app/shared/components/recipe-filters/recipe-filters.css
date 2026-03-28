@@ -294,7 +294,7 @@ label input {
 
 .chip.dessert { border: 4px solid var(--dessert-colour); }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
 
 .chip.curry:hover { background-color: #ffa5a1; }
 .chip.salad:hover { background-color: #a1ff9c; }
