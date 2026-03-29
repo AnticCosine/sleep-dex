@@ -67,7 +67,7 @@ export class RecipeService {
         const remote = await firstValueFrom(
           this.http.post<string[]>(`${this.API}/user/recipes`, { recipeId })
         );
-        await this.fetchRemoteRecipes();
+        // await this.fetchRemoteRecipes();
       } catch (err) {
         console.error('Failed to sync recipe:', err);
       }

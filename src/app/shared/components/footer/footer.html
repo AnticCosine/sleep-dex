@@ -20,7 +20,8 @@
         <textarea
           [(ngModel)]="feedbackText"
           id="feedback"
-          [disabled]="sending || submitted">
+          [disabled]="sending || submitted"
+          placeholder="Feel free to send feedback, report bugs or suggest features">
         </textarea>
         <button (click)="sendFeedback()" [disabled]="sending || submitted">
           {{ submitted ? 'Sent!' : error ? 'Already sent feedback, try again later.' : 'Send feedback' }}

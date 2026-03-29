@@ -62,7 +62,7 @@ export class IngredientService {
             quantity: clamped,
           })
         );
-        await this.fetchRemoteIngredients();
+        // await this.fetchRemoteIngredients();
       } catch (err) {
         console.error('Failed to sync ingredient:', err);
       }
@@ -90,7 +90,7 @@ export class IngredientService {
           this.http.put(`${this.API}/user/ingredients`, { ingredients: payload })
         );
 
-        await this.fetchRemoteIngredients();
+        // await this.fetchRemoteIngredients();
       } catch (err) {
         console.error('Failed to batch sync ingredients:', err);
       }
