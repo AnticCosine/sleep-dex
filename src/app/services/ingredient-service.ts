@@ -17,7 +17,26 @@ export class IngredientService {
   private readonly jwt_token = 'auth_token';
   private readonly API = environment.apiUrl;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    if (this.getToken()) {
+      this.fetchRemoteIngredients();
+    }
+  }
+
+  private async fetchRemoteIngredients(): Promise<void> {
+    try {
+      const remote = await firstValueFrom(
+        this.http.get<{ ingredientId: string; quantity: number }[]>(`${this.API}/user/ingredients`)
+      );
+      const mapped = remote.reduce((acc, { ingredientId, quantity }) => {
+        acc[ingredientId] = quantity;
+        return acc;
+      }, {} as { [id: string]: number });
+      this.updateState(mapped);
+    } catch (err) {
+      console.error('Failed to fetch remote recipes:', err);
+    }
+  }
 
   GetIngredients() {
     return this.http.get<Ingredient[]>('assets/data/ingredients.json');
@@ -43,6 +62,7 @@ export class IngredientService {
             quantity: clamped,
           })
         );
+        await this.fetchRemoteIngredients();
       } catch (err) {
         console.error('Failed to sync ingredient:', err);
       }
@@ -69,6 +89,8 @@ export class IngredientService {
         await firstValueFrom(
           this.http.put(`${this.API}/user/ingredients`, { ingredients: payload })
         );
+
+        await this.fetchRemoteIngredients();
       } catch (err) {
         console.error('Failed to batch sync ingredients:', err);
       }

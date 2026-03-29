@@ -18,7 +18,22 @@ export class RecipeService {
   cookedRecipes$ = this.cookedRecipesSubject.asObservable();
 
   
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    if (this.getToken()) {
+      this.fetchRemoteRecipes();
+    }
+  }
+
+  private async fetchRemoteRecipes(): Promise<void> {
+    try {
+      const remote = await firstValueFrom(
+        this.http.get<string[]>(`${this.API}/user/recipes`)
+      );
+      this.saveRecipe(remote);
+    } catch (err) {
+      console.error('Failed to fetch remote recipes:', err);
+    }
+  }
 
   getRecipes() {
     return this.http.get<Recipe[]>('assets/data/recipe.json');
@@ -46,13 +61,13 @@ export class RecipeService {
     } else {
       this.saveRecipe([...current, recipeId]);
     }
-    
+
     if (this.getToken()) {
       try {
         const remote = await firstValueFrom(
           this.http.post<string[]>(`${this.API}/user/recipes`, { recipeId })
         );
-        this.saveRecipe(remote);
+        await this.fetchRemoteRecipes();
       } catch (err) {
         console.error('Failed to sync recipe:', err);
       }
