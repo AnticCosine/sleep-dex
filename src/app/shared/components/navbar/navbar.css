@@ -191,6 +191,7 @@ a.active {
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
+  color: black;
 }
  
 .google-btn:hover {
