@@ -20,6 +20,8 @@ export class IngredientTable {
   clearConfirmPending = false;
   totalIngredients = 0;
 
+  showToolTipModal = false;
+
   private clearResetTimer: ReturnType<typeof setTimeout> | null = null;
   private readonly CONFIRM_TIMEOUT_MS = 3500;
 
@@ -49,6 +51,7 @@ export class IngredientTable {
   }
 
   async onImageUpload(event: Event): Promise<void> {
+    console.log("TEST")
     const input = event.target as HTMLInputElement;
     const file = input.files?.[0];
     if (!file) return;
@@ -127,5 +130,13 @@ export class IngredientTable {
       clearTimeout(this.clearResetTimer);
       this.clearResetTimer = null;
     }
+  }
+
+  openModal() {
+    this.showToolTipModal = true;
+  }
+
+  closeModal() {
+    this.showToolTipModal = false;
   }
 }

@@ -1,7 +1,10 @@
 <div class="ingredient-list">
  
   <div class="list-header">
-    <span class="section-label">Ingredient inventory</span>
+    <div class="title">
+      <span class="section-label">Ingredient inventory</span>
+      <button class="help-btn" (click)="openModal()">?</button>
+    </div>
 
     <div class="buttons">
       <button
@@ -67,5 +70,32 @@
     }
  
   </div>
- 
+
+
+  <div class="modal-view" *ngIf="showToolTipModal" (click)="closeModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <button class="modal-close" (click)="closeModal()">
+            <span></span>
+            <span></span>
+        </button>
+        <h2>How to use </h2>
+        <p>Take a screenshot of your ingredient inventory like the screenshot below and upload it. This will add your current ingredients to the table</p>
+
+        <div class="phone-frame">
+          <img class="screenshot" src="assets/images/tests/21.png" alt="">
+        </div>
+
+        <div class="upload">
+          <button class="upload-btn" (click)="modalUploadInput.click()">
+            <img src="assets/images/upload_icon.svg" alt="">
+              Upload photo
+            <span class="badge-beta">Beta</span>
+          </button>
+          <input #modalUploadInput type="file" accept="image/*" style="display:none" (change)="onImageUpload($event)">
+        </div>
+
+        <p>Note: Let me know via the feedback form if any ingredients/quantities are not registering</p>
+    </div>
+  </div>
+
 </div>
