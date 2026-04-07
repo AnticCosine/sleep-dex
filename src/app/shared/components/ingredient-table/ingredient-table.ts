@@ -20,6 +20,8 @@ export class IngredientTable {
   clearConfirmPending = false;
   totalIngredients = 0;
 
+  showToolTipModal = false;
+
   private clearResetTimer: ReturnType<typeof setTimeout> | null = null;
   private readonly CONFIRM_TIMEOUT_MS = 3500;
 
@@ -127,5 +129,13 @@ export class IngredientTable {
       clearTimeout(this.clearResetTimer);
       this.clearResetTimer = null;
     }
+  }
+
+  openModal() {
+    this.showToolTipModal = true;
+  }
+
+  closeModal() {
+    this.showToolTipModal = false;
   }
 }

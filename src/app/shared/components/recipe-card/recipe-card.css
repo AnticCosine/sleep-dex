@@ -49,9 +49,18 @@
   background-color: var(--dessert-colour);
 }
 
+
 .disabled {
-  opacity: 0.45;
-  filter: grayscale(50%);
+  filter: grayscale(40%);
+}
+
+.disabled .recipe-img,
+.disabled h2,
+.disabled .checklist,
+.disabled .craft-count,
+.disabled .recipe:not(.enabled) {
+  opacity: 0.6;
+  
 }
 
 .recipe-img {
@@ -133,6 +142,11 @@ h2 {
 .ingredient-total img {
   width: 16px;
   height: 16px;
+}
+
+.disabled .recipe.enabled {
+  opacity: 1;
+  filter: none;
 }
 
 .name-divider {

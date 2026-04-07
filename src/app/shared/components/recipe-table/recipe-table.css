@@ -130,7 +130,17 @@ h3 {
   font-size: 14px;
 }
 
-tbody tr.cannot-make td {
-  opacity: 0.45;
-  filter: grayscale(50%);
+.recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tbody tr.cannot-make {
+  filter: grayscale(40%);
+}
+
+tbody tr.cannot-make td,
+tbody tr.cannot-make .recipe:not(.enabled) {
+  opacity: 0.6;
 }

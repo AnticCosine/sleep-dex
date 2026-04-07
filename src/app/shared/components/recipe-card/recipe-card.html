@@ -19,17 +19,23 @@
     <div class="recipe-ingredients">
         @for (ingredient of recipe.ingredients; track ingredient) {
             <div class="ingredient">
-                <div class="ingredient-icon">
-                    <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
-                </div>
+                
                 
                 @if (quantities && !recipePlaceHolder) {
-                    <h3>
-                        <span>{{ quantities[ingredient.ingredientId] || 0 }}</span>
-                        <span class="divider">/</span>
-                        <span>{{ ingredient.amount }}</span>
-                    </h3>
+                    <div class="recipe" [class.enabled]="quantities[ingredient.ingredientId] >= ingredient.amount">
+                        <div class="ingredient-icon">
+                            <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                        </div>
+                        <h3>
+                            <span>{{ quantities[ingredient.ingredientId] || 0 }}</span>
+                            <span class="divider">/</span>
+                            <span>{{ ingredient.amount }}</span>
+                        </h3>
+                    </div>
                 } @else {
+                    <div class="ingredient-icon">
+                        <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                    </div>
                     <h3>{{ ingredient.amount }}</h3>
                 }
                 

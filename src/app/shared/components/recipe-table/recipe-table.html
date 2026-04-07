@@ -32,13 +32,19 @@
                 <td>
                     @for (ingredient of recipe.ingredients; track ingredient) {
                         <div class="ingredient">
-                            <div class="ingredient-icon">
-                                <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
-                            </div>
+                            
 
                             @if (quantities) {
-                                <h3>{{ quantityOf(ingredient.ingredientId) }}/{{ ingredient.amount }}</h3>
+                                <div class="recipe" [class.enabled]="quantityOf(ingredient.ingredientId) >= ingredient.amount">
+                                    <div class="ingredient-icon">
+                                        <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                                    </div>
+                                    <h3>{{ quantityOf(ingredient.ingredientId) }}/{{ ingredient.amount }}</h3>
+                                </div>
                             } @else {
+                                <div class="ingredient-icon">
+                                    <img [src]="imageIngredientPath(ingredient.ingredientId)" alt="" class="ingredient-img">
+                                </div>
                                 <h3>{{ ingredient.amount }}</h3>
                             }
                         </div>
