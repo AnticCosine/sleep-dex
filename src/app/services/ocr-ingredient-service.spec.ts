@@ -326,8 +326,8 @@ describe('OcrIngredientService', () => {
   });
 
   afterAll(() => {
-    console.log('\n========== TEST REPORT ==========\n' + report.join('\n') + '\n=================================');
-    console.log("✅ TOTAL PASSED: ", totalPassed)
+    //console.log('\n========== TEST REPORT ==========\n' + report.join('\n') + '\n=================================');
+    //console.log("✅ TOTAL PASSED: ", totalPassed)
   });
 
   async function loadTestImage(path: string): Promise<File> {
@@ -348,6 +348,7 @@ describe('OcrIngredientService', () => {
         JSON.stringify([...result].sort(sortFn)) ===
         JSON.stringify([...expected].sort(sortFn));
 
+      /*
       if (passed) {
         report[index] = (`✅ TEST ${test}: PASSED`);
         totalPassed++;
@@ -359,11 +360,9 @@ describe('OcrIngredientService', () => {
           `
         );
       }
+      */
 
-      //console.log(`OCR RESULT FOR TEST ${test}: `, result);
-
-      //expect(result).toEqual(expected);
-
+      expect(passed).toEqual(true);
     }, 10000);
   })
   

@@ -51,7 +51,6 @@ export class IngredientTable {
   }
 
   async onImageUpload(event: Event): Promise<void> {
-    console.log("TEST")
     const input = event.target as HTMLInputElement;
     const file = input.files?.[0];
     if (!file) return;
