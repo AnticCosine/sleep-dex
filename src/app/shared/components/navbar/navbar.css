@@ -192,6 +192,8 @@ a.active {
   background: #fff;
   cursor: pointer;
   color: black;
+
+  font-family: var(--font-primary);
 }
  
 .google-btn:hover {
