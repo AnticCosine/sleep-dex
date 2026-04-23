@@ -17,7 +17,7 @@
             <div class="main-cards">
                 @if (recipes$ | async; as recipes) {
                     <app-recipe-card
-                        [recipe]="recipes[21]"
+                        [recipe]="recipes[recipes.length - 1]"
                         [homePlaceHolder]="true">
                     </app-recipe-card>
                     <app-recipe-card
