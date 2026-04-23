@@ -127,8 +127,8 @@
     gap: 6px;
     font-family: var(--font-primary);
     font-size: 13px;
-    text-decoration: none;
     color: var(--stat-label-colour);
+    text-decoration: none;
     transition: color 0.15s;
 }
 
