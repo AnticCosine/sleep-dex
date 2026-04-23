@@ -397,6 +397,8 @@
   background: #fff;
   cursor: pointer;
   color: black;
+
+  font-family: var(--font-primary);
 }
  
 .upload-btn:hover {

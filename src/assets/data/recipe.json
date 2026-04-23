@@ -811,5 +811,17 @@
       { "ingredientId": "fiery_herb", "amount": 30 },
       { "ingredientId": "greengrass_soybeans", "amount": 22 }
     ]
+  },
+  {
+    "id": "scald_chunky_salad",
+    "name": "“Scald” Chunky Salad",
+    "type": "salad",
+    "baseStrength": 25356,
+    "ingredients": [
+      { "ingredientId": "plump_pumpkin", "amount": 20 },
+      { "ingredientId": "soft_potato", "amount": 30 },
+      { "ingredientId": "greengrass_corn", "amount": 18 },
+      { "ingredientId": "tasty_mushroom", "amount": 27 }
+    ]
   }
 ]

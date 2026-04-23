@@ -11,6 +11,7 @@
   margin-top: 16px;
 
   color: black;
+  font-family: var(--font-primary);
 }
 
 .first-filter {
@@ -281,6 +282,8 @@ label input {
   cursor: pointer;
   transition: all 0.1s ease;
   padding: 8px 14px;
+
+  font-family: var(--font-primary);
 }
 
 .chip.active {
