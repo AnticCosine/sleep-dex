@@ -141,6 +141,8 @@
     height: 15px;
     fill: currentColor;
     flex-shrink: 0;
+
+    filter: var(--github-colour);
 }
 
 @media (max-width: 768px) {
