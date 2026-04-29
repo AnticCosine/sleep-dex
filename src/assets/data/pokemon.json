@@ -4467,9 +4467,9 @@
     ]
   },
   {
-    "id": "pumpkaboo",
+    "id": "pumpkaboo_medium",
     "pokedex_number": "710",
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Medium)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4486,9 +4486,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "pumpkaboo",
+    "id": "pumpkaboo_small",
     "pokedex_number": "710.1",
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Small)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4501,9 +4501,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "pumpkaboo",
+    "id": "pumpkaboo_large",
     "pokedex_number": "710.2",
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Large)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4516,9 +4516,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "pumpkaboo",
+    "id": "pumpkaboo_jumbo",
     "pokedex_number": "710.3",
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Jumbo)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4531,9 +4531,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "gourgeist",
+    "id": "gourgeist_medium",
     "pokedex_number": "711",
-    "name": "Gourgeist",
+    "name": "Gourgeist (Medium)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4550,9 +4550,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "gourgeist",
+    "id": "gourgeist_small",
     "pokedex_number": "711.1",
-    "name": "Gourgeist",
+    "name": "Gourgeist (Small)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4565,9 +4565,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "gourgeist",
+    "id": "gourgeist_large",
     "pokedex_number": "711.2",
-    "name": "Gourgeist",
+    "name": "Gourgeist (Large)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4580,9 +4580,9 @@
     "drowsy_power_requirement_list": []
   },
   {
-    "id": "gourgeist",
+    "id": "gourgeist_jumbo",
     "pokedex_number": "711.3",
-    "name": "Gourgeist",
+    "name": "Gourgeist (Jumbo)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -4931,7 +4931,7 @@
     ]
   },
   {
-    "id": "toxtricity_(amped_form)",
+    "id": "toxtricity_amped_form",
     "pokedex_number": "849",
     "name": "Toxtricity (Amped Form)",
     "type": "poison",
@@ -4955,7 +4955,7 @@
     ]
   },
   {
-    "id": "toxtricity_(low_key_form)",
+    "id": "toxtricity_low_key_form",
     "pokedex_number": "849.1",
     "name": "Toxtricity (Low Key Form)",
     "type": "poison",
