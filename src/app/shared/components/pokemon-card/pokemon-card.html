@@ -1,0 +1,43 @@
+<div class="pokemon-card">
+
+    <div [class]="'pokemon-sleep-type-' + pokemon.sleep_type">
+        {{ pokemon.sleep_type | stringCapitalise }}
+    </div>
+    <div [class]="'pokemon-specialty-' + pokemon.specialty">
+        {{ pokemon.specialty | stringCapitalise }}
+    </div>
+    <h1 class="pokedex-no">#{{ pokemon.pokedex_number }}</h1>
+    <img [src]="imagePokemonPath" alt="{{ pokemon.name }}" class="pokemon-img">
+    <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+
+    <div class="pokemon-output">
+        <img [src]="imageBerryPath" alt="" class="berry-img">
+        <div class="output-divider"></div>
+
+        @for (ingredient of pokemon.ingredients; track ingredient) {
+            <img [src]="imageIngredientPath(ingredient)" alt="" class="ingredient-img">
+        }
+    </div>
+
+    <div class="name-divider"></div>
+
+    <div class="sleep-styles">
+        @for (item of [].constructor(pokemon.number_of_sleep_styles); track $index) {
+            <button class="sleep-button">
+
+                <div class="star-sleep">
+                    <div class="star-box">
+                        <span class="star-icon">{{ '☆' }}</span>
+                    </div>
+                    <span class="num">{{ $index }}</span>
+                </div>
+
+                <span class="drowsy-power">
+                    {{ pokemon.drowsy_power_requirement_list[$index] | numberAbbreviate }}
+                </span>
+
+            </button>
+        }
+    </div>
+
+</div>

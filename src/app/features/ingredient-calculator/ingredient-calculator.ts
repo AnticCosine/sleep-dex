@@ -5,7 +5,7 @@ import { BehaviorSubject, combineLatest, map, Observable, take } from 'rxjs';
 import { Ingredient } from '../../models/ingredient.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Recipe, RecipeIngredients } from '../../models/recipe.models';
+import { Recipe, RecipeIngredients } from '../../models/recipe.model';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { IngredientTable } from '../../shared/components/ingredient-table/ingredient-table';
 import { RecipeFilters } from '../../shared/components/recipe-filters/recipe-filters';

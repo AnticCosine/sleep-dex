@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { combineLatest, map, Observable, take, tap } from 'rxjs';
 import { HomeStats, TypeProgress } from '../../models/home-stats.model';
 import { RecipeService } from '../../services/recipe-service';
-import { Recipe } from '../../models/recipe.models';
+import { Recipe } from '../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
 import { RouterLink } from '@angular/router';

@@ -5,6 +5,7 @@
 
             <div class="nav-links">
                 <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+                <li><a routerLink="/pokemon" routerLinkActive="active">Pokemon</a></li>
                 <li><a routerLink="/recipes" routerLinkActive="active">Recipes</a></li>
                 <li><a routerLink="/ingredients" routerLinkActive="active">Ingredients</a></li>
 
@@ -36,6 +37,7 @@
     <div class="seperator"></div>
     <div class="mobile-drawer" [class.open]="menuOpen">
         <a routerLink="/" routerLinkActive="active" (click)="toggleMenu()" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a routerLink="/pokemon" routerLinkActive="active" (click)="toggleMenu()">Pokemon</a>
         <a routerLink="/recipes" routerLinkActive="active" (click)="toggleMenu()">Recipes</a>
         <a routerLink="/ingredients" routerLinkActive="active" (click)="toggleMenu()">Ingredients</a>
         <a *ngIf="!(isLoggedIn$ | async)" class="auth-link" (click)="openModal()">Sign in</a>

@@ -1,0 +1,5340 @@
+[
+  {
+    "id": "bulbasaur",
+    "pokedex_number": "1",
+    "name": "Bulbasaur",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "ivysaur",
+    "pokedex_number": "2",
+    "name": "Ivysaur",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "venusaur",
+    "pokedex_number": "3",
+    "name": "Venusaur",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "charmander",
+    "pokedex_number": "4",
+    "name": "Charmander",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "warming_ginger",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "charmeleon",
+    "pokedex_number": "5",
+    "name": "Charmeleon",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "warming_ginger",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "charizard",
+    "pokedex_number": "6",
+    "name": "Charizard",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "warming_ginger",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "squirtle",
+    "pokedex_number": "7",
+    "name": "Squirtle",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "wartortle",
+    "pokedex_number": "8",
+    "name": "Wartortle",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "blastoise",
+    "pokedex_number": "9",
+    "name": "Blastoise",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "caterpie",
+    "pokedex_number": "10",
+    "name": "Caterpie",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "lum",
+      "count": 2
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "metapod",
+    "pokedex_number": "11",
+    "name": "Metapod",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "lum",
+      "count": 2
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      570000,
+      3150000,
+      10830000,
+      14330000
+    ]
+  },
+  {
+    "id": "butterfree",
+    "pokedex_number": "12",
+    "name": "Butterfree",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "lum",
+      "count": 2
+    },
+    "ingredients": [
+      "honey",
+      "snoozy_tomato",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      20820000,
+      48070000,
+      59050000
+    ]
+  },
+  {
+    "id": "rattata",
+    "pokedex_number": "19",
+    "name": "Rattata",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_soybeans",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "raticate",
+    "pokedex_number": "20",
+    "name": "Raticate",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_soybeans",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      5050000,
+      15470000,
+      20820000
+    ]
+  },
+  {
+    "id": "ekans",
+    "pokedex_number": "23",
+    "name": "Ekans",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "chesto",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "fancy_egg",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "arbok",
+    "pokedex_number": "24",
+    "name": "Arbok",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "chesto",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "fancy_egg",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "pikachu",
+    "pokedex_number": "25",
+    "name": "Pikachu",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "grepa",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "pikachu_(halloween)",
+    "pokedex_number": "25.1",
+    "name": "Pikachu (Halloween)",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "grepa",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "pikachu_(holiday)",
+    "pokedex_number": "25.2",
+    "name": "Pikachu (Holiday)",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000
+    ]
+  },
+  {
+    "id": "raichu",
+    "pokedex_number": "26",
+    "name": "Raichu",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "grepa",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      20820000,
+      48070000,
+      59050000
+    ]
+  },
+  {
+    "id": "sandshrew",
+    "pokedex_number": "27",
+    "name": "Sandshrew",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "sandslash",
+    "pokedex_number": "28",
+    "name": "Sandslash",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      31810000,
+      90140000,
+      130070000
+    ]
+  },
+  {
+    "id": "clefairy",
+    "pokedex_number": "35",
+    "name": "Clefairy",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "honey",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      3910000,
+      12690000,
+      16640000
+    ]
+  },
+  {
+    "id": "clefable",
+    "pokedex_number": "36",
+    "name": "Clefable",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "honey",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "vulpix",
+    "pokedex_number": "37",
+    "name": "Vulpix",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      760000,
+      6570000,
+      19570000,
+      25540000
+    ]
+  },
+  {
+    "id": "alolan_vulpix",
+    "pokedex_number": "37.1",
+    "name": "Alolan Vulpix",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "rawst",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "ninetales",
+    "pokedex_number": "38",
+    "name": "Ninetales",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      6000000,
+      22150000,
+      49890000,
+      62780000
+    ]
+  },
+  {
+    "id": "alolan_ninetales",
+    "pokedex_number": "38.1",
+    "name": "Alolan Ninetales",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "rawst",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "jigglypuff",
+    "pokedex_number": "39",
+    "name": "Jigglypuff",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "pure_oil",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      304000,
+      2510000,
+      9120000,
+      12690000
+    ]
+  },
+  {
+    "id": "wigglytuff",
+    "pokedex_number": "40",
+    "name": "Wigglytuff",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "pure_oil",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5050000,
+      11780000,
+      30480000,
+      38300000
+    ]
+  },
+  {
+    "id": "diglett",
+    "pokedex_number": "50",
+    "name": "Diglett",
+    "type": "ground",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "large_leek",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000
+    ]
+  },
+  {
+    "id": "dugtrio",
+    "pokedex_number": "51",
+    "name": "Dugtrio",
+    "type": "ground",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "large_leek",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000
+    ]
+  },
+  {
+    "id": "meowth",
+    "pokedex_number": "52",
+    "name": "Meowth",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "persian",
+    "pokedex_number": "53",
+    "name": "Persian",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "psyduck",
+    "pokedex_number": "54",
+    "name": "Psyduck",
+    "type": "water",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "fancy_apple",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "golduck",
+    "pokedex_number": "55",
+    "name": "Golduck",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "fancy_apple",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "mankey",
+    "pokedex_number": "56",
+    "name": "Mankey",
+    "type": "fighting",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "cheri",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "primeape",
+    "pokedex_number": "57",
+    "name": "Primeape",
+    "type": "fighting",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "cheri",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "growlithe",
+    "pokedex_number": "58",
+    "name": "Growlithe",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "bean_sausage",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "arcanine",
+    "pokedex_number": "59",
+    "name": "Arcanine",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "bean_sausage",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      16640000,
+      31810000,
+      68670000,
+      85610000
+    ]
+  },
+  {
+    "id": "bellsprout",
+    "pokedex_number": "69",
+    "name": "Bellsprout",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soft_potato",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1820000,
+      7140000,
+      9920000
+    ]
+  },
+  {
+    "id": "weepinbell",
+    "pokedex_number": "70",
+    "name": "Weepinbell",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soft_potato",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      5050000,
+      15470000,
+      20820000
+    ]
+  },
+  {
+    "id": "victreebel",
+    "pokedex_number": "71",
+    "name": "Victreebel",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soft_potato",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      20820000,
+      48070000,
+      59050000
+    ]
+  },
+  {
+    "id": "geodude",
+    "pokedex_number": "74",
+    "name": "Geodude",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "soft_potato",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "graveler",
+    "pokedex_number": "75",
+    "name": "Graveler",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "soft_potato",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      5050000,
+      15470000,
+      20820000
+    ]
+  },
+  {
+    "id": "golem",
+    "pokedex_number": "76",
+    "name": "Golem",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "soft_potato",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "slowpoke",
+    "pokedex_number": "79",
+    "name": "Slowpoke",
+    "type": "water",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "slowpoke_tail",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "slowbro",
+    "pokedex_number": "80",
+    "name": "Slowbro",
+    "type": "water",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "slowpoke_tail",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "magnemite",
+    "pokedex_number": "81",
+    "name": "Magnemite",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      76000,
+      1820000,
+      7140000
+    ]
+  },
+  {
+    "id": "magneton",
+    "pokedex_number": "82",
+    "name": "Magneton",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000
+    ]
+  },
+  {
+    "id": "farfetch'd",
+    "pokedex_number": "83",
+    "name": "Farfetch'd",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "large_leek",
+      "bean_sausage",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      48070000,
+      147360000,
+      163740000
+    ]
+  },
+  {
+    "id": "doduo",
+    "pokedex_number": "84",
+    "name": "Doduo",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "pamtre",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "dodrio",
+    "pokedex_number": "85",
+    "name": "Dodrio",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "pamtre",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      5050000,
+      15470000,
+      20820000
+    ]
+  },
+  {
+    "id": "gastly",
+    "pokedex_number": "92",
+    "name": "Gastly",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "tasty_mushroom",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000
+    ]
+  },
+  {
+    "id": "haunter",
+    "pokedex_number": "93",
+    "name": "Haunter",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "tasty_mushroom",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      2089999,
+      5470000,
+      16640000
+    ]
+  },
+  {
+    "id": "gengar",
+    "pokedex_number": "94",
+    "name": "Gengar",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "tasty_mushroom",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "onix",
+    "pokedex_number": "95",
+    "name": "Onix",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "sitrus",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "bean_sausage",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      8320000,
+      18050000,
+      43700000
+    ]
+  },
+  {
+    "id": "cubone",
+    "pokedex_number": "104",
+    "name": "Cubone",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "figy",
+      "count": 2
+    },
+    "ingredients": [
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "marowak",
+    "pokedex_number": "105",
+    "name": "Marowak",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "figy",
+      "count": 2
+    },
+    "ingredients": [
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2510000,
+      6570000,
+      19570000,
+      25540000
+    ]
+  },
+  {
+    "id": "chansey",
+    "pokedex_number": "113",
+    "name": "Chansey",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "soft_potato",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      46210000,
+      93290000,
+      147360000
+    ]
+  },
+  {
+    "id": "kangaskhan",
+    "pokedex_number": "115",
+    "name": "Kangaskhan",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "warming_ginger",
+      "soft_potato",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      8320000,
+      18050000,
+      43700000,
+      52710000
+    ]
+  },
+  {
+    "id": "mr._mime",
+    "pokedex_number": "122",
+    "name": "Mr. Mime",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soft_potato",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "pinsir",
+    "pokedex_number": "127",
+    "name": "Pinsir",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "fancy_apple",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      7140000,
+      15470000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "ditto",
+    "pokedex_number": "132",
+    "name": "Ditto",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5470000,
+      12690000,
+      31810000,
+      40930000
+    ]
+  },
+  {
+    "id": "eevee",
+    "pokedex_number": "133",
+    "name": "Eevee",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "eevee_(holiday)",
+    "pokedex_number": "133.1",
+    "name": "Eevee (Holiday)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [
+      760000,
+      6570000
+    ]
+  },
+  {
+    "id": "eevee_(halloween)",
+    "pokedex_number": "133.2",
+    "name": "Eevee (Halloween)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "soothing_cacao",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [
+      760000,
+      6570000
+    ]
+  },
+  {
+    "id": "vaporeon",
+    "pokedex_number": "134",
+    "name": "Vaporeon",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "jolteon",
+    "pokedex_number": "135",
+    "name": "Jolteon",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "flareon",
+    "pokedex_number": "136",
+    "name": "Flareon",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "dratini",
+    "pokedex_number": "147",
+    "name": "Dratini",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "greengrass_corn",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      570000,
+      12690000,
+      20820000,
+      25540000
+    ]
+  },
+  {
+    "id": "dragonair",
+    "pokedex_number": "148",
+    "name": "Dragonair",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "greengrass_corn",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4640000,
+      15470000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "dragonite",
+    "pokedex_number": "149",
+    "name": "Dragonite",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "greengrass_corn",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      46210000,
+      77100000,
+      155340000,
+      185520000
+    ]
+  },
+  {
+    "id": "mew",
+    "pokedex_number": "151",
+    "name": "Mew",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "all",
+    "berry": {
+      "name": "mago",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_egg",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      43700000,
+      77100000,
+      163740000
+    ]
+  },
+  {
+    "id": "chikorita",
+    "pokedex_number": "152",
+    "name": "Chikorita",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "durin",
+      "count": 2
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "honey",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "bayleef",
+    "pokedex_number": "153",
+    "name": "Bayleef",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "durin",
+      "count": 2
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "honey",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "meganium",
+    "pokedex_number": "154",
+    "name": "Meganium",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "durin",
+      "count": 2
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "honey",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "cyndaquil",
+    "pokedex_number": "155",
+    "name": "Cyndaquil",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "warming_ginger",
+      "fiery_herb",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "quilava",
+    "pokedex_number": "156",
+    "name": "Quilava",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "warming_ginger",
+      "fiery_herb",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "typhlosion",
+    "pokedex_number": "157",
+    "name": "Typhlosion",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "warming_ginger",
+      "fiery_herb",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "totodile",
+    "pokedex_number": "158",
+    "name": "Totodile",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "oran",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "croconaw",
+    "pokedex_number": "159",
+    "name": "Croconaw",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "oran",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "feraligatr",
+    "pokedex_number": "160",
+    "name": "Feraligatr",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "oran",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      14330000,
+      28770000,
+      62780000,
+      77100000
+    ]
+  },
+  {
+    "id": "pichu",
+    "pokedex_number": "172",
+    "name": "Pichu",
+    "type": "electric",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "grepa",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "cleffa",
+    "pokedex_number": "173",
+    "name": "Cleffa",
+    "type": "fairy",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_apple",
+      "honey",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "igglybuff",
+    "pokedex_number": "174",
+    "name": "Igglybuff",
+    "type": "fairy",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "pure_oil",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "togepi",
+    "pokedex_number": "175",
+    "name": "Togepi",
+    "type": "fairy",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "togetic",
+    "pokedex_number": "176",
+    "name": "Togetic",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      5470000,
+      16640000,
+      22150000
+    ]
+  },
+  {
+    "id": "natu",
+    "pokedex_number": "177",
+    "name": "Natu",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "mago",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_egg",
+      "soothing_cacao",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "xatu",
+    "pokedex_number": "178",
+    "name": "Xatu",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "mago",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_egg",
+      "soothing_cacao",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      31810000,
+      85610000,
+      122850000
+    ]
+  },
+  {
+    "id": "mareep",
+    "pokedex_number": "179",
+    "name": "Mareep",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "flaaffy",
+    "pokedex_number": "180",
+    "name": "Flaaffy",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      5050000,
+      15470000,
+      20820000
+    ]
+  },
+  {
+    "id": "ampharos",
+    "pokedex_number": "181",
+    "name": "Ampharos",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      20820000,
+      48070000,
+      59050000
+    ]
+  },
+  {
+    "id": "sudowoodo",
+    "pokedex_number": "185",
+    "name": "Sudowoodo",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "greengrass_soybeans",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      570000,
+      3150000,
+      10830000,
+      14330000
+    ]
+  },
+  {
+    "id": "wooper",
+    "pokedex_number": "194",
+    "name": "Wooper",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "soft_potato",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2280000,
+      7140000,
+      28770000,
+      33479999
+    ]
+  },
+  {
+    "id": "paldean_wooper",
+    "pokedex_number": "194.1",
+    "name": "Paldean Wooper",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "rousing_coffee",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "quagsire",
+    "pokedex_number": "195",
+    "name": "Quagsire",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "soft_potato",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      23900000,
+      68670000,
+      81240000
+    ]
+  },
+  {
+    "id": "espeon",
+    "pokedex_number": "196",
+    "name": "Espeon",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "umbreon",
+    "pokedex_number": "197",
+    "name": "Umbreon",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "murkrow",
+    "pokedex_number": "198",
+    "name": "Murkrow",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "greengrass_soybeans",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      6000000,
+      27130000,
+      59050000,
+      93290000
+    ]
+  },
+  {
+    "id": "slowking",
+    "pokedex_number": "199",
+    "name": "Slowking",
+    "type": "water",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "slowpoke_tail",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      16640000,
+      31810000,
+      68670000,
+      85610000
+    ]
+  },
+  {
+    "id": "wobbuffet",
+    "pokedex_number": "202",
+    "name": "Wobbuffet",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "tasty_mushroom",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      570000,
+      3150000,
+      10830000,
+      14330000
+    ]
+  },
+  {
+    "id": "steelix",
+    "pokedex_number": "208",
+    "name": "Steelix",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "belue",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "bean_sausage",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      31810000,
+      55590000,
+      115980000
+    ]
+  },
+  {
+    "id": "shuckle",
+    "pokedex_number": "213",
+    "name": "Shuckle",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "rousing_coffee",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      49890000,
+      163740000,
+      185520000
+    ]
+  },
+  {
+    "id": "heracross",
+    "pokedex_number": "214",
+    "name": "Heracross",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "tasty_mushroom",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      7140000,
+      15470000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "sneasel",
+    "pokedex_number": "215",
+    "name": "Sneasel",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "wiki",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "fancy_egg",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      6000000,
+      27130000,
+      59050000,
+      93290000
+    ]
+  },
+  {
+    "id": "delibird",
+    "pokedex_number": "225",
+    "name": "Delibird",
+    "type": "flying",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "fancy_apple",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      25540000,
+      55590000,
+      68670000
+    ]
+  },
+  {
+    "id": "houndour",
+    "pokedex_number": "228",
+    "name": "Houndour",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "wiki",
+      "count": 2
+    },
+    "ingredients": [
+      "fiery_herb",
+      "warming_ginger",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "houndoom",
+    "pokedex_number": "229",
+    "name": "Houndoom",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "wiki",
+      "count": 2
+    },
+    "ingredients": [
+      "fiery_herb",
+      "warming_ginger",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3910000,
+      9120000,
+      25540000,
+      31810000
+    ]
+  },
+  {
+    "id": "blissey",
+    "pokedex_number": "242",
+    "name": "Blissey",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "soft_potato",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      30480000,
+      73110000,
+      172710000,
+      205880000
+    ]
+  },
+  {
+    "id": "raikou",
+    "pokedex_number": "243",
+    "name": "Raikou",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "fiery_herb",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      40930000,
+      115980000,
+      243390000
+    ]
+  },
+  {
+    "id": "entei",
+    "pokedex_number": "244",
+    "name": "Entei",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "snoozy_tomato",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      43700000,
+      122850000,
+      262430000
+    ]
+  },
+  {
+    "id": "suicune",
+    "pokedex_number": "245",
+    "name": "Suicune",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "pure_oil",
+      "greengrass_corn"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      46210000,
+      130070000,
+      275200000
+    ]
+  },
+  {
+    "id": "larvitar",
+    "pokedex_number": "246",
+    "name": "Larvitar",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "warming_ginger",
+      "greengrass_soybeans",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      760000,
+      3500000,
+      11780000,
+      15470000
+    ]
+  },
+  {
+    "id": "pupitar",
+    "pokedex_number": "247",
+    "name": "Pupitar",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "warming_ginger",
+      "greengrass_soybeans",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3910000,
+      9120000,
+      25540000,
+      31810000
+    ]
+  },
+  {
+    "id": "tyranitar",
+    "pokedex_number": "248",
+    "name": "Tyranitar",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "warming_ginger",
+      "greengrass_soybeans",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      35800000,
+      62780000,
+      130070000,
+      155340000
+    ]
+  },
+  {
+    "id": "treecko",
+    "pokedex_number": "252",
+    "name": "Treecko",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "rousing_coffee",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1220000,
+      12690000,
+      35800000,
+      40930000
+    ]
+  },
+  {
+    "id": "grovyle",
+    "pokedex_number": "253",
+    "name": "Grovyle",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "rousing_coffee",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4640000,
+      20820000,
+      55590000,
+      68670000
+    ]
+  },
+  {
+    "id": "sceptile",
+    "pokedex_number": "254",
+    "name": "Sceptile",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "rousing_coffee",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      65700000,
+      179020000,
+      195360000
+    ]
+  },
+  {
+    "id": "torchic",
+    "pokedex_number": "255",
+    "name": "Torchic",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "leppa",
+      "count": 2
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "greengrass_soybeans",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1220000,
+      12690000,
+      35800000,
+      40930000
+    ]
+  },
+  {
+    "id": "combusken",
+    "pokedex_number": "256",
+    "name": "Combusken",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "cheri",
+      "count": 2
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "greengrass_soybeans",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4640000,
+      20820000,
+      55590000,
+      68670000
+    ]
+  },
+  {
+    "id": "blaziken",
+    "pokedex_number": "257",
+    "name": "Blaziken",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "cheri",
+      "count": 2
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "greengrass_soybeans",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      65700000,
+      179020000,
+      195360000
+    ]
+  },
+  {
+    "id": "mudkip",
+    "pokedex_number": "258",
+    "name": "Mudkip",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "oran",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "moomoo_milk",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1220000,
+      12690000,
+      35800000,
+      40930000
+    ]
+  },
+  {
+    "id": "marshtomp",
+    "pokedex_number": "259",
+    "name": "Marshtomp",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "figy",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "moomoo_milk",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4640000,
+      20820000,
+      55590000,
+      68670000
+    ]
+  },
+  {
+    "id": "swampert",
+    "pokedex_number": "260",
+    "name": "Swampert",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "figy",
+      "count": 2
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "moomoo_milk",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      65700000,
+      179020000,
+      195360000
+    ]
+  },
+  {
+    "id": "ralts",
+    "pokedex_number": "280",
+    "name": "Ralts",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_corn",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      304000,
+      10830000,
+      18050000,
+      22150000
+    ]
+  },
+  {
+    "id": "kirlia",
+    "pokedex_number": "281",
+    "name": "Kirlia",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_corn",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4640000,
+      15470000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "gardevoir",
+    "pokedex_number": "282",
+    "name": "Gardevoir",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_corn",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      20820000,
+      38300000,
+      81240000,
+      97360000
+    ]
+  },
+  {
+    "id": "slakoth",
+    "pokedex_number": "287",
+    "name": "Slakoth",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "honey",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "vigoroth",
+    "pokedex_number": "288",
+    "name": "Vigoroth",
+    "type": "normal",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "honey",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2810000,
+      7140000,
+      20820000,
+      27130000
+    ]
+  },
+  {
+    "id": "slaking",
+    "pokedex_number": "289",
+    "name": "Slaking",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "persim",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "honey",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      22150000,
+      40930000,
+      85610000,
+      103250000
+    ]
+  },
+  {
+    "id": "sableye",
+    "pokedex_number": "302",
+    "name": "Sableye",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "tasty_mushroom",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5470000,
+      12690000,
+      31810000,
+      40930000
+    ]
+  },
+  {
+    "id": "mawile",
+    "pokedex_number": "303",
+    "name": "Mawile",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "greengrass_corn",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      48070000,
+      147360000,
+      163740000
+    ]
+  },
+  {
+    "id": "aron",
+    "pokedex_number": "304",
+    "name": "Aron",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "rousing_coffee",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      40930000,
+      49890000
+    ]
+  },
+  {
+    "id": "lairon",
+    "pokedex_number": "305",
+    "name": "Lairon",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "rousing_coffee",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5050000,
+      16640000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "aggron",
+    "pokedex_number": "306",
+    "name": "Aggron",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "rousing_coffee",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      35800000,
+      73110000,
+      179020000,
+      215610000
+    ]
+  },
+  {
+    "id": "plusle",
+    "pokedex_number": "311",
+    "name": "Plusle",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "large_leek",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      23900000,
+      43700000,
+      90140000,
+      109400000
+    ]
+  },
+  {
+    "id": "minun",
+    "pokedex_number": "312",
+    "name": "Minun",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "fancy_egg",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      23900000,
+      43700000,
+      90140000,
+      109400000
+    ]
+  },
+  {
+    "id": "gulpin",
+    "pokedex_number": "316",
+    "name": "Gulpin",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1820000,
+      7140000,
+      9920000
+    ]
+  },
+  {
+    "id": "swalot",
+    "pokedex_number": "317",
+    "name": "Swalot",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "trapinch",
+    "pokedex_number": "328",
+    "name": "Trapinch",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "glossy_avocado",
+      "fiery_herb",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1560000,
+      7140000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "vibrava",
+    "pokedex_number": "329",
+    "name": "Vibrava",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "glossy_avocado",
+      "fiery_herb",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      10830000,
+      28770000,
+      90140000,
+      109400000
+    ]
+  },
+  {
+    "id": "flygon",
+    "pokedex_number": "330",
+    "name": "Flygon",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      "glossy_avocado",
+      "fiery_herb",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      40930000,
+      85610000,
+      215610000,
+      250840000
+    ]
+  },
+  {
+    "id": "swablu",
+    "pokedex_number": "333",
+    "name": "Swablu",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "pamtre",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_egg",
+      "greengrass_soybeans",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1820000,
+      7140000,
+      9920000
+    ]
+  },
+  {
+    "id": "altaria",
+    "pokedex_number": "334",
+    "name": "Altaria",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "yache",
+      "count": 2
+    },
+    "ingredients": [
+      "fancy_egg",
+      "greengrass_soybeans",
+      "fancy_apple"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4260000,
+      9920000,
+      27130000,
+      33479999
+    ]
+  },
+  {
+    "id": "shuppet",
+    "pokedex_number": "353",
+    "name": "Shuppet",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "bluk",
+      "count": 2
+    },
+    "ingredients": [
+      "pure_oil",
+      "warming_ginger",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000
+    ]
+  },
+  {
+    "id": "banette",
+    "pokedex_number": "354",
+    "name": "Banette",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "bluk",
+      "count": 2
+    },
+    "ingredients": [
+      "pure_oil",
+      "warming_ginger",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5050000,
+      11780000,
+      30480000,
+      38300000
+    ]
+  },
+  {
+    "id": "absol",
+    "pokedex_number": "359",
+    "name": "Absol",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "fancy_apple",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      7140000,
+      15470000,
+      38300000,
+      48070000
+    ]
+  },
+  {
+    "id": "wynaut",
+    "pokedex_number": "360",
+    "name": "Wynaut",
+    "type": "psychic",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "tasty_mushroom",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "spheal",
+    "pokedex_number": "363",
+    "name": "Spheal",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "rawst",
+      "count": 2
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "spheal_(holiday)",
+    "pokedex_number": "363.1",
+    "name": "Spheal (Holiday)",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [
+      760000,
+      6570000
+    ]
+  },
+  {
+    "id": "sealeo",
+    "pokedex_number": "364",
+    "name": "Sealeo",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "rawst",
+      "count": 2
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "walrein",
+    "pokedex_number": "365",
+    "name": "Walrein",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "berries",
+    "berry": {
+      "name": "rawst",
+      "count": 2
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9920000,
+      20820000,
+      48070000,
+      59050000
+    ]
+  },
+  {
+    "id": "bagon",
+    "pokedex_number": "371",
+    "name": "Bagon",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "yache",
+      "count": 2
+    },
+    "ingredients": [
+      "soft_potato",
+      "warming_ginger",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1820000,
+      7710000,
+      40930000,
+      49890000
+    ]
+  },
+  {
+    "id": "shelgon",
+    "pokedex_number": "372",
+    "name": "Shelgon",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "yache",
+      "count": 2
+    },
+    "ingredients": [
+      "soft_potato",
+      "warming_ginger",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      8320000,
+      23900000,
+      81240000,
+      97360000
+    ]
+  },
+  {
+    "id": "salamence",
+    "pokedex_number": "373",
+    "name": "Salamence",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "yache",
+      "count": 2
+    },
+    "ingredients": [
+      "soft_potato",
+      "warming_ginger",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      59050000,
+      122850000,
+      250800000,
+      302290000
+    ]
+  },
+  {
+    "id": "latias",
+    "pokedex_number": "380",
+    "name": "Latias",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "plump_pumpkin",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      49890000,
+      139610000,
+      316770000
+    ]
+  },
+  {
+    "id": "shinx",
+    "pokedex_number": "403",
+    "name": "Shinx",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "pure_oil",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1560000,
+      7140000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "luxio",
+    "pokedex_number": "404",
+    "name": "Luxio",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "pure_oil",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9120000,
+      27130000,
+      85610000,
+      103250000
+    ]
+  },
+  {
+    "id": "luxray",
+    "pokedex_number": "405",
+    "name": "Luxray",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "pure_oil",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      68670000,
+      172710000,
+      205880000
+    ]
+  },
+  {
+    "id": "drifloon",
+    "pokedex_number": "425",
+    "name": "Drifloon",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "pure_oil",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      3910000,
+      13490000,
+      55590000
+    ]
+  },
+  {
+    "id": "drifblim",
+    "pokedex_number": "426",
+    "name": "Drifblim",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "pure_oil",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      62780000,
+      77100000,
+      155340000
+    ]
+  },
+  {
+    "id": "honchkrow",
+    "pokedex_number": "430",
+    "name": "Honchkrow",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "greengrass_soybeans",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      77100000,
+      179020000,
+      215610000
+    ]
+  },
+  {
+    "id": "bonsly",
+    "pokedex_number": "438",
+    "name": "Bonsly",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "greengrass_soybeans",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      1560000,
+      6570000,
+      9120000
+    ]
+  },
+  {
+    "id": "mime_jr.",
+    "pokedex_number": "439",
+    "name": "Mime Jr.",
+    "type": "psychic",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soft_potato",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "happiny",
+    "pokedex_number": "440",
+    "name": "Happiny",
+    "type": "normal",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "soft_potato",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      6000000,
+      31810000,
+      40930000
+    ]
+  },
+  {
+    "id": "spiritomb",
+    "pokedex_number": "442",
+    "name": "Spiritomb",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "plump_pumpkin",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      49890000,
+      163740000,
+      179020000
+    ]
+  },
+  {
+    "id": "riolu",
+    "pokedex_number": "447",
+    "name": "Riolu",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "soft_potato",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2280000,
+      8320000,
+      11780000
+    ]
+  },
+  {
+    "id": "lucario",
+    "pokedex_number": "448",
+    "name": "Lucario",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "soft_potato",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "croagunk",
+    "pokedex_number": "453",
+    "name": "Croagunk",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      76000,
+      2089999,
+      7710000,
+      10830000
+    ]
+  },
+  {
+    "id": "toxicroak",
+    "pokedex_number": "454",
+    "name": "Toxicroak",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      3150000,
+      7710000,
+      22150000,
+      28770000
+    ]
+  },
+  {
+    "id": "snover",
+    "pokedex_number": "459",
+    "name": "Snover",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "fancy_egg",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      418000,
+      2810000,
+      9920000,
+      13490000
+    ]
+  },
+  {
+    "id": "abomasnow",
+    "pokedex_number": "460",
+    "name": "Abomasnow",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "fancy_egg",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      7710000,
+      16640000,
+      40930000
+    ]
+  },
+  {
+    "id": "weavile",
+    "pokedex_number": "461",
+    "name": "Weavile",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "wiki",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage",
+      "fancy_egg",
+      "greengrass_soybeans"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33479999,
+      77100000,
+      179020000,
+      215610000
+    ]
+  },
+  {
+    "id": "magnezone",
+    "pokedex_number": "462",
+    "name": "Magnezone",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      16640000,
+      31810000,
+      68670000
+    ]
+  },
+  {
+    "id": "togekiss",
+    "pokedex_number": "468",
+    "name": "Togekiss",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_egg",
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      18050000,
+      33479999,
+      73110000,
+      90140000
+    ]
+  },
+  {
+    "id": "leafeon",
+    "pokedex_number": "470",
+    "name": "Leafeon",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "glaceon",
+    "pokedex_number": "471",
+    "name": "Glaceon",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "gallade",
+    "pokedex_number": "475",
+    "name": "Gallade",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "greengrass_corn",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      31810000,
+      55590000,
+      115980000,
+      139610000
+    ]
+  },
+  {
+    "id": "cresselia",
+    "pokedex_number": "488",
+    "name": "Cresselia",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "warming_ginger",
+      "soothing_cacao",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      48070000,
+      134710000,
+      288340000
+    ]
+  },
+  {
+    "id": "darkrai",
+    "pokedex_number": "491",
+    "name": "Darkrai",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "all",
+    "berry": {
+      "name": "wiki",
+      "count": 2
+    },
+    "ingredients": [
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      40930000,
+      73110000,
+      155340000
+    ]
+  },
+  {
+    "id": "munna",
+    "pokedex_number": "517",
+    "name": "Munna",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "mago",
+      "count": 2
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "honey",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      570000,
+      6000000,
+      18050000
+    ]
+  },
+  {
+    "id": "musharna",
+    "pokedex_number": "518",
+    "name": "Musharna",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "mago",
+      "count": 2
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "honey",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      22150000,
+      59050000,
+      134710000
+    ]
+  },
+  {
+    "id": "dwebble",
+    "pokedex_number": "557",
+    "name": "Dwebble",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "glossy_avocado",
+      "soft_potato",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1220000,
+      6570000,
+      33479999,
+      43700000
+    ]
+  },
+  {
+    "id": "crustle",
+    "pokedex_number": "558",
+    "name": "Crustle",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "glossy_avocado",
+      "soft_potato",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      27130000,
+      62780000,
+      195360000,
+      236280000
+    ]
+  },
+  {
+    "id": "rufflet",
+    "pokedex_number": "627",
+    "name": "Rufflet",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "greengrass_corn",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "braviary",
+    "pokedex_number": "628",
+    "name": "Braviary",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "bean_sausage",
+      "greengrass_corn",
+      "rousing_coffee"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      31810000,
+      85610000,
+      122850000
+    ]
+  },
+  {
+    "id": "sylveon",
+    "pokedex_number": "700",
+    "name": "Sylveon",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "soothing_cacao",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      13490000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "dedenne",
+    "pokedex_number": "702",
+    "name": "Dedenne",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "soothing_cacao",
+      "greengrass_corn"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      7140000,
+      25540000,
+      55590000,
+      68670000
+    ]
+  },
+  {
+    "id": "pumpkaboo",
+    "pokedex_number": "710",
+    "name": "Pumpkaboo",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "greengrass_soybeans",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "pumpkaboo",
+    "pokedex_number": "710.1",
+    "name": "Pumpkaboo",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "pumpkaboo",
+    "pokedex_number": "710.2",
+    "name": "Pumpkaboo",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "pumpkaboo",
+    "pokedex_number": "710.3",
+    "name": "Pumpkaboo",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "gourgeist",
+    "pokedex_number": "711",
+    "name": "Gourgeist",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "greengrass_soybeans",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "gourgeist",
+    "pokedex_number": "711.1",
+    "name": "Gourgeist",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "gourgeist",
+    "pokedex_number": "711.2",
+    "name": "Gourgeist",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "gourgeist",
+    "pokedex_number": "711.3",
+    "name": "Gourgeist",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [],
+    "number_of_sleep_styles": 0,
+    "drowsy_power_requirement_list": []
+  },
+  {
+    "id": "noibat",
+    "pokedex_number": "714",
+    "name": "Noibat",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "large_leek",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "noivern",
+    "pokedex_number": "715",
+    "name": "Noivern",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "large_leek",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      31810000,
+      90140000,
+      122850000
+    ]
+  },
+  {
+    "id": "grubbin",
+    "pokedex_number": "736",
+    "name": "Grubbin",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1560000,
+      7140000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "charjabug",
+    "pokedex_number": "737",
+    "name": "Charjabug",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9120000,
+      25540000,
+      81240000,
+      97360000
+    ]
+  },
+  {
+    "id": "vikavolt",
+    "pokedex_number": "738",
+    "name": "Vikavolt",
+    "type": "bug",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "lum",
+      "count": 1
+    },
+    "ingredients": [
+      "rousing_coffee",
+      "tasty_mushroom",
+      "honey"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      43700000,
+      85610000,
+      205880000,
+      243390000
+    ]
+  },
+  {
+    "id": "cutiefly",
+    "pokedex_number": "742",
+    "name": "Cutiefly",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "pure_oil",
+      "greengrass_corn"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      8320000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "ribombee",
+    "pokedex_number": "743",
+    "name": "Ribombee",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "honey",
+      "pure_oil",
+      "greengrass_corn"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      31810000,
+      90140000,
+      122850000
+    ]
+  },
+  {
+    "id": "stufful",
+    "pokedex_number": "759",
+    "name": "Stufful",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "bean_sausage",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      570000,
+      11780000,
+      19570000,
+      25540000
+    ]
+  },
+  {
+    "id": "bewear",
+    "pokedex_number": "760",
+    "name": "Bewear",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "bean_sausage",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      6000000,
+      19570000,
+      46210000,
+      55590000
+    ]
+  },
+  {
+    "id": "comfey",
+    "pokedex_number": "764",
+    "name": "Comfey",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_corn",
+      "warming_ginger",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      7710000,
+      27130000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "togedemaru",
+    "pokedex_number": "777",
+    "name": "Togedemaru",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "glossy_avocado",
+      "soothing_cacao"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      49890000,
+      163740000,
+      179020000
+    ]
+  },
+  {
+    "id": "mimikyu",
+    "pokedex_number": "778",
+    "name": "Mimikyu",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "rousing_coffee",
+      "tasty_mushroom"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12690000,
+      40930000,
+      139610000,
+      155340000
+    ]
+  },
+  {
+    "id": "cramorant",
+    "pokedex_number": "845",
+    "name": "Cramorant",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "soft_potato",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      8320000,
+      28770000,
+      68670000,
+      85610000
+    ]
+  },
+  {
+    "id": "toxel",
+    "pokedex_number": "848",
+    "name": "Toxel",
+    "type": "poison",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "fancy_apple",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      6000000,
+      31810000,
+      40930000
+    ]
+  },
+  {
+    "id": "toxtricity_(amped_form)",
+    "pokedex_number": "849",
+    "name": "Toxtricity (Amped Form)",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "fancy_apple",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      28770000,
+      65700000,
+      155340000,
+      185520000
+    ]
+  },
+  {
+    "id": "toxtricity_(low_key_form)",
+    "pokedex_number": "849.1",
+    "name": "Toxtricity (Low Key Form)",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "moomoo_milk",
+      "fancy_apple",
+      "large_leek"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      28770000,
+      65700000,
+      155340000,
+      185520000
+    ]
+  },
+  {
+    "id": "sprigatito",
+    "pokedex_number": "906",
+    "name": "Sprigatito",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "moomoo_milk",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      11780000,
+      33479999,
+      38300000
+    ]
+  },
+  {
+    "id": "floragato",
+    "pokedex_number": "907",
+    "name": "Floragato",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "moomoo_milk",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4260000,
+      19570000,
+      52710000,
+      65700000
+    ]
+  },
+  {
+    "id": "meowscarada",
+    "pokedex_number": "908",
+    "name": "Meowscarada",
+    "type": "dark",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "wiki",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "moomoo_milk",
+      "warming_ginger"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      27130000,
+      52710000,
+      139610000,
+      163740000
+    ]
+  },
+  {
+    "id": "fuecoco",
+    "pokedex_number": "909",
+    "name": "Fuecoco",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "bean_sausage",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      11780000,
+      33479999,
+      38300000
+    ]
+  },
+  {
+    "id": "crocalor",
+    "pokedex_number": "910",
+    "name": "Crocalor",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "bean_sausage",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4260000,
+      19570000,
+      52710000,
+      65700000
+    ]
+  },
+  {
+    "id": "skeledirge",
+    "pokedex_number": "911",
+    "name": "Skeledirge",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "bean_sausage",
+      "fiery_herb"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      27130000,
+      52710000,
+      139610000,
+      163740000
+    ]
+  },
+  {
+    "id": "quaxly",
+    "pokedex_number": "912",
+    "name": "Quaxly",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "large_leek",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      11780000,
+      33479999,
+      38300000
+    ]
+  },
+  {
+    "id": "quaxwell",
+    "pokedex_number": "913",
+    "name": "Quaxwell",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "large_leek",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4260000,
+      19570000,
+      52710000,
+      65700000
+    ]
+  },
+  {
+    "id": "quaquaval",
+    "pokedex_number": "914",
+    "name": "Quaquaval",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "large_leek",
+      "pure_oil"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      27130000,
+      52710000,
+      139610000,
+      163740000
+    ]
+  },
+  {
+    "id": "pawmi",
+    "pokedex_number": "921",
+    "name": "Pawmi",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "moomoo_milk",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      6000000,
+      31810000,
+      40930000
+    ]
+  },
+  {
+    "id": "pawmo",
+    "pokedex_number": "922",
+    "name": "Pawmo",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "moomoo_milk",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      5050000,
+      16640000,
+      59050000,
+      73110000
+    ]
+  },
+  {
+    "id": "pawmot",
+    "pokedex_number": "923",
+    "name": "Pawmot",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "moomoo_milk",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      31810000,
+      73110000,
+      179020000,
+      225640000
+    ]
+  },
+  {
+    "id": "cetoddle",
+    "pokedex_number": "974",
+    "name": "Cetoddle",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "bean_sausage",
+      "plump_pumpkin"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2089999,
+      7710000,
+      35800000,
+      46210000
+    ]
+  },
+  {
+    "id": "cetitan",
+    "pokedex_number": "975",
+    "name": "Cetitan",
+    "type": "ice",
+    "sleep_type": "slumbering",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "rawst",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "bean_sausage",
+      "plump_pumpkin"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      28770000,
+      65700000,
+      163740000
+    ]
+  },
+  {
+    "id": "clodsire",
+    "pokedex_number": "980",
+    "name": "Clodsire",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "soothing_cacao",
+      "rousing_coffee",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      27130000,
+      81240000,
+      93290000
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { RecipeCard } from '../../shared/components/recipe-card/recipe-card';
-import { Recipe } from '../../models/recipe.models';
+import { Recipe } from '../../models/recipe.model';
 import { RecipeService } from '../../services/recipe-service';
 import { CommonModule } from '@angular/common';
 import { combineLatest, debounceTime, map, Observable, startWith, take } from 'rxjs';

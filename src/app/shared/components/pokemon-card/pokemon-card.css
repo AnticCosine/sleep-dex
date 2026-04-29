@@ -1,0 +1,179 @@
+.pokemon-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 220px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  cursor: pointer;
+  user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
+  background-color: rgb(64, 63, 75);
+}
+
+.pokemon-img {
+  max-width: 110px;
+  max-height: 110px;
+}
+
+.pokemon-output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+}
+
+.berry-img,
+.ingredient-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  object-fit: contain;
+  padding: 3px;
+}
+
+.pokedex-no {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.pokemon-name {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.output-divider {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.name-divider {
+  width: calc(100% - 24px);
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+  margin: 8px 0 4px;
+}
+
+.pokemon-sleep-type-snoozing,
+.pokemon-sleep-type-slumbering,
+.pokemon-sleep-type-dozing,
+.pokemon-specialty-skills,
+.pokemon-specialty-ingredients,
+.pokemon-specialty-berries {
+  position: absolute;
+  top: 0;
+  width: 64px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(80, 77, 77);
+}
+
+.pokemon-specialty-skills,
+.pokemon-specialty-ingredients,
+.pokemon-specialty-berries {
+  left: 0;
+  border-radius: 10px 0 10px 0;
+}
+
+.pokemon-specialty-skills {
+  background: #4fa4fc;
+}
+
+.pokemon-specialty-ingredients {
+  background: #fbbf4d;
+}
+
+.pokemon-specialty-berries {
+  background: #25d96c;
+}
+
+.pokemon-sleep-type-snoozing,
+.pokemon-sleep-type-slumbering,
+.pokemon-sleep-type-dozing {
+  right: 0;
+  border-radius: 0 10px 0 10px;
+}
+
+.pokemon-sleep-type-snoozing {
+  background: #97fffe;
+}
+
+.pokemon-sleep-type-slumbering {
+  background: #6398f4;
+}
+
+.pokemon-sleep-type-dozing {
+  background: #fef37f;
+}
+
+.sleep-styles {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.sleep-button {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  padding: 5px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px; 
+  
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.star-sleep {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.star-icon {
+  font-size: 12px;
+  color: white;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.num {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.drowsy-power {
+  font-size: 9px;
+  color: white;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
