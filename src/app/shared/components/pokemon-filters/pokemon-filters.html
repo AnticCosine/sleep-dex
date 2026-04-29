@@ -1,0 +1,110 @@
+<div class="first-filter">
+  <input placeholder="Search Pokemon" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
+
+  <div class="input-buttons">
+    <button class="button-icon" (click)="filterState.resetFilters();">
+      <img src="assets/images/reset_icon.svg" alt="">
+    </button>
+  </div>
+</div>
+
+<div class="filters">
+
+    <div class="dropdown-filters">
+
+        <div class="cooked-chips-row">
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="ingredient-dropdown">Ingredients</summary>
+
+            <div class="ingredient-grid">
+
+                @if (filterState.ingredients$ | async; as ingredients) {
+                  @for (ingredient of ingredients; track ingredient) {
+                    <div class="ingredient-item" [class.selected]="filterState.ingredientControl.value?.includes(ingredient.id)" (click)="filterState.toggleIngredient(ingredient.id)">
+
+                      @if (filterState.hasIngredient(ingredient.id)) {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Sleep Type</summary>
+
+            <div class="sleep-grid">
+
+                <div class="sleep-chip-snoozing" [class.selected]="filterState.sleepTypeControl.value?.includes('snoozing')" (click)="filterState.toggleSleepType('snoozing')">Snoozing</div>
+                <div class="sleep-chip-dozing" [class.selected]="filterState.sleepTypeControl.value?.includes('dozing')" (click)="filterState.toggleSleepType('dozing')">Dozing</div>
+                <div class="sleep-chip-slumbering" [class.selected]="filterState.sleepTypeControl.value?.includes('slumbering')" (click)="filterState.toggleSleepType('slumbering')">Slumbering</div>
+                
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Specialty</summary>
+
+            <div class="sleep-grid">
+
+                <div class="sleep-chip-berries" [class.selected]="filterState.specialtyTypeControl.value?.includes('berries')" (click)="filterState.toggleSpecialtyType('berries')">Berries</div>
+                <div class="sleep-chip-ingredients" [class.selected]="filterState.specialtyTypeControl.value?.includes('ingredients')" (click)="filterState.toggleSpecialtyType('ingredients')">Ingredients</div>
+                <div class="sleep-chip-skills" [class.selected]="filterState.specialtyTypeControl.value?.includes('skills')" (click)="filterState.toggleSpecialtyType('skills')">Skills</div>
+                
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="ingredient-dropdown">Berries</summary>
+
+            <div class="ingredient-grid">
+
+                @if (filterState.berries$ | async; as berries) {
+                  @for (berry of berries; track berry) {
+                    <div class="ingredient-item" [class.selected]="filterState.berryControl.value?.includes(berry.id)" (click)="filterState.toggleBerry(berry.id)">
+
+                      @if (filterState.hasBerry(berry.id)) {
+                        <img [src]="filterState.imageBerryPath(berry.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="filterState.imageBerryPath(berry.id)" alt="" class="ingredient-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="ingredient-dropdown">Pokemon Type</summary>
+
+            <div class="ingredient-grid">
+
+                @if (filterState.pokemonTypes$ | async; as pokemonTypes) {
+                  @for (pokemonType of pokemonTypes; track pokemonType) {
+                    <div class="ingredient-item" [class.selected]="filterState.pokemonTypeControl.value?.includes(pokemonType.id)" (click)="filterState.togglePokemonType(pokemonType.id)">
+
+                      @if (filterState.hasPokemonType(pokemonType.id)) {
+                        <img [src]="filterState.imagePokemonTypePath(pokemonType.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="filterState.imagePokemonTypePath(pokemonType.id)" alt="" class="ingredient-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+        </div>
+
+    </div>
+    
+    
+</div>

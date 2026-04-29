@@ -19,9 +19,36 @@
   background-color: rgb(64, 63, 75);
 }
 
+.pokedex-no {
+  font-size: 12px;
+  color: rgb(139, 139, 139);
+  font-weight: 400;
+  margin: 2px 0 0 0;
+}
+
 .pokemon-img {
   max-width: 110px;
   max-height: 110px;
+}
+
+.pokemon-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+
+
+}
+
+.pokemon-name {
+  font-size: 16px;
+  margin: 0;
+}
+
+.type-img {
+  max-width: 16px;
+  max-height: 16px;
 }
 
 .pokemon-output {
@@ -31,6 +58,8 @@
   justify-content: center;
   gap: 6px;
   padding: 0 10px;
+
+  margin-top: 16px;
 }
 
 .berry-img,
@@ -41,16 +70,6 @@
   background: rgba(255, 255, 255, 0.08);
   object-fit: contain;
   padding: 3px;
-}
-
-.pokedex-no {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-.pokemon-name {
-  font-size: 16px;
-  margin-top: 0;
 }
 
 .output-divider {
@@ -95,15 +114,15 @@
 }
 
 .pokemon-specialty-skills {
-  background: #4fa4fc;
+  background: var(--skills-colour);
 }
 
 .pokemon-specialty-ingredients {
-  background: #fbbf4d;
+  background: var(--ingredients-colour);
 }
 
 .pokemon-specialty-berries {
-  background: #25d96c;
+  background: var(--berries-colour);
 }
 
 .pokemon-sleep-type-snoozing,
@@ -114,15 +133,15 @@
 }
 
 .pokemon-sleep-type-snoozing {
-  background: #97fffe;
+  background: var(--snoozing-colour);
 }
 
 .pokemon-sleep-type-slumbering {
-  background: #6398f4;
+  background: var(--slumbering-colour);
 }
 
 .pokemon-sleep-type-dozing {
-  background: #fef37f;
+  background: var(--dozing-colour);
 }
 
 .sleep-styles {

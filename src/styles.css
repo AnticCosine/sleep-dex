@@ -36,6 +36,14 @@
     --hover-colour: #f0f0f0;
 
     --github-colour: invert(0%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(94%) contrast(105%);
+
+    --snoozing-colour: #97fffe;
+    --slumbering-colour: #6398f4;
+    --dozing-colour: #fef37f;
+
+    --skills-colour: #4fa4fc;
+    --berries-colour: #25d96c;
+    --ingredients-colour: #fbbf4d;
 }
 
 [data-theme="dark"] {

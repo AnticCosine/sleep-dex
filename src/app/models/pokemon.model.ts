@@ -15,3 +15,8 @@ export interface PokemonBerry {
   name: string;
   count: number;
 }
+
+export interface PokemonTypes {
+  id: string;
+  name: string;
+}

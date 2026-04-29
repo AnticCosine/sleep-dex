@@ -6,9 +6,13 @@
     <div [class]="'pokemon-specialty-' + pokemon.specialty">
         {{ pokemon.specialty | stringCapitalise }}
     </div>
-    <h1 class="pokedex-no">#{{ pokemon.pokedex_number }}</h1>
     <img [src]="imagePokemonPath" alt="{{ pokemon.name }}" class="pokemon-img">
-    <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+
+    <div class="pokemon-title">
+        <img [src]="imageTypePath(pokemon.type)" alt="{{ pokemon.type }}" class="type-img">
+        <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+        <h1 class="pokedex-no">{{ pokemon.pokedex_number | pokedexConverter }}</h1>
+    </div>
 
     <div class="pokemon-output">
         <img [src]="imageBerryPath" alt="" class="berry-img">

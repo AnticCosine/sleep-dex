@@ -1,16 +1,19 @@
 <div class="wrapper">
     <div class="pokemon-finder">
 
-        <div class="pokemon-cards">
-            @if (pokemon$ | async; as pokemons) {
+        <app-pokemon-filters
+          [filterState]="filterState"
+        />
 
+        @if (filterState.filteredPokemon$ | async; as pokemons) {
+            <div class="pokemon-cards">
                 @for (pokemon of pokemons; track pokemon.id) {
                     <app-pokemon-card
                         [pokemon]="pokemon">
                     </app-pokemon-card>
-                }  
-            }
-        </div>
+                }    
+            </div>
+        }
     </div>
 
 </div>

@@ -1,0 +1,20 @@
+[
+  { "id": "belue", "name": "Belue" },
+  { "id": "bluk", "name": "Bluk" },
+  { "id": "cheri", "name": "Cheri" },
+  { "id": "chesto", "name": "Chesto" },
+  { "id": "durin", "name": "Durin" },
+  { "id": "figy", "name": "Figy" },
+  { "id": "grepa", "name": "Grepa" },
+  { "id": "leppa", "name": "Leppa" },
+  { "id": "lum", "name": "Lum" },
+  { "id": "mago", "name": "Mago" },
+  { "id": "oran", "name": "Oran" },
+  { "id": "pamtre", "name": "Pamtre" },
+  { "id": "pecha", "name": "Pecha" },
+  { "id": "persim", "name": "Persim" },
+  { "id": "rawst", "name": "Rawst" },
+  { "id": "sitrus", "name": "Sitrus" },
+  { "id": "wiki", "name": "Wiki" },
+  { "id": "yache", "name": "Yache" }
+]
