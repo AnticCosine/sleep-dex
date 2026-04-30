@@ -527,8 +527,8 @@
       "warming_ginger",
       "fancy_egg"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [76000, 2280000],
     "available_islands": []
   },
   {
@@ -757,8 +757,13 @@
       "greengrass_corn",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      7140000,
+      20820000,
+      27130000
+    ],
     "available_islands": [
       "snowdrop_tundra",
       "greengrass_isle_expert"
@@ -810,8 +815,13 @@
       "greengrass_corn",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      30480000,
+      77100000,
+      172710000,
+      215610000
+    ],
     "available_islands": [
       "snowdrop_tundra",
       "greengrass_isle_expert"
@@ -2768,8 +2778,13 @@
       "rousing_coffee",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2510000,
+      7710000,
+      31810000,
+      38300000
+    ],
     "available_islands": [
       "greengrass_isle",
       "taupe_hollow",
@@ -5481,8 +5496,13 @@
       "greengrass_soybeans",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      950000,
+      7710000,
+      38300000,
+      48070000
+    ],
     "available_islands": [
       "greengrass_isle",
       "old_gold_power_plant",
@@ -5569,8 +5589,13 @@
       "greengrass_soybeans",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": [],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      23900000,
+      59050000,
+      139610000,
+      172710000
+    ],
     "available_islands": [
       "greengrass_isle",
       "old_gold_power_plant",
