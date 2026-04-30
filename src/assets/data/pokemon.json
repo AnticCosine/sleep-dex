@@ -1875,6 +1875,209 @@
     ]
   },
   {
+    "id": "ditto_bulbasaur",
+    "pokedex_number": "132",
+    "name": "Ditto (Bulbasaur)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
+    "id": "ditto_squirtle",
+    "pokedex_number": "132",
+    "name": "Ditto (Squirtle)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
+    "id": "ditto_charmander",
+    "pokedex_number": "132",
+    "name": "Ditto (Charmander)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
+    "id": "ditto_glaceon",
+    "pokedex_number": "132",
+    "name": "Ditto (Glaceon)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
+    "id": "ditto_dragonite",
+    "pokedex_number": "132",
+    "name": "Ditto (Dragonite)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
+    ]
+  },
+  {
+    "id": "ditto_gengar",
+    "pokedex_number": "132",
+    "name": "Ditto (Gengar)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      115976000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
+    ]
+  },
+  {
+    "id": "ditto_larvitar",
+    "pokedex_number": "132",
+    "name": "Ditto (Larvitar)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      40926000
+    ],
+    "available_islands": [
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
+    "id": "ditto_mew",
+    "pokedex_number": "132",
+    "name": "Ditto (Mew)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "pure_oil",
+      "large_leek",
+      "slowpoke_tail"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      310498000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
+  },
+  {
     "id": "eevee",
     "pokedex_number": "133",
     "name": "Eevee",
