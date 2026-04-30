@@ -22,9 +22,11 @@ export class PokemonFilterStateService {
   mapTypeControl = new FormControl<string[]>([]);
   unlockedStyleControl = new FormControl<string[]>([]);
 
-  minDrowsyControl = new FormControl<number | null>(76000); // change this back to null and initialise in constructer 
-  maxDrowsyControl = new FormControl<number | null>(300000000);
+  minDrowsyControl = new FormControl<number | null>(0);
+  maxDrowsyControl = new FormControl<number | null>(0);
 
+  minDrowsy = 0;
+  maxDrowsy = 0;
 
   ingredients$: Observable<Ingredient[]>;
   berries$: Observable<Berry[]>;
@@ -42,8 +44,17 @@ export class PokemonFilterStateService {
       const pokemon$ = this.pokemonService.getPokemon();
       const filteredPokemon = new ReplaySubject<Pokemon[]>(1);
 
-      pokemon$.pipe(take(1)).subscribe(recipes => {
+      pokemon$.pipe(take(1)).subscribe(pokemon => {
+        
+        const allDrowsy = pokemon.flatMap(p =>
+          p.drowsy_power_requirement_list.filter((d): d is number => d != null)
+        );
 
+        this.minDrowsy = Math.min(...allDrowsy);
+        this.maxDrowsy = Math.max(...allDrowsy);
+
+        this.minDrowsyControl.setValue(this.minDrowsy);
+        this.maxDrowsyControl.setValue(this.maxDrowsy);
 
         combineLatest([
             pokemon$,
@@ -81,8 +92,8 @@ export class PokemonFilterStateService {
     this.specialtyTypeControl.setValue([]);
     this.mapTypeControl.setValue([]);
     this.unlockedStyleControl.setValue([]);
-    this.minDrowsyControl.setValue(76000);
-    this.maxDrowsyControl.setValue(300000000); // hardcoded for now but change this 
+    this.minDrowsyControl.setValue(this.minDrowsy);
+    this.maxDrowsyControl.setValue(this.maxDrowsy);
   }
 
   imageIngredientPath(ingredientId: string): string {

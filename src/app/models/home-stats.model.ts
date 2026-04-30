@@ -12,3 +12,23 @@ export interface TypeProgress {
     total: number,
     percent: number
 }
+
+export interface SleepTypeProgress {
+    total: number,
+    unlocked: number,
+    remaining: number,
+    completionPercent: number
+}
+
+export interface IslandSleepProgress {
+  island: string;
+  total: number;
+  unlocked: number;
+  percent: number;
+
+  bySleepType: {
+    sleepType: string;
+    total: number;
+    unlocked: number;
+  }[];
+}

@@ -61,13 +61,76 @@
                     <span class="badge" [class]="'badge-' + t.type">{{ t.cooked }} / {{ t.total }}</span>
                   </div>
                   <div class="progress-track">
-                    <div class="progress-fill" [class]="'progress-' + t.type" [style.width.%]="animate ? t.percent : 0"></div>
+                    <div class="progress-fill" [class]="'progress-' + t.type" [style.width.%]="t.percent"></div>
                   </div>
                   <div class="type-pct" id="type-pct-{{ t.type }}">{{ t.percent }}% complete</div>
                 </div>
               }
             </div>
         </div>
+
+        <div class="stats-grid" *ngIf="sleepStats$ | async as sleep">
+            <div class="stat-card">
+              <div class="stat-label">Total styles</div>
+              <div class="stat-value" id="sleep-total">{{ sleep.total }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Unlocked</div>
+              <div class="stat-value unlocked-value" id="sleep-unlocked">{{ sleep.unlocked }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Remaining</div>
+              <div class="stat-value" id="sleep-remaining">{{ sleep.remaining }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Completion</div>
+              <div class="stat-value" id="sleep-pct">{{ sleep.completionPercent }}%</div>
+            </div>
+        </div>
+
+
+        <div class="types" *ngIf="islandStats$ | async as islands">
+          <div class="section-label">Progress by island</div>
+          <div class="sleep-type-grid">
+          
+            @for (island of islands; track island.island) {
+              <div class="type-card island-card">
+                <div class="type-card-header">
+                  <span class="type-name">{{ island.island | idConverter }}</span>
+                  
+                </div>
+              
+                <div class="sleep-rows">
+                  @for (t of island.bySleepType; track t.sleepType) {
+                    <div class="sleep-row">
+                      <div class="sleep-row-header">
+                        <span class="sleep-label">
+                          <span class="sleep-dot" [class]="'dot-' + t.sleepType"></span>
+                          {{ t.sleepType | titlecase }}
+                        </span>
+                        <span class="badge" [class]="'badge-' + t.sleepType">{{ t.unlocked }} / {{ t.total }}</span>
+                      </div>
+                      <div class="bar-track">
+                        <div
+                          class="bar-fill"
+                          [class]="'fill-' + t.sleepType"
+                          [style.width.%]="(t.unlocked / t.total) * 100">
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </div>
+              
+                <div class="card-footer">
+                  <span class="footer-pct">{{ island.percent }}% complete</span>
+                  <span class="footer-pct">{{ island.unlocked }} / {{ island.total }}</span>
+                </div>
+              </div>
+            }
+          
+          </div>
+        </div>
+
 
         <app-ingredient-table [isExpanded]="true"></app-ingredient-table>
 

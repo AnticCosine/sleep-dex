@@ -1,4 +1,4 @@
-<div class="first-filter">
+<div class="first-filter" *ngIf="filterState.maxDrowsy > 0">
   <input placeholder="Search Pokemon" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
 
   <div class="input-buttons">
@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="filters">
+<div class="filters" *ngIf="filterState.maxDrowsy > 0">
 
     <div class="dropdown-filters">
 
@@ -154,16 +154,16 @@
                 <input
                   type="range"
                   class="drowsy-range"
-                  [min]="DROWSY_MIN"
-                  [max]="DROWSY_MAX"
+                  [min]="filterState.minDrowsy"
+                  [max]="filterState.maxDrowsy"
                   [formControl]="filterState.minDrowsyControl"
                   (input)="onMinSlider()"
                 >
                 <input
                   type="range"
                   class="drowsy-range"
-                  [min]="DROWSY_MIN"
-                  [max]="DROWSY_MAX"
+                  [min]="filterState.minDrowsy"
+                  [max]="filterState.maxDrowsy"
                   [formControl]="filterState.maxDrowsyControl"
                   (input)="onMaxSlider()"
                 >

@@ -299,12 +299,16 @@ label input {
 
 @media (hover: hover) and (pointer: fine) {
 
-.chip.curry:hover { background-color: #ffa5a1; }
-.chip.salad:hover { background-color: #a1ff9c; }
-.chip.dessert:hover { background-color: #fdf892; }
-.chip.neutral:hover { background-color: var(--hover-colour); }
-.sunday-chip:hover { background: #fce69f; }
-.dropdown summary:hover { background-color: var(--hover-colour); }
+  .chip.curry:hover { background-color: #ffa5a1; }
+  .chip.salad:hover { background-color: #a1ff9c; }
+  .chip.dessert:hover { background-color: #fdf892; }
+  .chip.neutral:hover { background-color: var(--hover-colour); }
+  .sunday-chip:hover { background: #fce69f; }
+  .dropdown summary:hover { background-color: var(--hover-colour); }
+
+  .ingredient-grid img.ingredient-unchecked:hover {
+    opacity: 1;
+  }
 
 }
 

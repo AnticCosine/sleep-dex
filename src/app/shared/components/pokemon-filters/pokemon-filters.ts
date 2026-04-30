@@ -18,8 +18,6 @@ export class PokemonFilters {
 
   mobileView = false;
 
-  readonly DROWSY_MIN = 76000;
-  readonly DROWSY_MAX = 300000000;
   private subs = new Subscription();
 
   ngAfterViewInit(): void {
@@ -37,8 +35,8 @@ export class PokemonFilters {
   }
 
   onMinSlider(): void {
-    const min = this.filterState.minDrowsyControl.value ?? this.DROWSY_MIN;
-    const max = this.filterState.maxDrowsyControl.value ?? this.DROWSY_MAX;
+    const min = this.filterState.minDrowsyControl.value ?? this.filterState.minDrowsy;
+    const max = this.filterState.maxDrowsyControl.value ?? this.filterState.maxDrowsy;
     if (min > max) {
       this.filterState.minDrowsyControl.setValue(max, { emitEvent: false });
     }
@@ -46,8 +44,8 @@ export class PokemonFilters {
   }
  
   onMaxSlider(): void {
-    const min = this.filterState.minDrowsyControl.value ?? this.DROWSY_MIN;
-    const max = this.filterState.maxDrowsyControl.value ?? this.DROWSY_MAX;
+    const min = this.filterState.minDrowsyControl.value ?? this.filterState.minDrowsy;
+    const max = this.filterState.maxDrowsyControl.value ?? this.filterState.maxDrowsy;
     if (max < min) {
       this.filterState.maxDrowsyControl.setValue(min, { emitEvent: false });
     }
@@ -58,20 +56,20 @@ export class PokemonFilters {
     if (!this.trackFillRef) return;
     const lo = this.drowsyMin;
     const hi = this.drowsyMax;
-    const range = this.DROWSY_MAX - this.DROWSY_MIN;
-    const pctLo = ((lo - this.DROWSY_MIN) / range) * 100;
-    const pctHi = ((hi - this.DROWSY_MIN) / range) * 100;
+    const range = this.filterState.maxDrowsy - this.filterState.minDrowsy;
+    const pctLo = ((lo - this.filterState.minDrowsy) / range) * 100;
+    const pctHi = ((hi - this.filterState.minDrowsy) / range) * 100;
     const el = this.trackFillRef.nativeElement;
     el.style.left  = `${pctLo}%`;
     el.style.right = `${100 - pctHi}%`;
   }
 
   get drowsyMin(): number {
-    return this.filterState.minDrowsyControl.value ?? this.DROWSY_MIN;
+    return this.filterState.minDrowsyControl.value ?? this.filterState.minDrowsy;
   }
  
   get drowsyMax(): number {
-    return this.filterState.maxDrowsyControl.value ?? this.DROWSY_MAX;
+    return this.filterState.maxDrowsyControl.value ?? this.filterState.maxDrowsy;;
   }
 
 
