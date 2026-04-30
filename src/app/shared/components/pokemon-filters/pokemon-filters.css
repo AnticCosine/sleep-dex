@@ -75,6 +75,7 @@
 
 .cooked-chips-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -99,6 +100,7 @@ label input {
   gap: 6px;
  
   padding: 10px;
+  
   background: #ffffff;
   border: 4px solid lightgrey;
   border-radius: 10px;
@@ -159,7 +161,9 @@ label input {
   height: 18px;
 }
 
-.ingredient-grid {
+.ingredient-grid,
+.berry-grid,
+.type-grid {
   
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +178,7 @@ label input {
   margin-left: 2px;
   padding: 5px;
 
-  width: 220px;
+  width: 200px;
   max-height: 200px;
   max-width: calc(100vw - 32px);
   overflow-y: auto;
@@ -183,7 +187,8 @@ label input {
   z-index: 1;
 }
 
-.ingredient-grid img {
+.ingredient-grid img,
+.berry-grid img {
   width: 40px;
   height: 40px;
 
@@ -191,7 +196,17 @@ label input {
   transition: opacity 0.5s ease, transform 0.2s ease;
 }
 
-.ingredient-grid img.ingredient-unchecked {
+.type-grid img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.2s ease;
+}
+
+.ingredient-grid img.ingredient-unchecked,
+.berry-grid img.berry-unchecked,
+.type-grid img.type-unchecked  {
   opacity: 0.5;
   transform: scale(0.95);
 }
@@ -203,7 +218,8 @@ label input {
 
 
 
-.sleep-grid {
+.sleep-grid,
+.sleep-island-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -218,6 +234,10 @@ label input {
   z-index: 1;
 }
 
+.sleep-island-grid {
+  width: 94px;
+}
+
 .sleep-chip-snoozing,
 .sleep-chip-dozing,
 .sleep-chip-slumbering,
@@ -226,6 +246,7 @@ label input {
 .sleep-chip-berries {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   padding: 6px 10px;
   border-radius: 20px;
@@ -243,29 +264,263 @@ label input {
   font-size: 11px;
   font-weight: 600;
   color: rgb(80, 77, 77);
+
+  width: stretch;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  
+  
+
+}
+
+
+.sleep-chip-snoozing.selected,
+.sleep-chip-dozing.selected,
+.sleep-chip-slumbering.selected,
+.sleep-chip-ingredients.selected,
+.sleep-chip-skills.selected,
+.sleep-chip-berries.selected,
+.sleep-chip-greengrass.selected, 
+.sleep-chip-cyan.selected,
+.sleep-chip-taupe.selected,
+.sleep-chip-snowdrop.selected,
+.sleep-chip-lapis.selected,
+.sleep-chip-gold.selected,
+.sleep-chip-amber.selected,
+.sleep-chip-greengrass-ex.selected {
+  opacity: 1;
 }
 
 .sleep-chip-snoozing {
   background: var(--snoozing-colour);
+  opacity: 0.8;
 }
 
 .sleep-chip-dozing {
   background: var(--dozing-colour);
+  opacity: 0.8;
 }
 
 .sleep-chip-slumbering {
   background: var(--slumbering-colour);
+  opacity: 0.8;
 }
 
 .sleep-chip-ingredients {
   background: var(--ingredients-colour);
+  opacity: 0.8;
 }
 
 .sleep-chip-skills {
   background: var(--skills-colour);
+  opacity: 0.8;
 }
 
 .sleep-chip-berries {
   background: var(--berries-colour);
+  opacity: 0.8;
 }
 
+.sleep-chip-greengrass, 
+.sleep-chip-cyan,
+.sleep-chip-taupe,
+.sleep-chip-snowdrop,
+.sleep-chip-lapis,
+.sleep-chip-gold,
+.sleep-chip-amber,
+.sleep-chip-greengrass-ex {
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  padding: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 2px solid lightgrey;
+
+  cursor: pointer;
+
+  opacity: 0.5;
+}
+
+.sleep-chip-greengrass-ex {
+  border: 2px solid rgb(201, 73, 73);
+}
+
+
+
+
+.chip {
+  background: white;
+  border: 4px solid lightgrey;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  padding: 8px 14px;
+
+  font-family: var(--font-primary);
+}
+
+
+
+
+
+
+ 
+.drowsy-pill {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 4px solid lightgrey;
+  border-radius: 10px;
+  
+  flex-shrink: 0;
+  overflow: hidden;
+
+  width: 170px;
+
+  
+}
+ 
+.drowsy-icon-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9px;
+  height: 100%;
+  border-right: 1.5px solid lightgrey;
+  background: #f9f9f9;
+  flex-shrink: 0;
+}
+ 
+.drowsy-icon-cell .pot-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+ 
+.drowsy-slider-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  min-width: 0;
+  flex: 1;
+}
+ 
+.drowsy-vals-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+}
+ 
+.drowsy-val {
+  font-size: 11px;
+  font-weight: 500;
+  color: black;
+  font-family: var(--font-primary);
+  min-width: 32px;
+  text-align: left;
+}
+ 
+.drowsy-val-right {
+  text-align: right;
+}
+ 
+.drowsy-val-sep {
+  font-size: 10px;
+}
+ 
+.drowsy-track-wrap {
+  position: relative;
+  height: 4px;
+  width: 100%;
+}
+ 
+.drowsy-track-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #e8e8e8;
+}
+ 
+.drowsy-track-fill {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  background: #5eb8f4;
+}
+ 
+.drowsy-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+ 
+.drowsy-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: white;
+  border: 3px solid lightgrey;
+  cursor: pointer;
+  pointer-events: all;
+  transition: border-color 0.15s;
+}
+ 
+.drowsy-range::-webkit-slider-thumb:hover,
+.drowsy-range:active::-webkit-slider-thumb {
+  border-color: #5eb8f4;
+}
+ 
+.drowsy-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: white;
+  border: 3px solid lightgrey;
+  cursor: pointer;
+  pointer-events: all;
+}
+ 
+input[type="range"]::-webkit-outer-spin-button,
+input[type="range"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+
+
+@media (max-width: 580px) {
+  
+}

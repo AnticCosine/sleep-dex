@@ -21,6 +21,11 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -45,6 +50,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -69,6 +79,11 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -93,6 +108,12 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -117,6 +138,12 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -141,6 +168,12 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -165,6 +198,12 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -189,6 +228,12 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -213,6 +258,12 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -237,6 +288,13 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -261,6 +319,12 @@
       3150000,
       10830000,
       14330000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -285,6 +349,12 @@
       20820000,
       48070000,
       59050000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -309,6 +379,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -333,6 +409,12 @@
       5050000,
       15470000,
       20820000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -357,6 +439,14 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon"
     ]
   },
   {
@@ -381,6 +471,13 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "amber_canyon"
     ]
   },
   {
@@ -405,6 +502,13 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -424,7 +528,8 @@
       "fancy_egg"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": []
   },
   {
     "id": "pikachu_(holiday)",
@@ -446,7 +551,8 @@
     "drowsy_power_requirement_list": [
       76000,
       2280000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "raichu",
@@ -470,6 +576,11 @@
       20820000,
       48070000,
       59050000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -494,6 +605,12 @@
       8320000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -518,6 +635,12 @@
       31810000,
       90140000,
       130070000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -542,6 +665,16 @@
       3910000,
       12690000,
       16640000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -566,6 +699,16 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -590,6 +733,12 @@
       6570000,
       19570000,
       25540000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -609,7 +758,11 @@
       "soft_potato"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "ninetales",
@@ -633,6 +786,12 @@
       22150000,
       49890000,
       62780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -652,7 +811,11 @@
       "soft_potato"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "jigglypuff",
@@ -676,6 +839,13 @@
       2510000,
       9120000,
       12690000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -700,6 +870,11 @@
       11780000,
       30480000,
       38300000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow"
     ]
   },
   {
@@ -723,6 +898,12 @@
       76000,
       1560000,
       6570000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -746,6 +927,11 @@
       3150000,
       7710000,
       22150000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -769,6 +955,11 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -792,6 +983,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -816,6 +1012,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -840,6 +1042,9 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "cyan_beach"
     ]
   },
   {
@@ -864,6 +1069,12 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -888,6 +1099,12 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -912,6 +1129,12 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -936,6 +1159,10 @@
       31810000,
       68670000,
       85610000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -960,6 +1187,12 @@
       1820000,
       7140000,
       9920000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -984,6 +1217,11 @@
       5050000,
       15470000,
       20820000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside"
     ]
   },
   {
@@ -1008,6 +1246,10 @@
       20820000,
       48070000,
       59050000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside"
     ]
   },
   {
@@ -1032,6 +1274,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1056,6 +1304,11 @@
       5050000,
       15470000,
       20820000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1080,6 +1333,9 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "taupe_hollow"
     ]
   },
   {
@@ -1104,6 +1360,12 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -1128,6 +1390,12 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -1150,6 +1418,11 @@
       76000,
       1820000,
       7140000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1172,6 +1445,11 @@
       3150000,
       7710000,
       22150000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1196,6 +1474,12 @@
       48070000,
       147360000,
       163740000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1220,6 +1504,11 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1244,6 +1533,11 @@
       5050000,
       15470000,
       20820000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1267,6 +1561,12 @@
       76000,
       2089999,
       7710000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1290,6 +1590,12 @@
       2089999,
       5470000,
       16640000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1314,6 +1620,10 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1337,6 +1647,10 @@
       8320000,
       18050000,
       43700000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1360,6 +1674,12 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1383,6 +1703,12 @@
       6570000,
       19570000,
       25540000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1407,6 +1733,13 @@
       46210000,
       93290000,
       147360000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1431,10 +1764,16 @@
       18050000,
       43700000,
       52710000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
-    "id": "mr._mime",
+    "id": "mr_mime",
     "pokedex_number": "122",
     "name": "Mr. Mime",
     "type": "psychic",
@@ -1455,6 +1794,10 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -1479,6 +1822,12 @@
       15470000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1503,6 +1852,16 @@
       12690000,
       31810000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1527,6 +1886,16 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1548,7 +1917,8 @@
     "drowsy_power_requirement_list": [
       760000,
       6570000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "eevee_(halloween)",
@@ -1570,7 +1940,8 @@
     "drowsy_power_requirement_list": [
       760000,
       6570000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "vaporeon",
@@ -1594,6 +1965,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1618,6 +1994,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1642,6 +2023,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1666,6 +2052,9 @@
       12690000,
       20820000,
       25540000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
     ]
   },
   {
@@ -1690,6 +2079,9 @@
       15470000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
     ]
   },
   {
@@ -1714,6 +2106,9 @@
       77100000,
       155340000,
       185520000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
     ]
   },
   {
@@ -1736,7 +2131,8 @@
       43700000,
       77100000,
       163740000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "chikorita",
@@ -1760,6 +2156,12 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1784,6 +2186,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1808,6 +2215,11 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1832,6 +2244,11 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1856,6 +2273,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1880,6 +2302,11 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1903,6 +2330,11 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1926,6 +2358,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1949,6 +2386,11 @@
       28770000,
       62780000,
       77100000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1973,6 +2415,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -1997,6 +2445,16 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2021,6 +2479,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "lapis_lakeside"
     ]
   },
   {
@@ -2045,6 +2509,12 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -2069,6 +2539,11 @@
       5470000,
       16640000,
       22150000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -2093,6 +2568,12 @@
       8320000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2117,6 +2598,12 @@
       31810000,
       85610000,
       122850000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2140,6 +2627,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2163,6 +2656,12 @@
       5050000,
       15470000,
       20820000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2186,6 +2685,11 @@
       20820000,
       48070000,
       59050000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2210,6 +2714,12 @@
       3150000,
       10830000,
       14330000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2234,6 +2744,12 @@
       7140000,
       28770000,
       33479999
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -2253,7 +2769,13 @@
       "soft_potato"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "quagsire",
@@ -2277,6 +2799,12 @@
       23900000,
       68670000,
       81240000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -2301,6 +2829,12 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2325,6 +2859,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2349,6 +2888,12 @@
       27130000,
       59050000,
       93290000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2373,6 +2918,9 @@
       31810000,
       68670000,
       85610000
+    ],
+    "available_islands": [
+      "cyan_beach"
     ]
   },
   {
@@ -2397,6 +2945,12 @@
       3150000,
       10830000,
       14330000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -2420,6 +2974,11 @@
       31810000,
       55590000,
       115980000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2444,6 +3003,13 @@
       49890000,
       163740000,
       185520000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2468,6 +3034,12 @@
       15470000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2492,6 +3064,11 @@
       27130000,
       59050000,
       93290000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2516,6 +3093,11 @@
       25540000,
       55590000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2540,6 +3122,11 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2564,6 +3151,10 @@
       9120000,
       25540000,
       31810000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2588,6 +3179,13 @@
       73110000,
       172710000,
       205880000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2611,6 +3209,11 @@
       40930000,
       115980000,
       243390000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2634,6 +3237,12 @@
       43700000,
       122850000,
       262430000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2657,6 +3266,12 @@
       46210000,
       130070000,
       275200000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2681,6 +3296,12 @@
       3500000,
       11780000,
       15470000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2705,6 +3326,11 @@
       9120000,
       25540000,
       31810000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2729,6 +3355,11 @@
       62780000,
       130070000,
       155340000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2753,6 +3384,13 @@
       12690000,
       35800000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2777,6 +3415,13 @@
       20820000,
       55590000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2801,6 +3446,13 @@
       65700000,
       179020000,
       195360000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2825,6 +3477,13 @@
       12690000,
       35800000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2849,6 +3508,13 @@
       20820000,
       55590000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2873,6 +3539,13 @@
       65700000,
       179020000,
       195360000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2897,6 +3570,13 @@
       12690000,
       35800000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2921,6 +3601,13 @@
       20820000,
       55590000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2945,6 +3632,13 @@
       65700000,
       179020000,
       195360000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2969,6 +3663,10 @@
       10830000,
       18050000,
       22150000
+    ],
+    "available_islands": [
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -2993,6 +3691,10 @@
       15470000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3017,6 +3719,10 @@
       38300000,
       81240000,
       97360000
+    ],
+    "available_islands": [
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3041,6 +3747,11 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3065,6 +3776,11 @@
       7140000,
       20820000,
       27130000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3089,6 +3805,11 @@
       40930000,
       85610000,
       103250000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3113,6 +3834,10 @@
       12690000,
       31810000,
       40930000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3137,6 +3862,13 @@
       48070000,
       147360000,
       163740000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3161,6 +3893,10 @@
       8320000,
       40930000,
       49890000
+    ],
+    "available_islands": [
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3185,6 +3921,10 @@
       16640000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3209,6 +3949,10 @@
       73110000,
       179020000,
       215610000
+    ],
+    "available_islands": [
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3233,6 +3977,12 @@
       43700000,
       90140000,
       109400000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3257,6 +4007,12 @@
       43700000,
       90140000,
       109400000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3281,6 +4037,12 @@
       1820000,
       7140000,
       9920000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -3305,6 +4067,11 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -3329,6 +4096,10 @@
       7140000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "amber_canyon"
     ]
   },
   {
@@ -3353,6 +4124,10 @@
       28770000,
       90140000,
       109400000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "amber_canyon"
     ]
   },
   {
@@ -3377,6 +4152,10 @@
       85610000,
       215610000,
       250840000
+    ],
+    "available_islands": [
+      "taupe_hollow",
+      "amber_canyon"
     ]
   },
   {
@@ -3401,6 +4180,13 @@
       1820000,
       7140000,
       9920000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3425,6 +4211,12 @@
       9920000,
       27130000,
       33479999
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3448,6 +4240,12 @@
       76000,
       2089999,
       7710000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3472,6 +4270,12 @@
       11780000,
       30480000,
       38300000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3496,6 +4300,11 @@
       15470000,
       38300000,
       48070000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3520,6 +4329,12 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -3544,6 +4359,12 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3566,7 +4387,8 @@
     "drowsy_power_requirement_list": [
       760000,
       6570000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "sealeo",
@@ -3590,6 +4412,10 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3614,6 +4440,10 @@
       20820000,
       48070000,
       59050000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3638,6 +4468,9 @@
       7710000,
       40930000,
       49890000
+    ],
+    "available_islands": [
+      "amber_canyon"
     ]
   },
   {
@@ -3662,6 +4495,9 @@
       23900000,
       81240000,
       97360000
+    ],
+    "available_islands": [
+      "amber_canyon"
     ]
   },
   {
@@ -3686,6 +4522,9 @@
       122850000,
       250800000,
       302290000
+    ],
+    "available_islands": [
+      "amber_canyon"
     ]
   },
   {
@@ -3709,6 +4548,12 @@
       49890000,
       139610000,
       316770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3733,6 +4578,9 @@
       7140000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -3757,6 +4605,9 @@
       27130000,
       85610000,
       103250000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -3781,6 +4632,9 @@
       68670000,
       172710000,
       205880000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -3804,6 +4658,11 @@
       3910000,
       13490000,
       55590000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3827,6 +4686,10 @@
       62780000,
       77100000,
       155340000
+    ],
+    "available_islands": [
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3851,6 +4714,12 @@
       77100000,
       179020000,
       215610000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3875,10 +4744,15 @@
       1560000,
       6570000,
       9120000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "greengrass_isle_expert"
     ]
   },
   {
-    "id": "mime_jr.",
+    "id": "mime_jr",
     "pokedex_number": "439",
     "name": "Mime Jr.",
     "type": "psychic",
@@ -3899,6 +4773,10 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "old_gold_power_plant"
     ]
   },
   {
@@ -3923,6 +4801,13 @@
       6000000,
       31810000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3947,6 +4832,13 @@
       49890000,
       163740000,
       179020000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -3971,6 +4863,12 @@
       2280000,
       8320000,
       11780000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "snowdrop_tundra",
+      "lapis_lakeside"
     ]
   },
   {
@@ -3995,6 +4893,9 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "snowdrop_tundra"
     ]
   },
   {
@@ -4018,6 +4919,12 @@
       2089999,
       7710000,
       10830000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -4041,6 +4948,12 @@
       7710000,
       22150000,
       28770000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "snowdrop_tundra"
     ]
   },
   {
@@ -4065,6 +4978,10 @@
       2810000,
       9920000,
       13490000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4088,6 +5005,10 @@
       7710000,
       16640000,
       40930000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4112,6 +5033,11 @@
       77100000,
       179020000,
       215610000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4134,6 +5060,11 @@
       16640000,
       31810000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4158,6 +5089,9 @@
       33479999,
       73110000,
       90140000
+    ],
+    "available_islands": [
+      "greengrass_isle"
     ]
   },
   {
@@ -4182,6 +5116,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4206,6 +5145,11 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4230,6 +5174,10 @@
       55590000,
       115980000,
       139610000
+    ],
+    "available_islands": [
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4253,6 +5201,12 @@
       48070000,
       134710000,
       288340000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4274,7 +5228,8 @@
       40930000,
       73110000,
       155340000
-    ]
+    ],
+    "available_islands": []
   },
   {
     "id": "munna",
@@ -4297,6 +5252,13 @@
       570000,
       6000000,
       18050000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4320,6 +5282,13 @@
       22150000,
       59050000,
       134710000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4344,6 +5313,9 @@
       6570000,
       33479999,
       43700000
+    ],
+    "available_islands": [
+      "amber_canyon"
     ]
   },
   {
@@ -4368,6 +5340,9 @@
       62780000,
       195360000,
       236280000
+    ],
+    "available_islands": [
+      "amber_canyon"
     ]
   },
   {
@@ -4392,6 +5367,13 @@
       8320000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4416,6 +5398,13 @@
       31810000,
       85610000,
       122850000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4440,6 +5429,10 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4464,6 +5457,12 @@
       25540000,
       55590000,
       68670000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4483,7 +5482,13 @@
       "soft_potato"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "pumpkaboo_small",
@@ -4498,7 +5503,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "pumpkaboo_large",
@@ -4513,7 +5524,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "pumpkaboo_jumbo",
@@ -4528,7 +5545,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "gourgeist_medium",
@@ -4547,7 +5570,13 @@
       "soft_potato"
     ],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "gourgeist_small",
@@ -4562,7 +5591,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "gourgeist_large",
@@ -4577,7 +5612,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "gourgeist_jumbo",
@@ -4592,7 +5633,13 @@
     },
     "ingredients": [],
     "number_of_sleep_styles": 0,
-    "drowsy_power_requirement_list": []
+    "drowsy_power_requirement_list": [],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
+    ]
   },
   {
     "id": "noibat",
@@ -4616,6 +5663,12 @@
       8320000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4640,6 +5693,12 @@
       31810000,
       90140000,
       122850000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4664,6 +5723,9 @@
       7140000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -4688,6 +5750,9 @@
       25540000,
       81240000,
       97360000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -4712,6 +5777,9 @@
       85610000,
       205880000,
       243390000
+    ],
+    "available_islands": [
+      "old_gold_power_plant"
     ]
   },
   {
@@ -4736,6 +5804,13 @@
       8320000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4760,6 +5835,13 @@
       31810000,
       90140000,
       122850000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4784,6 +5866,9 @@
       11780000,
       19570000,
       25540000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
     ]
   },
   {
@@ -4808,6 +5893,9 @@
       19570000,
       46210000,
       55590000
+    ],
+    "available_islands": [
+      "lapis_lakeside"
     ]
   },
   {
@@ -4832,6 +5920,12 @@
       27130000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4856,6 +5950,13 @@
       49890000,
       163740000,
       179020000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4880,6 +5981,11 @@
       40930000,
       139610000,
       155340000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4904,6 +6010,12 @@
       28770000,
       68670000,
       85610000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4928,6 +6040,12 @@
       6000000,
       31810000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4952,6 +6070,12 @@
       65700000,
       155340000,
       185520000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -4976,6 +6100,12 @@
       65700000,
       155340000,
       185520000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "old_gold_power_plant",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5000,6 +6130,12 @@
       11780000,
       33479999,
       38300000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5024,6 +6160,12 @@
       19570000,
       52710000,
       65700000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5048,6 +6190,12 @@
       52710000,
       139610000,
       163740000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5072,6 +6220,13 @@
       11780000,
       33479999,
       38300000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5096,6 +6251,12 @@
       19570000,
       52710000,
       65700000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5120,6 +6281,12 @@
       52710000,
       139610000,
       163740000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "taupe_hollow",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5144,6 +6311,13 @@
       11780000,
       33479999,
       38300000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5168,6 +6342,12 @@
       19570000,
       52710000,
       65700000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5192,6 +6372,12 @@
       52710000,
       139610000,
       163740000
+    ],
+    "available_islands": [
+      "cyan_beach",
+      "lapis_lakeside",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5216,6 +6402,12 @@
       6000000,
       31810000,
       40930000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5240,6 +6432,11 @@
       16640000,
       59050000,
       73110000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5264,6 +6461,11 @@
       73110000,
       179020000,
       225640000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "old_gold_power_plant",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5288,6 +6490,11 @@
       7710000,
       35800000,
       46210000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5311,6 +6518,10 @@
       28770000,
       65700000,
       163740000
+    ],
+    "available_islands": [
+      "snowdrop_tundra",
+      "greengrass_isle_expert"
     ]
   },
   {
@@ -5335,6 +6546,12 @@
       27130000,
       81240000,
       93290000
+    ],
+    "available_islands": [
+      "greengrass_isle",
+      "taupe_hollow",
+      "amber_canyon",
+      "greengrass_isle_expert"
     ]
   }
 ]

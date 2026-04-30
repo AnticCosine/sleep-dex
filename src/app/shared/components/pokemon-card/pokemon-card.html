@@ -25,13 +25,15 @@
 
     <div class="name-divider"></div>
 
-    <div class="sleep-styles">
+    <div class="sleep-styles" *ngIf="unlockedStyles$ | async as unlockedStyles">
         @for (item of [].constructor(pokemon.number_of_sleep_styles); track $index) {
-            <button class="sleep-button">
+            <button class="sleep-button"
+            [class.unlocked]="isUnlocked(unlockedStyles, $index)"
+            (click)="toggleStyle($index)">
 
                 <div class="star-sleep">
                     <div class="star-box">
-                        <span class="star-icon">{{ '☆' }}</span>
+                        <span class="star-icon">{{ isUnlocked(unlockedStyles, $index) ? '★' : '☆' }}</span>
                     </div>
                     <span class="num">{{ $index }}</span>
                 </div>

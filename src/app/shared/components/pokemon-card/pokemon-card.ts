@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { NumberAbbreviatePipe } from '../../../pipes/number-abbreviate-pipe';
 import { StringCapitalisePipe } from '../../../pipes/string-capitalise-pipe';
 import { PokedexConverterPipe } from '../../../pipes/pokedex-converter-pipe';
+import { PokemonService } from '../../../services/pokemon-service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -15,9 +17,20 @@ export class PokemonCard {
 
   @Input() pokemon!: Pokemon;
   
+  unlockedStyles$!: Observable<number[]>;
+
+  constructor(private pokemonService: PokemonService) {}
 
   ngOnInit() {
-    console.log(this.pokemon)
+    this.unlockedStyles$ = this.pokemonService.getUnlockedStyles$(this.pokemon.id);
+  }
+
+  isUnlocked(styles: number[] | null, index: number): boolean {
+    return (styles ?? []).includes(index);
+  }
+ 
+  toggleStyle(index: number) {
+    this.pokemonService.toggleStyle(this.pokemon.id, index);
   }
 
   get imagePokemonPath(): string {

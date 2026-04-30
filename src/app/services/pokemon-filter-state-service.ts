@@ -19,6 +19,11 @@ export class PokemonFilterStateService {
   pokemonTypeControl = new FormControl<string[]>([]);
   sleepTypeControl = new FormControl<string[]>([]);
   specialtyTypeControl = new FormControl<string[]>([]);
+  mapTypeControl = new FormControl<string[]>([]);
+  unlockedStyleControl = new FormControl<string[]>([]);
+
+  minDrowsyControl = new FormControl<number | null>(76000); // change this back to null and initialise in constructer 
+  maxDrowsyControl = new FormControl<number | null>(300000000);
 
 
   ingredients$: Observable<Ingredient[]>;
@@ -48,10 +53,15 @@ export class PokemonFilterStateService {
             this.pokemonTypeControl.valueChanges.pipe(startWith(this.pokemonTypeControl.value)),
             this.sleepTypeControl.valueChanges.pipe(startWith(this.sleepTypeControl.value)),
             this.specialtyTypeControl.valueChanges.pipe(startWith(this.specialtyTypeControl.value)),
+            this.mapTypeControl.valueChanges.pipe(startWith(this.mapTypeControl.value)),
+            this.unlockedStyleControl.valueChanges.pipe(startWith(this.unlockedStyleControl.value)),
+            this.pokemonService.unlockedStyles$,
+            this.minDrowsyControl.valueChanges.pipe(startWith(this.minDrowsyControl.value)),
+            this.maxDrowsyControl.valueChanges.pipe(startWith(this.maxDrowsyControl.value)),
         ]).pipe(
-          map(([pokemon, search, ingredient, berry, pokemonType, sleepType, specialtyType]) =>
+          map(([pokemon, search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy]) =>
             this.pokemonFilterService.filterPokemon(pokemon, {
-              search, ingredient, berry, pokemonType, sleepType, specialtyType
+              search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy
             })
           )
         ).subscribe(filtered => filteredPokemon.next(filtered));
@@ -69,6 +79,10 @@ export class PokemonFilterStateService {
     this.pokemonTypeControl.setValue([]);
     this.sleepTypeControl.setValue([]);
     this.specialtyTypeControl.setValue([]);
+    this.mapTypeControl.setValue([]);
+    this.unlockedStyleControl.setValue([]);
+    this.minDrowsyControl.setValue(76000);
+    this.maxDrowsyControl.setValue(300000000); // hardcoded for now but change this 
   }
 
   imageIngredientPath(ingredientId: string): string {
@@ -121,6 +135,18 @@ export class PokemonFilterStateService {
 
   hasSpecialtyType(id: string): boolean {
     return this.specialtyTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleMapType(id: string) {
+    this.toggle(this.mapTypeControl, id);
+  }
+
+  hasMapType(id: string): boolean {
+    return this.mapTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleStyleType(type: string) {
+    this.toggle(this.unlockedStyleControl, type);
   }
 
   private toggle(control: FormControl<string[] | null>, value: string) {

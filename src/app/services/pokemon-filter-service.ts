@@ -15,6 +15,11 @@ export class PokemonFilterService {
       pokemonType?: string[] | null;
       sleepType?: string[] | null;
       specialtyType?: string[] | null;
+      mapType?: string[] | null;
+      unlockedStyle?: string[] | null;
+      unlockedFilter?: Record<string, number[]> | null;
+      minDrowsy?: number | null;
+      maxDrowsy?: number | null;
     }
   ): Pokemon[] {
     const {
@@ -23,7 +28,12 @@ export class PokemonFilterService {
       berry = [],
       pokemonType = [],
       sleepType = [],
-      specialtyType = []
+      specialtyType = [],
+      mapType = [],
+      unlockedStyle = [],
+      unlockedFilter = {},
+      minDrowsy,
+      maxDrowsy
     } = options;
 
     const searchTerm = (search ?? ``).toLowerCase();
@@ -35,9 +45,22 @@ export class PokemonFilterService {
       const matchedPokemonTypes = !pokemonType?.length || pokemonType.some(i => pokemon.type.includes(i));
       const matchedSleepType = !sleepType?.length || sleepType.some(i => pokemon.sleep_type.includes(i));
       const matchedspecialtyType = !specialtyType?.length || specialtyType.some(i => pokemon.specialty.includes(i));
-      
+      const matchedMapType = !mapType?.length || mapType.every(i => pokemon.available_islands.some(j => j === i));
 
-      return matchedSearch && matchedIngredients && matchedBerries && matchedPokemonTypes && matchedSleepType && matchedspecialtyType;
+      const isUnlocked = pokemon.id in (unlockedFilter ?? {});
+      const matchedUnlockedStyle = !unlockedStyle?.length || (unlockedStyle?.includes('unlocked') && isUnlocked) || (unlockedStyle?.includes('locked') && !isUnlocked);
+
+      const matchedDrowsy =
+        pokemon.drowsy_power_requirement_list.some(drowsy => {
+          if (drowsy == null) return false;
+        
+          const meetsMin = minDrowsy == null || drowsy >= minDrowsy;
+          const meetsMax = maxDrowsy == null || drowsy <= maxDrowsy;
+        
+          return meetsMin && meetsMax;
+      });
+      
+      return matchedSearch && matchedIngredients && matchedBerries && matchedPokemonTypes && matchedSleepType && matchedspecialtyType && matchedMapType && matchedUnlockedStyle && matchedDrowsy;
     });
   }
 }
