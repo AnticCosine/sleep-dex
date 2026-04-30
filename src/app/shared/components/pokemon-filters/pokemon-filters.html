@@ -51,6 +51,7 @@
                 <div class="sleep-chip-berries" [class.selected]="filterState.specialtyTypeControl.value?.includes('berries')" (click)="filterState.toggleSpecialtyType('berries')">Berries</div>
                 <div class="sleep-chip-ingredients" [class.selected]="filterState.specialtyTypeControl.value?.includes('ingredients')" (click)="filterState.toggleSpecialtyType('ingredients')">Ingredients</div>
                 <div class="sleep-chip-skills" [class.selected]="filterState.specialtyTypeControl.value?.includes('skills')" (click)="filterState.toggleSpecialtyType('skills')">Skills</div>
+                <div class="sleep-chip-all" [class.selected]="filterState.specialtyTypeControl.value?.includes('all')" (click)="filterState.toggleSpecialtyType('all')">All</div>
                 
             </div>
           </details>
@@ -132,8 +133,8 @@
 
             <div class="sleep-grid">
 
-                <div class="sleep-chip-berries" [class.selected]="filterState.unlockedStyleControl.value?.includes('locked')" (click)="filterState.toggleStyleType('locked')">Locked</div>
-                <div class="sleep-chip-ingredients" [class.selected]="filterState.unlockedStyleControl.value?.includes('unlocked')" (click)="filterState.toggleStyleType('unlocked')">Unlocked</div>
+                <div class="sleep-chip-locked" [class.selected]="filterState.unlockedStyleControl.value?.includes('locked')" (click)="filterState.toggleStyleType('locked')">Locked</div>
+                <div class="sleep-chip-unlocked" [class.selected]="filterState.unlockedStyleControl.value?.includes('unlocked')" (click)="filterState.toggleStyleType('unlocked')">Unlocked</div>
                 
             </div>
           </details>

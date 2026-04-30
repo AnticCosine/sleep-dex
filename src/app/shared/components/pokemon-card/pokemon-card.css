@@ -96,7 +96,8 @@
 .pokemon-sleep-type-dozing,
 .pokemon-specialty-skills,
 .pokemon-specialty-ingredients,
-.pokemon-specialty-berries {
+.pokemon-specialty-berries,
+.pokemon-specialty-all {
   position: absolute;
   top: 0;
   width: 64px;
@@ -112,7 +113,8 @@
 
 .pokemon-specialty-skills,
 .pokemon-specialty-ingredients,
-.pokemon-specialty-berries {
+.pokemon-specialty-berries,
+.pokemon-specialty-all {
   left: 0;
   border-radius: 10px 0 10px 0;
 }
@@ -127,6 +129,10 @@
 
 .pokemon-specialty-berries {
   background: var(--berries-colour);
+}
+
+.pokemon-specialty-all {
+  background: var(--all-colour);
 }
 
 .pokemon-sleep-type-snoozing,

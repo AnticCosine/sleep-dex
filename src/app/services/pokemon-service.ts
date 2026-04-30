@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Pokemon, PokemonTypes } from '../models/pokemon.model';
 import { environment } from '../../environments/environment';
-import { BehaviorSubject, map, Observable } from 'rxjs';
+import { BehaviorSubject, firstValueFrom, map, Observable } from 'rxjs';
 
 type UnlockedStyles = { [pokemonId: string]: number[] };
 
@@ -26,7 +26,34 @@ export class PokemonService {
   }
 
   private async fetchRemoteStyles(): Promise<void> {
-    // TODO BE needs to be implemented first 
+    try {
+      const token = this.getToken();
+      const headers = { Authorization: `Bearer ${token}` };
+
+      const remote = await firstValueFrom(
+        this.http.get<UnlockedStyles>(`${this.API}/user/pokemon/styles`, { headers })
+      );
+
+      if (remote && Object.keys(remote).length > 0) {
+        this.persistStyles(remote);
+      }
+
+    } catch (err) {
+      console.error('Failed to fetch remote styles:', err);
+    }
+  }
+
+  private async pushStylesToRemote(styles: UnlockedStyles): Promise<void> {
+    const token = this.getToken();
+    const headers = { Authorization: `Bearer ${token}` };
+
+    await firstValueFrom(
+      this.http.put(`${this.API}/user/pokemon/styles`, { styles }, { headers })
+    );
+  }
+
+  public syncFromRemote(styles: UnlockedStyles): void {
+    this.persistStyles(styles);
   }
 
   getPokemon() {
@@ -58,7 +85,7 @@ export class PokemonService {
     this.persistStyles(current);
  
     if (this.getToken()) {
-      // TODO
+      await this.pushStylesToRemote(current);
     }
   }
 
@@ -74,11 +101,11 @@ export class PokemonService {
     this.persistStyles(current);
     
     if (this.getToken()) {
-      // TODO
+      await this.pushStylesToRemote(current);
     }
   }
 
-  private loadStyles(): UnlockedStyles {
+  public loadStyles(): UnlockedStyles {
     const stored = localStorage.getItem(this.storageKey);
     return stored ? JSON.parse(stored) : {};
   }

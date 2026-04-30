@@ -44,6 +44,7 @@
     --skills-colour: #4fa4fc;
     --berries-colour: #25d96c;
     --ingredients-colour: #fbbf4d;
+    --all-colour: #fb64b6;
 }
 
 [data-theme="dark"] {

@@ -2,9 +2,12 @@
   <input placeholder="Search Recipes" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
 
   <div class="input-buttons">
+
+    <!-- Removing tabular format for now (don't think it's necessary) 
     <button class="button-icon" (click)="changeRecipeFormat()" *ngIf="!mobileView">
       <img src="assets/images/table_icon.svg" alt="">
     </button>
+    -->
 
     <button class="button-icon" (click)="filterState.resetFilters(); magnezoneProcs = 0; sundayBonus = false; this.filterState.applySundayBonus(this.sundayBonus);">
       <img src="assets/images/reset_icon.svg" alt="">
