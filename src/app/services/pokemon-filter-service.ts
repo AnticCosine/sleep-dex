@@ -47,7 +47,8 @@ export class PokemonFilterService {
       const matchedspecialtyType = !specialtyType?.length || specialtyType.some(i => pokemon.specialty.includes(i));
       const matchedMapType = !mapType?.length || mapType.every(i => pokemon.available_islands.some(j => j === i));
 
-      const isUnlocked = pokemon.id in (unlockedFilter ?? {});
+      const styles = unlockedFilter?.[pokemon.id] ?? [];
+      const isUnlocked = styles.length > 0;
       const matchedUnlockedStyle = !unlockedStyle?.length || (unlockedStyle?.includes('unlocked') && isUnlocked) || (unlockedStyle?.includes('locked') && !isUnlocked);
 
       const matchedDrowsy =

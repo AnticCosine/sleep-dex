@@ -33,6 +33,10 @@ export class PokemonCard {
     this.pokemonService.toggleStyle(this.pokemon.id, index);
   }
 
+  toggleAll() {
+    this.pokemonService.toggleAll(this.pokemon.id, this.pokemon.number_of_sleep_styles);
+  }
+
   get imagePokemonPath(): string {
     return `assets/images/pokemon/${this.pokemon.id}.png`
   }

@@ -1,4 +1,4 @@
-<div class="pokemon-card">
+<div class="pokemon-card" (click)="toggleAll()">
 
     <div [class]="'pokemon-sleep-type-' + pokemon.sleep_type">
         {{ pokemon.sleep_type | stringCapitalise }}
@@ -29,12 +29,12 @@
         @for (item of [].constructor(pokemon.number_of_sleep_styles); track $index) {
             <button class="sleep-button"
             [class.unlocked]="isUnlocked(unlockedStyles, $index)"
-            (click)="toggleStyle($index)">
+            (click)="toggleStyle($index); $event.stopPropagation()">
 
                 <div class="star-sleep">
-                    <div class="star-box">
-                        <span class="star-icon">{{ isUnlocked(unlockedStyles, $index) ? '★' : '☆' }}</span>
-                    </div>
+                    
+                    <span class="star-icon">{{ isUnlocked(unlockedStyles, $index) ? '★' : '☆' }}</span>
+                    
                     <span class="num">{{ $index }}</span>
                 </div>
 

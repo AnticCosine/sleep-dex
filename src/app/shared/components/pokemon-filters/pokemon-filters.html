@@ -12,7 +12,7 @@
 
     <div class="dropdown-filters">
 
-        <div class="cooked-chips-row">
+        <div class="first-chips-row">
 
           <details class="dropdown" (click)="onDropdownToggle($event)">
             <summary class="sleep-dropdown">Sleep Type</summary>
@@ -55,7 +55,10 @@
             </div>
           </details>
 
-          
+        </div>
+
+
+        <div class="second-chips-row">
 
           <details class="dropdown" (click)="onDropdownToggle($event)">
             <summary class="berry-dropdown">Berries</summary>
@@ -100,7 +103,7 @@
           </details>
 
           <details class="dropdown" (click)="onDropdownToggle($event)">
-            <summary class="type-dropdown">Pokemon Type</summary>
+            <summary class="type-dropdown">Type</summary>
 
             <div class="type-grid">
 
@@ -119,6 +122,10 @@
                 }
             </div>
           </details>
+
+        </div>
+
+        <div class="third-chips-row">
 
           <details class="dropdown" (click)="onDropdownToggle($event)">
             <summary class="sleep-dropdown">Progress</summary>
@@ -163,10 +170,6 @@
               </div>
             </div>
           </div>
-
-
-
-          
 
         </div>
 

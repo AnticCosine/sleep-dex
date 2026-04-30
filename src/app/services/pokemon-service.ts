@@ -62,6 +62,22 @@ export class PokemonService {
     }
   }
 
+  async toggleAll(pokemonId: string, totalStyles: number): Promise<void> {
+    const current = { ...this.unlockedStylesSubject.value };
+    const existing = current[pokemonId] ?? [];
+    const allUnlocked = existing.length === totalStyles;
+    
+    current[pokemonId] = allUnlocked
+      ? []
+      : Array.from({ length: totalStyles }, (_, i) => i);
+    
+    this.persistStyles(current);
+    
+    if (this.getToken()) {
+      // TODO
+    }
+  }
+
   private loadStyles(): UnlockedStyles {
     const stored = localStorage.getItem(this.storageKey);
     return stored ? JSON.parse(stored) : {};

@@ -70,12 +70,14 @@
 .filters .dropdown-filters{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
-.cooked-chips-row {
+.first-chips-row,
+.second-chips-row,
+.third-chips-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -180,7 +182,6 @@ label input {
 
   width: 200px;
   max-height: 200px;
-  max-width: calc(100vw - 32px);
   overflow-y: auto;
 
   position: absolute; /* to make the dropdown size not change as well (might not work for smaller views need to revisit this)*/
@@ -235,7 +236,7 @@ label input {
 }
 
 .sleep-island-grid {
-  width: 94px;
+  width: 194px;
 }
 
 .sleep-chip-snoozing,
@@ -392,7 +393,7 @@ label input {
   flex-shrink: 0;
   overflow: hidden;
 
-  width: 170px;
+  width: 235px;
 
   
 }
@@ -518,9 +519,71 @@ input[type="range"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+@media (max-width: 790px) {
 
+  .type-grid,
+  .berry-grid,
+  .ingredient-grid { 
+    left: auto;
+    right: 0;
+  }
 
+}
+@media (max-width: 650px) {
 
-@media (max-width: 580px) {
+  .first-chips-row,
+  .second-chips-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .first-chips-row .dropdown,
+  .second-chips-row .dropdown {
+    width: 100%;
+  }
   
+  .first-chips-row .dropdown summary,
+  .second-chips-row .dropdown summary {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+
+
+  .third-chips-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .third-chips-row .dropdown {
+    width: 100%;
+  }
+  
+  .third-chips-row .dropdown summary {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .drowsy-pill {
+    grid-column: span 2;
+    width: stretch;
+  }
+
+
+  .berry-grid,
+  .ingredient-grid { 
+    left: 0;
+    right: auto;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .dropdown summary {
+    font-size: 12px;
+  }
 }
