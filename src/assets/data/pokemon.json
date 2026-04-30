@@ -512,7 +512,7 @@
     ]
   },
   {
-    "id": "pikachu_(halloween)",
+    "id": "pikachu_halloween",
     "pokedex_number": "25.1",
     "name": "Pikachu (Halloween)",
     "type": "electric",
@@ -532,7 +532,7 @@
     "available_islands": []
   },
   {
-    "id": "pikachu_(holiday)",
+    "id": "pikachu_holiday",
     "pokedex_number": "25.2",
     "name": "Pikachu (Holiday)",
     "type": "electric",
@@ -1899,7 +1899,7 @@
     ]
   },
   {
-    "id": "eevee_(holiday)",
+    "id": "eevee_holiday",
     "pokedex_number": "133.1",
     "name": "Eevee (Holiday)",
     "type": "normal",
@@ -1921,7 +1921,7 @@
     "available_islands": []
   },
   {
-    "id": "eevee_(halloween)",
+    "id": "eevee_halloween",
     "pokedex_number": "133.2",
     "name": "Eevee (Halloween)",
     "type": "normal",
@@ -4368,7 +4368,7 @@
     ]
   },
   {
-    "id": "spheal_(holiday)",
+    "id": "spheal_holiday",
     "pokedex_number": "363.1",
     "name": "Spheal (Holiday)",
     "type": "ice",
