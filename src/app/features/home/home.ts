@@ -23,12 +23,13 @@ export class Home {
   sleepStats$!: Observable<SleepTypeProgress>;
   islandStats$!: Observable<IslandSleepProgress[]>;
   recipes$!: Observable<Recipe[]>;
+  pokemon$!: Observable<Pokemon[]>;
   animate = false;
   constructor(private recipeService: RecipeService, private pokemonService: PokemonService) {} 
 
   ngOnInit(): void {
     this.recipes$ = this.recipeService.getRecipes();
-    const pokemon$ = this.pokemonService.getPokemon();
+    this.pokemon$ = this.pokemonService.getPokemon();
     
 
     this.stats$ = combineLatest([
@@ -68,7 +69,7 @@ export class Home {
     );
 
     this.sleepStats$ = combineLatest([
-      pokemon$,
+      this.pokemon$,
       this.pokemonService.unlockedStyles$
     ]).pipe(
       map(([pokemon, unlocked]) => {
