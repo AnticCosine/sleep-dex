@@ -1,18 +1,20 @@
 <div class="wrapper">
 
     <div class="ingredient-calculator">
+        
         <div class="ingredient">
             <app-ingredient-table></app-ingredient-table>
         </div>
 
-        <app-recipe-filters
-          [filterState]="filterState"
-          [showFormatToggle]="false"
-          [ingredeintPlaceHolder]="true"
-          (formatChange)="changeRecipeFormat()"
-        />
-
         @if (cookableRecipes$ | async; as recipes) {
+            <app-recipe-filters
+              [filterState]="filterState"
+              [showFormatToggle]="false"
+              [ingredeintPlaceHolder]="true"
+              (formatChange)="changeRecipeFormat()"
+            />
+
+        
             @if (tabularFormat) {
                 <div class="recipe-table">
                     <app-recipe-table

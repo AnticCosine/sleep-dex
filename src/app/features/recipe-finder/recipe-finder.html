@@ -1,13 +1,13 @@
 <div class="wrapper">
     <div class="recipe-finder">
-    
-        <app-recipe-filters
-          [filterState]="filterState"
-          [showFormatToggle]="false"
-          (formatChange)="changeRecipeFormat()"
-        />
-        
         @if (filterState.filteredRecipes$ | async; as recipes) {
+          <app-recipe-filters
+            [filterState]="filterState"
+            [showFormatToggle]="false"
+            (formatChange)="changeRecipeFormat()"
+          />
+        
+        
           @if (tabularFormat) {
             <div class="recipe-table">
               <app-recipe-table [recipes]="recipes"></app-recipe-table>
