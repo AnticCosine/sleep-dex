@@ -11,7 +11,7 @@
 .footer-inner {
     padding: 24px 24px 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
@@ -149,7 +149,7 @@
 
   .footer-inner {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
   }
