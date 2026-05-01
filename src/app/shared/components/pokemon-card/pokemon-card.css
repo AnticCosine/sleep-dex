@@ -49,6 +49,8 @@
   font-size: 16px;
   margin: 0;
   color: var(--font-colour);
+
+  text-align: center;
 }
 
 .pokemon-name.long-name {

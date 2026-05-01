@@ -10,7 +10,7 @@
 
     <div class="pokemon-title">
         <img [src]="imageTypePath(pokemon.type)" alt="{{ pokemon.type }}" class="type-img">
-        <h2 class="pokemon-name" [class.long-name]="pokemon.name.length > 15" [class.extra-long-name]="pokemon.name.length > 22">{{ pokemon.name }}</h2>
+        <h2 class="pokemon-name" [class.long-name]="pokemon.name.length >= 14" [class.extra-long-name]="pokemon.name.length > 22">{{ pokemon.name }}</h2>
         <h1 class="pokedex-no">{{ pokemon.pokedex_number | pokedexConverter }}</h1>
     </div>
 

@@ -8848,7 +8848,7 @@
   {
     "id": "pumpkaboo_medium",
     "pokedex_number": "710",
-    "name": "Pumpkaboo (Medium)",
+    "name": "Pumpkaboo (M)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -8897,7 +8897,7 @@
   {
     "id": "pumpkaboo_small",
     "pokedex_number": "710.1",
-    "name": "Pumpkaboo (Small)",
+    "name": "Pumpkaboo (S)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -8913,7 +8913,7 @@
   {
     "id": "pumpkaboo_large",
     "pokedex_number": "710.2",
-    "name": "Pumpkaboo (Large)",
+    "name": "Pumpkaboo (L)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -8929,7 +8929,7 @@
   {
     "id": "pumpkaboo_jumbo",
     "pokedex_number": "710.3",
-    "name": "Pumpkaboo (Jumbo)",
+    "name": "Pumpkaboo (J)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -8945,7 +8945,7 @@
   {
     "id": "gourgeist_medium",
     "pokedex_number": "711",
-    "name": "Gourgeist (Medium)",
+    "name": "Gourgeist (M)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -8994,7 +8994,7 @@
   {
     "id": "gourgeist_small",
     "pokedex_number": "711.1",
-    "name": "Gourgeist (Small)",
+    "name": "Gourgeist (S)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -9010,7 +9010,7 @@
   {
     "id": "gourgeist_large",
     "pokedex_number": "711.2",
-    "name": "Gourgeist (Large)",
+    "name": "Gourgeist (L)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -9026,7 +9026,7 @@
   {
     "id": "gourgeist_jumbo",
     "pokedex_number": "711.3",
-    "name": "Gourgeist (Jumbo)",
+    "name": "Gourgeist (J)",
     "type": "ghost",
     "sleep_type": "dozing",
     "specialty": "ingredients",
@@ -9683,7 +9683,7 @@
   {
     "id": "toxtricity_amped_form",
     "pokedex_number": "849",
-    "name": "Toxtricity (Amped Form)",
+    "name": "Toxtricity (Amped)",
     "type": "poison",
     "sleep_type": "dozing",
     "specialty": "skills",
@@ -9732,7 +9732,7 @@
   {
     "id": "toxtricity_low_key_form",
     "pokedex_number": "849.1",
-    "name": "Toxtricity (Low Key Form)",
+    "name": "Toxtricity (Low Key)",
     "type": "poison",
     "sleep_type": "dozing",
     "specialty": "skills",
