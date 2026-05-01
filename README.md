@@ -7,6 +7,7 @@ A Pokemon Sleep recipe & ingredient tracker
 ## Features so far
 
 - Keep track of recipes you have cooked and find recipes you are yet to cook in recipes page 
+- Pokemon Sleep Styles can be searched through and kept track of 
 - Use filters to check different recipe types of varying ingredient counts 
 - Store ingredients from your Pokemon Sleep inventory to see what ingredients you can currently cook 
 - Upload photos feature to autofill ingredients from a pokemon sleep ingredient inventory image (experimental) 
