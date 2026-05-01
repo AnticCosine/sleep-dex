@@ -161,7 +161,7 @@ h2 {
   justify-content: center;
   gap: 12px;
 
-  margin-top: 0;
+  margin-top: 4px;
   margin-bottom: 8px;
 }
 
@@ -180,13 +180,20 @@ h2 {
 }
 
 .ingredient-icon img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
   object-fit: contain;
+  padding: 3px;
 }
+
+.recipe .ingredient-icon img { background: rgba(255, 255, 255, 0.274); }
+
+.recipe.enabled .ingredient-icon img { background: rgba(64, 204, 51, 0.274); } 
 
 h3 {
     margin: 0px;
+    margin-top: 4px;
     font-family: var(--font-primary);
     color: inherit;
     font-size: 12px;

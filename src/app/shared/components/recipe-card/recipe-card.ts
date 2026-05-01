@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Recipe } from '../../../models/recipe.models';
+import { Recipe } from '../../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { RecipeService } from '../../../services/recipe-service';
 import { map, Observable } from 'rxjs';

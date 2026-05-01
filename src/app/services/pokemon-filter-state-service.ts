@@ -1,0 +1,171 @@
+import { Injectable } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { PokemonService } from './pokemon-service';
+import { PokemonFilterService } from './pokemon-filter-service';
+import { combineLatest, debounceTime, map, Observable, ReplaySubject, startWith, take } from 'rxjs';
+import { Pokemon, PokemonTypes } from '../models/pokemon.model';
+import { Ingredient } from '../models/ingredient.model';
+import { IngredientService } from './ingredient-service';
+import { Berry } from '../models/berry.model';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class PokemonFilterStateService {
+
+  searchControl = new FormControl('');
+  ingredientControl = new FormControl<string[]>([]);
+  berryControl = new FormControl<string[]>([]);
+  pokemonTypeControl = new FormControl<string[]>([]);
+  sleepTypeControl = new FormControl<string[]>([]);
+  specialtyTypeControl = new FormControl<string[]>([]);
+  mapTypeControl = new FormControl<string[]>([]);
+  unlockedStyleControl = new FormControl<string[]>([]);
+
+  minDrowsyControl = new FormControl<number | null>(0);
+  maxDrowsyControl = new FormControl<number | null>(0);
+
+  minDrowsy = 0;
+  maxDrowsy = 0;
+
+  ingredients$: Observable<Ingredient[]>;
+  berries$: Observable<Berry[]>;
+  pokemonTypes$: Observable<PokemonTypes[]>;
+  filteredPokemon$: Observable<Pokemon[]>;
+
+  constructor(
+    private pokemonService: PokemonService,
+    private ingredientService: IngredientService,
+    private pokemonFilterService: PokemonFilterService
+    ) {
+      this.ingredients$ = this.ingredientService.GetIngredients();
+      this.berries$ = this.ingredientService.GetBerries();
+      this.pokemonTypes$ = this.pokemonService.GetPokemonTypes();
+      const pokemon$ = this.pokemonService.getPokemon();
+      const filteredPokemon = new ReplaySubject<Pokemon[]>(1);
+
+      pokemon$.pipe(take(1)).subscribe(pokemon => {
+        
+        const allDrowsy = pokemon.flatMap(p =>
+          p.drowsy_power_requirement_list.filter((d): d is number => d != null)
+        );
+
+        this.minDrowsy = Math.min(...allDrowsy);
+        this.maxDrowsy = Math.max(...allDrowsy);
+
+        this.minDrowsyControl.setValue(this.minDrowsy);
+        this.maxDrowsyControl.setValue(this.maxDrowsy);
+
+        combineLatest([
+            pokemon$,
+            this.searchControl.valueChanges.pipe(startWith(this.searchControl.value), debounceTime(100)),
+            this.ingredientControl.valueChanges.pipe(startWith(this.ingredientControl.value)),
+            this.berryControl.valueChanges.pipe(startWith(this.berryControl.value)),
+            this.pokemonTypeControl.valueChanges.pipe(startWith(this.pokemonTypeControl.value)),
+            this.sleepTypeControl.valueChanges.pipe(startWith(this.sleepTypeControl.value)),
+            this.specialtyTypeControl.valueChanges.pipe(startWith(this.specialtyTypeControl.value)),
+            this.mapTypeControl.valueChanges.pipe(startWith(this.mapTypeControl.value)),
+            this.unlockedStyleControl.valueChanges.pipe(startWith(this.unlockedStyleControl.value)),
+            this.pokemonService.unlockedStyles$,
+            this.minDrowsyControl.valueChanges.pipe(startWith(this.minDrowsyControl.value)),
+            this.maxDrowsyControl.valueChanges.pipe(startWith(this.maxDrowsyControl.value)),
+        ]).pipe(
+          map(([pokemon, search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy]) =>
+            this.pokemonFilterService.filterPokemon(pokemon, {
+              search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy
+            })
+          )
+        ).subscribe(filtered => filteredPokemon.next(filtered));
+
+          // this.persistOnChange(); // used for local storage 
+      });
+
+      this.filteredPokemon$ = filteredPokemon.asObservable();
+    }
+
+  resetFilters() {
+    this.searchControl.setValue('');
+    this.ingredientControl.setValue([]);
+    this.berryControl.setValue([]);
+    this.pokemonTypeControl.setValue([]);
+    this.sleepTypeControl.setValue([]);
+    this.specialtyTypeControl.setValue([]);
+    this.mapTypeControl.setValue([]);
+    this.unlockedStyleControl.setValue([]);
+    this.minDrowsyControl.setValue(this.minDrowsy);
+    this.maxDrowsyControl.setValue(this.maxDrowsy);
+  }
+
+  imageIngredientPath(ingredientId: string): string {
+    return `assets/images/ingredients/${ingredientId}.png`;
+  }
+
+  toggleIngredient(id: string) {
+    this.toggle(this.ingredientControl, id);
+  }
+
+  hasIngredient(id: string): boolean {
+    return this.ingredientControl.value?.includes(id) ?? false;
+  }
+
+  imageBerryPath(berryId: string): string {
+    return `assets/images/berries/${berryId}.png`;
+  }
+
+  toggleBerry(id: string) {
+    this.toggle(this.berryControl, id);
+  }
+
+  hasBerry(id: string): boolean {
+    return this.berryControl.value?.includes(id) ?? false;
+  }
+
+  imagePokemonTypePath(typeId: string): string {
+    return `assets/images/pokemon-types/${typeId}.png`;
+  }
+
+  togglePokemonType(id: string) {
+    this.toggle(this.pokemonTypeControl, id);
+  }
+
+  hasPokemonType(id: string): boolean {
+    return this.pokemonTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleSleepType(id: string) {
+    this.toggle(this.sleepTypeControl, id);
+  }
+
+  hasSleepType(id: string): boolean {
+    return this.sleepTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleSpecialtyType(id: string) {
+    this.toggle(this.specialtyTypeControl, id);
+  }
+
+  hasSpecialtyType(id: string): boolean {
+    return this.specialtyTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleMapType(id: string) {
+    this.toggle(this.mapTypeControl, id);
+  }
+
+  hasMapType(id: string): boolean {
+    return this.mapTypeControl.value?.includes(id) ?? false;
+  }
+
+  toggleStyleType(type: string) {
+    this.toggle(this.unlockedStyleControl, type);
+  }
+
+  private toggle(control: FormControl<string[] | null>, value: string) {
+    const current = control.value ?? [];
+    control.setValue(
+      current.includes(value) ? current.filter(v => v !== value) : [...current, value]
+    );
+  }
+
+
+}

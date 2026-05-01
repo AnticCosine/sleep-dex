@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { combineLatest, debounceTime, map, Observable, ReplaySubject, startWith, take } from 'rxjs';
 import { Ingredient } from '../models/ingredient.model';
-import { Recipe } from '../models/recipe.models';
+import { Recipe } from '../models/recipe.model';
 import { IngredientService } from './ingredient-service';
 import { RecipeService } from './recipe-service';
 import { RecipeFilterService } from './recipe-filter-service';

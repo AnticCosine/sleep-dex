@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Ingredient } from '../models/ingredient.model';
 import { BehaviorSubject, firstValueFrom, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
+import { Berry } from '../models/berry.model';
 
 const lowThreshold = 20;
 export type IngredientStatus = 'ok' | 'low' | 'out';
@@ -40,6 +41,10 @@ export class IngredientService {
 
   GetIngredients() {
     return this.http.get<Ingredient[]>('assets/data/ingredients.json');
+  }
+
+  GetBerries() {
+    return this.http.get<Berry[]>('assets/data/berries.json');
   }
 
   getQuantities$(): Observable<{ [id: string]: number }> {

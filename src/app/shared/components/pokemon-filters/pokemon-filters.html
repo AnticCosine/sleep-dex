@@ -1,0 +1,180 @@
+<div class="first-filter" *ngIf="filterState.maxDrowsy > 0">
+  <input placeholder="Search Pokemon" type="text" class="input" id="search" autocomplete="off" [formControl]="filterState.searchControl">
+
+  <div class="input-buttons">
+    <button class="button-icon" (click)="filterState.resetFilters();">
+      <img src="assets/images/reset_icon.svg" alt="">
+    </button>
+  </div>
+</div>
+
+<div class="filters" *ngIf="filterState.maxDrowsy > 0">
+
+    <div class="dropdown-filters">
+
+        <div class="first-chips-row">
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Sleep Type</summary>
+
+            <div class="sleep-grid">
+
+                <div class="sleep-chip-snoozing" [class.selected]="filterState.sleepTypeControl.value?.includes('snoozing')" (click)="filterState.toggleSleepType('snoozing')">Snoozing</div>
+                <div class="sleep-chip-dozing" [class.selected]="filterState.sleepTypeControl.value?.includes('dozing')" (click)="filterState.toggleSleepType('dozing')">Dozing</div>
+                <div class="sleep-chip-slumbering" [class.selected]="filterState.sleepTypeControl.value?.includes('slumbering')" (click)="filterState.toggleSleepType('slumbering')">Slumbering</div>
+                
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Islands</summary>
+
+            <div class="sleep-island-grid">
+
+                <div class="sleep-chip-greengrass" [class.selected]="filterState.mapTypeControl.value?.includes('greengrass_isle')" [ngStyle]="{'background-image': 'url(' + getIslandImage('greengrass_isle') + ')'}" (click)="filterState.toggleMapType('greengrass_isle')"></div>
+                <div class="sleep-chip-cyan" [class.selected]="filterState.mapTypeControl.value?.includes('cyan_beach')" [ngStyle]="{'background-image': 'url(' + getIslandImage('cyan_beach') + ')'}" (click)="filterState.toggleMapType('cyan_beach')"></div>
+                <div class="sleep-chip-taupe" [class.selected]="filterState.mapTypeControl.value?.includes('taupe_hollow')" [ngStyle]="{'background-image': 'url(' + getIslandImage('taupe_hollow') + ')'}" (click)="filterState.toggleMapType('taupe_hollow')"></div>
+                <div class="sleep-chip-snowdrop" [class.selected]="filterState.mapTypeControl.value?.includes('snowdrop_tundra')" [ngStyle]="{'background-image': 'url(' + getIslandImage('snowdrop_tundra') + ')'}" (click)="filterState.toggleMapType('snowdrop_tundra')"></div>
+                <div class="sleep-chip-lapis" [class.selected]="filterState.mapTypeControl.value?.includes('lapis_lakeside')" [ngStyle]="{'background-image': 'url(' + getIslandImage('lapis_lakeside') + ')'}" (click)="filterState.toggleMapType('lapis_lakeside')"></div>
+                <div class="sleep-chip-gold" [class.selected]="filterState.mapTypeControl.value?.includes('old_gold_power_plant')" [ngStyle]="{'background-image': 'url(' + getIslandImage('old_gold_power_plant') + ')'}" (click)="filterState.toggleMapType('old_gold_power_plant')"></div>
+                <div class="sleep-chip-amber" [class.selected]="filterState.mapTypeControl.value?.includes('amber_canyon')" [ngStyle]="{'background-image': 'url(' + getIslandImage('amber_canyon') + ')'}" (click)="filterState.toggleMapType('amber_canyon')"></div>
+                <div class="sleep-chip-greengrass-ex" [class.selected]="filterState.mapTypeControl.value?.includes('greengrass_isle_expert')" [ngStyle]="{'background-image': 'url(' + getIslandImage('greengrass_isle') + ')'}" (click)="filterState.toggleMapType('greengrass_isle_expert')"></div>
+                
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Specialty</summary>
+
+            <div class="sleep-grid">
+
+                <div class="sleep-chip-berries" [class.selected]="filterState.specialtyTypeControl.value?.includes('berries')" (click)="filterState.toggleSpecialtyType('berries')">Berries</div>
+                <div class="sleep-chip-ingredients" [class.selected]="filterState.specialtyTypeControl.value?.includes('ingredients')" (click)="filterState.toggleSpecialtyType('ingredients')">Ingredients</div>
+                <div class="sleep-chip-skills" [class.selected]="filterState.specialtyTypeControl.value?.includes('skills')" (click)="filterState.toggleSpecialtyType('skills')">Skills</div>
+                <div class="sleep-chip-all" [class.selected]="filterState.specialtyTypeControl.value?.includes('all')" (click)="filterState.toggleSpecialtyType('all')">All</div>
+                
+            </div>
+          </details>
+
+        </div>
+
+
+        <div class="second-chips-row">
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="berry-dropdown">Berries</summary>
+
+            <div class="berry-grid">
+
+                @if (filterState.berries$ | async; as berries) {
+                  @for (berry of berries; track berry) {
+                    <div class="berry-item" [class.selected]="filterState.berryControl.value?.includes(berry.id)" (click)="filterState.toggleBerry(berry.id)">
+
+                      @if (filterState.hasBerry(berry.id)) {
+                        <img [src]="filterState.imageBerryPath(berry.id)" alt="" class="berry-checked">
+                      } @else {
+                        <img [src]="filterState.imageBerryPath(berry.id)" alt="" class="berry-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="ingredient-dropdown">Ingredients</summary>
+
+            <div class="ingredient-grid">
+
+                @if (filterState.ingredients$ | async; as ingredients) {
+                  @for (ingredient of ingredients; track ingredient) {
+                    <div class="ingredient-item" [class.selected]="filterState.ingredientControl.value?.includes(ingredient.id)" (click)="filterState.toggleIngredient(ingredient.id)">
+
+                      @if (filterState.hasIngredient(ingredient.id)) {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-checked">
+                      } @else {
+                        <img [src]="filterState.imageIngredientPath(ingredient.id)" alt="" class="ingredient-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="type-dropdown">Type</summary>
+
+            <div class="type-grid">
+
+                @if (filterState.pokemonTypes$ | async; as pokemonTypes) {
+                  @for (pokemonType of pokemonTypes; track pokemonType) {
+                    <div class="type-item" [class.selected]="filterState.pokemonTypeControl.value?.includes(pokemonType.id)" (click)="filterState.togglePokemonType(pokemonType.id)">
+
+                      @if (filterState.hasPokemonType(pokemonType.id)) {
+                        <img [src]="filterState.imagePokemonTypePath(pokemonType.id)" alt="" class="type-checked">
+                      } @else {
+                        <img [src]="filterState.imagePokemonTypePath(pokemonType.id)" alt="" class="type-unchecked">
+                      }
+
+                    </div>
+                  }
+                }
+            </div>
+          </details>
+
+        </div>
+
+        <div class="third-chips-row">
+
+          <details class="dropdown" (click)="onDropdownToggle($event)">
+            <summary class="sleep-dropdown">Progress</summary>
+
+            <div class="sleep-grid">
+
+                <div class="sleep-chip-locked" [class.selected]="filterState.unlockedStyleControl.value?.includes('locked')" (click)="filterState.toggleStyleType('locked')">Locked</div>
+                <div class="sleep-chip-unlocked" [class.selected]="filterState.unlockedStyleControl.value?.includes('unlocked')" (click)="filterState.toggleStyleType('unlocked')">Unlocked</div>
+                <div class="sleep-chip-partial" [class.selected]="filterState.unlockedStyleControl.value?.includes('partial')" (click)="filterState.toggleStyleType('partial')">Partial</div>
+                
+            </div>
+          </details>
+
+          <div class="drowsy-pill">
+            <div class="drowsy-icon-cell">
+              <img src="assets/images/snorlax_icon.png" alt="" class="pot-icon">
+            </div>
+            <div class="drowsy-slider-section">
+              <div class="drowsy-vals-row">
+                <span class="drowsy-val">{{ drowsyMin | numberAbbreviate }}</span>
+                <span class="drowsy-val-sep">–</span>
+                <span class="drowsy-val drowsy-val-right">{{ drowsyMax | numberAbbreviate }}</span>
+              </div>
+              <div class="drowsy-track-wrap">
+                <div class="drowsy-track-bg"></div>
+                <div class="drowsy-track-fill" #trackFill></div>
+                <input
+                  type="range"
+                  class="drowsy-range"
+                  [min]="filterState.minDrowsy"
+                  [max]="filterState.maxDrowsy"
+                  [formControl]="filterState.minDrowsyControl"
+                  (input)="onMinSlider()"
+                >
+                <input
+                  type="range"
+                  class="drowsy-range"
+                  [min]="filterState.minDrowsy"
+                  [max]="filterState.maxDrowsy"
+                  [formControl]="filterState.maxDrowsyControl"
+                  (input)="onMaxSlider()"
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+</div>
