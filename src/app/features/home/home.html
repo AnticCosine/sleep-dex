@@ -30,28 +30,51 @@
             </div>
         </div>
 
+        <div class="first-stats">
+          
+          <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-label">Total recipes</div>
+                <div class="stat-value" id="s-total">{{ stats.total }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Cooked</div>
+                <div class="stat-value cooked-value" id="s-cooked">{{ stats.cooked }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Remaining</div>
+                <div class="stat-value" id="s-remaining">{{ stats.remaining }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Completion</div>
+                <div class="stat-value" id="s-pct">{{ stats.completionPercent }}%</div>
+              </div>
+          </div>
 
-        <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-label">Total recipes</div>
-              <div class="stat-value" id="s-total">{{ stats.total }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Cooked</div>
-              <div class="stat-value cooked-value" id="s-cooked">{{ stats.cooked }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Remaining</div>
-              <div class="stat-value" id="s-remaining">{{ stats.remaining }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Completion</div>
-              <div class="stat-value" id="s-pct">{{ stats.completionPercent }}%</div>
-            </div>
+          <div class="stats-grid" *ngIf="sleepStats$ | async as sleep">
+              <div class="stat-card">
+                <div class="stat-label">Total styles</div>
+                <div class="stat-value" id="sleep-total">{{ sleep.total }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Unlocked</div>
+                <div class="stat-value unlocked-value" id="sleep-unlocked">{{ sleep.unlocked }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Remaining</div>
+                <div class="stat-value" id="sleep-remaining">{{ sleep.remaining }}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Completion</div>
+                <div class="stat-value" id="sleep-pct">{{ sleep.completionPercent }}%</div>
+              </div>
+          </div>
+
         </div>
 
+
         <div class="types">
-            <div class="section-label">Progress by type</div>
+            <div class="section-label">Progress by recipe type</div>
             <div class="type-grid">
 
               @for (t of stats.byType; track t.type) {
@@ -69,24 +92,7 @@
             </div>
         </div>
 
-        <div class="stats-grid" *ngIf="sleepStats$ | async as sleep">
-            <div class="stat-card">
-              <div class="stat-label">Total styles</div>
-              <div class="stat-value" id="sleep-total">{{ sleep.total }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Unlocked</div>
-              <div class="stat-value unlocked-value" id="sleep-unlocked">{{ sleep.unlocked }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Remaining</div>
-              <div class="stat-value" id="sleep-remaining">{{ sleep.remaining }}</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Completion</div>
-              <div class="stat-value" id="sleep-pct">{{ sleep.completionPercent }}%</div>
-            </div>
-        </div>
+        
 
 
         <div class="types" *ngIf="islandStats$ | async as islands">
