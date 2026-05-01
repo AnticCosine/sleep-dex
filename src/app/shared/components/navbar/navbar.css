@@ -51,7 +51,6 @@ a.active {
     display: none;
     flex-direction: column;
     gap: 5px;
-    margin-left: auto;
     padding: 8px;
     background: none;
     border: none;
@@ -223,27 +222,14 @@ a.active {
   opacity: 1;
 }
 
-.drawer-theme-btn {
-  padding: 12px 4px;
-  border-bottom: 1px solid var(--color-drawer-border, lightgrey);
-  width: 100%;
-  justify-content: flex-start;
-  gap: 8px;
-  font-size: 16px;
-  font-family: var(--font-primary);
-  color: var(--font-colour);
-}
 
-.drawer-theme-btn::after {
-  content: attr(title);
-  font-size: 16px;
-  color: inherit;
-}
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .nav-links { display: none; }
 
     .hamburger { display: flex; }
+
+    .theme-toggle { margin-left: auto; }
 
     .mobile-drawer.open { display: flex; }
 

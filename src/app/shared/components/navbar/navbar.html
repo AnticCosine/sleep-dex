@@ -16,16 +16,17 @@
                     <a class="auth-link signout" (click)="signOut()">Sign out</a>
                 </li>
                 
-                <li>
-                    <button class="theme-btn" (click)="themeService.toggle()">
-                    
-                      <img src="assets/images/sun_icon.svg" width="18" height="18" alt="" *ngIf="themeService.isDark">
-                      <img src="assets/images/moon_icon.svg" width="18" height="18" alt="" *ngIf="!themeService.isDark">
-                    </button>
-                </li>
+                
                 
                 
             </div>
+            
+            <li class="theme-toggle">
+                <button class="theme-btn" (click)="themeService.toggle()">
+                    <img src="assets/images/sun_icon.svg" width="18" height="18" alt="" *ngIf="themeService.isDark">
+                    <img src="assets/images/moon_icon.svg" width="18" height="18" alt="" *ngIf="!themeService.isDark">
+                </button>
+            </li>
 
             <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen">
                 <span></span>
@@ -36,17 +37,13 @@
     </div>
     <div class="seperator"></div>
     <div class="mobile-drawer" [class.open]="menuOpen">
+
         <a routerLink="/" routerLinkActive="active" (click)="toggleMenu()" [routerLinkActiveOptions]="{ exact: true }">Home</a>
         <a routerLink="/pokemon" routerLinkActive="active" (click)="toggleMenu()">Pokemon</a>
         <a routerLink="/recipes" routerLinkActive="active" (click)="toggleMenu()">Recipes</a>
         <a routerLink="/ingredients" routerLinkActive="active" (click)="toggleMenu()">Ingredients</a>
         <a *ngIf="!(isLoggedIn$ | async)" class="auth-link" (click)="openModal()">Sign in</a>
         <a *ngIf="isLoggedIn$ | async" class="auth-link" (click)="signOut()">Sign out</a>
-        
-        <button class="theme-btn drawer-theme-btn" (click)="themeService.toggle()" [title]="themeService.isDark ? 'Switch to light mode' : 'Switch to dark mode'">
-            <img src="assets/images/sun_icon.svg" width="18" height="18" alt="" *ngIf="themeService.isDark">
-            <img src="assets/images/moon_icon.svg" width="18" height="18" alt="" *ngIf="!themeService.isDark">
-        </button>
         
     </div>
 

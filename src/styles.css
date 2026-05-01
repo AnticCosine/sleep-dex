@@ -51,6 +51,7 @@
     --pokemon-unlocked-colour: rgba(248, 199, 39, 0.541);
     --pokemon-icon-colour: #eee76dd0;
     --pokemon-divider-colour: #dfd85eea;
+    --pokemon-sleep-btn-colour: rgba(255, 255, 255, 0.39);
 }
 
 [data-theme="dark"] {
@@ -91,6 +92,7 @@
     --pokemon-unlocked-colour: rgba(255, 210, 60, 0.22);
     --pokemon-icon-colour: rgba(255, 255, 255, 0.08);
     --pokemon-divider-colour: rgba(255, 255, 255, 0.15);
+    --pokemon-sleep-btn-colour: rgba(255, 255, 255, 0.05);
 }
 
 body {
