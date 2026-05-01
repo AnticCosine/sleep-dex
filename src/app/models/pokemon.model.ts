@@ -9,7 +9,7 @@ export interface Pokemon {
   ingredients: string[];
   number_of_sleep_styles: number;
   drowsy_power_requirement_list: (number | null)[];
-  available_islands: string[];
+  availability: Record<string, string[]>;
 }
 
 export interface PokemonBerry {

@@ -45,7 +45,7 @@ export class PokemonFilterService {
       const matchedPokemonTypes = !pokemonType?.length || pokemonType.some(i => pokemon.type.includes(i));
       const matchedSleepType = !sleepType?.length || sleepType.some(i => pokemon.sleep_type.includes(i));
       const matchedspecialtyType = !specialtyType?.length || specialtyType.some(i => pokemon.specialty.includes(i));
-      const matchedMapType = !mapType?.length || mapType.every(i => pokemon.available_islands.some(j => j === i));
+      const matchedMapType = !mapType?.length || mapType.every(i => Object.values(pokemon.availability).some(islands => islands.includes(i)));
 
       const styles = unlockedFilter?.[pokemon.id] ?? [];
       const isUnlocked = styles.length === pokemon.number_of_sleep_styles;

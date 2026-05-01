@@ -51,6 +51,14 @@
   color: var(--font-colour);
 }
 
+.pokemon-name.long-name {
+  font-size: 13px;
+}
+
+.pokemon-name.long-name.extra-long-name {
+  font-size: 10px;
+}
+
 .type-img {
   max-width: 16px;
   max-height: 16px;

@@ -103,42 +103,45 @@ export class Home {
 
         const islandResults = islands.map(island => {
 
-          const pokemonOnIsland = pokemon.filter(p =>
-            p.available_islands.includes(island)
-          );
+          
         
           let total = 0;
           let unlockedCount = 0;
         
           const bySleepType = sleepTypes.map(type => {
           
-            const ofType = pokemonOnIsland.filter(p => p.sleep_type === type);
+            const ofType = pokemon.filter(p => p.sleep_type === type);
+
+            let typeTotal = 0;
+            let typeUnlocked = 0;
           
-            const typeTotal = ofType.reduce(
-              (sum, p) => sum + p.number_of_sleep_styles,
-              0
-            );
-          
-            const typeUnlocked = ofType.reduce((sum, p) => {
+            ofType.forEach(p => {
+              const stylesOnIsland = this.getStylesOnIsland(p, island);
+                    
               const unlockedStyles = unlocked[p.id] ?? [];
-              return sum + unlockedStyles.length;
-            }, 0);
-          
+                    
+              // Count only unlocked styles that exist on this island
+              const unlockedOnIsland = unlockedStyles.filter(style =>
+                p.availability[`${style}_star`]?.includes(island)
+              ).length;
+            
+              typeTotal += stylesOnIsland;
+              typeUnlocked += unlockedOnIsland;
+            });
+
             total += typeTotal;
             unlockedCount += typeUnlocked;
-          
+
             return {
               sleepType: type,
               total: typeTotal,
               unlocked: typeUnlocked
             };
           });
-        
-
+          
           const percent =
           total > 0 ? Math.round((unlockedCount / total) * 100) : 0;
           
-
           return {
             island,
             total,
@@ -189,6 +192,12 @@ export class Home {
     );
       
 
+  }
+
+  private getStylesOnIsland(p: Pokemon, island: string): number {
+    return Object.entries(p.availability).reduce((count, [star, islands]) => {
+      return islands.includes(island) ? count + 1 : count;
+    }, 0);
   }
 
 }
