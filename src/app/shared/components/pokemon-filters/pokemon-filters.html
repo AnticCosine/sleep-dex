@@ -135,6 +135,7 @@
 
                 <div class="sleep-chip-locked" [class.selected]="filterState.unlockedStyleControl.value?.includes('locked')" (click)="filterState.toggleStyleType('locked')">Locked</div>
                 <div class="sleep-chip-unlocked" [class.selected]="filterState.unlockedStyleControl.value?.includes('unlocked')" (click)="filterState.toggleStyleType('unlocked')">Unlocked</div>
+                <div class="sleep-chip-partial" [class.selected]="filterState.unlockedStyleControl.value?.includes('partial')" (click)="filterState.toggleStyleType('partial')">Partial</div>
                 
             </div>
           </details>

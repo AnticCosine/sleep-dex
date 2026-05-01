@@ -45,6 +45,12 @@
     --berries-colour: #25d96c;
     --ingredients-colour: #fbbf4d;
     --all-colour: #fb64b6;
+
+    --pokemon-card-colour: #f5ef8aa6;
+    --pokemon-star-colour: #1d1d1d;
+    --pokemon-unlocked-colour: rgba(248, 199, 39, 0.541);
+    --pokemon-icon-colour: #eee76dd0;
+    --pokemon-divider-colour: #dfd85eea;
 }
 
 [data-theme="dark"] {
@@ -79,6 +85,12 @@
     --modal-bg: #2C333D;
 
     --github-colour: invert(100%) sepia(100%) saturate(466%) hue-rotate(180deg) brightness(120%) contrast(87%);
+
+    --pokemon-card-colour: rgb(64, 63, 75);
+    --pokemon-star-colour: #FFD23C;
+    --pokemon-unlocked-colour: rgba(255, 210, 60, 0.22);
+    --pokemon-icon-colour: rgba(255, 255, 255, 0.08);
+    --pokemon-divider-colour: rgba(255, 255, 255, 0.15);
 }
 
 body {

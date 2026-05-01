@@ -16,7 +16,7 @@
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 
-  background-color: rgb(64, 63, 75);
+  background-color: var(--pokemon-card-colour);
 }
 
 .pokemon-card:active {
@@ -48,6 +48,7 @@
 .pokemon-name {
   font-size: 16px;
   margin: 0;
+  color: var(--font-colour);
 }
 
 .type-img {
@@ -71,7 +72,7 @@
   width: 26px;
   height: 26px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--pokemon-icon-colour);
   object-fit: contain;
   padding: 3px;
 }
@@ -80,7 +81,7 @@
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--pokemon-divider-colour);
   flex-shrink: 0;
 }
 
@@ -185,7 +186,7 @@
 }
 
 .sleep-button.unlocked {
-  background: rgba(255, 210, 60, 0.22);
+  background: var(--pokemon-unlocked-colour);
   border-color: rgba(255, 210, 60, 0.5);
 }
 
@@ -197,37 +198,37 @@
 
 .star-icon {
   font-size: 12px;
-  color: white;
+  color: var(--font-colour);
   line-height: 1;
   transition: color 0.15s;
 }
 
 .sleep-button.unlocked .star-icon {
-  color: #FFD23C;
+  color: var(--pokemon-star-colour);
 }
 
 .num {
   font-size: 10px;
   font-weight: 500;
-  color: white;
+  color: var(--font-colour);
   line-height: 1;
   transition: color 0.15s;
 }
 
 .sleep-button.unlocked .num {
-  color: rgba(255, 210, 60, 0.9);
+  color: var(--pokemon-star-colour);
 }
 
 .drowsy-power {
   font-size: 9px;
-  color: white;
+  color: var(--font-colour);
   line-height: 1;
   white-space: nowrap;
   transition: color 0.15s;
 }
 
 .sleep-button.unlocked .drowsy-power {
-  color: rgba(255, 210, 60, 0.7);
+  color: var(--pokemon-star-colour);
 }
 
 
@@ -243,7 +244,7 @@
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     
-    background: rgba(255, 210, 60, 0.22);
+    background: var(--pokemon-unlocked-colour);
     border-color: rgba(255, 210, 60, 0.5);
   }
 }

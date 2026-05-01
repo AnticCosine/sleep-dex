@@ -247,7 +247,8 @@ label input {
 .sleep-chip-all,
 .sleep-chip-berries,
 .sleep-chip-locked,
-.sleep-chip-unlocked {
+.sleep-chip-unlocked,
+.sleep-chip-partial {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,6 +284,7 @@ label input {
   .sleep-chip-berries:hover,
   .sleep-chip-locked:hover,
   .sleep-chip-unlocked:hover,
+  .sleep-chip-partial:hover,
   .sleep-chip-greengrass:hover, 
   .sleep-chip-cyan:hover,
   .sleep-chip-taupe:hover,
@@ -311,6 +313,7 @@ label input {
 .sleep-chip-berries.selected,
 .sleep-chip-locked.selected,
 .sleep-chip-unlocked.selected,
+.sleep-chip-partial.selected,
 .sleep-chip-greengrass.selected, 
 .sleep-chip-cyan.selected,
 .sleep-chip-taupe.selected,
@@ -364,6 +367,11 @@ label input {
 
 .sleep-chip-unlocked {
   background: rgb(65, 209, 65);
+  opacity: 0.8;
+}
+
+.sleep-chip-partial {
+  background: rgb(242, 245, 71);
   opacity: 0.8;
 }
 

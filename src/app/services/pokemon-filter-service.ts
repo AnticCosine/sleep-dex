@@ -48,8 +48,10 @@ export class PokemonFilterService {
       const matchedMapType = !mapType?.length || mapType.every(i => pokemon.available_islands.some(j => j === i));
 
       const styles = unlockedFilter?.[pokemon.id] ?? [];
-      const isUnlocked = styles.length > 0;
-      const matchedUnlockedStyle = !unlockedStyle?.length || (unlockedStyle?.includes('unlocked') && isUnlocked) || (unlockedStyle?.includes('locked') && !isUnlocked);
+      const isUnlocked = styles.length === pokemon.number_of_sleep_styles;
+      const isLocked = styles.length === 0;
+      const isPartialUnlocked = styles.length > 0 && styles.length < pokemon.number_of_sleep_styles;
+      const matchedUnlockedStyle = !unlockedStyle?.length || (unlockedStyle?.includes('unlocked') && isUnlocked) || (unlockedStyle?.includes('locked') && isLocked) || (unlockedStyle?.includes('partial') && isPartialUnlocked);
 
       const matchedDrowsy =
         pokemon.drowsy_power_requirement_list.some(drowsy => {
