@@ -261,7 +261,7 @@ label input {
   font-size: 12px;
   font-family: var(--font-primary);
   color: black;
-  transition: opacity 0.5s ease, transform 0.2s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.2s ease;
   user-select: none;
 
   min-width: 60px;
@@ -275,16 +275,6 @@ label input {
 
 @media (hover: hover) and (pointer: fine) {
 
-  .sleep-chip-snoozing:hover,
-  .sleep-chip-dozing:hover,
-  .sleep-chip-slumbering:hover,
-  .sleep-chip-ingredients:hover,
-  .sleep-chip-skills:hover,
-  .sleep-chip-all:hover,
-  .sleep-chip-berries:hover,
-  .sleep-chip-locked:hover,
-  .sleep-chip-unlocked:hover,
-  .sleep-chip-partial:hover,
   .sleep-chip-greengrass:hover, 
   .sleep-chip-cyan:hover,
   .sleep-chip-taupe:hover,
@@ -301,8 +291,22 @@ label input {
   .type-grid img.type-unchecked:hover{
     opacity: 1;
   }
-}
 
+  .sleep-chip-snoozing:hover,
+  .sleep-chip-dozing:hover,
+  .sleep-chip-slumbering:hover,
+  .sleep-chip-ingredients:hover,
+  .sleep-chip-skills:hover,
+  .sleep-chip-all:hover,
+  .sleep-chip-berries:hover,
+  .sleep-chip-locked:hover,
+  .sleep-chip-unlocked:hover,
+  .sleep-chip-partial:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    filter: brightness(1.05);
+  }
+}
 
 .sleep-chip-snoozing.selected,
 .sleep-chip-dozing.selected,
@@ -313,7 +317,13 @@ label input {
 .sleep-chip-berries.selected,
 .sleep-chip-locked.selected,
 .sleep-chip-unlocked.selected,
-.sleep-chip-partial.selected,
+.sleep-chip-partial.selected {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.15) inset;
+  filter: saturate(1.1);
+}
+
+
 .sleep-chip-greengrass.selected, 
 .sleep-chip-cyan.selected,
 .sleep-chip-taupe.selected,
@@ -327,52 +337,42 @@ label input {
 
 .sleep-chip-snoozing {
   background: var(--snoozing-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-dozing {
   background: var(--dozing-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-slumbering {
-  background: var(--slumbering-colour);
-  opacity: 0.8;
+  background: var(--slumbering-colour); 
 }
 
 .sleep-chip-ingredients {
   background: var(--ingredients-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-skills {
   background: var(--skills-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-all {
   background: var(--all-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-berries {
   background: var(--berries-colour);
-  opacity: 0.8;
 }
 
 .sleep-chip-locked {
   background: rgb(224, 91, 91);
-  opacity: 0.8;
 }
 
 .sleep-chip-unlocked {
   background: rgb(65, 209, 65);
-  opacity: 0.8;
 }
 
 .sleep-chip-partial {
   background: rgb(242, 245, 71);
-  opacity: 0.8;
 }
 
 .sleep-chip-greengrass, 
