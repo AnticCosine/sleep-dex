@@ -52,7 +52,7 @@
   font-size: 12px;
   padding: 6px 8px;
   border-radius: 10px;
-  border: 1px solid lightgray;
+  border: 4px solid lightgray;
   background: #fff;
   color: black;
   font-family: var(--font-primary);
@@ -82,14 +82,14 @@
   text-transform: uppercase;
   background: #fef3c7;
   color: #92400e;
-  border: 1px solid #fcd34d;
+  border: 2px solid #fcd34d;
   border-radius: 6px;
   padding: 1px 5px;
 }
 
 .list-card {
   background: var(--border-colour);
-  border: 1px solid var(--border-colour);
+  border: 4px solid var(--border-colour);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -100,7 +100,7 @@
   gap: 12px;
   padding: 8px 14px;
   background: var(--table-head-colour);
-  border-bottom: 1px solid var(--border-colour);
+  border-bottom: 4px solid var(--border-colour);
 }
 
 .th {
@@ -122,7 +122,7 @@
   gap: 12px;
   padding: 10px 14px;
   background-color: var(--table-row-colour);
-  border-bottom: 1px solid var(--border-colour);
+  border-bottom: 4px solid var(--border-colour);
   transition: opacity 0.2s;
 }
 
@@ -223,7 +223,6 @@
   color: var(--stat-label-colour);
   background: var(--table-row-colour);
   border: none;
-  border-top: 1px solid var(--border-colour);
   cursor: pointer;
 }
 
@@ -392,7 +391,7 @@
   justify-content: center;
   gap: 10px;
   padding: 10px 16px;
-  border: 1px solid #ddd;
+  border: 4px solid #ddd;
   border-radius: 8px;
   background: #fff;
   cursor: pointer;

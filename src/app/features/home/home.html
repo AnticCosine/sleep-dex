@@ -77,7 +77,7 @@
             <div class="type-grid">
 
               @for (t of stats.byType; track t.type) {
-                <div class="type-card">
+                <div class="type-card" [class]="t.type">
                   <div class="type-card-header">
                     <span class="type-name">{{ t.type | titlecase }}</span>
                     <span class="badge" [class]="'badge-' + t.type">{{ t.cooked }} / {{ t.total }}</span>

@@ -3,7 +3,7 @@
   height: 60px;
   padding: 12px;
   border-radius: 12px;
-  border: 1.5px solid lightgrey;
+  border: 4px solid lightgrey;
   outline: none;
   background-color: white;
   box-sizing: border-box;
@@ -43,7 +43,7 @@
   
   border-radius: 10px;
   background: #ffff;
-  border: 1.5px solid lightgrey;
+  border: 4px solid lightgrey;
 
   cursor: pointer;
 }
