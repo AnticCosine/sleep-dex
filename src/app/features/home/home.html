@@ -1,6 +1,6 @@
 <div class="wrapper">
 
-    <div class="home" *ngIf="stats$ | async as stats">
+    <div class="home" *ngIf="islandStats$ | async as islands">
 
         <div class="main-content">
             <div class="main-desc">
@@ -31,7 +31,7 @@
 
         <div class="first-stats">
           
-          <div class="stats-grid">
+          <div class="stats-grid" *ngIf="stats$ | async as stats">
               <div class="stat-card">
                 <div class="stat-label">Total recipes</div>
                 <div class="stat-value" id="s-total">{{ stats.total }}</div>
@@ -72,7 +72,7 @@
         </div>
 
 
-        <div class="types">
+        <div class="types" *ngIf="stats$ | async as stats">
             <div class="section-label">Progress by recipe type</div>
             <div class="type-grid">
 
@@ -94,7 +94,7 @@
         
 
 
-        <div class="types" *ngIf="islandStats$ | async as islands">
+        <div class="types">
           <div class="section-label">Progress by island</div>
           <div class="sleep-type-grid">
           
@@ -134,10 +134,10 @@
             }
           
           </div>
+
+          <app-ingredient-table [isExpanded]="true"></app-ingredient-table>
         </div>
 
-
-        <app-ingredient-table [isExpanded]="true"></app-ingredient-table>
 
     </div>
 </div>

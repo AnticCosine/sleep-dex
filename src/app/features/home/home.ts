@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { combineLatest, map, Observable, take, tap } from 'rxjs';
 import { HomeStats, IslandSleepProgress, SleepTypeProgress, TypeProgress } from '../../models/home-stats.model';
 import { RecipeService } from '../../services/recipe-service';
@@ -25,7 +25,9 @@ export class Home {
   recipes$!: Observable<Recipe[]>;
   pokemon$!: Observable<Pokemon[]>;
   animate = false;
-  constructor(private recipeService: RecipeService, private pokemonService: PokemonService) {} 
+  imageLoaded: Record<string, boolean> = {};
+
+  constructor(private recipeService: RecipeService, private pokemonService: PokemonService, private cdr: ChangeDetectorRef) {} 
 
   ngOnInit(): void {
     this.recipes$ = this.recipeService.getRecipes();
@@ -102,8 +104,6 @@ export class Home {
         const sleepTypes = ['snoozing', 'dozing', 'slumbering'];
 
         const islandResults = islands.map(island => {
-
-          
         
           let total = 0;
           let unlockedCount = 0;
@@ -191,7 +191,22 @@ export class Home {
       })
     );
       
+    this.islandStats$.subscribe(islands => {
+      islands.forEach(i => {
+        this.preloadImage(i.island);
+      })
+    })
 
+  }
+
+  preloadImage(island: string) {
+    const img = new Image();
+    img.src = `assets/images/islands/${island}.png`
+
+    img.onload = () => {
+      this.imageLoaded[island] = true;
+      this.cdr.markForCheck();
+    };
   }
 
   private getStylesOnIsland(p: Pokemon, island: string): number {
@@ -200,8 +215,12 @@ export class Home {
     }, 0);
   }
 
+  onImageLoad(island: string) {
+    this.imageLoaded[island] = true;
+  }
+
   getIslandImage(island: string): string {
-    return `assets/images/islands/${island}.png`;
+    return this.imageLoaded[island] ? `assets/images/islands/${island}.png` : `assets/images/islands/${island}_blur.png`;
   }
 
   getIslandClass(island: string): string {
