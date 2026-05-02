@@ -6,7 +6,7 @@
             <div class="main-desc">
                 <h1>Pokemon Sleep Companion</h1>
                 <p>
-                    Discover new recipes, track sleep styles and manage your ingredient pantry, all in one place!
+                    Discover new sleep styles, track recipes you can cook and manage your ingredient pantry, all in one place!
                 </p>
                 <div class="browse">
                   <a routerLink="/pokemon" class="btn-primary">Browse Pokemon</a>
@@ -99,10 +99,10 @@
           <div class="sleep-type-grid">
           
             @for (island of islands; track island.island) {
-              <div class="type-card island-card">
-                <div class="type-card-header">
+              <div class="type-card island-card" [class]="getIslandClass(island.island)">
+
+                <div class="island-banner" [style.backgroundImage]="'url(' + getIslandImage(island.island) + ')'">
                   <span class="type-name">{{ island.island | idConverter }}</span>
-                  
                 </div>
               
                 <div class="sleep-rows">

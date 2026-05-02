@@ -200,4 +200,12 @@ export class Home {
     }, 0);
   }
 
+  getIslandImage(island: string): string {
+    return `assets/images/islands/${island}.png`;
+  }
+
+  getIslandClass(island: string): string {
+    return `island-${island.replace(/_/g, '-')}`;
+  }
+
 }

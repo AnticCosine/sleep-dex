@@ -175,15 +175,13 @@
   align-items: center;
 }
 
-
-
 .type-name {
   font-size: 13px;
   font-weight: 600;
   font-family: var(--font-primary);
   color: var(--font-colour);
 }
- 
+
 .badge {
   display: inline-block;
   font-size: 11px;
@@ -234,10 +232,6 @@
 .dot-dozing     { background-color: var(--dozing-colour); }
 .dot-slumbering { background-color: var(--slumbering-colour); }
 
-.island-card {
-  min-width: 180px;
-}
-
 .island-total {
   font-size: 11px;
   color: var(--stat-label-colour);
@@ -248,6 +242,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+  padding: 10px 16px 4px;
 }
 
 .sleep-row {
@@ -300,8 +295,8 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--border-colour);
-  padding-top: 8px;
-  margin-top: 2px;
+  padding: 8px 0;
+  margin: 0 16px;
 }
 
 .footer-pct {
@@ -317,6 +312,60 @@
 .badge-snoozing   { background-color: var(--snoozing-colour); color: #2f5353; }
 .badge-dozing     { background-color: var(--dozing-colour); color: #5f5b2e; }
 .badge-slumbering { background-color: var(--slumbering-colour);; color: #2b436e; }
+
+
+.island-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.island-banner {
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.island-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.45) 100%);
+}
+
+.island-banner .type-name {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.island-overall,             
+.island-greengrass-isle,     
+.island-cyan-beach,          
+.island-taupe-hollow,        
+.island-snowdrop-tundra,     
+.island-lapis-lakeside,      
+.island-old-gold-power-plant,
+.island-amber-canyon,
+.island-greengrass-isle-expert {
+  border: 3px solid;
+}
+
+.island-overall               { border-color: #534e45; }
+.island-greengrass-isle       { border-color: #4caf50; }
+.island-cyan-beach            { border-color: #e3bf9b; }
+.island-taupe-hollow          { border-color: #958b8a; }
+.island-snowdrop-tundra       { border-color: #9fd5fb; }
+.island-lapis-lakeside        { border-color: #7deec9; }
+.island-old-gold-power-plant  { border-color: #e5df87; }
+.island-amber-canyon          { border-color: #ffa262; }
+.island-greengrass-isle-expert { border-color: #cf5f57; }
 
 
 
