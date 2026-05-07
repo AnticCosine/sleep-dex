@@ -16,7 +16,7 @@
 
     <div class="pokemon-output">
         <img [src]="imageBerryPath" alt="" class="berry-img">
-        <div class="output-divider"></div>
+        <div class="output-divider" *ngIf="pokemon.ingredients.length > 0"></div>
 
         @for (ingredient of pokemon.ingredients; track ingredient) {
             <img [src]="imageIngredientPath(ingredient)" alt="" class="ingredient-img">

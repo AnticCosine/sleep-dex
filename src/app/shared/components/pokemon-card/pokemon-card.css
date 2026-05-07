@@ -108,7 +108,8 @@
 .pokemon-specialty-skills,
 .pokemon-specialty-ingredients,
 .pokemon-specialty-berries,
-.pokemon-specialty-all {
+.pokemon-specialty-all,
+.pokemon-specialty-unknown {
   position: absolute;
   top: 0;
   width: 64px;
@@ -125,7 +126,8 @@
 .pokemon-specialty-skills,
 .pokemon-specialty-ingredients,
 .pokemon-specialty-berries,
-.pokemon-specialty-all {
+.pokemon-specialty-all,
+.pokemon-specialty-unknown {
   left: 0;
   border-radius: 10px 0 10px 0;
 }
@@ -144,6 +146,10 @@
 
 .pokemon-specialty-all {
   background: var(--all-colour);
+}
+
+.pokemon-specialty-unknown {
+  background: var(--unknown-colour);
 }
 
 .pokemon-sleep-type-snoozing,

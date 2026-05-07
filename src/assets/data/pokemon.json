@@ -8755,6 +8755,93 @@
     }
   },
   {
+    "id": "tyrunt",
+    "pokedex_number": "696",
+    "name": "Tyrunt",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2090000,
+      8322000,
+      38304000,
+      48070000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "tyrantrum",
+    "pokedex_number": "697",
+    "name": "Tyrantrum",
+    "type": "rock",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "sitrus",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      27132000,
+      68666000,
+      179018000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
     "id": "sylveon",
     "pokedex_number": "700",
     "name": "Sylveon",
