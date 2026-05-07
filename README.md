@@ -1,6 +1,6 @@
 # Sleep Dex
 
-A Pokemon Sleep recipe & ingredient tracker 
+A Pokemon Sleep Companion Tool 
 
 [Visit Website](https://sleep-dex.com/)
 
