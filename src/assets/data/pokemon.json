@@ -8760,13 +8760,15 @@
     "name": "Tyrunt",
     "type": "rock",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "berries",
     "berry": {
       "name": "sitrus",
-      "count": 1
+      "count": 2
     },
     "ingredients": [
-      
+      "bean_sausage",
+      "fancy_apple",
+      "soft_potato"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -8807,13 +8809,15 @@
     "name": "Tyrantrum",
     "type": "rock",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "berries",
     "berry": {
       "name": "sitrus",
-      "count": 1
+      "count": 2
     },
     "ingredients": [
-      
+      "bean_sausage",
+      "fancy_apple",
+      "soft_potato"
     ],
     "number_of_sleep_styles": 3,
     "drowsy_power_requirement_list": [
