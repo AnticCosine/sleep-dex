@@ -130,6 +130,7 @@
     color: var(--stat-label-colour);
     text-decoration: none;
     transition: color 0.15s;
+    margin-left: 8px;
 }
 
 .github-link:hover {

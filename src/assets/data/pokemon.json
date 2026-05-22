@@ -9673,6 +9673,53 @@
     }
   },
   {
+    "id": "drampa",
+    "pokedex_number": "780",
+    "name": "Drampa",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "unknown",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12692000,
+      49894000,
+      155344000,
+      195358000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
     "id": "cramorant",
     "pokedex_number": "845",
     "name": "Cramorant",
