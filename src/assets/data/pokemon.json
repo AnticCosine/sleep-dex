@@ -9678,13 +9678,15 @@
     "name": "Drampa",
     "type": "dragon",
     "sleep_type": "dozing",
-    "specialty": "unknown",
+    "specialty": "ingredients",
     "berry": {
       "name": "yache",
       "count": 1
     },
     "ingredients": [
-
+      "greengrass_soybeans",
+      "glossy_avocado",
+      "bean_sausage"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [

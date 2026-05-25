@@ -159,3 +159,14 @@
     grid-column: 1 / -1;
   }
 }
+
+@media (max-width: 500px) {
+  .footer-bottom-wrapper {
+    padding: 0 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
