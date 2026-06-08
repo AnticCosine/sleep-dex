@@ -7439,9 +7439,52 @@
     ],
     "number_of_sleep_styles": 3,
     "drowsy_power_requirement_list": [
-      49890000,
-      139610000,
-      316770000
+      49894000,
+      139612000,
+      316768000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "latios",
+    "pokedex_number": "381",
+    "name": "Latios",
+    "type": "dragon",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "yache",
+      "count": 1
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "fancy_egg",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      49894000,
+      139612000,
+      316768000
     ],
     "availability": {
       "1_star": [
