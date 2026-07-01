@@ -7437,11 +7437,13 @@
       "plump_pumpkin",
       "tasty_mushroom"
     ],
-    "number_of_sleep_styles": 3,
+    "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
       49894000,
       139612000,
-      316768000
+      316768000,
+      null,
+      0
     ],
     "availability": {
       "1_star": [
@@ -7480,11 +7482,13 @@
       "fancy_egg",
       "moomoo_milk"
     ],
-    "number_of_sleep_styles": 3,
+    "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
       49894000,
       139612000,
-      316768000
+      316768000,
+      null,
+      0
     ],
     "availability": {
       "1_star": [
