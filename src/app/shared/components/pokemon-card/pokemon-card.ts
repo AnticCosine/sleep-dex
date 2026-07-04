@@ -34,7 +34,7 @@ export class PokemonCard {
   }
 
   toggleAll() {
-    this.pokemonService.toggleAll(this.pokemon.id, this.pokemon.number_of_sleep_styles);
+    this.pokemonService.toggleAll(this.pokemon.id, this.pokemon.drowsy_power_requirement_list);
   }
 
   get imagePokemonPath(): string {

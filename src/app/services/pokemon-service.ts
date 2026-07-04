@@ -89,14 +89,18 @@ export class PokemonService {
     }
   }
 
-  async toggleAll(pokemonId: string, totalStyles: number): Promise<void> {
+  async toggleAll(pokemonId: string, totalStyles: (number | null)[]): Promise<void> {
+    const validIndices = totalStyles
+      .map((v, i) => (v != null ? i : null))
+      .filter((i): i is number => i !== null);
+
     const current = { ...this.unlockedStylesSubject.value };
     const existing = current[pokemonId] ?? [];
-    const allUnlocked = existing.length === totalStyles;
+    const allUnlocked = existing.length === validIndices.length;
     
     current[pokemonId] = allUnlocked
       ? []
-      : Array.from({ length: totalStyles }, (_, i) => i);
+      : validIndices;
     
     this.persistStyles(current);
     

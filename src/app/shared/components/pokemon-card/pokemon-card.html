@@ -26,8 +26,9 @@
     <div class="name-divider"></div>
 
     <div class="sleep-styles" *ngIf="unlockedStyles$ | async as unlockedStyles">
-        @for (item of [].constructor(pokemon.number_of_sleep_styles); track $index) {
+        @for (item of [].constructor(pokemon.drowsy_power_requirement_list.length); track $index) {
             <button class="sleep-button"
+            *ngIf="pokemon.drowsy_power_requirement_list[$index] != null"
             [class.unlocked]="isUnlocked(unlockedStyles, $index)"
             (click)="toggleStyle($index); $event.stopPropagation()">
 

@@ -162,24 +162,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -211,24 +207,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -260,25 +252,21 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -310,24 +298,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ]
     }
@@ -359,24 +343,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ]
     }
@@ -408,25 +388,21 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ]
     }
@@ -459,27 +435,23 @@
         "greengrass_isle",
         "cyan_beach",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -511,25 +483,21 @@
       "1_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -561,25 +529,21 @@
       "1_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -610,25 +574,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ]
     }
@@ -659,25 +615,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ]
     }
@@ -708,33 +656,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon"
       ]
     }
@@ -765,29 +697,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant",
         "amber_canyon"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant",
         "amber_canyon"
       ]
     }
@@ -819,27 +739,23 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
@@ -866,10 +782,7 @@
       76000,
       2280000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": []
-    }
+    "availability": {}
   },
   {
     "id": "pikachu_holiday",
@@ -892,10 +805,7 @@
       76000,
       2280000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": []
-    }
+    "availability": {}
   },
   {
     "id": "raichu",
@@ -1379,30 +1289,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ]
     }
   },
@@ -1432,22 +1330,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow"
+        "cyan_beach"
       ]
     }
   },
@@ -1476,20 +1370,14 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ]
     }
   },
@@ -1518,17 +1406,14 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "3_star": [
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ]
     }
   },
@@ -1648,26 +1533,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ]
     }
   },
@@ -1735,26 +1612,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "3_star": [
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ]
     }
   },
@@ -1784,26 +1653,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "3_star": [
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ]
     }
   },
@@ -1833,24 +1694,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "taupe_hollow",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
         "greengrass_isle_expert"
       ]
@@ -1925,24 +1782,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "3_star": [
         "cyan_beach",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ]
     }
@@ -1973,21 +1826,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside"
       ],
       "3_star": [
-        "cyan_beach",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside"
       ]
     }
@@ -2059,26 +1908,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "3_star": [
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ]
     }
   },
@@ -2108,22 +1949,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "3_star": [
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "taupe_hollow"
       ]
     }
   },
@@ -2191,26 +2028,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ]
     }
   },
@@ -2240,26 +2069,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "cyan_beach"
       ]
     }
   },
@@ -2506,18 +2327,15 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ],
       "3_star": [
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ]
     }
@@ -2548,18 +2366,15 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ],
       "3_star": [
         "taupe_hollow",
-        "snowdrop_tundra",
         "old_gold_power_plant"
       ]
     }
@@ -2669,24 +2484,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ]
     }
@@ -2717,24 +2528,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
         "greengrass_isle_expert"
       ]
     }
@@ -2765,27 +2572,23 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
@@ -2819,25 +2622,21 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "cyan_beach",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -2867,20 +2666,16 @@
     ],
     "availability": {
       "1_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "2_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "4_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ]
     }
   },
@@ -2981,9 +2776,7 @@
       "3_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
@@ -3019,7 +2812,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "greengrass_isle",
         "greengrass_isle_expert"
       ]
@@ -3046,7 +2839,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "cyan_beach",
         "greengrass_isle_expert"
       ]
@@ -3073,7 +2866,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "taupe_hollow",
         "greengrass_isle_expert"
       ]
@@ -3100,7 +2893,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "snowdrop_tundra",
         "greengrass_isle_expert"
       ]
@@ -3127,7 +2920,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "lapis_lakeside"
       ]
     }
@@ -3153,7 +2946,7 @@
       115976000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "old_gold_power_plant"
       ]
     }
@@ -3179,7 +2972,7 @@
       40926000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -3206,10 +2999,11 @@
       115976000
     ],
     "availability": {
-      "1_star": [
+      "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
+        "snowdrop_tundra",
         "lapis_lakeside",
         "old_gold_power_plant",
         "amber_canyon",
@@ -3244,39 +3038,23 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -3302,10 +3080,7 @@
       760000,
       6570000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": []
-    }
+    "availability": {}
   },
   {
     "id": "eevee_halloween",
@@ -3328,10 +3103,7 @@
       760000,
       6570000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": []
-    }
+    "availability": {}
   },
   {
     "id": "vaporeon",
@@ -3604,11 +3376,7 @@
       77100000,
       163740000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": [],
-      "3_star": []
-    }
+    "availability": {}
   },
   {
     "id": "chikorita",
@@ -3636,24 +3404,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ]
@@ -4045,24 +3809,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
@@ -4159,26 +3919,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "lapis_lakeside"
+        "cyan_beach"
       ]
     }
   },
@@ -4208,25 +3960,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "3_star": [
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ]
     }
@@ -4257,21 +4001,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "3_star": [
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ]
     }
@@ -4351,24 +4091,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -4400,24 +4136,20 @@
       "1_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -4448,24 +4180,20 @@
       "1_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -4495,22 +4223,18 @@
     "availability": {
       "1_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "snowdrop_tundra",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -4542,24 +4266,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ]
     }
@@ -4590,26 +4310,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ]
     }
   },
@@ -4640,24 +4352,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -4688,26 +4396,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "old_gold_power_plant"
+        "cyan_beach"
       ]
     }
   },
@@ -4737,24 +4437,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
         "greengrass_isle_expert"
       ]
@@ -4918,25 +4614,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "3_star": [
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ]
     }
@@ -5008,27 +4696,23 @@
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5287,27 +4971,23 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
@@ -5515,22 +5195,18 @@
     "availability": {
       "1_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5561,22 +5237,18 @@
     "availability": {
       "1_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5609,27 +5281,23 @@
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -5662,27 +5330,23 @@
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -5715,27 +5379,23 @@
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -5766,29 +5426,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5819,29 +5471,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5872,29 +5516,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5925,29 +5561,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -5978,29 +5606,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -6031,29 +5651,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -6388,27 +6000,23 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
@@ -6666,24 +6274,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "3_star": [
         "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "taupe_hollow",
         "snowdrop_tundra"
       ]
     }
@@ -6714,21 +6318,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "3_star": [
-        "taupe_hollow",
         "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "snowdrop_tundra"
       ]
     }
@@ -6886,28 +6486,20 @@
       "1_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -6938,26 +6530,18 @@
     "availability": {
       "1_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -6987,18 +6571,15 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
@@ -7030,24 +6611,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
@@ -7124,25 +6701,17 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "2_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "3_star": [
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ],
       "4_star": [
         "greengrass_isle",
-        "taupe_hollow",
-        "snowdrop_tundra",
         "lapis_lakeside"
       ]
     }
@@ -7173,25 +6742,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "greengrass_isle_expert"
       ]
@@ -7218,10 +6783,7 @@
       760000,
       6570000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": []
-    }
+    "availability": {}
   },
   {
     "id": "sealeo",
@@ -7437,11 +6999,13 @@
       "plump_pumpkin",
       "tasty_mushroom"
     ],
-    "number_of_sleep_styles": 3,
+    "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
       49894000,
       139612000,
-      316768000
+      316768000,
+      null,
+      0
     ],
     "availability": {
       "1_star": [
@@ -7480,11 +7044,13 @@
       "fancy_egg",
       "moomoo_milk"
     ],
-    "number_of_sleep_styles": 3,
+    "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
       49894000,
       139612000,
-      316768000
+      316768000,
+      null,
+      0
     ],
     "availability": {
       "1_star": [
@@ -7816,20 +7382,16 @@
     ],
     "availability": {
       "1_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "2_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ],
       "4_star": [
-        "cyan_beach",
-        "old_gold_power_plant"
+        "cyan_beach"
       ]
     }
   },
@@ -7859,27 +7421,23 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
@@ -7913,27 +7471,23 @@
       "1_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "snowdrop_tundra",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "snowdrop_tundra",
-        "lapis_lakeside",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -7966,25 +7520,21 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "3_star": [
         "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "snowdrop_tundra",
-        "lapis_lakeside"
+        "snowdrop_tundra"
       ]
     }
   },
@@ -8051,26 +7601,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ]
     }
   },
@@ -8099,26 +7641,18 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "3_star": [
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "taupe_hollow",
-        "snowdrop_tundra"
+        "cyan_beach"
       ]
     }
   },
@@ -8518,11 +8052,7 @@
       73110000,
       155340000
     ],
-    "availability": {
-      "1_star": [],
-      "2_star": [],
-      "3_star": []
-    }
+    "availability": {}
   },
   {
     "id": "munna",
@@ -8550,21 +8080,15 @@
       "1_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -8595,21 +8119,15 @@
       "1_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "lapis_lakeside",
-        "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -8717,27 +8235,23 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -8769,29 +8283,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
-        "snowdrop_tundra",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -9006,24 +8512,20 @@
       "1_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -9103,24 +8605,20 @@
       "1_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "old_gold_power_plant",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -9412,28 +8910,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -9465,28 +8955,20 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }
@@ -9594,25 +9076,21 @@
       "1_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
-        "lapis_lakeside",
         "greengrass_isle_expert"
       ]
     }
@@ -9643,27 +9121,23 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "snowdrop_tundra",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "snowdrop_tundra",
         "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
@@ -9889,24 +9363,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -9938,24 +9408,20 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "old_gold_power_plant",
         "amber_canyon",
         "greengrass_isle_expert"
       ]
@@ -9988,24 +9454,20 @@
       "1_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10037,24 +9499,20 @@
       "1_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10086,24 +9544,20 @@
       "1_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10136,27 +9590,23 @@
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10188,25 +9638,21 @@
       "1_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10238,25 +9684,21 @@
       "1_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "cyan_beach",
         "taupe_hollow",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10287,29 +9729,21 @@
     "availability": {
       "1_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10339,27 +9773,19 @@
     ],
     "availability": {
       "1_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10389,27 +9815,19 @@
     ],
     "availability": {
       "1_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "2_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ],
       "4_star": [
-        "cyan_beach",
         "lapis_lakeside",
-        "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
     }
@@ -10664,24 +10082,20 @@
       "1_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "2_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "3_star": [
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ],
       "4_star": [
         "greengrass_isle",
         "taupe_hollow",
-        "amber_canyon",
         "greengrass_isle_expert"
       ]
     }

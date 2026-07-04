@@ -47,7 +47,7 @@ export class PokemonFilterStateService {
       pokemon$.pipe(take(1)).subscribe(pokemon => {
         
         const allDrowsy = pokemon.flatMap(p =>
-          p.drowsy_power_requirement_list.filter((d): d is number => d != null)
+          p.drowsy_power_requirement_list.filter((d): d is number => d != null && d != 0) // using 0 for unkown DPR might need to change 
         );
 
         this.minDrowsy = Math.min(...allDrowsy);

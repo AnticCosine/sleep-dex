@@ -22,6 +22,10 @@ export class NumberAbbreviatePipe implements PipeTransform {
       return (value / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
     }
 
+    if (absValue == 0) {
+      return "?"
+    }
+
     return value.toString();
   }
 
