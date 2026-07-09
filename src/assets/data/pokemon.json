@@ -7074,6 +7074,422 @@
     }
   },
   {
+    "id": "turtwig",
+    "pokedex_number": "387",
+    "name": "Turtwig",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "unknown",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1216000,
+      12692000,
+      38304000,
+      43700000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "grotle",
+    "pokedex_number": "388",
+    "name": "Grotle",
+    "type": "grass",
+    "sleep_type": "dozing",
+    "specialty": "unknown",
+    "berry": {
+      "name": "durin",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4636000,
+      20824000,
+      59052000,
+      73112000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "torterra",
+    "pokedex_number": "389",
+    "name": "Torterra",
+    "type": "ground",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "figy",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      33478000,
+      65702000,
+      185516000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "chimchar",
+    "pokedex_number": "390",
+    "name": "Chimchar",
+    "type": "fire",
+    "sleep_type": "snoozing",
+    "specialty": "unknown",
+    "berry": {
+      "name": "leppa",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1216000,
+      12692000,
+      38304000,
+      43700000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "monferno",
+    "pokedex_number": "391",
+    "name": "Monferno",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4636000,
+      20824000,
+      59052000,
+      73112000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "infernape",
+    "pokedex_number": "392",
+    "name": "Infernape",
+    "type": "fighting",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "cheri",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33478000,
+      65702000,
+      185516000,
+      205884000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "taupe_hollow",
+        "amber_canyon",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "piplup",
+    "pokedex_number": "393",
+    "name": "Piplup",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1216000,
+      12692000,
+      38304000,
+      43700000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "prinplup",
+    "pokedex_number": "394",
+    "name": "Prinplup",
+    "type": "water",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "oran",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      4636000,
+      20824000,
+      59052000,
+      73112000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "empoleon",
+    "pokedex_number": "395",
+    "name": "Empoleon",
+    "type": "steel",
+    "sleep_type": "slumbering",
+    "specialty": "unknown",
+    "berry": {
+      "name": "belue",
+      "count": 1
+    },
+    "ingredients": [
+      
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      33478000,
+      65702000,
+      185516000,
+      205884000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "snowdrop_tundra",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
     "id": "shinx",
     "pokedex_number": "403",
     "name": "Shinx",
