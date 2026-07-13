@@ -7079,13 +7079,15 @@
     "name": "Turtwig",
     "type": "grass",
     "sleep_type": "dozing",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "durin",
       "count": 1
     },
     "ingredients": [
-      
+      "tasty_mushroom",
+      "soft_potato",
+      "warming_ginger"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7126,13 +7128,15 @@
     "name": "Grotle",
     "type": "grass",
     "sleep_type": "dozing",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "durin",
       "count": 1
     },
     "ingredients": [
-      
+      "tasty_mushroom",
+      "soft_potato",
+      "warming_ginger"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7173,13 +7177,15 @@
     "name": "Torterra",
     "type": "ground",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "figy",
       "count": 1
     },
     "ingredients": [
-      
+      "tasty_mushroom",
+      "soft_potato",
+      "warming_ginger"
     ],
     "number_of_sleep_styles": 3,
     "drowsy_power_requirement_list": [
@@ -7213,13 +7219,15 @@
     "name": "Chimchar",
     "type": "fire",
     "sleep_type": "snoozing",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "leppa",
       "count": 1
     },
     "ingredients": [
-      
+      "fiery_herb",
+      "warming_ginger",
+      "rousing_coffee"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7260,13 +7268,15 @@
     "name": "Monferno",
     "type": "fighting",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "cheri",
       "count": 1
     },
     "ingredients": [
-      
+      "fiery_herb",
+      "warming_ginger",
+      "rousing_coffee"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7307,13 +7317,15 @@
     "name": "Infernape",
     "type": "fighting",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "skills",
     "berry": {
       "name": "cheri",
       "count": 1
     },
     "ingredients": [
-      
+      "fiery_herb",
+      "warming_ginger",
+      "rousing_coffee"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7354,13 +7366,15 @@
     "name": "Piplup",
     "type": "water",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "berries",
     "berry": {
       "name": "oran",
-      "count": 1
+      "count": 2
     },
     "ingredients": [
-      
+      "fancy_egg",
+      "large_leek",
+      "honey"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7401,13 +7415,15 @@
     "name": "Prinplup",
     "type": "water",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "berries",
     "berry": {
       "name": "oran",
-      "count": 1
+      "count": 2
     },
     "ingredients": [
-      
+      "fancy_egg",
+      "large_leek",
+      "honey"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
@@ -7448,13 +7464,15 @@
     "name": "Empoleon",
     "type": "steel",
     "sleep_type": "slumbering",
-    "specialty": "unknown",
+    "specialty": "berries",
     "berry": {
       "name": "belue",
-      "count": 1
+      "count": 2
     },
     "ingredients": [
-      
+      "fancy_egg",
+      "large_leek",
+      "honey"
     ],
     "number_of_sleep_styles": 4,
     "drowsy_power_requirement_list": [
