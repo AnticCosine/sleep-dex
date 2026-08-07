@@ -16,11 +16,11 @@
             <div class="main-cards">
                 @if (recipes$ | async; as recipes) {
                     <app-recipe-card
-                        [recipe]="recipes[recipes.length - 1]"
+                        [recipe]="recipes[24]"
                         [homePlaceHolder]="true">
                     </app-recipe-card>
                     <app-recipe-card
-                        [recipe]="recipes[42]"
+                        [recipe]="recipes[44]"
                         [homePlaceHolder]="true"
                         class="salad-card">
                     </app-recipe-card>

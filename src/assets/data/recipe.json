@@ -188,6 +188,18 @@
     ]
   },
   {
+    "id": "greengrass_curry_bun",
+    "name": "Greengrass Curry Bun",
+    "type": "curry",
+    "baseStrength": 10945,
+    "ingredients": [
+      { "ingredientId": "warming_ginger", "amount": 20 },
+      { "ingredientId": "fiery_herb", "amount": 20 },
+      { "ingredientId": "greengrass_soybeans", "amount": 8 },
+      { "ingredientId": "pure_oil", "amount": 15 }
+    ]
+  },
+  {
     "id": "inferno_corn_keema_curry",
     "name": "“Inferno” Corn Keema Curry",
     "type": "curry",
@@ -245,6 +257,18 @@
       { "ingredientId": "soft_potato", "amount": 20 },
       { "ingredientId": "moomoo_milk", "amount": 41 },
       { "ingredientId": "pure_oil", "amount": 32 }
+    ]
+  },
+  {
+    "id": "bounce_curry_udon",
+    "name": "“Bounce” Curry Udon",
+    "type": "curry",
+    "baseStrength": 25539,
+    "ingredients": [
+      { "ingredientId": "warming_ginger", "amount": 39 },
+      { "ingredientId": "tasty_mushroom", "amount": 31 },
+      { "ingredientId": "fiery_herb", "amount": 22 },
+      { "ingredientId": "bean_sausage", "amount": 20 }
     ]
   },
   {
