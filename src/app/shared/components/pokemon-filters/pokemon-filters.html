@@ -39,7 +39,8 @@
                 <div class="sleep-chip-gold" [class.selected]="filterState.mapTypeControl.value?.includes('old_gold_power_plant')" [ngStyle]="{'background-image': 'url(' + getIslandImage('old_gold_power_plant') + ')'}" (click)="filterState.toggleMapType('old_gold_power_plant')"></div>
                 <div class="sleep-chip-amber" [class.selected]="filterState.mapTypeControl.value?.includes('amber_canyon')" [ngStyle]="{'background-image': 'url(' + getIslandImage('amber_canyon') + ')'}" (click)="filterState.toggleMapType('amber_canyon')"></div>
                 <div class="sleep-chip-greengrass-ex" [class.selected]="filterState.mapTypeControl.value?.includes('greengrass_isle_expert')" [ngStyle]="{'background-image': 'url(' + getIslandImage('greengrass_isle') + ')'}" (click)="filterState.toggleMapType('greengrass_isle_expert')"></div>
-                
+                <div class="sleep-chip-cyan-ex" [class.selected]="filterState.mapTypeControl.value?.includes('cyan_beach_expert')" [ngStyle]="{'background-image': 'url(' + getIslandImage('cyan_beach') + ')'}" (click)="filterState.toggleMapType('cyan_beach_expert')"></div>
+
             </div>
           </details>
 
