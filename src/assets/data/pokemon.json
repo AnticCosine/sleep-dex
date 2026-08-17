@@ -8871,6 +8871,55 @@
     }
   },
   {
+    "id": "hawlucha",
+    "pokedex_number": "701",
+    "name": "Hawlucha",
+    "type": "flying",
+    "sleep_type": "slumbering",
+    "specialty": "skills",
+    "berry": {
+      "name": "pamtre",
+      "count": 1
+    },
+    "ingredients": [
+      "fiery_herb",
+      "warming_ginger",
+      "bean_sausage"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      12692000,
+      59052000,
+      185516000,
+      215612000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "lapis_lakeside",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
     "id": "dedenne",
     "pokedex_number": "702",
     "name": "Dedenne",
@@ -10402,6 +10451,152 @@
       ],
       "4_star": [
         "snowdrop_tundra",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "tinkatink",
+    "pokedex_number": "957",
+    "name": "Tinkatink",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soothing_cacao",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      1558000,
+      6574000,
+      33478000,
+      46208000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "tinkatuff",
+    "pokedex_number": "958",
+    "name": "Tinkatuff",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soothing_cacao",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      9918000,
+      23902000,
+      77102000,
+      93290000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "tinkaton",
+    "pokedex_number": "959",
+    "name": "Tinkaton",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "pecha",
+      "count": 2
+    },
+    "ingredients": [
+      "snoozy_tomato",
+      "soothing_cacao",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      33478000,
+      65702000,
+      179018000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "3_star": [
+        "cyan_beach",
+        "old_gold_power_plant",
+        "greengrass_isle_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "cyan_beach",
         "old_gold_power_plant",
         "greengrass_isle_expert"
       ]
