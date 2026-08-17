@@ -100,7 +100,7 @@ export class Home {
     ]).pipe(
       map(([pokemon, unlocked]) => {
 
-        const islands = ['greengrass_isle', 'cyan_beach', 'taupe_hollow','snowdrop_tundra', 'lapis_lakeside', 'old_gold_power_plant','amber_canyon', 'greengrass_isle_expert'];
+        const islands = ['greengrass_isle', 'cyan_beach', 'taupe_hollow','snowdrop_tundra', 'lapis_lakeside', 'old_gold_power_plant','amber_canyon', 'greengrass_isle_expert', 'cyan_beach_expert'];
         const sleepTypes = ['snoozing', 'dozing', 'slumbering'];
 
         const islandResults = islands.map(island => {
@@ -122,7 +122,7 @@ export class Home {
                     
               // Count only unlocked styles that exist on this island
               const unlockedOnIsland = unlockedStyles.filter(style =>
-                p.availability[`${style}_star`]?.includes(island)
+                p.availability[`${style+1}_star`]?.includes(island)
               ).length;
             
               typeTotal += stylesOnIsland;

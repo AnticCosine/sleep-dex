@@ -358,7 +358,8 @@
 .island-lapis-lakeside,      
 .island-old-gold-power-plant,
 .island-amber-canyon,
-.island-greengrass-isle-expert {
+.island-greengrass-isle-expert,
+.island-cyan-beach-expert {
   border: 4px solid;
 }
 
@@ -371,6 +372,7 @@
 .island-old-gold-power-plant  { border-color: #e5df87; }
 .island-amber-canyon          { border-color: #ffa262; }
 .island-greengrass-isle-expert { border-color: #cf5f57; }
+.island-cyan-beach-expert { border-color: #cf5f57; }
 
 
 

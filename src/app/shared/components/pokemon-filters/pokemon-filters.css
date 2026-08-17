@@ -282,7 +282,8 @@ label input {
   .sleep-chip-lapis:hover,
   .sleep-chip-gold:hover,
   .sleep-chip-amber:hover,
-  .sleep-chip-greengrass-ex:hover {
+  .sleep-chip-greengrass-ex:hover,
+  .sleep-chip-cyan-ex:hover {
     opacity: 1;
   }
   
@@ -331,7 +332,8 @@ label input {
 .sleep-chip-lapis.selected,
 .sleep-chip-gold.selected,
 .sleep-chip-amber.selected,
-.sleep-chip-greengrass-ex.selected {
+.sleep-chip-greengrass-ex.selected,
+.sleep-chip-cyan-ex.selected {
   opacity: 1;
 }
 
@@ -382,7 +384,8 @@ label input {
 .sleep-chip-lapis,
 .sleep-chip-gold,
 .sleep-chip-amber,
-.sleep-chip-greengrass-ex {
+.sleep-chip-greengrass-ex,
+.sleep-chip-cyan-ex {
 
   width: 40px;
   height: 40px;
@@ -411,7 +414,8 @@ label input {
   transition: opacity 0.5s ease, transform 0.2s ease;
 }
 
-.sleep-chip-greengrass-ex {
+.sleep-chip-greengrass-ex,
+.sleep-chip-cyan-ex {
   border: 2px solid rgb(201, 73, 73);
 }
 
