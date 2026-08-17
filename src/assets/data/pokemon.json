@@ -808,6 +808,32 @@
     "availability": {}
   },
   {
+    "id": "pikachu_captain",
+    "pokedex_number": "25.2",
+    "name": "Pikachu (Captain)",
+    "type": "electric",
+    "sleep_type": "snoozing",
+    "specialty": "berries",
+    "berry": {
+      "name": "grepa",
+      "count": 1
+    },
+    "ingredients": [
+      "fancy_apple",
+      "warming_ginger",
+      "fancy_egg"
+    ],
+    "number_of_sleep_styles": 1,
+    "drowsy_power_requirement_list": [
+      2090000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle"
+      ]
+    }
+  },
+  {
     "id": "raichu",
     "pokedex_number": "26",
     "name": "Raichu",
@@ -10590,12 +10616,6 @@
         "greengrass_isle_expert"
       ],
       "3_star": [
-        "cyan_beach",
-        "old_gold_power_plant",
-        "greengrass_isle_expert"
-      ],
-      "4_star": [
-        "greengrass_isle",
         "cyan_beach",
         "old_gold_power_plant",
         "greengrass_isle_expert"
