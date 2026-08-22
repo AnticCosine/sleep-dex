@@ -102,7 +102,6 @@ export class Home {
       map(([pokemon, unlockedShinies]) => {
         
         const eligible = pokemon.filter(p => !UNAVAILABLE_SHINY_IDS.has(p.id));
-        console.log(eligible)
         const total = eligible.length;
         const unlockedCount = eligible.filter(p => unlockedShinies[p.id]).length;
         const remaining = total - unlockedCount;
