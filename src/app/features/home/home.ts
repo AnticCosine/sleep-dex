@@ -10,6 +10,7 @@ import { IngredientTable } from '../../shared/components/ingredient-table/ingred
 import { PokemonService } from '../../services/pokemon-service';
 import { Pokemon } from '../../models/pokemon.model';
 import { IdConverterPipe } from '../../pipes/id-converter-pipe';
+import { UNAVAILABLE_SHINY_IDS } from '../../constants/unavailable-shinies';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ export class Home {
 
   stats$!: Observable<HomeStats>;
   sleepStats$!: Observable<SleepTypeProgress>;
+  shinyStats$!: Observable<SleepTypeProgress>;
   islandStats$!: Observable<IslandSleepProgress[]>;
   recipes$!: Observable<Recipe[]>;
   pokemon$!: Observable<Pokemon[]>;
@@ -92,6 +94,22 @@ export class Home {
         };
       }) // combine into one pipe later 
     )
+
+    this.shinyStats$ = combineLatest([
+      this.pokemon$,
+      this.pokemonService.unlockedShinies$
+    ]).pipe(
+      map(([pokemon, unlockedShinies]) => {
+        
+        const eligible = pokemon.filter(p => !UNAVAILABLE_SHINY_IDS.has(p.id));
+        const total = eligible.length;
+        const unlockedCount = eligible.filter(p => unlockedShinies[p.id]).length;
+        const remaining = total - unlockedCount;
+        const completionPercent = total > 0 ? Math.round((unlockedCount / total) * 100) : 0;
+
+        return { total, unlocked: unlockedCount, remaining, completionPercent };
+      })
+    );
 
 
     this.islandStats$ = combineLatest([

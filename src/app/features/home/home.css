@@ -313,6 +313,10 @@
   color: #7F77DD;
 }
 
+.stat-value.shiny-value {
+  color: #e9e633;
+}
+
 .badge-snoozing   { background-color: var(--snoozing-colour); color: #2f5353; }
 .badge-dozing     { background-color: var(--dozing-colour); color: #5f5b2e; }
 .badge-slumbering { background-color: var(--slumbering-colour);; color: #2b436e; }
@@ -382,7 +386,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1050px) {
   .first-stats {
     display: flex;
     flex-direction: column;

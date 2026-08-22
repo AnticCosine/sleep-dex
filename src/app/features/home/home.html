@@ -33,7 +33,7 @@
           
           <div class="stats-grid" *ngIf="stats$ | async as stats">
               <div class="stat-card">
-                <div class="stat-label">Total recipes</div>
+                <div class="stat-label">Total Recipes</div>
                 <div class="stat-value" id="s-total">{{ stats.total }}</div>
               </div>
               <div class="stat-card">
@@ -52,7 +52,7 @@
 
           <div class="stats-grid" *ngIf="sleepStats$ | async as sleep">
               <div class="stat-card">
-                <div class="stat-label">Total styles</div>
+                <div class="stat-label">Total Styles</div>
                 <div class="stat-value" id="sleep-total">{{ sleep.total }}</div>
               </div>
               <div class="stat-card">
@@ -67,6 +67,25 @@
                 <div class="stat-label">Completion</div>
                 <div class="stat-value" id="sleep-pct">{{ sleep.completionPercent }}%</div>
               </div>
+          </div>
+
+          <div class="stats-grid" *ngIf="shinyStats$ | async as shiny">
+            <div class="stat-card">
+              <div class="stat-label">Total Shinies</div>
+              <div class="stat-value" id="shiny-total">{{ shiny.total }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Unlocked</div>
+              <div class="stat-value shiny-value" id="shiny-unlocked">{{ shiny.unlocked }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Remaining</div>
+              <div class="stat-value" id="shiny-remaining">{{ shiny.remaining }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Completion</div>
+              <div class="stat-value" id="shiny-pct">{{ shiny.completionPercent }}%</div>
+            </div>
           </div>
 
         </div>

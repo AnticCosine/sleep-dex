@@ -14,6 +14,7 @@ import { ThemeService } from '../../../services/theme-service';
 export class Navbar {
   menuOpen = false;
   showAuthModal = false;
+  pokemonSubOpen = false;
   isLoggedIn$!: Observable<boolean>;
 
   constructor(private authService: AuthService, public themeService: ThemeService) {}

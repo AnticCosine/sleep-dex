@@ -247,7 +247,38 @@
   color: var(--pokemon-star-colour);
 }
 
+.checklist {
+    margin-top: auto;
+}
 
+.checklist button {
+    width: 90px;
+    height: 24px;
+    padding: 4px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.checklist button:disabled {
+    cursor: default;
+}
+
+.checklist .button-icon {
+    background-color: #ff6363;
+    transition: background-color 0.35s ease, transform 0.15s ease;
+}
+
+.checklist .button-icon.unlocked {
+    background-color: #95e951;
+    transition: background-color 0.35s ease, transform 0.15s ease;
+}
 
 @media (hover: hover) and (pointer: fine) {
 

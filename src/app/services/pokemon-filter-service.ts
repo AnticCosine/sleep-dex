@@ -20,6 +20,8 @@ export class PokemonFilterService {
       unlockedFilter?: Record<string, number[]> | null;
       minDrowsy?: number | null;
       maxDrowsy?: number | null;
+      unlockedShiny?: string[] | null;
+      shinyFilter?: Record<string, boolean> | null;
     }
   ): Pokemon[] {
     const {
@@ -33,7 +35,9 @@ export class PokemonFilterService {
       unlockedStyle = [],
       unlockedFilter = {},
       minDrowsy,
-      maxDrowsy
+      maxDrowsy,
+      unlockedShiny = [],
+      shinyFilter = {}
     } = options;
 
     const searchTerm = (search ?? ``).toLowerCase();
@@ -53,6 +57,9 @@ export class PokemonFilterService {
       const isPartialUnlocked = styles.length > 0 && styles.length < pokemon.number_of_sleep_styles;
       const matchedUnlockedStyle = !unlockedStyle?.length || (unlockedStyle?.includes('unlocked') && isUnlocked) || (unlockedStyle?.includes('locked') && isLocked) || (unlockedStyle?.includes('partial') && isPartialUnlocked);
 
+      const isShinyUnlocked = shinyFilter?.[pokemon.id] ?? false;
+      const matchedUnlockedShiny = !unlockedShiny?.length || (unlockedShiny.includes('unlocked') && isShinyUnlocked) || (unlockedShiny.includes('locked') && !isShinyUnlocked);
+
       const matchedDrowsy =
         pokemon.drowsy_power_requirement_list.some(drowsy => {
           if (drowsy == null) return false;
@@ -63,7 +70,7 @@ export class PokemonFilterService {
           return meetsMin && meetsMax;
       });
       
-      return matchedSearch && matchedIngredients && matchedBerries && matchedPokemonTypes && matchedSleepType && matchedspecialtyType && matchedMapType && matchedUnlockedStyle && matchedDrowsy;
+      return matchedSearch && matchedIngredients && matchedBerries && matchedPokemonTypes && matchedSleepType && matchedspecialtyType && matchedMapType && matchedUnlockedStyle && matchedDrowsy && matchedUnlockedShiny;
     });
   }
 }
