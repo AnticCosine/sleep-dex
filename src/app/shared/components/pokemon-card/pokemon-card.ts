@@ -16,13 +16,16 @@ import { Observable } from 'rxjs';
 export class PokemonCard {
 
   @Input() pokemon!: Pokemon;
+  @Input() shiny?: boolean = false;
   
   unlockedStyles$!: Observable<number[]>;
+  isShinyUnlocked$!: Observable<boolean>
 
   constructor(private pokemonService: PokemonService) {}
 
   ngOnInit() {
     this.unlockedStyles$ = this.pokemonService.getUnlockedStyles$(this.pokemon.id);
+    this.isShinyUnlocked$ = this.pokemonService.getUnlockedShinies$(this.pokemon.id);
   }
 
   isUnlocked(styles: number[] | null, index: number): boolean {
@@ -34,11 +37,19 @@ export class PokemonCard {
   }
 
   toggleAll() {
-    this.pokemonService.toggleAll(this.pokemon.id, this.pokemon.drowsy_power_requirement_list);
+    if (this.shiny) {
+      this.toggleShiny()
+    } else {
+      this.pokemonService.toggleAll(this.pokemon.id, this.pokemon.drowsy_power_requirement_list);
+    }
+  }
+
+  toggleShiny() {
+    this.pokemonService.toggleShiny(this.pokemon.id);
   }
 
   get imagePokemonPath(): string {
-    return `assets/images/pokemon/${this.pokemon.id}.png`
+    return this.shiny ? `assets/images/pokemon/shiny/${this.pokemon.id}_shiny.png` : `assets/images/pokemon/${this.pokemon.id}.png`
   }
 
   get imageBerryPath(): string {

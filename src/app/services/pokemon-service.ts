@@ -5,6 +5,7 @@ import { environment } from '../../environments/environment';
 import { BehaviorSubject, firstValueFrom, map, Observable } from 'rxjs';
 
 type UnlockedStyles = { [pokemonId: string]: number[] };
+type UnlockedShinies = { [pokemonId: string]: boolean };
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +13,7 @@ type UnlockedStyles = { [pokemonId: string]: number[] };
 export class PokemonService {
 
   private readonly storageKey = 'unlockedStyles';
+  private readonly shinyKey = 'shinyPokemon';
   private readonly jwt_token = 'auth_token';
 
   private readonly API = environment.apiUrl;
@@ -19,11 +21,17 @@ export class PokemonService {
   private unlockedStylesSubject = new BehaviorSubject<UnlockedStyles>(this.loadStyles());
   unlockedStyles$ = this.unlockedStylesSubject.asObservable();
 
+  private unlockedShiniesSubject = new BehaviorSubject<UnlockedShinies>(this.loadShinies());
+  unlockedShinies$ = this.unlockedShiniesSubject.asObservable();
+
   constructor(private http: HttpClient) {
     if (this.getToken()) {
       this.fetchRemoteStyles();
+      this.fetchRemoteShinies();
     }
   }
+
+  // sync sleep styles 
 
   private async fetchRemoteStyles(): Promise<void> {
     try {
@@ -56,6 +64,39 @@ export class PokemonService {
     this.persistStyles(styles);
   }
 
+  // sync shinies 
+
+  private async fetchRemoteShinies(): Promise<void> {
+    try {
+      const token = this.getToken();
+      const headers = { Authorization: `Bearer ${token}` };
+
+      const remote = await firstValueFrom(
+        this.http.get<UnlockedShinies>(`${this.API}/user/pokemon/shinies`, { headers })
+      );
+
+      if (remote && Object.keys(remote).length > 0) {
+        this.persistShinies(remote);
+      }
+
+    } catch (err) {
+      console.error('Failed to fetch remote shinies:', err);
+    }
+  }
+
+  private async pushShiniesToRemote(shinies: UnlockedShinies): Promise<void> {
+    const token = this.getToken();
+    const headers = { Authorization: `Bearer ${token}` };
+
+    await firstValueFrom(
+      this.http.put(`${this.API}/user/pokemon/shinies`, { shinies }, { headers })
+    );
+  }
+
+  public syncShiniesFromRemote(shinies: UnlockedShinies): void {
+    this.persistShinies(shinies);
+  }
+
   getPokemon() {
     return this.http.get<Pokemon[]>('assets/data/pokemon.json');
   }
@@ -63,6 +104,8 @@ export class PokemonService {
   GetPokemonTypes() {
     return this.http.get<PokemonTypes[]>('assets/data/pokemon-types.json');
   }
+
+  // sleep styles 
 
   getUnlockedStyles$(pokemonId: string): Observable<number[]> {
     return this.unlockedStyles$.pipe(
@@ -118,6 +161,41 @@ export class PokemonService {
     localStorage.setItem(this.storageKey, JSON.stringify(styles));
     this.unlockedStylesSubject.next(styles);
   }
+
+ // Shinies 
+
+  getUnlockedShinies$(pokemonId: string): Observable<boolean> {
+    return this.unlockedShinies$.pipe(
+      map(all => all[pokemonId] ?? false)
+    );
+  }
+
+  isShinyUnlocked(pokemonId: string): boolean {
+    return this.unlockedShiniesSubject.value[pokemonId] ?? false;
+  }
+
+  async toggleShiny(pokemonId: string): Promise<void> {
+    const current = { ...this.unlockedShiniesSubject.value };
+    current[pokemonId] = !current[pokemonId];
+
+    this.persistShinies(current);
+
+    if (this.getToken()) {
+      await this.pushShiniesToRemote(current);
+    }
+  }
+
+  public loadShinies(): UnlockedShinies {
+    const stored = localStorage.getItem(this.shinyKey);
+    return stored ? JSON.parse(stored) : {};
+  }
+
+  private persistShinies(shinies: UnlockedShinies): void {
+    localStorage.setItem(this.shinyKey, JSON.stringify(shinies));
+    this.unlockedShiniesSubject.next(shinies);
+  }
+
+  // auth 
 
   private getToken(): string | null {
     return localStorage.getItem(this.jwt_token);

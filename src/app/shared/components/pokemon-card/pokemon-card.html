@@ -25,26 +25,38 @@
 
     <div class="name-divider"></div>
 
-    <div class="sleep-styles" *ngIf="unlockedStyles$ | async as unlockedStyles">
-        @for (item of [].constructor(pokemon.drowsy_power_requirement_list.length); track $index) {
-            <button class="sleep-button"
-            *ngIf="pokemon.drowsy_power_requirement_list[$index] != null"
-            [class.unlocked]="isUnlocked(unlockedStyles, $index)"
-            (click)="toggleStyle($index); $event.stopPropagation()">
+    @if (!shiny) {
+        <div class="sleep-styles" *ngIf="unlockedStyles$ | async as unlockedStyles">
 
-                <div class="star-sleep">
-                    
-                    <span class="star-icon">{{ isUnlocked(unlockedStyles, $index) ? '★' : '☆' }}</span>
-                    
-                    <span class="num">{{ $index + 1 }}</span>
-                </div>
+            @for (item of [].constructor(pokemon.drowsy_power_requirement_list.length); track $index) {
+                <button class="sleep-button"
+                *ngIf="pokemon.drowsy_power_requirement_list[$index] != null"
+                [class.unlocked]="isUnlocked(unlockedStyles, $index)"
+                (click)="toggleStyle($index); $event.stopPropagation()">
 
-                <span class="drowsy-power">
-                    {{ pokemon.drowsy_power_requirement_list[$index] | numberAbbreviate }}
-                </span>
+                    <div class="star-sleep">
 
+                        <span class="star-icon">{{ isUnlocked(unlockedStyles, $index) ? '★' : '☆' }}</span>
+
+                        <span class="num">{{ $index + 1 }}</span>
+                    </div>
+
+                    <span class="drowsy-power">
+                        {{ pokemon.drowsy_power_requirement_list[$index] | numberAbbreviate }}
+                    </span>
+
+                </button>
+            }
+        </div>
+    } @else {
+        <div class="checklist">
+            <button
+                class="button-icon"
+                [class.unlocked]="isShinyUnlocked$ | async"
+                (click)="toggleShiny(); $event.stopPropagation()">
+                {{ (isShinyUnlocked$ | async) ? 'Unlocked' : 'Locked' }}
             </button>
-        }
-    </div>
+        </div>
+    }
 
 </div>
