@@ -22,6 +22,8 @@ export class PokemonFilterStateService {
   mapTypeControl = new FormControl<string[]>([]);
   unlockedStyleControl = new FormControl<string[]>([]);
 
+  unlockedShinyControl = new FormControl<string[]>([]);
+
   minDrowsyControl = new FormControl<number | null>(0);
   maxDrowsyControl = new FormControl<number | null>(0);
 
@@ -69,10 +71,12 @@ export class PokemonFilterStateService {
             this.pokemonService.unlockedStyles$,
             this.minDrowsyControl.valueChanges.pipe(startWith(this.minDrowsyControl.value)),
             this.maxDrowsyControl.valueChanges.pipe(startWith(this.maxDrowsyControl.value)),
+            this.unlockedShinyControl.valueChanges.pipe(startWith(this.unlockedShinyControl.value)),
+            this.pokemonService.unlockedShinies$,
         ]).pipe(
-          map(([pokemon, search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy]) =>
+          map(([pokemon, search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy, unlockedShiny, shinyFilter]) =>
             this.pokemonFilterService.filterPokemon(pokemon, {
-              search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy
+              search, ingredient, berry, pokemonType, sleepType, specialtyType, mapType, unlockedStyle, unlockedFilter, minDrowsy, maxDrowsy, unlockedShiny, shinyFilter
             })
           )
         ).subscribe(filtered => filteredPokemon.next(filtered));
@@ -92,6 +96,7 @@ export class PokemonFilterStateService {
     this.specialtyTypeControl.setValue([]);
     this.mapTypeControl.setValue([]);
     this.unlockedStyleControl.setValue([]);
+    this.unlockedShinyControl.setValue([]);
     this.minDrowsyControl.setValue(this.minDrowsy);
     this.maxDrowsyControl.setValue(this.maxDrowsy);
   }
@@ -158,6 +163,10 @@ export class PokemonFilterStateService {
 
   toggleStyleType(type: string) {
     this.toggle(this.unlockedStyleControl, type);
+  }
+
+  toggleShinyType(type: string) {
+    this.toggle(this.unlockedShinyControl, type);
   }
 
   private toggle(control: FormControl<string[] | null>, value: string) {

@@ -3,6 +3,7 @@
 
         <app-pokemon-filters
           [filterState]="filterState"
+          [shiny]="true"
         />
 
         @if (pokemon$ | async; as pokemons) {

@@ -14,6 +14,7 @@ import { NumberAbbreviatePipe } from '../../../pipes/number-abbreviate-pipe';
 export class PokemonFilters {
 
   @Input() filterState!: PokemonFilterStateService;
+  @Input() shiny?: boolean = false;
   @ViewChild('trackFill') trackFillRef!: ElementRef<HTMLDivElement>;
 
   mobileView = false;
