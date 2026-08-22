@@ -23,7 +23,7 @@ export class DataSyncService {
     const headers = new HttpHeaders({ Authorization: `Bearer ${token}` });
 
     try {
-      const [remoteRecipes, remoteIngredients, remoteStyles] = await Promise.all([
+      const [remoteRecipes, remoteIngredients, remoteStyles, remoteShinies] = await Promise.all([
         firstValueFrom(this.http.get<string[]>(`${this.API}/user/recipes`, { headers })),
         firstValueFrom(
           this.http.get<{ ingredientId: string; quantity: number }[]>(
@@ -37,17 +37,24 @@ export class DataSyncService {
             { headers }
           )
         ),
+        firstValueFrom(
+          this.http.get<{ [pokemonId: string]: boolean }>(
+            `${this.API}/user/pokemon/shinies`,
+            { headers }
+          )
+        ),
       ]);
       
       const recipes = remoteRecipes ?? [];
       const ingredients = remoteIngredients ?? [];
       const styles = remoteStyles ?? {};
+      const shinies = remoteShinies ?? {};
 
       const flatIngredients = Object.fromEntries(
         ingredients.map(({ ingredientId, quantity }) => [ingredientId, quantity])
       );
 
-      const hasRemoteData = recipes.length > 0 || ingredients.length > 0 || Object.keys(styles).length > 0;
+      const hasRemoteData = recipes.length > 0 || ingredients.length > 0 || Object.keys(styles).length > 0 || Object.keys(shinies).length > 0;
  
       if (hasRemoteData) {
         this.recipeService.saveRecipe(recipes);
@@ -55,10 +62,14 @@ export class DataSyncService {
         if (Object.keys(styles).length > 0) {
           this.pokemonService.syncFromRemote(styles);
         }
+        if (Object.keys(shinies).length > 0) {
+          this.pokemonService.syncShiniesFromRemote(shinies);
+        }
       } else {
         const localRecipes = this.recipeService.loadRecipes();
         const localIngredients = this.ingredientService.loadFromStorage();
         const localStyles = this.pokemonService.loadStyles();
+        const localShinies = this.pokemonService.loadShinies();
         const uploads: Promise<any>[] = [];
         if (localRecipes.length > 0) {
           uploads.push(
@@ -94,6 +105,12 @@ export class DataSyncService {
         if (Object.keys(localStyles).length > 0) {
           uploads.push(
             firstValueFrom(this.http.put(`${this.API}/user/pokemon/styles`, { styles: localStyles }, { headers }))
+          );
+        }
+
+        if (Object.keys(localShinies).length > 0) {
+          uploads.push(
+            firstValueFrom(this.http.put(`${this.API}/user/pokemon/shinies`, { shinies: localShinies }, { headers }))
           );
         }
  
