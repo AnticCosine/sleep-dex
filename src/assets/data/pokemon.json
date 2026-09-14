@@ -3452,6 +3452,48 @@
     }
   },
   {
+    "id": "mewtwo",
+    "pokedex_number": "150",
+    "name": "Mewtwo",
+    "type": "psychic",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "mago",
+      "count": 1
+    },
+    "ingredients": [
+      "greengrass_soybeans",
+      "greengrass_corn",
+      "soft_potato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      52706000,
+      147364000,
+      326192000,
+      null,
+      0
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "3_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ]
+    }
+  },
+  {
     "id": "mew",
     "pokedex_number": "151",
     "name": "Mew",
