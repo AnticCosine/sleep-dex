@@ -3467,12 +3467,13 @@
       "greengrass_corn",
       "soft_potato"
     ],
-    "number_of_sleep_styles": 4,
+    "number_of_sleep_styles": 5,
     "drowsy_power_requirement_list": [
       52706000,
       147364000,
       326192000,
       null,
+      0,
       0
     ],
     "availability": {
