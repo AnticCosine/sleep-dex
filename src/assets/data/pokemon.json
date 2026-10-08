@@ -8869,6 +8869,112 @@
     }
   },
   {
+    "id": "foongus",
+    "pokedex_number": "590",
+    "name": "Foongus",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "fancy_egg",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2090000,
+      9120000,
+      38304000,
+      49894000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "3_star": [
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ]
+    }
+  },
+  {
+    "id": "amoonguss",
+    "pokedex_number": "591",
+    "name": "Amoonguss",
+    "type": "poison",
+    "sleep_type": "dozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "chesto",
+      "count": 1
+    },
+    "ingredients": [
+      "tasty_mushroom",
+      "fancy_egg",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      11780000,
+      33478000,
+      93290000,
+      134710000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "3_star": [
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "lapis_lakeside",
+        "amber_canyon",
+        "greengrass_isle_expert",
+        "cyan_beach_expert"
+      ]
+    }
+  },
+  {
     "id": "rufflet",
     "pokedex_number": "627",
     "name": "Rufflet",
