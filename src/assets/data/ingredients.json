@@ -35,6 +35,11 @@
         "strength": 110
     },
     {
+        "id": "snackable_nuts",
+        "name": "Snackable Nuts",
+        "strength": 112
+    },
+    {
         "id": "fancy_egg",
         "name": "Fancy Egg",
         "strength": 115

@@ -164,6 +164,17 @@
     ]
   },
   {
+    "id": "seed_bomb_naan_and_curry",
+    "name": "“Seed Bomb” Naan and Curry",
+    "type": "curry",
+    "baseStrength": 7950,
+    "ingredients": [
+      { "ingredientId": "snackable_nuts", "amount": 15 },
+      { "ingredientId": "plump_pumpkin", "amount": 12 },
+      { "ingredientId": "greengrass_corn", "amount": 12 }
+    ]
+  },
+  {
     "id": "dream_eater_butter_curry",
     "name": "“Dream Eater” Butter Curry",
     "type": "curry",
@@ -529,6 +540,18 @@
     ]
   },
   {
+    "id": "slowpoke_tail_roll_cake",
+    "name": "Slowpoke Tail Roll Cake",
+    "type": "dessert",
+    "baseStrength": 19846,
+    "ingredients": [
+      { "ingredientId": "snackable_nuts", "amount": 26 },
+      { "ingredientId": "slowpoke_tail", "amount": 10 },
+      { "ingredientId": "greengrass_soybeans", "amount": 22 },
+      { "ingredientId": "fancy_egg", "amount": 33 }
+    ]
+  },
+  {
     "id": "clodsire_eclair",
     "name": "Clodsire Eclair",
     "type": "dessert",
@@ -846,6 +869,18 @@
       { "ingredientId": "soft_potato", "amount": 30 },
       { "ingredientId": "greengrass_corn", "amount": 18 },
       { "ingredientId": "tasty_mushroom", "amount": 27 }
+    ]
+  },
+  {
+    "id": "grass_knot_salad_wrap",
+    "name": "“Grass Knot” Salad Wrap",
+    "type": "salad",
+    "baseStrength": 26350,
+    "ingredients": [
+      { "ingredientId": "snackable_nuts", "amount": 30 },
+      { "ingredientId": "glossy_avocado", "amount": 22 },
+      { "ingredientId": "warming_ginger", "amount": 36 },
+      { "ingredientId": "snoozy_tomato", "amount": 33 }
     ]
   }
 ]

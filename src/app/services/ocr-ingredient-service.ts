@@ -17,6 +17,7 @@ const NAME_TO_ID: Record<string, string> = {
   'pure': 'pure_oil',
   'ginger': 'warming_ginger',
   'tom': 'snoozy_tomato',
+  'nut': 'snackable_nuts',
   'soybeans': 'greengrass_soybeans',
   'corn': 'greengrass_corn',
   'large leek': 'large_leek',
