@@ -3190,6 +3190,29 @@
     "availability": {}
   },
   {
+    "id": "eevee_halloween_purple",
+    "pokedex_number": "133.3",
+    "name": "Eevee (Halloween)",
+    "type": "normal",
+    "sleep_type": "snoozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "persim",
+      "count": 1
+    },
+    "ingredients": [
+      "plump_pumpkin",
+      "soothing_cacao",
+      "moomoo_milk"
+    ],
+    "number_of_sleep_styles": 2,
+    "drowsy_power_requirement_list": [
+      760000,
+      6570000
+    ],
+    "availability": {}
+  },
+  {
     "id": "vaporeon",
     "pokedex_number": "134",
     "name": "Vaporeon",
@@ -4744,6 +4767,48 @@
       ],
       "4_star": [
         "cyan_beach"
+      ]
+    }
+  },
+  {
+    "id": "misdreavus",
+    "pokedex_number": "200",
+    "name": "Misdreavus",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "rousing_coffee",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      6004000,
+      30476000,
+      65702000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
+      ],
+      "3_star": [
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
       ]
     }
   },
@@ -7908,6 +7973,48 @@
     }
   },
   {
+    "id": "mismagius",
+    "pokedex_number": "429",
+    "name": "Mismagius",
+    "type": "ghost",
+    "sleep_type": "dozing",
+    "specialty": "skills",
+    "berry": {
+      "name": "bluk",
+      "count": 1
+    },
+    "ingredients": [
+      "soft_potato",
+      "rousing_coffee",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 3,
+    "drowsy_power_requirement_list": [
+      33478000,    
+      85614000,
+      205884000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
+      ],
+      "3_star": [
+        "greengrass_isle_expert",
+        "snowdrop_tundra",
+        "old_gold_power_plant"
+      ]
+    }
+  },
+  {
     "id": "honchkrow",
     "pokedex_number": "430",
     "name": "Honchkrow",
@@ -8789,6 +8896,112 @@
       "3_star": [
         "lapis_lakeside",
         "greengrass_isle_expert"
+      ]
+    }
+  },
+  {
+    "id": "cottonee",
+    "pokedex_number": "546",
+    "name": "Cottonee",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "snackable_nuts",
+      "glossy_avocado",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      2090000,
+      10830000,
+      48070000,
+      62776000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "3_star": [
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ]
+    }
+  },
+  {
+    "id": "whimsicott",
+    "pokedex_number": "547",
+    "name": "Whimsicott",
+    "type": "fairy",
+    "sleep_type": "snoozing",
+    "specialty": "ingredients",
+    "berry": {
+      "name": "pecha",
+      "count": 1
+    },
+    "ingredients": [
+      "snackable_nuts",
+      "glossy_avocado",
+      "snoozy_tomato"
+    ],
+    "number_of_sleep_styles": 4,
+    "drowsy_power_requirement_list": [
+      28766000,
+      81244000,
+      195358000,
+      236208000
+    ],
+    "availability": {
+      "1_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "2_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "3_star": [
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
+      ],
+      "4_star": [
+        "greengrass_isle",
+        "greengrass_isle_expert",
+        "cyan_beach",
+        "cyan_beach_expert",
+        "amber_canyon"
       ]
     }
   },
